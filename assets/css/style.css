@@ -1,0 +1,235 @@
+/**
+ * Theme: LoutikCLOUD - Deep Sea Edition
+ * Role: Main Stylesheet
+ * Maintainer: Louis MEDO
+ * Description: Custom overrides for Material for MkDocs
+ */
+
+/* ==========================================================================
+   1. VARIABLES & CONFIGURATION
+   ========================================================================== */
+
+:root {
+  /* Palette Deep Sea */
+  --color-ds-arctic:   #E0E1DD;
+  --color-ds-slate:    #778DA9;
+  --color-ds-teal:     #415A77;
+  --color-ds-navy:     #1B263B;
+  --color-ds-midnight: #0D1B2A;
+
+  /* UI States */
+  --color-ui-active:   #1a73e8;
+  --color-ui-hover:    rgba(119, 141, 169, 0.08);
+  --color-ui-active-bg: rgba(26, 115, 232, 0.08);
+
+  /* Spacing Tokens */
+  --spacing-xs: 0.5rem;
+  --spacing-sm: 1rem;
+  --spacing-md: 1.5rem;
+  --spacing-lg: 2rem;
+
+  /* Material Overrides */
+  --md-primary-fg-color: #e3f2fd;
+  --md-primary-fg-color--dark: #bbdefb;
+  --md-primary-bg-color: #000000;
+  --md-accent-fg-color: var(--color-ds-teal);
+  --md-typeset-a-color: var(--color-ds-teal);
+  --md-text-color: var(--color-ds-midnight);
+}
+
+/* ==========================================================================
+   2. LAYOUT & GRID SYSTEM
+   ========================================================================== */
+
+/* Widescreen Optimization */
+@media screen and (min-width: 76.25em) {
+  .md-grid {
+    max-width: 100%;
+    padding-right: var(--spacing-lg);
+    padding-left: 0;
+  }
+
+  .md-sidebar--primary {
+    width: 18rem;
+  }
+
+  .md-sidebar--secondary {
+    width: 15rem;
+  }
+
+  .md-content {
+    max-width: 52rem;
+    margin: 0 auto;
+  }
+}
+
+/* Content Separation (Borders) */
+@media screen and (min-width: 60em) {
+  .md-sidebar--primary .md-sidebar__scrollwrap {
+    border-right: 1px solid rgba(13, 27, 42, 0.08);
+    padding-right: var(--spacing-md);
+  }
+
+  .md-sidebar--secondary .md-sidebar__scrollwrap {
+    border-left: 1px solid rgba(13, 27, 42, 0.08);
+    padding-left: var(--spacing-md);
+  }
+}
+
+/* Header Layout */
+.md-header__inner {
+  padding-right: var(--spacing-lg);
+  padding-left: var(--spacing-sm);
+}
+
+/* ==========================================================================
+   3. TYPOGRAPHY
+   ========================================================================== */
+
+.md-typeset h1,
+.md-typeset h2 {
+  color: var(--color-ds-midnight);
+  font-weight: 700;
+  letter-spacing: -0.015em;
+}
+
+.md-typeset h2 {
+  border-bottom: 1px solid var(--color-ds-arctic);
+  padding-bottom: var(--spacing-xs);
+  margin-top: 2.5rem;
+}
+
+/* ==========================================================================
+   4. COMPONENTS
+   ========================================================================== */
+
+/* --- Logo --- */
+.md-header__button.md-logo img {
+  width: 2rem;
+  height: 2rem;
+  object-fit: contain;
+  background-color: #ffffff;
+  padding: 6px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* --- Search Bar --- */
+.md-search {
+  max-width: 350px !important; /* Force width override */
+}
+
+.md-search__form {
+  background-color: #ffffff !important;
+  border-radius: 8px !important;
+  border: 1px solid var(--color-ds-slate) !important;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+}
+
+.md-search__input {
+  font-size: 16px !important;
+  color: var(--color-ds-midnight) !important;
+}
+
+.md-search__input::placeholder {
+  color: var(--color-ds-slate) !important;
+}
+
+.md-search__icon,
+.md-header__button {
+  color: var(--color-ds-slate) !important;
+}
+
+/* --- Custom Blockquotes (Metadata) --- */
+.md-typeset blockquote {
+  border-left: 4px solid var(--color-ds-teal) !important;
+  background-color: rgba(224, 225, 221, 0.35) !important;
+  color: var(--color-ds-navy) !important;
+  border-radius: 0 6px 6px 0;
+  padding: 1.2rem 1.5rem;
+  margin: 1.5em 0;
+  font-style: normal;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.02);
+}
+
+/* ==========================================================================
+   5. NAVIGATION (PRIMARY SIDEBAR)
+   ========================================================================== */
+
+/* Hide Site Title in Drawer */
+.md-nav__title[for="__drawer"] {
+  display: none !important;
+}
+
+/* Reset Default Margins */
+.md-nav--primary,
+.md-nav--primary .md-nav__list {
+  margin-left: 0 !important;
+}
+
+/* --- ESPACEMENT VERTICAL --- */
+/* Réduit l'espace entre TOUS les éléments de la liste (sections et pages) */
+.md-nav__item {
+  margin-top: 0.02rem !important;    /* Espace minimal au-dessus */
+  margin-bottom: 0.02rem !important;  /* Espace minimal en dessous */
+}
+
+/* Link Styling */
+.md-nav__item .md-nav__link {
+  padding: 0.1rem 0.2rem;  /* Réduit le padding haut/bas (était 0.3rem) */
+  margin: 0 0.1rem;
+  border-radius: 4px;
+  color: var(--color-ds-midnight);
+  font-size: 0.95rem;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+/* Hover State */
+.md-nav__item:not(.md-nav__item--active) > .md-nav__link:hover {
+  background-color: var(--color-ui-hover);
+  color: var(--color-ds-midnight);
+}
+
+/* Active State */
+.md-nav__item--active > .md-nav__link {
+  background-color: var(--color-ui-active-bg);
+  color: var(--color-ui-active) !important;
+  font-weight: 700;
+}
+
+.md-nav__item--active > .md-nav__link .md-nav__icon {
+  color: var(--color-ui-active) !important;
+}
+
+/* ==========================================================================
+   6. TABLE OF CONTENTS (SECONDARY SIDEBAR)
+   ========================================================================== */
+
+/* Title of the ToC */
+.md-sidebar--secondary .md-nav__title {
+  margin-bottom: var(--spacing-sm);
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--color-ds-slate);
+}
+
+/* Links Styling - Compact & Grey */
+.md-sidebar--secondary .md-nav__link {
+  color: #555 !important;
+  font-size: 0.85rem !important;
+  margin-bottom: 0.2rem !important;
+  padding-top: 0.1rem;
+  padding-bottom: 0.1rem;
+}
+
+/* Active Link in ToC */
+.md-sidebar--secondary .md-nav__link--active {
+  font-weight: 600 !important;
+  color: #333 !important;
+}
+
+/* Hide Scrollbar for cleaner look if content is short */
+.md-sidebar--secondary .md-sidebar__scrollwrap {
+  overflow: hidden !important;
+}
