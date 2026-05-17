@@ -1,0 +1,2 @@
+- https://blog.stephane-robert.info/docs/documenter/concevoir/documentation-operationnelle/
+- https://blog.stephane-robert.info/docs/documenter/

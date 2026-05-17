@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+
+{% block content %}
+  {# Vérifie si le plugin Git a généré la date de révision #}
+  {% if page.meta.git_revision_date_localized %}
+    <div style="text-align: left; font-size: 0.85em; color: var(--md-default-fg-color--light); margin-bottom: 20px;">
+      <strong>Dernière édition :</strong> {{ page.meta.git_revision_date_localized }}
+    </div>
+  {% endif %}
+  
+  {# Insère le contenu normal de la page Markdown #}
+  {{ super() }}
+{% endblock %}

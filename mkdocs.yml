@@ -1,0 +1,42 @@
+site_name: Documentation infrastructure - LoutikCLOUD
+copyright: LoutikCLOUD - OpsTeam
+
+repo_url: https://github.com/loutik/infrastructure-docs
+repo_name: ""
+
+extra_css:
+  - assets/css/style.css
+
+theme:
+  name: material
+  language: fr
+  custom_dir: overrides # Dossier pour modifier la structure HTML
+  logo: assets/logo_loutik.png
+  favicon: assets/logo_loutik.png
+  palette:
+    primary: light-blue # On garde ça en secours
+    accent: light-blue
+  features:
+    - navigation.top
+    - search.suggest
+    - search.highlight
+    - content.code.copy
+    - navigation.indexes
+
+plugins:
+  - search
+  - git-revision-date-localized: # Automatise les dates via Git
+      enable_creation_date: true
+      type: timeago
+      fallback_to_build_date: true
+  - macros # Permet d'injecter du code dynamiquement
+
+markdown_extensions:
+  - meta # Active la lecture de des métadonnées
+  - admonition
+  - pymdownx.details # Permet de créer des encarts dépliables
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
