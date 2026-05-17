@@ -1,4 +1,5 @@
 site_name: Documentation infrastructure - LoutikCLOUD
+site_url: https://infra-docs.loutik.fr
 copyright: LoutikCLOUD - OpsTeam
 
 repo_url: https://github.com/loutik/infrastructure-docs
