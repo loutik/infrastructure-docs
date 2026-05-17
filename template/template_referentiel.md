@@ -22,7 +22,7 @@ CONTRAINTES DE SORTIE :
 - L'image markdown doit toujours être présente.
 
 TEMPLATE À REMPLIR :
-```markdown
+``````markdown
 ---
 id: [ID]
 title: [Titre]
@@ -69,3 +69,4 @@ tags: [referentiel, norme, standard, convention]
 [Moyen technique mis en œuvre pour garantir le respect de cette norme au quotidien.]
 * [Ex: Validation automatisée par un linter (ex: `ansible-lint`, `yamllint`) dans le pipeline CI/CD de GitHub Actions.]
 * [Ex: Contrôle bloquant via une politique OPA (Open Policy Agent) sur le cluster Kubernetes.]
+``````
