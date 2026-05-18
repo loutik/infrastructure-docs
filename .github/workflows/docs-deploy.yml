@@ -28,7 +28,7 @@ jobs:
         run: pip install -r requirements.txt
 
       - name: Déclaration de l'enregistrement DNS CNAME
-        run: echo "infra-docs.loutik.fr" > CNAME        
+        run: echo "infra-docs.loutik.fr" > docs/CNAME        
 
       - name: Build et Déploiement vers GitHub Pages
         run: mkdocs gh-deploy --force
