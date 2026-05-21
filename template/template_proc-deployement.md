@@ -34,7 +34,7 @@ owner: [Responsable]
 tags: [deploiement, iac, mise-en-production]
 ---
 
-# [ID] : [Titre]
+# {{ page.meta.title }}
 
 ![Bannière LoutikCLOUD](/assets/banniere_loutikcloud.png)
 

@@ -32,7 +32,7 @@ author: [Auteur]
 tags: [referentiel, norme, standard, convention]
 ---
 
-# [ID] : [Titre]
+# {{ page.meta.title }}
 
 ![Bannière LoutikCLOUD](/assets/banniere_loutikcloud.png)
 
