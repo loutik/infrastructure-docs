@@ -31,7 +31,7 @@ owner: [Responsable]
 tags: [adr, architecture]
 ---
 
-# ADR-[ID] : [Titre]
+# ADR-{{ page.meta.id }} : {{ page.meta.title }}
 
 !!! info "Informations"
     * **Date de création** : {{ page.meta.date }}

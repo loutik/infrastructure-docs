@@ -34,7 +34,7 @@ owner: [Responsable]
 tags: [runbook, exploitation, mco]
 ---
 
-# [ID] : [Titre]
+# {{ page.meta.title }}
 
 ![Bannière LoutikCLOUD](/assets/banniere_loutikcloud.png)
 

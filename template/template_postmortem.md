@@ -34,7 +34,7 @@ owner: [Responsable]
 tags: [postmortem, incident, blameless]
 ---
 
-# [ID] : [Titre]
+# {{ page.meta.id }} : {{ page.meta.title }}
 
 ![Bannière LoutikCLOUD](/assets/banniere_loutikcloud.png)
 
