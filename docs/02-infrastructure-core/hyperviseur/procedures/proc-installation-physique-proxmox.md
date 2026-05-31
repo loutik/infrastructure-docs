@@ -4,7 +4,7 @@ service: Proxmox
 date: 2026-05-31
 author: Louis MEDO
 owner: Louis MEDO
-tags: [deploiement, iac, mise-en-production]
+tags: [proxmox]
 ---
 
 # {{ page.meta.title }}
@@ -44,7 +44,7 @@ L'installation bare-metal de Proxmox VE sur un nouveau serveur physique permet d
     
     ![Proxmox - Choix de la zone d'heure](./assets/proc-installation-physique-proxmox_04-choix-time-zone.png)
 
-5.  **Paramétrage du compte administrateur système.** Configurer les accès pour le compte root local. Renseigner un mot de passe robuste (et modifier le mot de passe par défaut). Saisir l'adresse email de contact (`contact@loutik.fr`) pour la réception des alertes critiques de l'hyperviseur.
+5.  **Paramétrage du compte administrateur système.** Configurer les accès pour le compte root local. Renseigner un mot de passe robuste (mot de passe par défaut pour Ansible : Ansible123456*). Saisir l'adresse email de contact (`contact@loutik.fr`) pour la réception des alertes critiques de l'hyperviseur.
     
     ![Proxmox - Choix du mot de passe Administrateur](./assets/proc-installation-physique-proxmox_05-mdp-admin.png)
 
@@ -58,7 +58,7 @@ L'installation bare-metal de Proxmox VE sur un nouveau serveur physique permet d
 
 ## 4. Validation
 
-- [ ]  Vérifier la disponibilité de l'interface web d'administration après le redémarrage depuis l'accès physique (shell).
+- [ ] Vérifier la disponibilité de l'interface web d'administration après le redémarrage depuis l'accès physique (shell).
 
     ```bash
     systemctl status pveproxy
