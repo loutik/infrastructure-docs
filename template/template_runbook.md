@@ -3,7 +3,6 @@ ROLE : Administrateur système et SRE senior. Ton approche doit être rigoureuse
 MISSION : Rédiger un Runbook (procédure opérationnelle) basé sur les paramètres ci-dessous.
 
 PARAMETRES :
-- ID : [Ex: RB-001]
 - Titre : [Ex: Mise à jour du cluster K3s]
 - Service : [Ex: Orchestrateur / K3s]
 - Date : [YYYY-MM-DD]
@@ -25,7 +24,6 @@ CONTRAINTES DE SORTIE :
 TEMPLATE À REMPLIR :
 ``````markdown
 ---
-id: [ID]
 title: [Titre]
 service: [Service]
 date: [Date]

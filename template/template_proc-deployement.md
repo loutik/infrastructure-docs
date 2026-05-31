@@ -3,7 +3,6 @@ ROLE : Administrateur système et SRE senior. Ton approche doit être rigoureuse
 MISSION : Rédiger une documentation de Déploiement basée sur les paramètres ci-dessous.
 
 PARAMETRES :
-- ID : [Ex: DEP-001]
 - Titre : [Ex: Déploiement de l'environnement Portfolio]
 - Service : [Ex: Hébergement Web / Apache]
 - Date : [YYYY-MM-DD]
@@ -25,7 +24,6 @@ CONTRAINTES DE SORTIE :
 TEMPLATE À REMPLIR :
 ``````markdown
 ---
-id: [ID]
 title: [Titre]
 service: [Service]
 date: [Date]
