@@ -7,32 +7,34 @@
       <meta name="viewport" content="width=device-width,initial-scale=1">
       
       
-      
-        <link rel="canonical" href="https://infra-docs.loutik.fr/04-securite/">
-      
-      
-        <link rel="prev" href="../03-edge/">
+        <meta name="author" content="Louis MEDO">
       
       
-        <link rel="next" href="../05-services/">
+        <link rel="canonical" href="https://infra-docs.loutik.fr/02-infrastructure-core/hyperviseur/procedures/proc-configuration-sso-proxmox-via-authentik/">
+      
+      
+        <link rel="prev" href="../../../">
+      
+      
+        <link rel="next" href="../proc-creation-cluster-proxmox/">
       
       
         
       
       
-      <link rel="icon" href="../assets/logo_loutik.png">
+      <link rel="icon" href="../../../../assets/logo_loutik.png">
       <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.6">
     
     
       
-        <title>🚀 Sécurité - Documentation infrastructure - LoutikCLOUD</title>
+        <title>Configuration de l'accès SSO Proxmox via Authentik - Documentation infrastructure - LoutikCLOUD</title>
       
     
     
-      <link rel="stylesheet" href="../assets/stylesheets/main.484c7ddc.min.css">
+      <link rel="stylesheet" href="../../../../assets/stylesheets/main.484c7ddc.min.css">
       
         
-        <link rel="stylesheet" href="../assets/stylesheets/palette.ab4e12ef.min.css">
+        <link rel="stylesheet" href="../../../../assets/stylesheets/palette.ab4e12ef.min.css">
       
       
 
@@ -51,11 +53,11 @@
       
     
     
-      <link rel="stylesheet" href="../css/timeago.css">
+      <link rel="stylesheet" href="../../../../css/timeago.css">
     
-      <link rel="stylesheet" href="../assets/css/style.css">
+      <link rel="stylesheet" href="../../../../assets/css/style.css">
     
-    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("../../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
@@ -78,7 +80,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#securite" class="md-skip">
+        <a href="#configuration-de-lacces-sso-proxmox-via-authentik" class="md-skip">
           Aller au contenu
         </a>
       
@@ -94,9 +96,9 @@
 
 <header class="md-header md-header--shadow" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="En-tête">
-    <a href=".." title="Documentation infrastructure - LoutikCLOUD" class="md-header__button md-logo" aria-label="Documentation infrastructure - LoutikCLOUD" data-md-component="logo">
+    <a href="../../../.." title="Documentation infrastructure - LoutikCLOUD" class="md-header__button md-logo" aria-label="Documentation infrastructure - LoutikCLOUD" data-md-component="logo">
       
-  <img src="../assets/logo_loutik.png" alt="logo">
+  <img src="../../../../assets/logo_loutik.png" alt="logo">
 
     </a>
     <label class="md-header__button md-icon" for="__drawer">
@@ -113,7 +115,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              🚀 Sécurité
+              Configuration de l'accès SSO Proxmox via Authentik
             
           </span>
         </div>
@@ -205,9 +207,9 @@
 
 <nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href=".." title="Documentation infrastructure - LoutikCLOUD" class="md-nav__button md-logo" aria-label="Documentation infrastructure - LoutikCLOUD" data-md-component="logo">
+    <a href="../../../.." title="Documentation infrastructure - LoutikCLOUD" class="md-nav__button md-logo" aria-label="Documentation infrastructure - LoutikCLOUD" data-md-component="logo">
       
-  <img src="../assets/logo_loutik.png" alt="logo">
+  <img src="../../../../assets/logo_loutik.png" alt="logo">
 
     </a>
     Documentation infrastructure - LoutikCLOUD
@@ -234,7 +236,7 @@
   
   
     <li class="md-nav__item">
-      <a href=".." class="md-nav__link">
+      <a href="../../../.." class="md-nav__link">
         
   
   
@@ -283,7 +285,7 @@
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="../01-architecture/" class="md-nav__link ">
+            <a href="../../../../01-architecture/" class="md-nav__link ">
               
   
   
@@ -382,7 +384,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../01-architecture/ADR/001-choix-hebergeur-vps-gateway/" class="md-nav__link">
+      <a href="../../../../01-architecture/ADR/001-choix-hebergeur-vps-gateway/" class="md-nav__link">
         
   
   
@@ -417,7 +419,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../01-architecture/ADR/002-choix-plan-adressage/" class="md-nav__link">
+      <a href="../../../../01-architecture/ADR/002-choix-plan-adressage/" class="md-nav__link">
         
   
   
@@ -452,7 +454,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../01-architecture/ADR/003-plateforme-documentation/" class="md-nav__link">
+      <a href="../../../../01-architecture/ADR/003-plateforme-documentation/" class="md-nav__link">
         
   
   
@@ -548,7 +550,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../01-architecture/referentiels/ref-001-convention-nommage-infrastructure/" class="md-nav__link">
+      <a href="../../../../01-architecture/referentiels/ref-001-convention-nommage-infrastructure/" class="md-nav__link">
         
   
   
@@ -576,7 +578,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../01-architecture/referentiels/ref-002-convention-nommage-git/" class="md-nav__link">
+      <a href="../../../../01-architecture/referentiels/ref-002-convention-nommage-git/" class="md-nav__link">
         
   
   
@@ -616,6 +618,8 @@
       
   
   
+    
+  
   
   
     
@@ -631,15 +635,15 @@
     
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="../02-infrastructure-core/" class="md-nav__link ">
+            <a href="../../../" class="md-nav__link ">
               
   
   
@@ -663,7 +667,7 @@
             
           </div>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_3">
             <span class="md-nav__icon md-icon"></span>
             
@@ -680,8 +684,10 @@
                 
   
   
+    
   
   
+  
     
     
       
@@ -693,11 +699,11 @@
     
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_2" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_2" checked>
         
           
           <label class="md-nav__link" for="__nav_3_2" id="__nav_3_2_label" tabindex="0">
@@ -718,7 +724,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_2_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_2_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_3_2">
             <span class="md-nav__icon md-icon"></span>
             
@@ -733,8 +739,10 @@
                 
   
   
+    
   
   
+  
     
     
       
@@ -750,11 +758,11 @@
     
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_2_1" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_2_1" checked>
         
           
           <label class="md-nav__link" for="__nav_3_2_1" id="__nav_3_2_1_label" tabindex="0">
@@ -775,7 +783,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_3_2_1_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_3_2_1_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_3_2_1">
             <span class="md-nav__icon md-icon"></span>
             
@@ -790,10 +798,37 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../02-infrastructure-core/hyperviseur/procedures/proc-configuration-sso-proxmox-via-authentik/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Configuration de l'accès SSO Proxmox via Authentik
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   
@@ -809,6 +844,103 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table des matières">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table des matières
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1-architecture-et-contexte" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. Architecture et contexte
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-prerequis" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. Prérequis
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-configuration-du-fournisseur-authentik" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. Configuration du Fournisseur Authentik
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-configuration-de-lapplication-authentik-et-restriction" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. Configuration de l'Application Authentik et Restriction
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-configuration-du-role-et-du-realm-sur-proxmox" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5. Configuration du Rôle et du Realm sur Proxmox
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#6-validation-post-deploiement" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6. Validation post-déploiement
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#annexe" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Annexe
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -821,7 +953,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../02-infrastructure-core/hyperviseur/procedures/proc-creation-cluster-proxmox/" class="md-nav__link">
+      <a href="../proc-creation-cluster-proxmox/" class="md-nav__link">
         
   
   
@@ -849,7 +981,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../02-infrastructure-core/hyperviseur/procedures/proc-installation-physique-proxmox/" class="md-nav__link">
+      <a href="../proc-installation-physique-proxmox/" class="md-nav__link">
         
   
   
@@ -877,7 +1009,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../02-infrastructure-core/hyperviseur/procedures/proc-rejoindre-cluster-proxmox/" class="md-nav__link">
+      <a href="../proc-rejoindre-cluster-proxmox/" class="md-nav__link">
         
   
   
@@ -964,7 +1096,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../02-infrastructure-core/hyperviseur/runbooks/runbook-sortir-un-noeud-cluster-proxmox/" class="md-nav__link">
+      <a href="../../runbooks/runbook-sortir-un-noeud-cluster-proxmox/" class="md-nav__link">
         
   
   
@@ -1033,7 +1165,7 @@
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="../03-edge/" class="md-nav__link ">
+            <a href="../../../../03-edge/" class="md-nav__link ">
               
   
   
@@ -1076,8 +1208,6 @@
       
   
   
-    
-  
   
   
     
@@ -1091,15 +1221,15 @@
     
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="./" class="md-nav__link md-nav__link--active">
+            <a href="../../../../04-securite/" class="md-nav__link ">
               
   
   
@@ -1118,7 +1248,7 @@
             
           </div>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_5">
             <span class="md-nav__icon md-icon"></span>
             
@@ -1163,7 +1293,7 @@
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="../05-services/" class="md-nav__link ">
+            <a href="../../../../05-services/" class="md-nav__link ">
               
   
   
@@ -1229,10 +1359,10 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#vue-densemble" class="md-nav__link">
+  <a href="#1-architecture-et-contexte" class="md-nav__link">
     <span class="md-ellipsis">
       
-        📝 Vue d'ensemble
+        1. Architecture et contexte
       
     </span>
   </a>
@@ -1240,10 +1370,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#perimetre-et-objectifs" class="md-nav__link">
+  <a href="#2-prerequis" class="md-nav__link">
     <span class="md-ellipsis">
       
-        🎯 Périmètre et objectifs
+        2. Prérequis
       
     </span>
   </a>
@@ -1251,10 +1381,54 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#navigation" class="md-nav__link">
+  <a href="#3-configuration-du-fournisseur-authentik" class="md-nav__link">
     <span class="md-ellipsis">
       
-        🗺️ Navigation
+        3. Configuration du Fournisseur Authentik
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-configuration-de-lapplication-authentik-et-restriction" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. Configuration de l'Application Authentik et Restriction
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-configuration-du-role-et-du-realm-sur-proxmox" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5. Configuration du Rôle et du Realm sur Proxmox
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#6-validation-post-deploiement" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6. Validation post-déploiement
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#annexe" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Annexe
       
     </span>
   </a>
@@ -1277,7 +1451,7 @@
   
   
     <div style="text-align: left; font-size: 0.85em; color: var(--md-default-fg-color--light); margin-bottom: 20px;">
-      <strong>Dernière édition :</strong> <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-timeago" title="17 mai 2026 10:00:26 UTC"><span class="timeago" datetime="2026-05-17T10:00:26+00:00" locale="fr"></span></span><span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date" title="17 mai 2026 10:00:26 UTC">2026-05-17</span>
+      <strong>Dernière édition :</strong> <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-timeago" title="31 mai 2026 16:32:15 UTC"><span class="timeago" datetime="2026-05-31T16:32:15+00:00" locale="fr"></span></span><span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date" title="31 mai 2026 16:32:15 UTC">2026-05-31</span>
     </div>
   
   
@@ -1290,19 +1464,111 @@
   
 
 
-<h1 id="securite">🚀 Sécurité</h1>
-<p><img alt="Bannière LoutikCLOUD" src="../assets/banniere_loutikcloud.png" /></p>
-<h2 id="vue-densemble">📝 Vue d'ensemble</h2>
-<p>Cette section centralise les mécanismes de défense active, d'observabilité et de prévention des menaces de l'infrastructure. Elle garantit l'auditabilité des systèmes et la protection proactive des services exposés contre les attaques.</p>
-<h2 id="perimetre-et-objectifs">🎯 Périmètre et objectifs</h2>
+<h1 id="configuration-de-lacces-sso-proxmox-via-authentik">Configuration de l'accès SSO Proxmox via Authentik</h1>
+<p><img alt="Bannière LoutikCLOUD" src="/assets/banniere_loutikcloud.png" /></p>
+<div class="admonition info">
+<p class="admonition-title">Informations</p>
 <ul>
-<li><strong>SIEM</strong> : Collecter, corréler et analyser les journaux d'événements système et réseau pour détecter et alerter sur les comportements suspects.</li>
-<li><strong>WAF</strong> : Assurer le filtrage du trafic HTTP/HTTPS entrant et bloquer les attaques de la couche applicative (notamment via CrowdSec) avant qu'elles n'atteignent les services internes.</li>
+<li><strong>Date de création</strong> : 2026-05-27</li>
+<li><strong>Service ciblé</strong> : Proxmox</li>
+<li><strong>Auteur</strong> : Louis MEDO</li>
+<li><strong>Responsable</strong> : Louis MEDO</li>
 </ul>
-<h2 id="navigation">🗺️ Navigation</h2>
+</div>
+<h2 id="1-architecture-et-contexte">1. Architecture et contexte</h2>
+<p>Ce document décrit la procédure d'intégration SSO (OIDC) entre Authentik (v.2026.5.0) et Proxmox VE. L'objectif est de déléguer l'authentification et l'autorisation à Authentik. L'accès est strictement restreint aux utilisateurs membres du groupe <code>inf-pve-prd-adm</code>. Proxmox est configuré pour associer automatiquement ce groupe au rôle Administrateur via les claims OIDC, garantissant une gestion des accès centralisée et sécurisée au sein de l'infrastructure LoutikCLOUD.</p>
+<h2 id="2-prerequis">2. Prérequis</h2>
 <ul>
-<li><strong><a href="./SIEM">SIEM</a></strong> - Architecture de centralisation des logs, tableaux de bord d'audit et configuration des alertes de sécurité.</li>
-<li><strong><a href="./WAF">WAF</a></strong> - Déploiement des moteurs de détection, intégration des bouncers et gestion des listes de remédiation.</li>
+<li><strong>Réseau</strong> : Enregistrements DNS configurés pour les FQDN d'Authentik et de Proxmox. Flux HTTPS (443) et API Proxmox (8006) ouverts.</li>
+<li><strong>Dépendances</strong> : Instance Authentik 2026.5.0 opérationnelle. Nœud ou cluster Proxmox VE opérationnel.</li>
+<li><strong>Gestion des accès et secrets</strong> : Les valeurs générées lors de cette procédure (<code>Client ID</code> et <code>Client Secret</code>) devront être stockées de manière sécurisée (ex: Vault) si intégrées ultérieurement dans des modules IaC (Ansible/Terraform).</li>
+</ul>
+<h2 id="3-configuration-du-fournisseur-authentik">3. Configuration du Fournisseur Authentik</h2>
+<ol>
+<li>
+<p><strong>Création du Scope Mapping.</strong> Dans Authentik, naviguez vers <em>Customization &gt; Property Mappings</em> et créez un <em>OIDC Scope Mapping</em> pour exposer les groupes de l'utilisateur.</p>
+<p><img alt="Capture d'écran - OIDC Scope Mapping" src="../assets/proc-configuration-sso-proxmox-authentik-01-scope-mapping.png" /></p>
+<div class="highlight"><pre><span></span><code><span class="k">return</span> <span class="n">request</span><span class="o">.</span><span class="n">user</span><span class="o">.</span><span class="n">ak_groups</span><span class="o">.</span><span class="n">values_list</span><span class="p">(</span><span class="s1">&#39;name&#39;</span><span class="p">,</span> <span class="n">flat</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+</code></pre></div>
+<ul>
+<li><code>Name</code> : Proxmox-Groups-Claim</li>
+<li><code>Scope name</code> : groups</li>
+</ul>
+</li>
+<li>
+<p><strong>Création du Provider.</strong> Naviguez vers <em>Applications &gt; Providers</em> et créez un <em>OAuth2/OpenID Provider</em>.</p>
+<p><img alt="Capture d'écran - OAuth2/OpenID Provider 01" src="../assets/proc-configuration-sso-proxmox-authentik-02-oauth2-oid-provider.png" />
+<img alt="Capture d'écran - OAuth2/OpenID Provider 01" src="../assets/proc-configuration-sso-proxmox-authentik-03-oauth2-oid-provider.png" />
+<img alt="Capture d'écran - OAuth2/OpenID Provider 01" src="../assets/proc-configuration-sso-proxmox-authentik-04-oauth2-oid-provider.png" /></p>
+<ul>
+<li><code>Name</code> : Provider-Proxmox</li>
+<li><code>Authorization Flow</code> : default-provider-authorization-implicit-consent (Authorize Application)</li>
+<li><code>Client Type</code> : Confidential</li>
+<li><code>Scopes</code> : Sélectionner openid, email, profile, et le nouveau scope groups.</li>
+<li><code>Redirect URIs</code> : https://<FQDN_PROXMOX>:8006</li>
+</ul>
+</li>
+</ol>
+<h2 id="4-configuration-de-lapplication-authentik-et-restriction">4. Configuration de l'Application Authentik et Restriction</h2>
+<ol>
+<li>
+<p><strong>Création de la Policy d'accès.</strong> Naviguez vers <em>Customization &gt; Policies</em> et créez une <em>Expression Policy</em> pour bloquer l'accès aux utilisateurs non autorisés.</p>
+<p><img alt="Capture d'écran - Expression Policy" src="../assets/proc-configuration-sso-proxmox-authentik-05-expression-policy.png" /></p>
+<div class="highlight"><pre><span></span><code><span class="k">return</span> <span class="n">ak_is_group_member</span><span class="p">(</span><span class="n">request</span><span class="o">.</span><span class="n">user</span><span class="p">,</span> <span class="n">name</span><span class="o">=</span><span class="s2">&quot;inf-pve-prd-adm&quot;</span><span class="p">)</span>
+</code></pre></div>
+<ul>
+<li><code>Name</code> : Policy-Proxmox-Admin-Only</li>
+</ul>
+</li>
+<li>
+<p><strong>Création et liaison de l'Application.</strong> Naviguez vers <em>Applications &gt; Applications</em>, créez l'application, associez-lui le Provider. Dans l'onglet <em>Policy / Group / User Bindings</em> de l'application, liez la Policy créée précédemment.</p>
+<p><img alt="Capture d'écran - Application" src="../assets/proc-configuration-sso-proxmox-authentik-06-application.png" /></p>
+<ul>
+<li><code>Name</code> : Proxmox VE</li>
+<li><code>Slug</code> : proxmox</li>
+</ul>
+</li>
+</ol>
+<h2 id="5-configuration-du-role-et-du-realm-sur-proxmox">5. Configuration du Rôle et du Realm sur Proxmox</h2>
+<ol>
+<li>
+<p><strong>Préparation du groupe local et des ACL.</strong> Connectez-vous en shell sur le serveur Proxmox pour créer le groupe correspondant et lui attribuer les droits Administrateur globaux.</p>
+<div class="highlight"><pre><span></span><code>pveum<span class="w"> </span>group<span class="w"> </span>add<span class="w"> </span>inf-pve-prd-adm
+pveum<span class="w"> </span>acl<span class="w"> </span>modify<span class="w"> </span>/<span class="w"> </span>-group<span class="w"> </span>inf-pve-prd-adm<span class="w"> </span>-role<span class="w"> </span>Administrator
+</code></pre></div>
+<ul>
+<li><code>inf-pve-prd-adm</code> : Nom du groupe cible, devant correspondre exactement à la valeur transmise par le claim Authentik.</li>
+<li><code>Administrator</code> : Rôle natif Proxmox accordant les privilèges d'administration.</li>
+</ul>
+</li>
+<li>
+<p><strong>Ajout du Realm OIDC.</strong> Dans l'interface web Proxmox, naviguez vers <em>Datacenter &gt; Permissions &gt; Realms</em> et ajoutez une méthode <em>OpenID Connect</em>.</p>
+<p><img alt="Capture d'écran - Realm OIDC" src="../assets/proc-configuration-sso-proxmox-authentik-07-realm-oidc.png" /></p>
+<ul>
+<li><code>Issuer URL</code> : https://<FQDN_AUTHENTIK>/application/o/proxmox/</li>
+<li><code>Client ID / Client Key</code> : Renseigner les secrets générés par le Provider Authentik.</li>
+<li><code>Username Claim</code> : preferred_username</li>
+<li><code>Default</code> : coché</li>
+<li><code>Scopes</code> : openid profile email groups</li>
+<li><code>Autocreate Users</code> : Coché (permet le provisionnement JIT de l'utilisateur dans Proxmox).</li>
+</ul>
+</li>
+</ol>
+<h2 id="6-validation-post-deploiement">6. Validation post-déploiement</h2>
+<ol>
+<li>
+<p><strong>Tests de connexion.</strong> Valider l'intégration selon la matrice d'autorisation configurée.</p>
+<p><img alt="Capture d'écran - Connexion realm" src="../assets/proc-configuration-sso-proxmox-authentik-08-connexion-realm.png" /></p>
+<ul>
+<li><code>Cas nominal</code> : Connexion avec un utilisateur du groupe <code>inf-pve-prd-adm</code>. Résultat attendu : succès, accès total (Administrator).</li>
+<li><code>Cas de rejet</code> : Connexion avec un utilisateur valide mais n'appartenant pas au groupe <code>inf-pve-prd-adm</code>. Résultat attendu : blocage par la Policy Authentik ("Access denied").</li>
+</ul>
+</li>
+</ol>
+<h2 id="annexe">Annexe</h2>
+<ul>
+<li><a href="https://docs.goauthentik.io/docs/providers/oauth2/">Documentation officielle Authentik - OIDC Provider</a></li>
+<li><a href="https://pve.proxmox.com/pve-docs/pve-admin-guide.html#pveum_authentication_realms">Documentation officielle Proxmox VE - User Management &amp; OIDC</a></li>
 </ul>
 
 
@@ -1326,7 +1592,7 @@
     <span class="md-icon" title="Dernière mise à jour">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-timeago" title="17 mai 2026 10:00:26 UTC"><span class="timeago" datetime="2026-05-17T10:00:26+00:00" locale="fr"></span></span><span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date" title="17 mai 2026 10:00:26 UTC">2026-05-17</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-timeago" title="31 mai 2026 16:32:15 UTC"><span class="timeago" datetime="2026-05-31T16:32:15+00:00" locale="fr"></span></span><span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date" title="31 mai 2026 16:32:15 UTC">2026-05-31</span>
   </span>
 
     
@@ -1336,7 +1602,7 @@
     <span class="md-icon" title="Créé">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M14.47 15.08 11 13V7h1.5v5.25l3.08 1.83c-.41.28-.79.62-1.11 1m-1.39 4.84c-.36.05-.71.08-1.08.08-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8c0 .37-.03.72-.08 1.08.69.1 1.33.32 1.92.64.1-.56.16-1.13.16-1.72 0-5.5-4.5-10-10-10S2 6.5 2 12s4.47 10 10 10c.59 0 1.16-.06 1.72-.16-.32-.59-.54-1.23-.64-1.92M18 15v3h-3v2h3v3h2v-3h3v-2h-3v-3z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-timeago" title="17 mai 2026 10:00:26 UTC"><span class="timeago" datetime="2026-05-17T10:00:26+00:00" locale="fr"></span></span><span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date" title="17 mai 2026 10:00:26 UTC">2026-05-17</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-timeago" title="31 mai 2026 16:32:15 UTC"><span class="timeago" datetime="2026-05-31T16:32:15+00:00" locale="fr"></span></span><span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date" title="31 mai 2026 16:32:15 UTC">2026-05-31</span>
   </span>
 
     
@@ -1396,14 +1662,14 @@
     
       
       
-      <script id="__config" type="application/json">{"annotate": null, "base": "..", "features": ["navigation.top", "search.suggest", "search.highlight", "content.code.copy", "navigation.indexes"], "search": "../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copi\u00e9 dans le presse-papier", "clipboard.copy": "Copier dans le presse-papier", "search.result.more.one": "1 de plus sur cette page", "search.result.more.other": "# de plus sur cette page", "search.result.none": "Aucun document trouv\u00e9", "search.result.one": "1 document trouv\u00e9", "search.result.other": "# documents trouv\u00e9s", "search.result.placeholder": "Taper pour d\u00e9marrer la recherche", "search.result.term.missing": "Non trouv\u00e9", "select.version": "S\u00e9lectionner la version"}, "version": null}</script>
+      <script id="__config" type="application/json">{"annotate": null, "base": "../../../..", "features": ["navigation.top", "search.suggest", "search.highlight", "content.code.copy", "navigation.indexes"], "search": "../../../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copi\u00e9 dans le presse-papier", "clipboard.copy": "Copier dans le presse-papier", "search.result.more.one": "1 de plus sur cette page", "search.result.more.other": "# de plus sur cette page", "search.result.none": "Aucun document trouv\u00e9", "search.result.one": "1 document trouv\u00e9", "search.result.other": "# documents trouv\u00e9s", "search.result.placeholder": "Taper pour d\u00e9marrer la recherche", "search.result.term.missing": "Non trouv\u00e9", "select.version": "S\u00e9lectionner la version"}, "version": null}</script>
     
     
-      <script src="../assets/javascripts/bundle.79ae519e.min.js"></script>
+      <script src="../../../../assets/javascripts/bundle.79ae519e.min.js"></script>
       
-        <script src="../js/timeago.min.js"></script>
+        <script src="../../../../js/timeago.min.js"></script>
       
-        <script src="../js/timeago_mkdocs_material.js"></script>
+        <script src="../../../../js/timeago_mkdocs_material.js"></script>
       
     
   </body>
