@@ -30,7 +30,7 @@ Ce document décrit la procédure d'intégration SSO (OIDC) entre Authentik (v.2
 
 1. **Création du Scope Mapping.** Dans Authentik, naviguez vers *Customization > Property Mappings* et créez un *OIDC Scope Mapping* pour exposer les groupes de l'utilisateur.
 
-    [Capture d'écran - OIDC Scope Mapping](./assets/proc-configuration-sso-proxmox-authentik-01-scope-mapping.png)
+    ![Capture d'écran - OIDC Scope Mapping](./assets/proc-configuration-sso-proxmox-authentik-01-scope-mapping.png)
 
     ```python
     return request.user.ak_groups.values_list('name', flat=True)
@@ -41,9 +41,9 @@ Ce document décrit la procédure d'intégration SSO (OIDC) entre Authentik (v.2
 
 2.  **Création du Provider.** Naviguez vers *Applications > Providers* et créez un *OAuth2/OpenID Provider*.
 
-    [Capture d'écran - OAuth2/OpenID Provider 01](./assets/proc-configuration-sso-proxmox-authentik-02-oauth2-oid-provider.png)
-    [Capture d'écran - OAuth2/OpenID Provider 01](./assets/proc-configuration-sso-proxmox-authentik-03-oauth2-oid-provider.png)
-    [Capture d'écran - OAuth2/OpenID Provider 01](./assets/proc-configuration-sso-proxmox-authentik-04-oauth2-oid-provider.png)
+    ![Capture d'écran - OAuth2/OpenID Provider 01](./assets/proc-configuration-sso-proxmox-authentik-02-oauth2-oid-provider.png)
+    ![Capture d'écran - OAuth2/OpenID Provider 01](./assets/proc-configuration-sso-proxmox-authentik-03-oauth2-oid-provider.png)
+    ![Capture d'écran - OAuth2/OpenID Provider 01](./assets/proc-configuration-sso-proxmox-authentik-04-oauth2-oid-provider.png)
 
     * `Name` : Provider-Proxmox
     * `Authorization Flow` : default-provider-authorization-implicit-consent (Authorize Application)
@@ -55,7 +55,7 @@ Ce document décrit la procédure d'intégration SSO (OIDC) entre Authentik (v.2
 
 1.  **Création de la Policy d'accès.** Naviguez vers *Customization > Policies* et créez une *Expression Policy* pour bloquer l'accès aux utilisateurs non autorisés.
 
-    [Capture d'écran - Expression Policy](./assets/proc-configuration-sso-proxmox-authentik-05-expression-policy.png)
+    ![Capture d'écran - Expression Policy](./assets/proc-configuration-sso-proxmox-authentik-05-expression-policy.png)
 
     ```python
     return ak_is_group_member(request.user, name="inf-pve-prd-adm")
@@ -65,7 +65,7 @@ Ce document décrit la procédure d'intégration SSO (OIDC) entre Authentik (v.2
 
 2.  **Création et liaison de l'Application.** Naviguez vers *Applications > Applications*, créez l'application, associez-lui le Provider. Dans l'onglet *Policy / Group / User Bindings* de l'application, liez la Policy créée précédemment.
 
-    [Capture d'écran - Application](./assets/proc-configuration-sso-proxmox-authentik-06-application.png)
+    ![Capture d'écran - Application](./assets/proc-configuration-sso-proxmox-authentik-06-application.png)
 
     * `Name` : Proxmox VE
     * `Slug` : proxmox
@@ -84,7 +84,7 @@ Ce document décrit la procédure d'intégration SSO (OIDC) entre Authentik (v.2
 
 2.  **Ajout du Realm OIDC.** Dans l'interface web Proxmox, naviguez vers *Datacenter > Permissions > Realms* et ajoutez une méthode *OpenID Connect*.
 
-    [Capture d'écran - Realm OIDC](./assets/proc-configuration-sso-proxmox-authentik-07-realm-oidc.png)
+    ![Capture d'écran - Realm OIDC](./assets/proc-configuration-sso-proxmox-authentik-07-realm-oidc.png)
 
     * `Issuer URL` : https://<FQDN_AUTHENTIK>/application/o/proxmox/
     * `Client ID / Client Key` : Renseigner les secrets générés par le Provider Authentik.
@@ -97,12 +97,10 @@ Ce document décrit la procédure d'intégration SSO (OIDC) entre Authentik (v.2
 
 1.  **Tests de connexion.** Valider l'intégration selon la matrice d'autorisation configurée.
 
-    [Capture d'écran - Connexion realm](./assets/proc-configuration-sso-proxmox-authentik-08-connexion-realm.png)
+    ![Capture d'écran - Connexion realm](./assets/proc-configuration-sso-proxmox-authentik-08-connexion-realm.png)
 
     * `Cas nominal` : Connexion avec un utilisateur du groupe `inf-pve-prd-adm`. Résultat attendu : succès, accès total (Administrator).
     * `Cas de rejet` : Connexion avec un utilisateur valide mais n'appartenant pas au groupe `inf-pve-prd-adm`. Résultat attendu : blocage par la Policy Authentik ("Access denied").
-
----
 
 ## Annexe
 
