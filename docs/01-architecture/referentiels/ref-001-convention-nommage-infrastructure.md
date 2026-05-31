@@ -51,8 +51,12 @@ La structure globale repose sur un format strict composé de **5 segments** sép
     * `ovhgra1_db_vm_dev_01` (Invalide : Utilise des underscores au lieu de tirets).
 
 ## 4. Exceptions
+
 * **Ressources logiques pures :** Le champ `env` peut être omis ou remplacé par une valeur métier uniquement pour les VLANs (ex: `trs1-vlan-mgt-10` où `10` remplace `id` et `mgt` remplace `env`).
+
 * **Objets d'organisation Netbox :** Les noms des objets "Sites" et "Racks" dans Netbox (qui ne sont pas des noms d'hôtes DNS) peuvent conserver des majuscules pour la lisibilité humaine (ex: `DC-TRS1`, `TRS1-RK01`).
+
+* **Clusters :** Les noms des clusters sont allégés pour répondre à la problématique de la taille définie par certains orchestrateurs et hyperviseurs. Ils doivent donc utiliser le format suivant : `<loc>-<loc>-<env>` (ex: `trs1-pve-prd`, `mlt1-pve-prd`, `ovhgra1-pve-prd`).
 
 ## 5. Validation
 
