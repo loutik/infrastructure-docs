@@ -152,6 +152,14 @@
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.02);
 }
 
+/* --- Forcer la couleur blanche sur les éléments de la nav bar --- */
+@media screen and (max-width: 76.24em) {
+  .md-header__button,
+  .md-search__icon {
+    color: #ffffff !important; 
+  }
+}
+
 /* ==========================================================================
    5. NAVIGATION (PRIMARY SIDEBAR)
    ========================================================================== */
@@ -176,8 +184,8 @@
 
 /* Link Styling */
 .md-nav__item .md-nav__link {
-  padding: 0.1rem 0.2rem;  /* Réduit le padding haut/bas (était 0.3rem) */
-  margin: 0 0.1rem;
+  padding: 0.1rem 0.2rem;
+  margin: 0.1rem 0.2rem;
   border-radius: 4px;
   color: var(--color-ds-midnight);
   font-size: 0.95rem;
