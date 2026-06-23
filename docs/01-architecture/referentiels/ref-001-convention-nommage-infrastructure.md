@@ -21,6 +21,9 @@ L'objectif de cette norme est d'harmoniser l'identification de l'ensemble des re
 
 Cette norme s'applique de manière stricte aux : sites physiques, baies de brassage, équipements réseau (switchs, routeurs, firewalls), serveurs bare-metal, machines virtuelles (On-Premise et Cloud), et ressources logiques (VLANs, IPAM). Elle s'applique également aux enregistrements DNS d'infrastructure (A/AAAA).
 
+!!! warning "Nommage des interfaces et des composants physiques (routeur, switch)"
+    Pour le nommage des interfaces et des composants physiques, se référer au référentiel : [Convention de nommage réseau et pare-feu](./ref-003-convention-nommage-reseau-pare-feu.md)
+
 ## 2. Conventions
 La structure globale repose sur un format strict composé de **5 segments** séparés par des tirets. L'utilisation de majuscules est proscrite pour les noms d'hôtes et le DNS.
 
