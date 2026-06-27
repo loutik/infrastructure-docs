@@ -10,13 +10,13 @@
         <meta name="author" content="Louis MEDO">
       
       
-        <link rel="canonical" href="https://infra-docs.loutik.fr/01-architecture/ADR/001-choix-hebergeur-vps-gateway/">
+        <link rel="canonical" href="https://infra-docs.loutik.fr/01-architecture/ADR/adr-003-plateforme-documentation/">
       
       
-        <link rel="prev" href="../../">
+        <link rel="prev" href="../adr-002-choix-plan-adressage/">
       
       
-        <link rel="next" href="../002-choix-plan-adressage/">
+        <link rel="next" href="../../referentiels/ref-001-convention-nommage-infrastructure/">
       
       
         
@@ -27,7 +27,7 @@
     
     
       
-        <title>ADR-0001 - Choix de l'hébergeur pour le VPS Gateway - Documentation infrastructure - LoutikCLOUD</title>
+        <title>Choix de la plateforme pour la documentation - Documentation infrastructure - LoutikCLOUD</title>
       
     
     
@@ -80,7 +80,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#adr-0001-choix-de-lhebergeur-pour-le-vps-gateway" class="md-skip">
+        <a href="#adr-3-choix-de-la-plateforme-pour-la-documentation" class="md-skip">
           Aller au contenu
         </a>
       
@@ -115,7 +115,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              ADR-0001 - Choix de l'hébergeur pour le VPS Gateway
+              Choix de la plateforme pour la documentation
             
           </span>
         </div>
@@ -385,6 +385,76 @@
                 
   
   
+  
+  
+    <li class="md-nav__item">
+      <a href="../adr-001-choix-hebergeur-vps-gateway/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Choix de l'hébergeur pour le VPS Gateway
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--accepted"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../adr-002-choix-plan-adressage/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Choix plan d'adressage V1
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--accepted"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
     
   
   
@@ -404,7 +474,7 @@
   <span class="md-ellipsis">
     
   
-    ADR-0001 - Choix de l'hébergeur pour le VPS Gateway
+    Choix de la plateforme pour la documentation
   
 
     
@@ -429,7 +499,7 @@
   <span class="md-ellipsis">
     
   
-    ADR-0001 - Choix de l'hébergeur pour le VPS Gateway
+    Choix de la plateforme pour la documentation
   
 
     
@@ -462,49 +532,10 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#1-contexte-et-expression-des-besoins" class="md-nav__link">
+  <a href="#1-contexte" class="md-nav__link">
     <span class="md-ellipsis">
       
-        1. Contexte et Expression des Besoins
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="1. Contexte et Expression des Besoins">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#role-du-serveur-gateway01" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Rôle du serveur (gateway01)
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#contraintes" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Contraintes
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#2-etude-de-marche-options-considerees" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        2. Étude de Marché (Options considérées)
+        1. Contexte
       
     </span>
   </a>
@@ -512,69 +543,24 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#3-decision" class="md-nav__link">
+  <a href="#2-decision" class="md-nav__link">
     <span class="md-ellipsis">
       
-        3. Décision
+        2. Décision
       
     </span>
   </a>
-  
-    <nav class="md-nav" aria-label="3. Décision">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#justification" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Justification
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#4-consequences" class="md-nav__link">
+  <a href="#3-consequences" class="md-nav__link">
     <span class="md-ellipsis">
       
-        4. Conséquences
+        3. Conséquences
       
     </span>
   </a>
-  
-    <nav class="md-nav" aria-label="4. Conséquences">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#positives" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Positives
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#negatives-risques" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Négatives / Risques
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
       
@@ -582,76 +568,6 @@
   
 </nav>
       
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../002-choix-plan-adressage/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    ADR-0002 - Choix plan d'adressage V1
-  
-
-    
-  </span>
-  
-  
-    
-  
-  
-    <span class="md-status md-status--accepted"></span>
-  
-
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../003-plateforme-documentation/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    ADR-0003 - Choix de la plateforme pour la documentation
-  
-
-    
-  </span>
-  
-  
-    
-  
-  
-    <span class="md-status md-status--accepted"></span>
-  
-
-  
-
-      </a>
     </li>
   
 
@@ -1434,49 +1350,10 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#1-contexte-et-expression-des-besoins" class="md-nav__link">
+  <a href="#1-contexte" class="md-nav__link">
     <span class="md-ellipsis">
       
-        1. Contexte et Expression des Besoins
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="1. Contexte et Expression des Besoins">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#role-du-serveur-gateway01" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Rôle du serveur (gateway01)
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#contraintes" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Contraintes
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#2-etude-de-marche-options-considerees" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        2. Étude de Marché (Options considérées)
+        1. Contexte
       
     </span>
   </a>
@@ -1484,69 +1361,24 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#3-decision" class="md-nav__link">
+  <a href="#2-decision" class="md-nav__link">
     <span class="md-ellipsis">
       
-        3. Décision
+        2. Décision
       
     </span>
   </a>
-  
-    <nav class="md-nav" aria-label="3. Décision">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#justification" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Justification
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#4-consequences" class="md-nav__link">
+  <a href="#3-consequences" class="md-nav__link">
     <span class="md-ellipsis">
       
-        4. Conséquences
+        3. Conséquences
       
     </span>
   </a>
-  
-    <nav class="md-nav" aria-label="4. Conséquences">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#positives" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Positives
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#negatives-risques" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Négatives / Risques
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
       
@@ -1579,7 +1411,7 @@
   
 
 
-<h1 id="adr-0001-choix-de-lhebergeur-pour-le-vps-gateway">ADR-0001 - Choix de l'hébergeur pour le VPS Gateway</h1>
+<h1 id="adr-3-choix-de-la-plateforme-pour-la-documentation">ADR-3 : Choix de la plateforme pour la documentation</h1>
 <p><img alt="Bannière LoutikCLOUD" src="/assets/banniere_loutikcloud.png" /></p>
 <div class="admonition info">
 <p class="admonition-title">Informations</p>
@@ -1590,77 +1422,55 @@
 <li><strong>Responsable</strong> : Louis MEDO</li>
 </ul>
 </div>
-<hr />
-<h2 id="1-contexte-et-expression-des-besoins">1. Contexte et Expression des Besoins</h2>
-<p>Dans le cadre de la mise en place de l'infrastructure hybride, nous avons besoin d'un serveur exposé sur internet (<strong>VPS</strong>) qui servira de point d'entrée unique (Gateway).</p>
-<h3 id="role-du-serveur-gateway01">Rôle du serveur (<code>gateway01</code>)</h3>
-<ul>
-<li><strong>Reverse Proxy :</strong> Recevoir le trafic HTTP/HTTPS public.</li>
-<li><strong>Sécurité (WAF) :</strong> Filtrer les attaques via Crowdsec avant qu'elles n'atteignent le domicile.</li>
-<li><strong>Tunneling :</strong> Monter un tunnel VPN (Wireguard) vers le cluster Proxmox on-premise.</li>
-</ul>
-<h3 id="contraintes">Contraintes</h3>
-<ol>
-<li><strong>Budget Étudiant :</strong> Le coût doit être le plus faible possible (objectif &lt; 5€/mois).</li>
-<li><strong>Géolocalisation :</strong> Le serveur doit être en Europe pour minimiser la latence avec le domicile (Tours).</li>
-<li><strong>Éthique :</strong> Préférence pour un hébergeur ayant une démarche écologique (Green IT).</li>
-<li><strong>Technique :</strong> IP Publique fixe (v4) incluse, OS Linux (Debian/Ubuntu) supporté.</li>
-</ol>
-<h2 id="2-etude-de-marche-options-considerees">2. Étude de Marché (Options considérées)</h2>
-<p>Nous avons comparé trois solutions populaires pour un VPS d'entrée de gamme (1 vCore, 2Go RAM, 20Go Disk).</p>
+<h2 id="1-contexte">1. Contexte</h2>
+<p>Notre plateforme de documentation actuelle, basée sur Docusaurus, présente des frictions opérationnelles. La maintenance quotidienne est contraignante et impose aux équipes de cloner un dépôt volumineux. Par ailleurs, la complexité de l'arborescence des fichiers ralentit l'intégration et la contribution des collaborateurs débutants.</p>
+<h2 id="2-decision">2. Décision</h2>
+<p>Nous avons pris la décision de migrer vers <strong>MkDocs</strong>. Cette solution a été retenue pour sa légèreté, sa sobriété et son faible coût de fonctionnement par rapport à Docusaurus. MkDocs propose une structure de fichiers nativement plus simple, éliminant la surcharge technique liée aux écosystèmes plus complexes.</p>
+<h2 id="3-consequences">3. Conséquences</h2>
+<p>Analyse comparative par rapport à nos besoins opérationnels :</p>
 <table>
 <thead>
 <tr>
-<th style="text-align: left;">Hébergeur</th>
-<th style="text-align: left;">Offre</th>
-<th style="text-align: left;">Prix Annuel (Approx)</th>
-<th style="text-align: left;">Avantages</th>
-<th style="text-align: left;">Inconvénients</th>
+<th style="text-align: left;">Besoin / Critère</th>
+<th style="text-align: left;">Docusaurus</th>
+<th style="text-align: left;">MkDocs</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;"><strong>AWS / Azure</strong></td>
-<td style="text-align: left;">EC2 / VM</td>
-<td style="text-align: left;">&gt; 100€ (Variable)</td>
-<td style="text-align: left;">Écosystème riche</td>
-<td style="text-align: left;">Trop cher, facturation complexe, IP payante.</td>
+<td style="text-align: left;"><strong>Poids du dépôt</strong></td>
+<td style="text-align: left;">Lourd</td>
+<td style="text-align: left;">Léger</td>
 </tr>
 <tr>
-<td style="text-align: left;"><strong>OVHcloud</strong></td>
-<td style="text-align: left;">VPS Starter</td>
-<td style="text-align: left;">~45€</td>
-<td style="text-align: left;">Leader français</td>
-<td style="text-align: left;">Support parfois lent, impact carbone variable selon DC.</td>
+<td style="text-align: left;"><strong>Gestion de l'arborescence</strong></td>
+<td style="text-align: left;">Complexe pour les débutants</td>
+<td style="text-align: left;">Simple et intuitive</td>
 </tr>
 <tr>
-<td style="text-align: left;"><strong>Infomaniak</strong></td>
-<td style="text-align: left;">VPS Cloud</td>
-<td style="text-align: left;"><strong>38€</strong> (Offre étudiée)</td>
-<td style="text-align: left;">Suisse (Confidentialité), <strong>Green IT</strong>, Prix fixe.</td>
-<td style="text-align: left;">Gamme moins large que OVH.</td>
+<td style="text-align: left;"><strong>Maintenance quotidienne</strong></td>
+<td style="text-align: left;">Contraignante</td>
+<td style="text-align: left;">Allégée</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Coût d'exploitation</strong></td>
+<td style="text-align: left;">Élevé</td>
+<td style="text-align: left;">Moindre coût</td>
 </tr>
 </tbody>
 </table>
-<h2 id="3-decision">3. Décision</h2>
-<p>Nous choisissons <strong>Infomaniak</strong> pour héberger l'instance <code>gateway01-infomaniak</code>.</p>
-<h3 id="justification">Justification</h3>
 <ul>
-<li><strong>Coût :</strong> Avec un tarif de <strong>38€ par an</strong> (soit ~3,15€/mois), c'est l'offre la plus compétitive incluant une IPv4 dédiée.</li>
-<li><strong>RSE (Responsabilité Sociétale) :</strong> Infomaniak est certifié ISO 14001 et 50001, compensant ses émissions à 200%. Cela s'aligne avec une démarche de numérique responsable.</li>
-<li><strong>Performance :</strong> Suffisante pour faire tourner NGINX et l'agent Crowdsec sans ralentissement.</li>
+<li><strong>Impacts positifs</strong> :<ul>
+<li>Les équipes n'ont plus à télécharger un lourd dépôt pour contribuer.</li>
+<li>L'arborescence simplifiée rend la courbe d'apprentissage beaucoup plus rapide pour les débutants.</li>
+<li>Alignement facilité pour structurer notre contenu selon le framework documentaire Diátaxis.</li>
 </ul>
-<h2 id="4-consequences">4. Conséquences</h2>
-<h3 id="positives">Positives</h3>
-<ul>
-<li>Budget respecté.</li>
-<li>Faible latence réseau (Data centers en Suisse, proche de la France).</li>
-<li>Valorisation possible de l'aspect "Green IT" lors des oraux d'examen.</li>
+</li>
+<li><strong>Impacts négatifs (dette technique / risques)</strong> :<ul>
+<li>Effort initial nécessaire pour la migration du contenu existant et l'adaptation du pipeline de déploiement continu.</li>
+<li>Perte des composants interactifs (React) natifs à Docusaurus.</li>
 </ul>
-<h3 id="negatives-risques">Négatives / Risques</h3>
-<ul>
-<li>La gestion est "Unmanaged" : nous sommes responsables de la sécurité de l'OS (mises à jour, firewall UFW).</li>
-<li>En cas de panne du datacenter suisse, l'accès à l'ensemble du homelab depuis l'extérieur sera coupé (SPOF - Single Point of Failure).</li>
+</li>
 </ul>
 
 
