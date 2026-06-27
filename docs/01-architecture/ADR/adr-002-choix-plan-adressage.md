@@ -1,5 +1,6 @@
 ---
-title: ADR-0002 - Choix plan d'adressage V1
+id: 002
+title: Choix plan d'adressage V1
 date: 2026-05-17
 status: accepted
 author: Louis MEDO
@@ -7,7 +8,7 @@ owner: Louis MEDO
 tags: [adr, architecture]
 ---
 
-# ADR-0002 - Choix plan d'adressage V1
+# ADR-{{ page.meta.id }} : {{ page.meta.title }}
 
 ![Bannière LoutikCLOUD](/assets/banniere_loutikcloud.png)
 

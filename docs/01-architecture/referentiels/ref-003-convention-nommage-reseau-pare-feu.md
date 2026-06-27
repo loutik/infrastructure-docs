@@ -1,5 +1,5 @@
 ---
-id: REF-003
+id: 003
 title: Convention de nommage réseau et pare-feu
 category: Architecture
 date: 2026-06-23
@@ -7,7 +7,7 @@ author: Louis MEDO
 tags: [referentiel, norme, standard, convention]
 ---
 
-# {{ page.meta.title }}
+# REF-{{ page.meta.id }} : {{ page.meta.title }}
 
 ![Bannière LoutikCLOUD](/assets/banniere_loutikcloud.png)
 
