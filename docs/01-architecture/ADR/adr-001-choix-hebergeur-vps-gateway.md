@@ -1,5 +1,6 @@
 ---
-title: ADR-0001 - Choix de l'hébergeur pour le VPS Gateway
+id: 001
+title: Choix de l'hébergeur pour le VPS Gateway
 date: 2026-05-17
 status: accepted
 author: Louis MEDO
@@ -7,7 +8,7 @@ owner: Louis MEDO
 tags: [adr, architecture]
 ---
 
-# ADR-0001 - Choix de l'hébergeur pour le VPS Gateway
+# ADR-{{ page.meta.id }} : {{ page.meta.title }}
 
 ![Bannière LoutikCLOUD](/assets/banniere_loutikcloud.png)
 

@@ -1,6 +1,6 @@
 ---
-id: 0003
-title: ADR-0003 - Choix de la plateforme pour la documentation
+id: 003
+title: Choix de la plateforme pour la documentation
 date: 2026-05-17
 status: accepted
 author: Louis MEDO
@@ -8,7 +8,7 @@ owner: Louis MEDO
 tags: [adr, architecture]
 ---
 
-# ADR-0003 - Choix de la plateforme pour la documentation
+# ADR-{{ page.meta.id }} : {{ page.meta.title }}
 
 ![Bannière LoutikCLOUD](/assets/banniere_loutikcloud.png)
 

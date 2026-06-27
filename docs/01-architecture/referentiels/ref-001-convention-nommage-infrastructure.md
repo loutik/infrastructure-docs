@@ -1,5 +1,5 @@
 ---
-id: REF-001
+id: 001
 title: Convention de nommage infrastructure
 category: Architecture
 date: 2026-05-18
@@ -7,7 +7,7 @@ author: Louis MEDO
 tags: [convention]
 ---
 
-# {{ page.meta.id }} : {{ page.meta.title }}
+# REF-{{ page.meta.id }} : {{ page.meta.title }}
 
 ![Bannière LoutikCLOUD](/assets/banniere_loutikcloud.png)
 

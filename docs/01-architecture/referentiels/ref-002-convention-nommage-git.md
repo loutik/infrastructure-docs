@@ -1,5 +1,5 @@
 ---
-id: REF-002
+id: 002
 title: Convention de nommage Git
 category: Code
 date: 2026-05-17
@@ -7,7 +7,7 @@ author: Louis MEDO
 tags: [convention, git, ci-cd]
 ---
 
-# {{ page.meta.id }} : {{ page.meta.title }}
+# REF-{{ page.meta.id }} : {{ page.meta.title }}
 
 ![Bannière LoutikCLOUD](/assets/banniere_loutikcloud.png)
 
