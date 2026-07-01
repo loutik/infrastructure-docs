@@ -51,9 +51,9 @@ tags: [deploiement, iac, mise-en-production]
 * [Réseau, ex: Entrées DNS configurées, IP statique réservée]
 * [Gestion des accès et secrets, ex: Identifiants stockés dans le Vault, certificats TLS]
 
-## 1. [Titre de l'étape]
+## 3. [Titre de l'étape]
 
-1.  **[Titre de l'action à mener].** [Description de l'action à mener].
+3.1.  **[Titre de l'action à mener].** [Description de l'action à mener].
 
     ```bash
     Exemple de commande
