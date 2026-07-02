@@ -95,7 +95,7 @@ Mise en production du premier routeur de l'infrastructure LoutikCLOUD sans proce
   ```bash
   Enter an option: 2
   Configure IPv4 address LAN interface via DHCP: n
-  Enter the new LAN IPv4 address: 10.0.20.254
+  Enter the new LAN IPv4 address: 10.0.199.254
   Subnet bit count: 24
   IPv4 Upstream Gateway: [Laisser vide / None]
   Configure IPv6 address LAN interface via WAN tracking: Y
