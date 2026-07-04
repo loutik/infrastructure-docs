@@ -1,5 +1,5 @@
 ---
-title: Configuration bootstrap OPNsense
+title: Configuration bootstrap - OPNsense
 service: Réseau
 date: 2026-06-30
 author: Louis MEDO

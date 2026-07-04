@@ -1,5 +1,5 @@
 ---
-title: Installation d'OPNsense
+title: Installation - OPNsense
 service: Réseau
 date: 2026-06-30
 author: Louis MEDO

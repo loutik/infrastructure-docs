@@ -1,5 +1,5 @@
 ---
-title: Configuration du système de prévention d'intrusions (IPS - Suricata)
+title: Configuration du système de prévention d'intrusions (IPS - Suricata) - OPNsense
 service: Sécurité
 date: 2026-07-03
 author: Louis MEDO
