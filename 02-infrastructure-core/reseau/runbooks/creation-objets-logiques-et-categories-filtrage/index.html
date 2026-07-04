@@ -7,26 +7,34 @@
       <meta name="viewport" content="width=device-width,initial-scale=1">
       
       
+        <meta name="author" content="Louis MEDO">
       
       
+        <link rel="canonical" href="https://infra-docs.loutik.fr/02-infrastructure-core/reseau/runbooks/creation-objets-logiques-et-categories-filtrage/">
+      
+      
+        <link rel="prev" href="../../procedures/regles-filtrage/configuration-regles-filtrage-vlan-admoob-opnsense/">
+      
+      
+        <link rel="next" href="../creation-regles-filtrage/">
       
       
         
       
       
-      <link rel="icon" href="/assets/logo_loutik.png">
+      <link rel="icon" href="../../../../assets/logo_loutik.png">
       <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.6">
     
     
       
-        <title>Documentation infrastructure - LoutikCLOUD</title>
+        <title>Création des objets logiques et catégories de filtrage - Documentation infrastructure - LoutikCLOUD</title>
       
     
     
-      <link rel="stylesheet" href="/assets/stylesheets/main.484c7ddc.min.css">
+      <link rel="stylesheet" href="../../../../assets/stylesheets/main.484c7ddc.min.css">
       
         
-        <link rel="stylesheet" href="/assets/stylesheets/palette.ab4e12ef.min.css">
+        <link rel="stylesheet" href="../../../../assets/stylesheets/palette.ab4e12ef.min.css">
       
       
 
@@ -45,11 +53,11 @@
       
     
     
-      <link rel="stylesheet" href="/css/timeago.css">
+      <link rel="stylesheet" href="../../../../css/timeago.css">
     
-      <link rel="stylesheet" href="/assets/css/style.css">
+      <link rel="stylesheet" href="../../../../assets/css/style.css">
     
-    <script>__md_scope=new URL("/",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("../../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
@@ -71,6 +79,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#creation-des-objets-logiques-et-categories-de-filtrage" class="md-skip">
+          Aller au contenu
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -83,9 +96,9 @@
 
 <header class="md-header md-header--shadow" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="En-tête">
-    <a href="/." title="Documentation infrastructure - LoutikCLOUD" class="md-header__button md-logo" aria-label="Documentation infrastructure - LoutikCLOUD" data-md-component="logo">
+    <a href="../../../.." title="Documentation infrastructure - LoutikCLOUD" class="md-header__button md-logo" aria-label="Documentation infrastructure - LoutikCLOUD" data-md-component="logo">
       
-  <img src="/assets/logo_loutik.png" alt="logo">
+  <img src="../../../../assets/logo_loutik.png" alt="logo">
 
     </a>
     <label class="md-header__button md-icon" for="__drawer">
@@ -102,7 +115,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              
+              Création des objets logiques et catégories de filtrage
             
           </span>
         </div>
@@ -194,9 +207,9 @@
 
 <nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="/." title="Documentation infrastructure - LoutikCLOUD" class="md-nav__button md-logo" aria-label="Documentation infrastructure - LoutikCLOUD" data-md-component="logo">
+    <a href="../../../.." title="Documentation infrastructure - LoutikCLOUD" class="md-nav__button md-logo" aria-label="Documentation infrastructure - LoutikCLOUD" data-md-component="logo">
       
-  <img src="/assets/logo_loutik.png" alt="logo">
+  <img src="../../../../assets/logo_loutik.png" alt="logo">
 
     </a>
     Documentation infrastructure - LoutikCLOUD
@@ -223,7 +236,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/." class="md-nav__link">
+      <a href="../../../.." class="md-nav__link">
         
   
   
@@ -272,7 +285,7 @@
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="/01-architecture/" class="md-nav__link ">
+            <a href="../../../../01-architecture/" class="md-nav__link ">
               
   
   
@@ -371,7 +384,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/01-architecture/ADR/adr-001-choix-hebergeur-vps-gateway/" class="md-nav__link">
+      <a href="../../../../01-architecture/ADR/adr-001-choix-hebergeur-vps-gateway/" class="md-nav__link">
         
   
   
@@ -406,7 +419,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/01-architecture/ADR/adr-002-choix-plan-adressage/" class="md-nav__link">
+      <a href="../../../../01-architecture/ADR/adr-002-choix-plan-adressage/" class="md-nav__link">
         
   
   
@@ -441,7 +454,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/01-architecture/ADR/adr-003-plateforme-documentation/" class="md-nav__link">
+      <a href="../../../../01-architecture/ADR/adr-003-plateforme-documentation/" class="md-nav__link">
         
   
   
@@ -539,7 +552,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/01-architecture/referentiels/ref-001-convention-nommage-infrastructure/" class="md-nav__link">
+      <a href="../../../../01-architecture/referentiels/ref-001-convention-nommage-infrastructure/" class="md-nav__link">
         
   
   
@@ -567,7 +580,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/01-architecture/referentiels/ref-002-convention-nommage-git/" class="md-nav__link">
+      <a href="../../../../01-architecture/referentiels/ref-002-convention-nommage-git/" class="md-nav__link">
         
   
   
@@ -595,7 +608,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/01-architecture/referentiels/ref-003-convention-nommage-reseau-pare-feu/" class="md-nav__link">
+      <a href="../../../../01-architecture/referentiels/ref-003-convention-nommage-reseau-pare-feu/" class="md-nav__link">
         
   
   
@@ -635,6 +648,8 @@
       
   
   
+    
+  
   
   
     
@@ -652,15 +667,15 @@
     
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="/02-infrastructure-core/" class="md-nav__link ">
+            <a href="../../../" class="md-nav__link ">
               
   
   
@@ -684,7 +699,7 @@
             
           </div>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_3">
             <span class="md-nav__icon md-icon"></span>
             
@@ -814,7 +829,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/02-infrastructure-core/hyperviseur/procedures/proc-configuration-sso-proxmox-via-authentik/" class="md-nav__link">
+      <a href="../../../hyperviseur/procedures/proc-configuration-sso-proxmox-via-authentik/" class="md-nav__link">
         
   
   
@@ -842,7 +857,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/02-infrastructure-core/hyperviseur/procedures/proc-creation-cluster-proxmox/" class="md-nav__link">
+      <a href="../../../hyperviseur/procedures/proc-creation-cluster-proxmox/" class="md-nav__link">
         
   
   
@@ -870,7 +885,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/02-infrastructure-core/hyperviseur/procedures/proc-installation-physique-proxmox/" class="md-nav__link">
+      <a href="../../../hyperviseur/procedures/proc-installation-physique-proxmox/" class="md-nav__link">
         
   
   
@@ -898,7 +913,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/02-infrastructure-core/hyperviseur/procedures/proc-rejoindre-cluster-proxmox/" class="md-nav__link">
+      <a href="../../../hyperviseur/procedures/proc-rejoindre-cluster-proxmox/" class="md-nav__link">
         
   
   
@@ -985,7 +1000,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/02-infrastructure-core/hyperviseur/runbooks/runbook-sortir-un-noeud-cluster-proxmox/" class="md-nav__link">
+      <a href="../../../hyperviseur/runbooks/runbook-sortir-un-noeud-cluster-proxmox/" class="md-nav__link">
         
   
   
@@ -1026,8 +1041,10 @@
                 
   
   
+    
   
   
+  
     
     
       
@@ -1039,11 +1056,11 @@
     
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_3" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_3" checked>
         
           
           <label class="md-nav__link" for="__nav_3_3" id="__nav_3_3_label" tabindex="0">
@@ -1064,7 +1081,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_3_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_3_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_3_3">
             <span class="md-nav__icon md-icon"></span>
             
@@ -1143,7 +1160,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/02-infrastructure-core/reseau/procedures/configuration-alias-opnsense/" class="md-nav__link">
+      <a href="../../procedures/configuration-alias-opnsense/" class="md-nav__link">
         
   
   
@@ -1171,7 +1188,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/02-infrastructure-core/reseau/procedures/configuration-boostrap-opnsense/" class="md-nav__link">
+      <a href="../../procedures/configuration-boostrap-opnsense/" class="md-nav__link">
         
   
   
@@ -1199,7 +1216,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/02-infrastructure-core/reseau/procedures/configuration-categories-opnsense/" class="md-nav__link">
+      <a href="../../procedures/configuration-categories-opnsense/" class="md-nav__link">
         
   
   
@@ -1227,7 +1244,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/02-infrastructure-core/reseau/procedures/configuration-ips-suricata-opnsense/" class="md-nav__link">
+      <a href="../../procedures/configuration-ips-suricata-opnsense/" class="md-nav__link">
         
   
   
@@ -1255,7 +1272,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/02-infrastructure-core/reseau/procedures/installation-opnsense/" class="md-nav__link">
+      <a href="../../procedures/installation-opnsense/" class="md-nav__link">
         
   
   
@@ -1334,7 +1351,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/02-infrastructure-core/reseau/procedures/regles-filtrage/configuration-regles-filtrage-vlan-admoob-opnsense/" class="md-nav__link">
+      <a href="../../procedures/regles-filtrage/configuration-regles-filtrage-vlan-admoob-opnsense/" class="md-nav__link">
         
   
   
@@ -1375,8 +1392,10 @@
                 
   
   
+    
   
   
+  
     
     
       
@@ -1390,11 +1409,11 @@
     
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_3_2" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_3_2" checked>
         
           
           <label class="md-nav__link" for="__nav_3_3_2" id="__nav_3_3_2_label" tabindex="0">
@@ -1415,7 +1434,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_3_3_2_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_3_3_2_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_3_3_2">
             <span class="md-nav__icon md-icon"></span>
             
@@ -1430,10 +1449,37 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="/02-infrastructure-core/reseau/runbooks/creation-objets-logiques-et-categories-filtrage/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Création des objets logiques et catégories de filtrage
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   
@@ -1449,6 +1495,92 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table des matières">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table des matières
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1-architecture-et-contexte" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. Architecture et contexte
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-prerequis" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. Prérequis
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-creation-des-categories-de-filtrage" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. Création des catégories de filtrage
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-creation-des-alias-reseau-net_-et-host_" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. Création des alias réseau (NET_ et HOST_)
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-creation-des-alias-de-services-port_" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5. Création des alias de services (PORT_)
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#annexe" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Annexe
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -1461,7 +1593,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/02-infrastructure-core/reseau/runbooks/creation-regles-filtrage/" class="md-nav__link">
+      <a href="../creation-regles-filtrage/" class="md-nav__link">
         
   
   
@@ -1489,7 +1621,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/02-infrastructure-core/reseau/runbooks/creation-vlan-opnsense/" class="md-nav__link">
+      <a href="../creation-vlan-opnsense/" class="md-nav__link">
         
   
   
@@ -1558,7 +1690,7 @@
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="/03-edge/" class="md-nav__link ">
+            <a href="../../../../03-edge/" class="md-nav__link ">
               
   
   
@@ -1622,7 +1754,7 @@
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="/04-securite/" class="md-nav__link ">
+            <a href="../../../../04-securite/" class="md-nav__link ">
               
   
   
@@ -1686,7 +1818,7 @@
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="/05-services/" class="md-nav__link ">
+            <a href="../../../../05-services/" class="md-nav__link ">
               
   
   
@@ -1742,6 +1874,82 @@
   
   
   
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table des matières
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1-architecture-et-contexte" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. Architecture et contexte
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-prerequis" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. Prérequis
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-creation-des-categories-de-filtrage" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. Création des catégories de filtrage
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-creation-des-alias-reseau-net_-et-host_" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. Création des alias réseau (NET_ et HOST_)
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-creation-des-alias-de-services-port_" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5. Création des alias de services (PORT_)
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#annexe" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Annexe
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
   
 </nav>
                   </div>
@@ -1754,7 +1962,125 @@
               
               <article class="md-content__inner md-typeset">
                 
-  <h1>404 - Not found</h1>
+  
+  
+    <div style="text-align: left; font-size: 0.85em; color: var(--md-default-fg-color--light); margin-bottom: 20px;">
+      <strong>Dernière édition :</strong> <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-timeago" title="4 juillet 2026 13:28:52 UTC"><span class="timeago" datetime="2026-07-04T13:28:52+00:00" locale="fr"></span></span><span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date" title="4 juillet 2026 13:28:52 UTC">2026-07-04</span>
+    </div>
+  
+  
+  
+  
+                  
+
+
+  
+  
+
+
+<h1 id="creation-des-objets-logiques-et-categories-de-filtrage">Création des objets logiques et catégories de filtrage</h1>
+<p><img alt="Bannière LoutikCLOUD" src="/assets/banniere_loutikcloud.png" /></p>
+<div class="admonition info">
+<p class="admonition-title">Informations</p>
+<ul>
+<li><strong>Date de création</strong> : 2026-06-30</li>
+<li><strong>Service ciblé</strong> : Réseau</li>
+<li><strong>Auteur</strong> : Louis MEDO</li>
+<li><strong>Responsable</strong> : Louis MEDO</li>
+</ul>
+</div>
+<h2 id="1-architecture-et-contexte">1. Architecture et contexte</h2>
+<p>Cette procédure formalise la création des objets logiques (Alias) et des structures d'organisation (Catégories) au sein du moteur de filtrage d'OPNsense. Elle abstrait les variables réseau (IP, CIDR, ports) pour découpler l'infrastructure réseau de la logique des règles. La déclaration stricte de ces objets est indispensable avant d'exploiter l'interface de règles modernes <code>Rules [new]</code> et garantit la conformité avec la matrice de flux globale de LoutikCLOUD.</p>
+<h2 id="2-prerequis">2. Prérequis</h2>
+<ul>
+<li>La procédure de création des VLANs et interfaces est entièrement finalisée et validée.</li>
+<li>Consultation du référentiel <strong>REF-003 (Convention de nommage réseau et pare-feu)</strong>, Sections 2.2 et 2.3 pour valider les règles de casse et de préfixage.</li>
+<li>Schéma de la cartographie réseau à disposition pour relever les identifiants de VLANs et les adresses de sous-réseaux.</li>
+</ul>
+<h2 id="3-creation-des-categories-de-filtrage">3. Création des catégories de filtrage</h2>
+<p>3.1. <strong>Déclaration des structures d'organisation.</strong> Depuis l'interface Web, naviguez dans <code>Firewall &gt; Category</code> et cliquez sur le bouton "+" pour ajouter les catégories qui serviront à classifier les flux métiers.</p>
+<div class="highlight"><pre><span></span><code>Name<span class="w"> </span>:<span class="w"> </span>Internet-Access
+Auto<span class="w"> </span>color<span class="w"> </span>:<span class="w"> </span>Coché
+</code></pre></div>
+<p><code>Name</code> : Nom de la catégorie respectant les valeurs autorisées (<code>Internet-Access</code>, <code>Inter-VLAN</code>, <code>Management</code>) du <strong>REF-003, Section 2.3</strong>.</p>
+<p><code>Auto color</code> : Attribue dynamiquement une couleur d'identification visuelle pour le repérage dans l'IHM.</p>
+<h2 id="4-creation-des-alias-reseau-net_-et-host_">4. Création des alias réseau (NET_ et HOST_)</h2>
+<p>4.1.  <strong>Déclaration des alias de sous-réseaux.</strong> Naviguez dans <code>Firewall &gt; Aliases</code>, cliquez sur le bouton "+" et déclarez les sous-réseaux d'infrastructure d'après la cartographie LoutikCLOUD.</p>
+<div class="highlight"><pre><span></span><code>Name<span class="w"> </span>:<span class="w"> </span>NET_DMZI_SERVICES
+Type<span class="w"> </span>:<span class="w"> </span>Network<span class="o">(</span>s<span class="o">)</span>
+Content<span class="w"> </span>:<span class="w"> </span><span class="m">10</span>.0.12.0/24
+Description<span class="w"> </span>:<span class="w"> </span>Réseau<span class="w"> </span>complet<span class="w"> </span>du<span class="w"> </span>VLAN<span class="w"> </span><span class="m">12</span><span class="w"> </span>dédié<span class="w"> </span>aux<span class="w"> </span>clusters<span class="w"> </span>et<span class="w"> </span>services<span class="w"> </span>internes
+</code></pre></div>
+<p><code>Name</code> : Nommage en majuscules avec le préfixe strict <code>NET_</code> suivi de la description en snake_case (<strong>REF-003, Section 2.2</strong>).</p>
+<p><code>Type</code> : Sélectionnez <code>Network(s)</code> pour englober un masque CIDR complet.</p>
+<p><code>Content</code> : Bloc d'adresses IPv4 correspondant (ex: <code>10.0.12.0/24</code> pour la DMZ Interne, <code>10.0.20.0/24</code> pour le LAN Administration).</p>
+<p>4.2. <strong>Déclaration des alias d'hôtes uniques.</strong> Répétez l'opération dans <code>Firewall &gt; Aliases</code> pour isoler des machines spécifiques nécessitant des flux unitaires.</p>
+<div class="highlight"><pre><span></span><code>Name<span class="w"> </span>:<span class="w"> </span>HOST_DEBIAN_CLI_01
+Type<span class="w"> </span>:<span class="w"> </span>Host<span class="o">(</span>s<span class="o">)</span>
+Content<span class="w"> </span>:<span class="w"> </span><span class="m">10</span>.0.20.254
+Description<span class="w"> </span>:<span class="w"> </span>Poste<span class="w"> </span>client<span class="w"> </span>Debian<span class="w"> </span>d<span class="err">&#39;</span>administration<span class="w"> </span>réseau
+</code></pre></div>
+<p><code>Name</code> : Nommage en majuscules avec le préfixe strict <code>HOST_</code> suivi du nom système de la machine (<strong>REF-003, Section 2.2</strong>).</p>
+<p><code>Type</code> : Sélectionnez <code>Host(s)</code> pour restreindre l'alias à une adresse IP unique.</p>
+<h2 id="5-creation-des-alias-de-services-port_">5. Création des alias de services (PORT_)</h2>
+<p>5.1. <strong>Déclaration des groupes de ports.</strong> Toujours dans <code>Firewall &gt; Aliases</code>, créez les abstractions de ports applicatifs pour rationaliser l'écriture des règles.</p>
+<div class="highlight"><pre><span></span><code>Name<span class="w"> </span>:<span class="w"> </span>PORT_SSH_ADMIN
+Type<span class="w"> </span>:<span class="w"> </span>Port<span class="o">(</span>s<span class="o">)</span>
+Content<span class="w"> </span>:<span class="w"> </span><span class="m">22</span>
+Description<span class="w"> </span>:<span class="w"> </span>Port<span class="w"> </span>standard<span class="w"> </span>dédié<span class="w"> </span>au<span class="w"> </span>protocole<span class="w"> </span>de<span class="w"> </span>communication<span class="w"> </span>sécurisé<span class="w"> </span>SSH
+</code></pre></div>
+<p><code>Name</code> : Nommage en majuscules avec le préfixe strict <code>PORT_</code> suivi du protocole métier associé (<strong>REF-003, Section 2.2</strong>).</p>
+<p><code>Type</code> : Sélectionnez <code>Port(s)</code> pour encapsuler des numéros de ports TCP/UDP individuels ou en listes séparées par des virgules.</p>
+<h2 id="annexe">Annexe</h2>
+<ul>
+<li><a href="/01-architecture/referentiels/ref-003-convention-nommage-reseau-pare-feu.md">REF-003 - Convention de nommage réseau et pare-feu</a></li>
+<li><a href="/01-architecture/schemas/schema-reseau-vlan.png">Cartographie réseau LoutikCLOUD</a></li>
+</ul>
+
+
+
+
+
+
+
+  
+    
+  
+  
+    
+  
+
+
+  <aside class="md-source-file">
+    
+      
+  <span class="md-source-file__fact">
+    <span class="md-icon" title="Dernière mise à jour">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
+    </span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-timeago" title="4 juillet 2026 13:28:52 UTC"><span class="timeago" datetime="2026-07-04T13:28:52+00:00" locale="fr"></span></span><span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date" title="4 juillet 2026 13:28:52 UTC">2026-07-04</span>
+  </span>
+
+    
+    
+      
+  <span class="md-source-file__fact">
+    <span class="md-icon" title="Créé">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M14.47 15.08 11 13V7h1.5v5.25l3.08 1.83c-.41.28-.79.62-1.11 1m-1.39 4.84c-.36.05-.71.08-1.08.08-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8c0 .37-.03.72-.08 1.08.69.1 1.33.32 1.92.64.1-.56.16-1.13.16-1.72 0-5.5-4.5-10-10-10S2 6.5 2 12s4.47 10 10 10c.59 0 1.16-.06 1.72-.16-.32-.59-.54-1.23-.64-1.92M18 15v3h-3v2h3v3h2v-3h3v-2h-3v-3z"/></svg>
+    </span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-timeago" title="4 juillet 2026 13:28:52 UTC"><span class="timeago" datetime="2026-07-04T13:28:52+00:00" locale="fr"></span></span><span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date" title="4 juillet 2026 13:28:52 UTC">2026-07-04</span>
+  </span>
+
+    
+    
+    
+  </aside>
+
+
+
+
+
+                
 
               </article>
             </div>
@@ -1802,14 +2128,14 @@
     
       
       
-      <script id="__config" type="application/json">{"annotate": null, "base": "/", "features": ["navigation.top", "search.suggest", "search.highlight", "content.code.copy", "navigation.indexes"], "search": "/assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copi\u00e9 dans le presse-papier", "clipboard.copy": "Copier dans le presse-papier", "search.result.more.one": "1 de plus sur cette page", "search.result.more.other": "# de plus sur cette page", "search.result.none": "Aucun document trouv\u00e9", "search.result.one": "1 document trouv\u00e9", "search.result.other": "# documents trouv\u00e9s", "search.result.placeholder": "Taper pour d\u00e9marrer la recherche", "search.result.term.missing": "Non trouv\u00e9", "select.version": "S\u00e9lectionner la version"}, "version": null}</script>
+      <script id="__config" type="application/json">{"annotate": null, "base": "../../../..", "features": ["navigation.top", "search.suggest", "search.highlight", "content.code.copy", "navigation.indexes"], "search": "../../../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copi\u00e9 dans le presse-papier", "clipboard.copy": "Copier dans le presse-papier", "search.result.more.one": "1 de plus sur cette page", "search.result.more.other": "# de plus sur cette page", "search.result.none": "Aucun document trouv\u00e9", "search.result.one": "1 document trouv\u00e9", "search.result.other": "# documents trouv\u00e9s", "search.result.placeholder": "Taper pour d\u00e9marrer la recherche", "search.result.term.missing": "Non trouv\u00e9", "select.version": "S\u00e9lectionner la version"}, "version": null}</script>
     
     
-      <script src="/assets/javascripts/bundle.79ae519e.min.js"></script>
+      <script src="../../../../assets/javascripts/bundle.79ae519e.min.js"></script>
       
-        <script src="/js/timeago.min.js"></script>
+        <script src="../../../../js/timeago.min.js"></script>
       
-        <script src="/js/timeago_mkdocs_material.js"></script>
+        <script src="../../../../js/timeago_mkdocs_material.js"></script>
       
     
   </body>

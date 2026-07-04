@@ -7,26 +7,34 @@
       <meta name="viewport" content="width=device-width,initial-scale=1">
       
       
+        <meta name="author" content="Louis MEDO">
       
       
+        <link rel="canonical" href="https://infra-docs.loutik.fr/02-infrastructure-core/reseau/procedures/installation-opnsense/">
+      
+      
+        <link rel="prev" href="../configuration-ips-suricata-opnsense/">
+      
+      
+        <link rel="next" href="../regles-filtrage/configuration-regles-filtrage-vlan-admoob-opnsense/">
       
       
         
       
       
-      <link rel="icon" href="/assets/logo_loutik.png">
+      <link rel="icon" href="../../../../assets/logo_loutik.png">
       <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.6">
     
     
       
-        <title>Documentation infrastructure - LoutikCLOUD</title>
+        <title>Installation - OPNsense - Documentation infrastructure - LoutikCLOUD</title>
       
     
     
-      <link rel="stylesheet" href="/assets/stylesheets/main.484c7ddc.min.css">
+      <link rel="stylesheet" href="../../../../assets/stylesheets/main.484c7ddc.min.css">
       
         
-        <link rel="stylesheet" href="/assets/stylesheets/palette.ab4e12ef.min.css">
+        <link rel="stylesheet" href="../../../../assets/stylesheets/palette.ab4e12ef.min.css">
       
       
 
@@ -45,11 +53,11 @@
       
     
     
-      <link rel="stylesheet" href="/css/timeago.css">
+      <link rel="stylesheet" href="../../../../css/timeago.css">
     
-      <link rel="stylesheet" href="/assets/css/style.css">
+      <link rel="stylesheet" href="../../../../assets/css/style.css">
     
-    <script>__md_scope=new URL("/",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("../../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
@@ -71,6 +79,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#installation-opnsense" class="md-skip">
+          Aller au contenu
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -83,9 +96,9 @@
 
 <header class="md-header md-header--shadow" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="En-tête">
-    <a href="/." title="Documentation infrastructure - LoutikCLOUD" class="md-header__button md-logo" aria-label="Documentation infrastructure - LoutikCLOUD" data-md-component="logo">
+    <a href="../../../.." title="Documentation infrastructure - LoutikCLOUD" class="md-header__button md-logo" aria-label="Documentation infrastructure - LoutikCLOUD" data-md-component="logo">
       
-  <img src="/assets/logo_loutik.png" alt="logo">
+  <img src="../../../../assets/logo_loutik.png" alt="logo">
 
     </a>
     <label class="md-header__button md-icon" for="__drawer">
@@ -102,7 +115,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              
+              Installation - OPNsense
             
           </span>
         </div>
@@ -194,9 +207,9 @@
 
 <nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="/." title="Documentation infrastructure - LoutikCLOUD" class="md-nav__button md-logo" aria-label="Documentation infrastructure - LoutikCLOUD" data-md-component="logo">
+    <a href="../../../.." title="Documentation infrastructure - LoutikCLOUD" class="md-nav__button md-logo" aria-label="Documentation infrastructure - LoutikCLOUD" data-md-component="logo">
       
-  <img src="/assets/logo_loutik.png" alt="logo">
+  <img src="../../../../assets/logo_loutik.png" alt="logo">
 
     </a>
     Documentation infrastructure - LoutikCLOUD
@@ -223,7 +236,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/." class="md-nav__link">
+      <a href="../../../.." class="md-nav__link">
         
   
   
@@ -272,7 +285,7 @@
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="/01-architecture/" class="md-nav__link ">
+            <a href="../../../../01-architecture/" class="md-nav__link ">
               
   
   
@@ -371,7 +384,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/01-architecture/ADR/adr-001-choix-hebergeur-vps-gateway/" class="md-nav__link">
+      <a href="../../../../01-architecture/ADR/adr-001-choix-hebergeur-vps-gateway/" class="md-nav__link">
         
   
   
@@ -406,7 +419,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/01-architecture/ADR/adr-002-choix-plan-adressage/" class="md-nav__link">
+      <a href="../../../../01-architecture/ADR/adr-002-choix-plan-adressage/" class="md-nav__link">
         
   
   
@@ -441,7 +454,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/01-architecture/ADR/adr-003-plateforme-documentation/" class="md-nav__link">
+      <a href="../../../../01-architecture/ADR/adr-003-plateforme-documentation/" class="md-nav__link">
         
   
   
@@ -539,7 +552,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/01-architecture/referentiels/ref-001-convention-nommage-infrastructure/" class="md-nav__link">
+      <a href="../../../../01-architecture/referentiels/ref-001-convention-nommage-infrastructure/" class="md-nav__link">
         
   
   
@@ -567,7 +580,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/01-architecture/referentiels/ref-002-convention-nommage-git/" class="md-nav__link">
+      <a href="../../../../01-architecture/referentiels/ref-002-convention-nommage-git/" class="md-nav__link">
         
   
   
@@ -595,7 +608,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/01-architecture/referentiels/ref-003-convention-nommage-reseau-pare-feu/" class="md-nav__link">
+      <a href="../../../../01-architecture/referentiels/ref-003-convention-nommage-reseau-pare-feu/" class="md-nav__link">
         
   
   
@@ -635,6 +648,8 @@
       
   
   
+    
+  
   
   
     
@@ -652,15 +667,15 @@
     
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="/02-infrastructure-core/" class="md-nav__link ">
+            <a href="../../../" class="md-nav__link ">
               
   
   
@@ -684,7 +699,7 @@
             
           </div>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_3">
             <span class="md-nav__icon md-icon"></span>
             
@@ -814,7 +829,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/02-infrastructure-core/hyperviseur/procedures/proc-configuration-sso-proxmox-via-authentik/" class="md-nav__link">
+      <a href="../../../hyperviseur/procedures/proc-configuration-sso-proxmox-via-authentik/" class="md-nav__link">
         
   
   
@@ -842,7 +857,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/02-infrastructure-core/hyperviseur/procedures/proc-creation-cluster-proxmox/" class="md-nav__link">
+      <a href="../../../hyperviseur/procedures/proc-creation-cluster-proxmox/" class="md-nav__link">
         
   
   
@@ -870,7 +885,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/02-infrastructure-core/hyperviseur/procedures/proc-installation-physique-proxmox/" class="md-nav__link">
+      <a href="../../../hyperviseur/procedures/proc-installation-physique-proxmox/" class="md-nav__link">
         
   
   
@@ -898,7 +913,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/02-infrastructure-core/hyperviseur/procedures/proc-rejoindre-cluster-proxmox/" class="md-nav__link">
+      <a href="../../../hyperviseur/procedures/proc-rejoindre-cluster-proxmox/" class="md-nav__link">
         
   
   
@@ -985,7 +1000,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/02-infrastructure-core/hyperviseur/runbooks/runbook-sortir-un-noeud-cluster-proxmox/" class="md-nav__link">
+      <a href="../../../hyperviseur/runbooks/runbook-sortir-un-noeud-cluster-proxmox/" class="md-nav__link">
         
   
   
@@ -1026,8 +1041,10 @@
                 
   
   
+    
   
   
+  
     
     
       
@@ -1039,11 +1056,11 @@
     
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_3" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_3" checked>
         
           
           <label class="md-nav__link" for="__nav_3_3" id="__nav_3_3_label" tabindex="0">
@@ -1064,7 +1081,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_3_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_3_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_3_3">
             <span class="md-nav__icon md-icon"></span>
             
@@ -1079,8 +1096,10 @@
                 
   
   
+    
   
   
+  
     
     
       
@@ -1100,11 +1119,11 @@
     
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_3_1" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_3_1" checked>
         
           
           <label class="md-nav__link" for="__nav_3_3_1" id="__nav_3_3_1_label" tabindex="0">
@@ -1125,7 +1144,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_3_3_1_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_3_3_1_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_3_3_1">
             <span class="md-nav__icon md-icon"></span>
             
@@ -1143,7 +1162,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/02-infrastructure-core/reseau/procedures/configuration-alias-opnsense/" class="md-nav__link">
+      <a href="../configuration-alias-opnsense/" class="md-nav__link">
         
   
   
@@ -1171,7 +1190,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/02-infrastructure-core/reseau/procedures/configuration-boostrap-opnsense/" class="md-nav__link">
+      <a href="../configuration-boostrap-opnsense/" class="md-nav__link">
         
   
   
@@ -1199,7 +1218,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/02-infrastructure-core/reseau/procedures/configuration-categories-opnsense/" class="md-nav__link">
+      <a href="../configuration-categories-opnsense/" class="md-nav__link">
         
   
   
@@ -1227,7 +1246,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/02-infrastructure-core/reseau/procedures/configuration-ips-suricata-opnsense/" class="md-nav__link">
+      <a href="../configuration-ips-suricata-opnsense/" class="md-nav__link">
         
   
   
@@ -1252,10 +1271,37 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="/02-infrastructure-core/reseau/procedures/installation-opnsense/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Installation - OPNsense
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   
@@ -1271,6 +1317,92 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table des matières">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table des matières
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1-architecture-et-contexte" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. Architecture et contexte
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-prerequis" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. Prérequis
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-telechargement-de-liso-opnsense" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. Téléchargement de l'ISO OPNsense
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-installation-de-opnsense" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. Installation de OPNsense
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-configuration-post-installation" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5. Configuration post installation
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#annexe" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Annexe
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -1334,7 +1466,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/02-infrastructure-core/reseau/procedures/regles-filtrage/configuration-regles-filtrage-vlan-admoob-opnsense/" class="md-nav__link">
+      <a href="../regles-filtrage/configuration-regles-filtrage-vlan-admoob-opnsense/" class="md-nav__link">
         
   
   
@@ -1433,7 +1565,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/02-infrastructure-core/reseau/runbooks/creation-objets-logiques-et-categories-filtrage/" class="md-nav__link">
+      <a href="../../runbooks/creation-objets-logiques-et-categories-filtrage/" class="md-nav__link">
         
   
   
@@ -1461,7 +1593,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/02-infrastructure-core/reseau/runbooks/creation-regles-filtrage/" class="md-nav__link">
+      <a href="../../runbooks/creation-regles-filtrage/" class="md-nav__link">
         
   
   
@@ -1489,7 +1621,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/02-infrastructure-core/reseau/runbooks/creation-vlan-opnsense/" class="md-nav__link">
+      <a href="../../runbooks/creation-vlan-opnsense/" class="md-nav__link">
         
   
   
@@ -1558,7 +1690,7 @@
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="/03-edge/" class="md-nav__link ">
+            <a href="../../../../03-edge/" class="md-nav__link ">
               
   
   
@@ -1622,7 +1754,7 @@
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="/04-securite/" class="md-nav__link ">
+            <a href="../../../../04-securite/" class="md-nav__link ">
               
   
   
@@ -1686,7 +1818,7 @@
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="/05-services/" class="md-nav__link ">
+            <a href="../../../../05-services/" class="md-nav__link ">
               
   
   
@@ -1742,6 +1874,82 @@
   
   
   
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table des matières
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1-architecture-et-contexte" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. Architecture et contexte
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-prerequis" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. Prérequis
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-telechargement-de-liso-opnsense" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. Téléchargement de l'ISO OPNsense
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-installation-de-opnsense" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. Installation de OPNsense
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-configuration-post-installation" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5. Configuration post installation
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#annexe" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Annexe
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
   
 </nav>
                   </div>
@@ -1754,7 +1962,162 @@
               
               <article class="md-content__inner md-typeset">
                 
-  <h1>404 - Not found</h1>
+  
+  
+    <div style="text-align: left; font-size: 0.85em; color: var(--md-default-fg-color--light); margin-bottom: 20px;">
+      <strong>Dernière édition :</strong> <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-timeago" title="4 juillet 2026 13:28:52 UTC"><span class="timeago" datetime="2026-07-04T13:28:52+00:00" locale="fr"></span></span><span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date" title="4 juillet 2026 13:28:52 UTC">2026-07-04</span>
+    </div>
+  
+  
+  
+  
+                  
+
+
+  
+  
+
+
+<h1 id="installation-opnsense">Installation - OPNsense</h1>
+<p><img alt="Bannière LoutikCLOUD" src="/assets/banniere_loutikcloud.png" /></p>
+<div class="admonition info">
+<p class="admonition-title">Informations</p>
+<ul>
+<li><strong>Date de création</strong> : 2026-06-30</li>
+<li><strong>Service ciblé</strong> : Réseau</li>
+<li><strong>Auteur</strong> : Louis MEDO</li>
+<li><strong>Responsable</strong> : Louis MEDO</li>
+</ul>
+</div>
+<h2 id="1-architecture-et-contexte">1. Architecture et contexte</h2>
+<p>Mise en production du premier routeur de l'infrastructure LoutikCLOUD sans processus IaC. L'objectif est de provisionner un routeur opérationnel avec un nom de domaine défini, un compte utilisateur sécurisé, et une configuration WAN/LAN de base permettant un accès Internet fonctionnel via NAT. Cette configuration initiale manuelle rendra la console Web accessible depuis le réseau local, constituant ainsi le socle requis pour la future orchestration et configuration automatisée via Ansible.</p>
+<h2 id="2-prerequis">2. Prérequis</h2>
+<ul>
+<li>Ressources allouées : machine avec au moins deux interfaces réseau virtuelles distinctes (WAN et LAN).</li>
+<li>Réseau : Adressage planifié (Réseau LAN <code>10.0.20.0/24</code>, passerelle WAN <code>172.16.1.1/24</code>).</li>
+</ul>
+<h2 id="3-telechargement-de-liso-opnsense">3. Téléchargement de l'ISO OPNsense</h2>
+<p>3.1. <strong>Récupération de l'image.</strong> Téléchargez l'image d'installation officielle depuis le site d'OPNsense.</p>
+<ul>
+<li><a href="https://opnsense.org/download/">https://opnsense.org/download/</a></li>
+</ul>
+<p><img alt="Image du téléchargement de l'ISO" src="../assets/installation-opnsense/opnsense_capture-ecran_telechargement-opnsense.png" /></p>
+<p><code>Architecture</code> : Sélectionnez <code>amd64</code>, correspondant à la norme pour les processeurs récents.</p>
+<p><code>Type d'image</code> : Sélectionnez <code>vga</code> si vous installez sur un matériel physique avec écran/clavier, ou <code>dvd</code> si vous montez l'image sur une machine virtuelle.</p>
+<h2 id="4-installation-de-opnsense">4. Installation de OPNsense</h2>
+<p>4.1. <strong>Démarrage en mode Live OS.</strong> L'image OPNsense va être chargée sur la machine, afin que le système soit accessible en "live". Connectez-vous à l'aide du login "installer" et du mot de passe "opnsense".</p>
+<div class="highlight"><pre><span></span><code>login:<span class="w"> </span>installer
+password:<span class="w"> </span>opnsense
+</code></pre></div>
+<p><code>installer</code> : Compte permettant de lancer l'assistant d'installation sur le disque.</p>
+<p><code>opnsense</code> : Mot de passe par défaut. Attention, le mappage clavier est en QWERTY par défaut à cette étape.</p>
+<p><img alt="Écran de connexion Live OS" src="../assets/installation-opnsense/opnsense_capture-ecran_lancement-installation.png" /></p>
+<p>4.2. <strong>Configuration du système de fichiers et du clavier.</strong> Pour un clavier AZERTY, sélectionnez l'option "French (accent keys)". Sélectionnez ensuite "Install (ZFS)" et choisissez "stripe" puisque notre machine est équipée d'un seul disque. Validez la destruction des données du disque pour lancer le formatage.</p>
+<div class="highlight"><pre><span></span><code>Keymap<span class="w"> </span>:<span class="w"> </span>French<span class="w"> </span><span class="o">(</span>accent<span class="w"> </span>keys<span class="o">)</span>
+Task<span class="w"> </span>:<span class="w"> </span>Install<span class="w"> </span><span class="o">(</span>ZFS<span class="o">)</span>
+Virtual<span class="w"> </span>Device<span class="w"> </span><span class="nb">type</span><span class="w"> </span>:<span class="w"> </span>Stripe
+</code></pre></div>
+<p><code>French (accent keys)</code> : Adapte la saisie à la norme française.</p>
+<p><code>Stripe</code> : Formatage ZFS sans redondance matérielle, idéal pour une machine virtuelle mono-disque.</p>
+<p><img alt="Sélection du système de fichiers ZFS" src="../assets/installation-opnsense/opnsense_capture-ecran_choix-zfs-stripe.png" /></p>
+<p>4.3. <strong>Création du compte administrateur.</strong> À la fin de l'installation, sélectionnez "Root Password", appuyez sur Entrée et indiquez un mot de passe "root". Sélectionnez ensuite "Complete Install" et appuyez sur Entrée pour redémarrer.</p>
+<div class="highlight"><pre><span></span><code>Root<span class="w"> </span>Password:<span class="w"> </span>Azertyuiop123456*
+</code></pre></div>
+<p><code>Azertyuiop123456*</code> : Mot de passe administrateur utilisé pour se connecter à la console locale et à l'interface Web.</p>
+<h2 id="5-configuration-post-installation">5. Configuration post installation</h2>
+<p>5.1. <strong>Association des interfaces réseau.</strong> Une fois redémarré, connectez-vous avec le compte "root". Faites le choix "1" et appuyez sur Entrée pour associer les cartes réseaux. L'assistant propose de configurer une agrégation de liens et des VLANs, indiquez "n" pour refuser. Vous devez affecter les deux interfaces: "hn0" et "hn1" au WAN et au LAN.</p>
+<div class="highlight"><pre><span></span><code>Enter<span class="w"> </span>an<span class="w"> </span>option:<span class="w"> </span><span class="m">1</span>
+Do<span class="w"> </span>you<span class="w"> </span>want<span class="w"> </span>to<span class="w"> </span>configure<span class="w"> </span>LAGGs<span class="w"> </span>now?<span class="w"> </span><span class="o">[</span>y/N<span class="o">]</span>:<span class="w"> </span>n
+Do<span class="w"> </span>you<span class="w"> </span>want<span class="w"> </span>to<span class="w"> </span>configure<span class="w"> </span>VLANs<span class="w"> </span>now?<span class="w"> </span><span class="o">[</span>y/N<span class="o">]</span>:<span class="w"> </span>n
+Enter<span class="w"> </span>the<span class="w"> </span>WAN<span class="w"> </span>interface<span class="w"> </span>name:<span class="w"> </span>hn0
+Enter<span class="w"> </span>the<span class="w"> </span>LAN<span class="w"> </span>interface<span class="w"> </span>name:<span class="w"> </span>hn1
+</code></pre></div>
+<p><code>hn0</code> : Interface physique de sortie (WAN).</p>
+<p><code>hn1</code> : Interface physique interne (LAN).</p>
+<p>5.2.  <strong>Configuration IP du LAN.</strong> Dans le menu principal de la console, utilisez l'option 2 (<code>Set interface IP address</code>) pour configurer l'interface <code>LAN</code>.</p>
+<div class="highlight"><pre><span></span><code>Enter<span class="w"> </span>an<span class="w"> </span>option:<span class="w"> </span><span class="m">2</span>
+Configure<span class="w"> </span>IPv4<span class="w"> </span>address<span class="w"> </span>LAN<span class="w"> </span>interface<span class="w"> </span>via<span class="w"> </span>DHCP:<span class="w"> </span>n
+Enter<span class="w"> </span>the<span class="w"> </span>new<span class="w"> </span>LAN<span class="w"> </span>IPv4<span class="w"> </span>address:<span class="w"> </span><span class="m">10</span>.0.199.254
+Subnet<span class="w"> </span>bit<span class="w"> </span>count:<span class="w"> </span><span class="m">24</span>
+IPv4<span class="w"> </span>Upstream<span class="w"> </span>Gateway:<span class="w"> </span><span class="o">[</span>Laisser<span class="w"> </span>vide<span class="w"> </span>/<span class="w"> </span>None<span class="o">]</span>
+Configure<span class="w"> </span>IPv6<span class="w"> </span>address<span class="w"> </span>LAN<span class="w"> </span>interface<span class="w"> </span>via<span class="w"> </span>WAN<span class="w"> </span>tracking:<span class="w"> </span>Y
+Do<span class="w"> </span>you<span class="w"> </span>want<span class="w"> </span>to<span class="w"> </span><span class="nb">enable</span><span class="w"> </span>the<span class="w"> </span>DHCP<span class="w"> </span>server<span class="w"> </span>on<span class="w"> </span>LAN:<span class="w"> </span>N
+Do<span class="w"> </span>you<span class="w"> </span>want<span class="w"> </span>to<span class="w"> </span>change<span class="w"> </span>the<span class="w"> </span>web<span class="w"> </span>GUI<span class="w"> </span>protocol<span class="w"> </span>from<span class="w"> </span>HTTPS<span class="w"> </span>to<span class="w"> </span>HTTP:<span class="w"> </span>N
+Do<span class="w"> </span>you<span class="w"> </span>want<span class="w"> </span>to<span class="w"> </span>generate<span class="w"> </span>a<span class="w"> </span>new<span class="w"> </span>self-signed<span class="w"> </span>web<span class="w"> </span>GUI<span class="w"> </span>certificate:<span class="w"> </span>N
+Restore<span class="w"> </span>web<span class="w"> </span>GUI<span class="w"> </span>access<span class="w"> </span>defaults:<span class="w"> </span>N
+</code></pre></div>
+<p><code>10.0.20.1</code> : Adresse IP locale définie pour le routeur.</p>
+<p><code>Upstream Gateway</code> : Ne spécifiez aucune passerelle pour le LAN afin d'éviter les boucles de routage.</p>
+<p>5.3. <strong>Configuration IP du WAN.</strong> Répétez l'opération avec l'option 2 pour configurer l'interface <code>WAN</code>.</p>
+<div class="highlight"><pre><span></span><code>Enter<span class="w"> </span>an<span class="w"> </span>option:<span class="w"> </span><span class="m">2</span>
+Configure<span class="w"> </span>IPv4<span class="w"> </span>address<span class="w"> </span>WAN<span class="w"> </span>interface<span class="w"> </span>via<span class="w"> </span>DHCP:<span class="w"> </span>n
+Enter<span class="w"> </span>the<span class="w"> </span>new<span class="w"> </span>WAN<span class="w"> </span>IPv4<span class="w"> </span>address:<span class="w"> </span><span class="m">172</span>.16.1.253
+Subnet<span class="w"> </span>bit<span class="w"> </span>count:<span class="w"> </span><span class="m">24</span>
+IPv4<span class="w"> </span>Upstream<span class="w"> </span>Gateway:<span class="w"> </span><span class="m">172</span>.16.1.1
+IPv4<span class="w"> </span>name<span class="w"> </span>server:<span class="w"> </span><span class="m">9</span>.9.9.9
+Configure<span class="w"> </span>IPv6<span class="w"> </span>address<span class="w"> </span>WAN<span class="w"> </span>interface<span class="w"> </span>via<span class="w"> </span>DHCP6:<span class="w"> </span>Y
+Do<span class="w"> </span>you<span class="w"> </span>want<span class="w"> </span>to<span class="w"> </span>change<span class="w"> </span>the<span class="w"> </span>web<span class="w"> </span>GUI<span class="w"> </span>protocol<span class="w"> </span>from<span class="w"> </span>HTTPS<span class="w"> </span>to<span class="w"> </span>HTTP:<span class="w"> </span>N
+Do<span class="w"> </span>you<span class="w"> </span>want<span class="w"> </span>to<span class="w"> </span>generate<span class="w"> </span>a<span class="w"> </span>new<span class="w"> </span>self-signed<span class="w"> </span>web<span class="w"> </span>GUI<span class="w"> </span>certificate:<span class="w"> </span>N
+Restore<span class="w"> </span>web<span class="w"> </span>GUI<span class="w"> </span>access<span class="w"> </span>defaults:<span class="w"> </span>N
+</code></pre></div>
+<p><code>172.16.1.1</code> : La passerelle par défaut du fournisseur d'accès ou du pare-feu parent.</p>
+<p>5.4.  <strong>Accès à l'interface Web et configuration NAT.</strong> Depuis une machine connectée au réseau LAN, ouvrez un navigateur Web pour accéder à l'interface d'administration. </p>
+<div class="highlight"><pre><span></span><code>URL<span class="w"> </span>:<span class="w"> </span>&lt;ip-opnsense&gt;<span class="w"> </span><span class="p">|</span><span class="w"> </span>https://10.0.20.254
+Identifiant<span class="w"> </span>:<span class="w"> </span>root
+Mot<span class="w"> </span>de<span class="w"> </span>passe<span class="w"> </span>:<span class="w"> </span>Azertyuiop123456*
+</code></pre></div>
+<p><code>URL</code> : Point de terminaison sécurisé du pare-feu OPNsense.</p>
+<p><code>Configuration NAT</code> : Dans l'interface Web, naviguez vers <strong>Interfaces &gt; [WAN]</strong> pour décocher <code>Block private networks</code> et <code>Block bogon networks</code>. Allez ensuite dans <strong>Firewall &gt; NAT &gt; Outbound</strong>, sélectionnez <code>Automatic outbound NAT rule generation</code> et sauvegardez pour autoriser la traduction d'adresse et débloquer l'accès Internet pour le LAN <code>10.0.20.0/24</code>.</p>
+<h2 id="annexe">Annexe</h2>
+<ul>
+<li><a href="https://docs.opnsense.org/manual/install.html">Documentation OPNsense - Installation</a></li>
+<li><a href="/01-architecture/referentiels/ref-003-convention-nommage-reseau-pare-feu.md">Référentiel des normes de nommage réseau LoutikCLOUD</a></li>
+</ul>
+
+
+
+
+
+
+
+  
+    
+  
+  
+    
+  
+
+
+  <aside class="md-source-file">
+    
+      
+  <span class="md-source-file__fact">
+    <span class="md-icon" title="Dernière mise à jour">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
+    </span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-timeago" title="4 juillet 2026 13:28:52 UTC"><span class="timeago" datetime="2026-07-04T13:28:52+00:00" locale="fr"></span></span><span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date" title="4 juillet 2026 13:28:52 UTC">2026-07-04</span>
+  </span>
+
+    
+    
+      
+  <span class="md-source-file__fact">
+    <span class="md-icon" title="Créé">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M14.47 15.08 11 13V7h1.5v5.25l3.08 1.83c-.41.28-.79.62-1.11 1m-1.39 4.84c-.36.05-.71.08-1.08.08-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8c0 .37-.03.72-.08 1.08.69.1 1.33.32 1.92.64.1-.56.16-1.13.16-1.72 0-5.5-4.5-10-10-10S2 6.5 2 12s4.47 10 10 10c.59 0 1.16-.06 1.72-.16-.32-.59-.54-1.23-.64-1.92M18 15v3h-3v2h3v3h2v-3h3v-2h-3v-3z"/></svg>
+    </span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-timeago" title="4 juillet 2026 13:28:52 UTC"><span class="timeago" datetime="2026-07-04T13:28:52+00:00" locale="fr"></span></span><span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date" title="4 juillet 2026 13:28:52 UTC">2026-07-04</span>
+  </span>
+
+    
+    
+    
+  </aside>
+
+
+
+
+
+                
 
               </article>
             </div>
@@ -1802,14 +2165,14 @@
     
       
       
-      <script id="__config" type="application/json">{"annotate": null, "base": "/", "features": ["navigation.top", "search.suggest", "search.highlight", "content.code.copy", "navigation.indexes"], "search": "/assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copi\u00e9 dans le presse-papier", "clipboard.copy": "Copier dans le presse-papier", "search.result.more.one": "1 de plus sur cette page", "search.result.more.other": "# de plus sur cette page", "search.result.none": "Aucun document trouv\u00e9", "search.result.one": "1 document trouv\u00e9", "search.result.other": "# documents trouv\u00e9s", "search.result.placeholder": "Taper pour d\u00e9marrer la recherche", "search.result.term.missing": "Non trouv\u00e9", "select.version": "S\u00e9lectionner la version"}, "version": null}</script>
+      <script id="__config" type="application/json">{"annotate": null, "base": "../../../..", "features": ["navigation.top", "search.suggest", "search.highlight", "content.code.copy", "navigation.indexes"], "search": "../../../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copi\u00e9 dans le presse-papier", "clipboard.copy": "Copier dans le presse-papier", "search.result.more.one": "1 de plus sur cette page", "search.result.more.other": "# de plus sur cette page", "search.result.none": "Aucun document trouv\u00e9", "search.result.one": "1 document trouv\u00e9", "search.result.other": "# documents trouv\u00e9s", "search.result.placeholder": "Taper pour d\u00e9marrer la recherche", "search.result.term.missing": "Non trouv\u00e9", "select.version": "S\u00e9lectionner la version"}, "version": null}</script>
     
     
-      <script src="/assets/javascripts/bundle.79ae519e.min.js"></script>
+      <script src="../../../../assets/javascripts/bundle.79ae519e.min.js"></script>
       
-        <script src="/js/timeago.min.js"></script>
+        <script src="../../../../js/timeago.min.js"></script>
       
-        <script src="/js/timeago_mkdocs_material.js"></script>
+        <script src="../../../../js/timeago_mkdocs_material.js"></script>
       
     
   </body>
