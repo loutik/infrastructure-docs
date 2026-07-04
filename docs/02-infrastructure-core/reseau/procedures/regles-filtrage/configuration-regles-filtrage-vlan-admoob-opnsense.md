@@ -26,7 +26,7 @@ Cette procédure documente la mise en place de la règle de filtrage autorisant 
 * Le plan d'adressage IP du VLAN ADMOOB 20 est fonctionnel et la passerelle OPNsense est accessible (niveau 2/3).
 * Les alias de ports pour l'administration (ex: `PORT_WEB_ADMIN`, `PORT_SSH_ADMIN`) sont préalablement déclarés dans le pare-feu.
 
-## 3. Configuration de la règle d'accès
+## 3. Configuration de l'accès à l'intergace d'administration OPNsense
 
 3.1. **Création de la règle d'autorisation.** Depuis l'interface d'administration, naviguez dans `Firewall > Rules > [Nom de l'interface ADMOOB 20]` (ou `Rules [new]`) et ajoutez une nouvelle règle en tête de liste pour garantir l'accès au pare-feu.
 
@@ -61,6 +61,42 @@ Cette procédure documente la mise en place de la règle de filtrage autorisant 
   ```
 
   `Apply Changes` : Valide la nouvelle matrice de flux et recharge `pf` sans interrompre les connexions actives établies.
+
+## 4. Configuration de l'accès Internet via Alias Inverse (RFC 1918)
+
+!!! warning "Accès internet "
+    Cette règle est **temporaire**, elle nous permet de pouvoir installer et configurer nos hyperviseur sans avoir besoin du proxy qui n'est pas encore configuré.
+
+4.1. **Création de l'Alias des réseaux privés (Prérequis).** Avant de créer la règle, naviguez dans `Firewall > Aliases`, créez un alias nommé `RFC1918` de type `Network(s)` contenant les sous-réseaux `10.0.0.0/8`, `172.16.0.0/12` et `192.168.0.0/16`.
+
+4.2. **Création de la règle d'autorisation Internet.** Depuis l'interface d'administration, naviguez dans `Firewall > Rules > [Nom de l'interface]` et ajoutez une nouvelle règle en dessous de vos règles d'accès locaux.
+
+  ```bash
+  Categories : Internet
+  Description : [LAN_ADMOOB_20 -> WAN] Accès Internet
+  Interface : LAN_ADMOOB_20
+  Action : Pass
+  Direction : In
+  Version : IPv4
+  Protocol : any
+  Source : LAN_ADMOOB_20 net
+  Source Port : any
+  Invert Destination : coché
+  Destination : RFC1918
+  Destination Port : any
+  ```
+
+  `Action` : Définie sur `Pass` pour autoriser le trafic sortant vers les destinations externes.
+
+  `Interface` : Applique le filtrage sur les paquets entrants initiés par la zone réseau spécifiée.
+
+  `Source` : Restreint l'origine du flux au sous-réseau complet (`net`) de l'interface courante.
+
+  `Destination` : Exploite l'alias `RFC1918` combiné à la directive d'inversion (`!`). Le pare-feu bloque ainsi toute tentative de routage vers un autre VLAN interne et n'autorise le flux que vers le WAN.
+
+  `Destination Port` : Positionné sur `any` (ou restreint à `PORT_WEB` / 80, 443) selon le niveau de filtrage applicatif désiré pour la zone.
+
+  `Description` : Identifie le flux selon la nomenclature LoutikCLOUD en spécifiant l'usage de la règle d'inversion pour le WAN.
 
 ## Annexe
 
