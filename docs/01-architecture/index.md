@@ -14,6 +14,6 @@ Ce référentiel centralise la conception, les standards de configuration et l'h
 
 ## 🗺️ Navigation
 
-* **[Postmortems](./postmortems)** - Procédures de gestion de crise et modèles de rédaction d'analyses d'incidents.
-* **[Referentiels](./referentiels)** - Accès direct aux normes d'infrastructure, conventions de nommage et typologies standardisées.
-* **[ADR](./adr)** - Registre détaillé justifiant chaque décision architecturale structurante.
+* **Postmortems** - Procédures de gestion de crise et modèles de rédaction d'analyses d'incidents.
+* **Referentiels** - Accès direct aux normes d'infrastructure, conventions de nommage et typologies standardisées.
+* **ADR** - Registre détaillé justifiant chaque décision architecturale structurante.

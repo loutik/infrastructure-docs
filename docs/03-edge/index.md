@@ -11,6 +11,6 @@ Cette section documente la couche de périphérie exposée aux réseaux publics.
 * **VPN** : Établir des tunnels chiffrés et authentifiés pour l'administration sécurisée de l'infrastructure depuis l'extérieur.
 
 ## 🗺️ Navigation
-* **[Reverse Proxy](./reverse-proxy)** - Configurations de routage HTTP/HTTPS, gestion des certificats et règles d'exposition des services.
-* **[Security](./security)** - Politiques de filtrage, intégrations CrowdSec, et mécanismes de protection des accès.
-* **[VPN](./vpn)** - Déploiement des tunnels distants, gestion des clés cryptographiques et règles de routage client-à-site.
+* **Reverse Proxy** - Configurations de routage HTTP/HTTPS, gestion des certificats et règles d'exposition des services.
+* **Security** - Politiques de filtrage, intégrations CrowdSec, et mécanismes de protection des accès.
+* **VPN** - Déploiement des tunnels distants, gestion des clés cryptographiques et règles de routage client-à-site.

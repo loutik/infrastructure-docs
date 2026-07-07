@@ -12,9 +12,9 @@ Cette section cartographie l'intégralité de la couche applicative de l'infrast
 * **Outillage** : Mettre à disposition les utilitaires de diagnostic technique.
 
 ## 🗺️ Navigation
-* **[Dashboard](./dashboard)** - Point d'entrée centralisé pour l'administration et l'accès rapide aux outils de l'infrastructure.
-* **[Portfolio](./portfolio)** - Architecture d'hébergement web isolée (Apache/PHP-FPM) dédiée aux environnements des étudiants du BTS SIO.
-* **[Speedtest](./speedtest)** - Utilitaire de diagnostic interne pour mesurer et valider les performances de la bande passante réseau.
-* **[SSO](./sso)** - Configuration du fournisseur d'identité (Authentik) pour la gestion des accès et l'authentification unique (OIDC).
-* **[Supervision](./supervision)** - Stack d'observabilité assurant la collecte de métriques et le monitoring continu des systèmes.
-* **[Website-storefront](./website-storefront)** - Environnement de déploiement et d'hébergement sécurisé pour la boutique en ligne haut de gamme.
+* **Dashboard** - Point d'entrée centralisé pour l'administration et l'accès rapide aux outils de l'infrastructure.
+* **Portfolio** - Architecture d'hébergement web isolée (Apache/PHP-FPM) dédiée aux environnements des étudiants du BTS SIO.
+* **Speedtest** - Utilitaire de diagnostic interne pour mesurer et valider les performances de la bande passante réseau.
+* **SSO** - Configuration du fournisseur d'identité (Authentik) pour la gestion des accès et l'authentification unique (OIDC).
+* **Supervision** - Stack d'observabilité assurant la collecte de métriques et le monitoring continu des systèmes.
+* **Website-storefront** - Environnement de déploiement et d'hébergement sécurisé pour la boutique en ligne haut de gamme.
