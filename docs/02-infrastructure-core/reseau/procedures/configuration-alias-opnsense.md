@@ -9,6 +9,8 @@ tags: [deploiement, opnsense, alias]
 
 # {{ page.meta.title }}
 
+![Bannière LoutikCLOUD](../../../assets/banniere_loutikcloud.png)
+
 !!! info "Informations"
     * **Date de création** : {{ page.meta.date }}
     * **Service ciblé** : {{ page.meta.service }}
@@ -54,4 +56,4 @@ Pour éviter la redondance d'adresses IP ou de numéros de ports codés en dur a
 
 ## Annexe
 
-* [Référentiel des normes de nommage réseau LoutikCLOUD](/01-architecture/referentiels/ref-003-convention-nommage-reseau-pare-feu.md)
+* [Référentiel des normes de nommage réseau LoutikCLOUD](../../../01-architecture/referentiels/ref-003-convention-nommage-reseau-pare-feu.md)

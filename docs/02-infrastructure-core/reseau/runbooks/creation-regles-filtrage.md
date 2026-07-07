@@ -9,7 +9,7 @@ tags: [deploiement, reseau, firewall, rules-new]
 
 # {{ page.meta.title }}
 
-![Bannière LoutikCLOUD](/assets/banniere_loutikcloud.png)
+![Bannière LoutikCLOUD](../../../assets/banniere_loutikcloud.png)
 
 !!! info "Informations"
     * **Date de création** : {{ page.meta.date }}
@@ -25,7 +25,7 @@ Cette procédure décrit l'écriture et l'application des règles de sécurité 
 
 * La procédure de création des VLANs et interfaces ([Création des VLANs et interfaces](./creation-vlan-opnsense.md)) est validée.
 * La procédure de déclaration des alias et catégories ([Création des objets logiques et catégories de filtrage](./creation-objets-logiques-et-categories-filtrage.md)) est finalisée.
-* Consultation du référentiel **REF-003 ([Convention de nommage réseau et pare-feu](/01-architecture/referentiels/ref-003-convention-nommage-reseau-pare-feu))**, Section 2.3 pour la nomenclature obligatoire des descriptions.
+* Consultation du référentiel **REF-003 ([Convention de nommage réseau et pare-feu](../../../01-architecture/referentiels/ref-003-convention-nommage-reseau-pare-feu.md))**, Section 2.3 pour la nomenclature obligatoire des descriptions.
 
 ## 3. Création d'une règle de filtrage dans l'interface moderne
 
@@ -52,7 +52,7 @@ Cette procédure décrit l'écriture et l'application des règles de sécurité 
 
   `Categories` : Association à l'étiquette organisationnelle (ex: Management, Inter-VLAN).
   
-  `Description` : Contextualisation humaine respectant scrupuleusement le format strict [Flux] Description métier du REF-003, Section 2.3 ([Convention de nommage réseau et pare-feu](/01-architecture/referentiels/ref-003-convention-nommage-reseau-pare-feu)).
+  `Description` : Contextualisation humaine respectant scrupuleusement le format strict [Flux] Description métier du REF-003, Section 2.3 ([Convention de nommage réseau et pare-feu](../../../01-architecture/referentiels/ref-003-convention-nommage-reseau-pare-feu.md)).
 
   `Interface` : Segment réseau physique ou logique (VLAN) sur lequel s'applique le contrôle d'accès.
 
@@ -84,5 +84,4 @@ Cette procédure décrit l'écriture et l'application des règles de sécurité 
 
 ## Annexe
 
-- [REF-003 - Convention de nommage réseau et pare-feu](/01-architecture/referentiels/ref-003-convention-nommage-reseau-pare-feu)
-- [Cartographie réseau LoutikCLOUD](/01-architecture/schemas/schema-reseau-vlan.png)
+- [REF-003 - Convention de nommage réseau et pare-feu](../../../01-architecture/referentiels/ref-003-convention-nommage-reseau-pare-feu.md)
