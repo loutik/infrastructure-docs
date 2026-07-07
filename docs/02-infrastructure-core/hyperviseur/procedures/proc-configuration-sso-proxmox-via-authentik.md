@@ -9,7 +9,7 @@ tags: [deploiement, iac, mise-en-production, sso, securite]
 
 # {{ page.meta.title }}
 
-![Bannière LoutikCLOUD](/assets/banniere_loutikcloud.png)
+![Bannière LoutikCLOUD](../../../assets/banniere_loutikcloud.png)
 
 !!! info "Informations"
     * **Date de création** : {{ page.meta.date }}

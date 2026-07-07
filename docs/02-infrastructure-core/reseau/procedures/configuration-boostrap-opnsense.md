@@ -9,7 +9,7 @@ tags: [deploiement, bootstrap, iac, securite]
 
 # {{ page.meta.title }}
 
-![Bannière LoutikCLOUD](/assets/banniere_loutikcloud.png)
+![Bannière LoutikCLOUD](../../../assets/banniere_loutikcloud.png)
 
 !!! info "Informations"
     * **Date de création** : {{ page.meta.date }}
@@ -31,7 +31,7 @@ Cette documentation détaille la phase de "Bootstrap" post-installation du route
 3.1. **Configuration du FQDN et des serveurs DNS.** Depuis `System > Settings > General`, configurez l'identité réseau du routeur et les serveurs de résolution externes.
 
 !!! warning "NORMES"
-    Le hostname est défini par le référentiel **Convention de nommage infrastructure** que vous pouvez consulter ici : [Convention de nommage infrastructure](/01-architecture/referentiels/ref-001-convention-nommage-infrastructure/).
+    Le hostname est défini par le référentiel **Convention de nommage infrastructure** que vous pouvez consulter ici : [Convention de nommage infrastructure](../../../01-architecture/referentiels/ref-001-convention-nommage-infrastructure.md).
 
   ```bash
   Hostname : mlt1-opn-fw-prd-01
@@ -95,4 +95,4 @@ Cette documentation détaille la phase de "Bootstrap" post-installation du route
 
 ## Annexe
 
-- [Référentiel des normes de nommage réseau LoutikCLOUD](/01-architecture/referentiels/ref-003-convention-nommage-reseau-pare-feu.md)
+- [Référentiel des normes de nommage réseau LoutikCLOUD](../../../01-architecture/referentiels/ref-003-convention-nommage-reseau-pare-feu.md)

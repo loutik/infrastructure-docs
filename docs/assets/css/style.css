@@ -222,13 +222,34 @@
   color: var(--color-ds-slate);
 }
 
+/* Reset margins on items and lists in secondary sidebar */
+.md-sidebar--secondary .md-nav__item {
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+.md-sidebar--secondary .md-nav__list {
+  margin: 0 !important;
+  padding: 0 !important;
+  list-style: none !important;
+}
+
 /* Links Styling - Compact & Grey */
 .md-sidebar--secondary .md-nav__link {
   color: #555 !important;
   font-size: 0.85rem !important;
-  margin-bottom: 0.2rem !important;
-  padding-top: 0.1rem;
-  padding-bottom: 0.1rem;
+  margin: 0.2rem 0 !important;
+  padding: 0.1rem 0 !important;
+  display: block !important;
+  
+  line-height: 1.4 !important; 
+  height: max-content !important; 
+  min-height: 24px !important;
+  overflow: hidden !important; 
+}
+
+.md-nav {
+  width: 16rem !important;
 }
 
 /* Active Link in ToC */

@@ -11,6 +11,6 @@ Cette section documente les fondations matérielles et logiques de l'environneme
 * **Réseau** : Assurer le routage interne/externe, la segmentation stricte des flux et la sécurisation du périmètre de l'infrastructure (OPNsense).
 
 ## 🗺️ Navigation
-* **[Hyperviseur](./hyperviseur)** - Documentation des nœuds de virtualisation, templates de machines virtuelles/LXC et gestion du stockage.
-* **[Orchestrateur](./orchestrateur)** - Architecture du cluster, gestion des nœuds (control-plane/workers) et standards de déploiement des pods.
-* **[Réseau](./reseau)** - Cartographie de la topologie, règles de filtrage du pare-feu, configurations des VLANs et politiques de routage.
+* **Hyperviseur** - Documentation des nœuds de virtualisation, templates de machines virtuelles/LXC et gestion du stockage.
+* **Orchestrateur** - Architecture du cluster, gestion des nœuds (control-plane/workers) et standards de déploiement des pods.
+* **Réseau** - Cartographie de la topologie, règles de filtrage du pare-feu, configurations des VLANs et politiques de routage.

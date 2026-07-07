@@ -9,7 +9,7 @@ tags: [deploiement, iac, mise-en-production]
 
 # {{ page.meta.title }}
 
-![Bannière LoutikCLOUD](/assets/banniere_loutikcloud.png)
+![Bannière LoutikCLOUD](../../../assets/banniere_loutikcloud.png)
 
 !!! info "Informations"
     * **Date de création** : {{ page.meta.date }}
@@ -141,4 +141,4 @@ Mise en production du premier routeur de l'infrastructure LoutikCLOUD sans proce
 ## Annexe
 
 - [Documentation OPNsense - Installation](https://docs.opnsense.org/manual/install.html)
-- [Référentiel des normes de nommage réseau LoutikCLOUD](/01-architecture/referentiels/ref-003-convention-nommage-reseau-pare-feu.md)
+- [Référentiel des normes de nommage réseau LoutikCLOUD](../../../01-architecture/referentiels/ref-003-convention-nommage-reseau-pare-feu.md)

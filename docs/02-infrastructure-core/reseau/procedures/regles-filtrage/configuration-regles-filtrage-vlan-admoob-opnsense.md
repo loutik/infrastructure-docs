@@ -9,7 +9,7 @@ tags: [deploiement, iac, mise-en-production, securite, firewall]
 
 # {{ page.meta.title }}
 
-![Bannière LoutikCLOUD](/assets/banniere_loutikcloud.png)
+![Bannière LoutikCLOUD](../../../../assets/banniere_loutikcloud.png)
 
 !!! info "Informations"
     * **Date de création** : {{ page.meta.date }}
@@ -100,4 +100,4 @@ Cette procédure documente la mise en place de la règle de filtrage autorisant 
 
 ## Annexe
 
-- [Référentiel des normes de nommage réseau LoutikCLOUD](/01-architecture/referentiels/ref-003-convention-nommage-reseau-pare-feu.md)
+- [Référentiel des normes de nommage réseau LoutikCLOUD](../../../../01-architecture/referentiels/ref-003-convention-nommage-reseau-pare-feu.md)

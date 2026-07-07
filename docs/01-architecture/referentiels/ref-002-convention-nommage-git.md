@@ -9,7 +9,7 @@ tags: [convention, git, ci-cd]
 
 # REF-{{ page.meta.id }} : {{ page.meta.title }}
 
-![Bannière LoutikCLOUD](/assets/banniere_loutikcloud.png)
+![Bannière LoutikCLOUD](../../assets/banniere_loutikcloud.png)
 
 !!! info "Informations du Référentiel"
     * **Date d'application** : {{ page.meta.date }}

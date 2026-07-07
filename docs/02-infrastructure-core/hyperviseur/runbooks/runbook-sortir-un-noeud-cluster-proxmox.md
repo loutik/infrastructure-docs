@@ -9,7 +9,7 @@ tags: [runbook, exploitation, mco]
 
 # {{ page.meta.title }}
 
-![Bannière LoutikCLOUD](/assets/banniere_loutikcloud.png)
+![Bannière LoutikCLOUD](../../../assets/banniere_loutikcloud.png)
 
 !!! info "Informations"
 

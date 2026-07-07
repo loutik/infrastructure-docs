@@ -9,7 +9,7 @@ tags: [deploiement, reseau, vlan, segmentation]
 
 # {{ page.meta.title }}
 
-![Bannière LoutikCLOUD](/assets/banniere_loutikcloud.png)
+![Bannière LoutikCLOUD](../../../assets/banniere_loutikcloud.png)
 
 !!! info "Informations"
     * **Date de création** : {{ page.meta.date }}
@@ -77,5 +77,4 @@ Cette procédure décrit la mise en place de la segmentation réseau de niveau 2
 
 ## Annexe
 
-* [REF-003 - Convention de nommage réseau et pare-feu](/01-architecture/referentiels/ref-003-convention-nommage-reseau-pare-feu.md)
-* [Cartographie réseau LoutikCLOUD](/01-architecture/schemas/schema-reseau-vlan.png)
+* [REF-003 - Convention de nommage réseau et pare-feu](../../../01-architecture/referentiels/ref-003-convention-nommage-reseau-pare-feu.md)
