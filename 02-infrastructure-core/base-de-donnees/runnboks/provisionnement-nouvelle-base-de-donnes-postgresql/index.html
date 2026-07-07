@@ -10,13 +10,13 @@
         <meta name="author" content="Louis MEDO">
       
       
-        <link rel="canonical" href="https://infra-docs.loutik.fr/02-infrastructure-core/hyperviseur/procedures/proc-installation-physique-proxmox/">
+        <link rel="canonical" href="https://infra-docs.loutik.fr/02-infrastructure-core/base-de-donnees/runnboks/provisionnement-nouvelle-base-de-donnes-postgresql/">
       
       
-        <link rel="prev" href="../proc-creation-cluster-proxmox/">
+        <link rel="prev" href="../../procedures/deploiement-environnement-postgresql/">
       
       
-        <link rel="next" href="../proc-rejoindre-cluster-proxmox/">
+        <link rel="next" href="../../../hyperviseur/procedures/proc-configuration-sso-proxmox-via-authentik/">
       
       
         
@@ -27,7 +27,7 @@
     
     
       
-        <title>Installation physique de l'hyperviseur - Documentation infrastructure - LoutikCLOUD</title>
+        <title>Provisionnement d'une nouvelle base de données applicative - Documentation infrastructure - LoutikCLOUD</title>
       
     
     
@@ -80,7 +80,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#installation-physique-de-lhyperviseur" class="md-skip">
+        <a href="#provisionnement-dune-nouvelle-base-de-donnees-applicative" class="md-skip">
           Aller au contenu
         </a>
       
@@ -115,7 +115,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Installation physique de l'hyperviseur
+              Provisionnement d'une nouvelle base de données applicative
             
           </span>
         </div>
@@ -748,8 +748,10 @@
                 
   
   
+    
   
   
+  
     
     
       
@@ -761,11 +763,11 @@
     
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_2" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_2" checked>
         
           
           <label class="md-nav__link" for="__nav_3_2" id="__nav_3_2_label" tabindex="0">
@@ -786,7 +788,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_2_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_2_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_3_2">
             <span class="md-nav__icon md-icon"></span>
             
@@ -855,7 +857,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../base-de-donnees/procedures/deploiement-environnement-postgresql/" class="md-nav__link">
+      <a href="../../procedures/deploiement-environnement-postgresql/" class="md-nav__link">
         
   
   
@@ -888,8 +890,10 @@
                 
   
   
+    
   
   
+  
     
     
       
@@ -899,11 +903,11 @@
     
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_2_2" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_2_2" checked>
         
           
           <label class="md-nav__link" for="__nav_3_2_2" id="__nav_3_2_2_label" tabindex="0">
@@ -924,7 +928,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_3_2_2_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_3_2_2_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_3_2_2">
             <span class="md-nav__icon md-icon"></span>
             
@@ -939,10 +943,37 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../../../base-de-donnees/runnboks/provisionnement-nouvelle-base-de-donnes-postgresql/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Provisionnement d'une nouvelle base de données applicative
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   
@@ -958,6 +989,81 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table des matières">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table des matières
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1-contexte-et-objectif" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. Contexte et Objectif
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-prerequis" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. Prérequis
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-procedure-dexecution" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. Procédure d'exécution
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-validation" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. Validation
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-rollback-retour-arriere" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5. Rollback (Retour arrière)
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -983,10 +1089,8 @@
                 
   
   
-    
   
   
-  
     
     
       
@@ -998,11 +1102,11 @@
     
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_3" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_3" >
         
           
           <label class="md-nav__link" for="__nav_3_3" id="__nav_3_3_label" tabindex="0">
@@ -1023,7 +1127,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_3_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_3_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_3_3">
             <span class="md-nav__icon md-icon"></span>
             
@@ -1038,10 +1142,8 @@
                 
   
   
-    
   
   
-  
     
     
       
@@ -1057,11 +1159,11 @@
     
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_3_1" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_3_1" >
         
           
           <label class="md-nav__link" for="__nav_3_3_1" id="__nav_3_3_1_label" tabindex="0">
@@ -1082,7 +1184,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_3_3_1_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_3_3_1_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_3_3_1">
             <span class="md-nav__icon md-icon"></span>
             
@@ -1100,7 +1202,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../proc-configuration-sso-proxmox-via-authentik/" class="md-nav__link">
+      <a href="../../../hyperviseur/procedures/proc-configuration-sso-proxmox-via-authentik/" class="md-nav__link">
         
   
   
@@ -1128,7 +1230,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../proc-creation-cluster-proxmox/" class="md-nav__link">
+      <a href="../../../hyperviseur/procedures/proc-creation-cluster-proxmox/" class="md-nav__link">
         
   
   
@@ -1153,37 +1255,10 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Installation physique de l'hyperviseur
-  
-
-    
-  </span>
-  
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../../../hyperviseur/procedures/proc-installation-physique-proxmox/" class="md-nav__link">
         
   
   
@@ -1199,81 +1274,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table des matières">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table des matières
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#1-architecture-et-contexte" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        1. Architecture et contexte
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#2-prerequis" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        2. Prérequis
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#3-procedure-dinstallation-bare-metal" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        3. Procédure d'installation bare-metal
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#4-validation" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        4. Validation
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#annexe" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Annexe
-      
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -1286,7 +1286,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../proc-rejoindre-cluster-proxmox/" class="md-nav__link">
+      <a href="../../../hyperviseur/procedures/proc-rejoindre-cluster-proxmox/" class="md-nav__link">
         
   
   
@@ -1373,7 +1373,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../runbooks/runbook-sortir-un-noeud-cluster-proxmox/" class="md-nav__link">
+      <a href="../../../hyperviseur/runbooks/runbook-sortir-un-noeud-cluster-proxmox/" class="md-nav__link">
         
   
   
@@ -2140,10 +2140,10 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#1-architecture-et-contexte" class="md-nav__link">
+  <a href="#1-contexte-et-objectif" class="md-nav__link">
     <span class="md-ellipsis">
       
-        1. Architecture et contexte
+        1. Contexte et Objectif
       
     </span>
   </a>
@@ -2162,10 +2162,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#3-procedure-dinstallation-bare-metal" class="md-nav__link">
+  <a href="#3-procedure-dexecution" class="md-nav__link">
     <span class="md-ellipsis">
       
-        3. Procédure d'installation bare-metal
+        3. Procédure d'exécution
       
     </span>
   </a>
@@ -2184,10 +2184,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#annexe" class="md-nav__link">
+  <a href="#5-rollback-retour-arriere" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Annexe
+        5. Rollback (Retour arrière)
       
     </span>
   </a>
@@ -2223,76 +2223,68 @@
   
 
 
-<h1 id="installation-physique-de-lhyperviseur">Installation physique de l'hyperviseur</h1>
+<h1 id="provisionnement-dune-nouvelle-base-de-donnees-applicative">Provisionnement d'une nouvelle base de données applicative</h1>
 <p><img alt="Bannière LoutikCLOUD" src="../../../../assets/banniere_loutikcloud.png" /></p>
 <div class="admonition info">
 <p class="admonition-title">Informations</p>
 <ul>
-<li><strong>Date de création</strong> : 2026-05-31</li>
-<li><strong>Service ciblé</strong> : Proxmox</li>
+<li><strong>Date de mise à jour</strong> : 2026-07-06</li>
+<li><strong>Service ciblé</strong> : Base de données / PostgreSQL</li>
 <li><strong>Auteur</strong> : Louis MEDO</li>
 <li><strong>Responsable</strong> : Louis MEDO</li>
 </ul>
 </div>
-<h2 id="1-architecture-et-contexte">1. Architecture et contexte</h2>
-<p>L'installation bare-metal de Proxmox VE sur un nouveau serveur physique permet d'initialiser le socle de virtualisation de base de l'infrastructure LoutikCLOUD. Cet hyperviseur hébergera les futures machines virtuelles et les ressources d'orchestration. Il est impératif de placer temporairement l'hyperviseur dans le VLAN de commissionnement (ID: 60). Ce réseau isolé permet un accès temporaire à Internet depuis une IP de management le temps de la configuration initiale.</p>
+<h2 id="1-contexte-et-objectif">1. Contexte et Objectif</h2>
+<p>L'objectif de cette procédure est d'automatiser et de standardiser la création d'une nouvelle base de données isolée au sein du cluster de production LoutikCLOUD. Ce runbook doit être exécuté lors du déploiement d'un nouveau service nécessitant de la persistance (ex: Authentik, Netbox) afin de lui fournir une base de données avec séparation stricte des privilèges (DDL vs DML) respectant l'architecture Zero Trust.</p>
 <h2 id="2-prerequis">2. Prérequis</h2>
 <ul>
-<li>Télécharger l'image ISO d'installation de l'hyperviseur (<a href="https://www.proxmox.com/en/downloads/proxmox-virtual-environment/iso">lien de téléchargement</a>).</li>
-<li>Disposer d'une connectivité réseau avec un accès à internet actif.</li>
-<li>Le port réseau du commutateur doit être configuré temporairement sur le VLAN de commissionnement (VLAN ID 60).</li>
+<li>Accès au dépôt Git <code>infrastructure-ansible</code> à jour (branche <code>main</code>).</li>
+<li>Binaire <code>ansible-playbook</code> fonctionnel avec la collection <code>community.postgresql</code> installée. </li>
+<li>Clé SSH du compte de service <code>svc-ansible</code> chargée dans l'agent SSH local de l'opérateur. (⚠️ Ceci est temporaire le temps que le bastion soit mis en place.)</li>
+<li>Connaissance du mot de passe maître pour le déchiffrement du coffre Ansible (<code>secrets/vault.yml</code>).</li>
 </ul>
-<h2 id="3-procedure-dinstallation-bare-metal">3. Procédure d'installation bare-metal</h2>
+<h2 id="3-procedure-dexecution">3. Procédure d'exécution</h2>
 <ol>
-<li>
-<p><strong>Démarrage et sélection du mode d'installation.</strong> Amorcer le serveur sur le support d'installation. Cliquer sur l'option "Install Proxmox VE (Graphical)" depuis le menu de démarrage.</p>
-<p><img alt="Proxmox - Lancement de l'installation" src="../assets/proc-installation-physique-proxmox_01-homepage-install.png" /></p>
-</li>
-<li>
-<p><strong>Acceptation des conditions d'utilisation.</strong> Lire et accepter le contrat de licence (EULA) de l'environnement virtuel Proxmox.</p>
-<p><img alt="Proxmox - Conditions d'utilisation" src="../assets/proc-installation-physique-proxmox_02-licence-utilisation.png" /></p>
-</li>
-<li>
-<p><strong>Sélection du disque cible.</strong> Choisir le support de stockage physique qui va héberger le système d'exploitation de l'hyperviseur. Sur l'infrastructure LoutikCLOUD, il faut impérativement sélectionner le disque SSD NVMe. Il ne faut pas sélectionner le disque dur destiné au stockage des futures machines virtuelles.</p>
-<p><img alt="Proxmox - Choix du stockage" src="../assets/proc-installation-physique-proxmox_03-stockage-proxmox.png" /></p>
-</li>
-<li>
-<p><strong>Configuration régionale.</strong> Définir la localisation et le fuseau horaire du serveur. Renseigner le pays ("France"), la zone temporelle ("Europe/Paris") et la disposition du clavier ("French").</p>
-<p><img alt="Proxmox - Choix de la zone d'heure" src="../assets/proc-installation-physique-proxmox_04-choix-time-zone.png" /></p>
-</li>
-<li>
-<p><strong>Paramétrage du compte administrateur système.</strong> Configurer les accès pour le compte root local. Renseigner un mot de passe robuste (mot de passe par défaut pour Ansible : Ansible123456*). Saisir l'adresse email de contact (<code>contact@loutik.fr</code>) pour la réception des alertes critiques de l'hyperviseur.</p>
-<p><img alt="Proxmox - Choix du mot de passe Administrateur" src="../assets/proc-installation-physique-proxmox_05-mdp-admin.png" /></p>
-</li>
-<li>
-<p><strong>Configuration du réseau de management.</strong> Appliquer la configuration IP statique préalablement définie dans l'IPAM de l'infrastructure. Renseigner l'interface de management, le nom d'hôte complet (FQDN), l'adresse IP avec son masque (CIDR), la passerelle par défaut et le serveur DNS.</p>
-<p><img alt="Proxmox - Configuration IP" src="../assets/proc-installation-physique-proxmox_06-configuration-ip.png" /></p>
-</li>
-<li>
-<p><strong>Validation et déploiement.</strong> Vérifier l'exactitude du résumé des paramètres (système de fichiers <code>ext4</code>, disque <code>/dev/sda</code>, réseau). Il est normal que ces paramètres diffèrent de l'exemple selon le nœud. Confirmer l'installation pour lancer le partitionnement. S'assurer que l'option de redémarrage automatique après l'installation est cochée.</p>
-<p><img alt="Proxmox - Confirmation de configuration" src="../assets/proc-installation-physique-proxmox_07-confirmation-configuration.png" /></p>
-</li>
+<li><strong>Déclaration de la nomenclature (Architecture RBAC).</strong> Éditer le fichier d'inventaire global en clair pour ajouter le nouveau service dans la liste <code>pg_apps</code> en respectant la convention de nommage (<code>db_[service]</code>, <code>role_adm_[service]</code>, <code>usr_[service]</code>). Assigner ensuite le groupe d'administration à un utilisateur humain (DBA) dans la liste <code>pg_users_roles</code>.</li>
 </ol>
+<div class="highlight"><pre><span></span><code>nano<span class="w"> </span>inventories/production/group_vars/all.yml
+</code></pre></div>
+<p><strong><code>nano</code></strong> : Éditeur de texte en ligne de commande pour modifier l'inventaire des variables d'environnement.</p>
+<ol>
+<li><strong>Stockage sécurisé des identifiants applicatifs.</strong> Ouvrir le coffre-fort chiffré pour y ajouter le mot de passe du compte de service (DML) qui vient d'être déclaré dans l'étape précédente.</li>
+</ol>
+<div class="highlight"><pre><span></span><code>ansible-vault<span class="w"> </span>edit<span class="w"> </span>secrets/vault.yml
+</code></pre></div>
+<p><strong><code>ansible-vault edit</code></strong> : Commande Ansible permettant d'éditer un fichier chiffré à la volée de manière sécurisée.</p>
+<ol>
+<li><strong>Déploiement de la configuration via IaC.</strong> Exécuter le playbook de configuration PostgreSQL pour appliquer les modifications déclarées. Ce playbook est idempotent et ne modifiera que les ressources nouvellement ajoutées.</li>
+</ol>
+<div class="highlight"><pre><span></span><code>ansible-playbook<span class="w"> </span>-i<span class="w"> </span>inventories/production/hosts.yml<span class="w"> </span>playbooks/postgresql-config.yml<span class="w"> </span>--ask-vault-pass
+</code></pre></div>
+<p><strong><code>-i inventories/production/hosts.yml</code></strong> : Cible explicitement le périmètre de production pour l'exécution du playbook.</p>
+<p><strong><code>--ask-vault-pass</code></strong> : Demande interactivement le mot de passe maître pour déchiffrer les identifiants en mémoire.</p>
 <h2 id="4-validation">4. Validation</h2>
 <ul>
+<li>Le retour de la commande <code>ansible-playbook</code> n'affiche aucune erreur (<code>failed=0</code>) et affiche le statut <code>changed</code> pour les nouvelles ressources.</li>
+<li><strong>Validation de la donnée (DML)</strong> : L'application tierce (via K3s) ou une connexion manuelle avec le compte <code>usr_[service]</code> réussit, mais toute tentative de modification de structure (ex: <code>DROP TABLE</code>) renvoie une erreur de permission.</li>
+<li><strong>Validation de la structure (DDL)</strong> : La connexion avec le compte d'administration nominatif (ex: <code>louismedo</code>) permet de s'attribuer le rôle de propriétaire (<code>SET ROLE role_adm_[service];</code>) et de créer une table de test.</li>
+</ul>
+<h2 id="5-rollback-retour-arriere">5. Rollback (Retour arrière)</h2>
+<p>Afin d'éviter tout dommage accidentel sur l'infrastructure de production (Blast Radius), le code Ansible ne gère pas la destruction automatisée des bases de données. Le retrait s'effectue manuellement.</p>
+<ol>
 <li>
-<p>[ ] Vérifier la disponibilité de l'interface web d'administration après le redémarrage depuis l'accès physique (shell).</p>
-<div class="highlight"><pre><span></span><code>systemctl<span class="w"> </span>status<span class="w"> </span>pveproxy
-</code></pre></div>
-<p><code>systemctl</code> : Utilitaire de contrôle du gestionnaire de système et de services.</p>
-<p><code>status pveproxy</code> : Affiche l'état d'exécution du démon Proxmox VE API Proxy, confirmant que le serveur écoute bien sur le port TCP 8006 pour les accès web sécurisés.</p>
+<p>Supprimer l'application et les affectations de privilèges dans les fichiers <code>group_vars/all.yml</code> et <code>secrets/vault.yml</code>, puis valider le commit.</p>
 </li>
 <li>
-<p>[ ] Accès à l'interface d'administration depuis le navigateur internet</p>
-<div class="highlight"><pre><span></span><code>https://&lt;ip-proxmox&gt;:8006
-</code></pre></div>
+<p>Se connecter en CLI sur le serveur de base de données en tant qu'administrateur système pour procéder au nettoyage manuel.</p>
 </li>
-</ul>
-<hr />
-<h2 id="annexe">Annexe</h2>
-<ul>
-<li><a href="https://pve.proxmox.com/pve-docs/chapter-pve-installation.html">Documentation officielle Proxmox VE - Bare-metal Installation</a></li>
-</ul>
+</ol>
+<div class="highlight"><pre><span></span><code>sudo<span class="w"> </span>-u<span class="w"> </span>postgres<span class="w"> </span>psql
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><span class="k">DROP</span><span class="w"> </span><span class="k">DATABASE</span><span class="w"> </span><span class="n">db_</span><span class="p">[</span><span class="n">service</span><span class="p">];</span>
+<span class="k">DROP</span><span class="w"> </span><span class="k">ROLE</span><span class="w"> </span><span class="n">usr_</span><span class="p">[</span><span class="n">service</span><span class="p">];</span>
+<span class="k">DROP</span><span class="w"> </span><span class="k">ROLE</span><span class="w"> </span><span class="n">role_adm_</span><span class="p">[</span><span class="n">service</span><span class="p">];</span>
+</code></pre></div>
 
 
 
@@ -2325,7 +2317,7 @@
     <span class="md-icon" title="Créé">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M14.47 15.08 11 13V7h1.5v5.25l3.08 1.83c-.41.28-.79.62-1.11 1m-1.39 4.84c-.36.05-.71.08-1.08.08-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8c0 .37-.03.72-.08 1.08.69.1 1.33.32 1.92.64.1-.56.16-1.13.16-1.72 0-5.5-4.5-10-10-10S2 6.5 2 12s4.47 10 10 10c.59 0 1.16-.06 1.72-.16-.32-.59-.54-1.23-.64-1.92M18 15v3h-3v2h3v3h2v-3h3v-2h-3v-3z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-timeago" title="31 mai 2026 16:32:15 UTC"><span class="timeago" datetime="2026-05-31T16:32:15+00:00" locale="fr"></span></span><span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date" title="31 mai 2026 16:32:15 UTC">2026-05-31</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-timeago" title="7 juillet 2026 19:17:45 UTC"><span class="timeago" datetime="2026-07-07T19:17:45+00:00" locale="fr"></span></span><span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date" title="7 juillet 2026 19:17:45 UTC">2026-07-07</span>
   </span>
 
     

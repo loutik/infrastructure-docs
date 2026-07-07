@@ -10,13 +10,13 @@
         <meta name="author" content="Louis MEDO">
       
       
-        <link rel="canonical" href="https://infra-docs.loutik.fr/02-infrastructure-core/hyperviseur/procedures/proc-installation-physique-proxmox/">
+        <link rel="canonical" href="https://infra-docs.loutik.fr/02-infrastructure-core/base-de-donnees/procedures/deploiement-environnement-postgresql/">
       
       
-        <link rel="prev" href="../proc-creation-cluster-proxmox/">
+        <link rel="prev" href="../../../">
       
       
-        <link rel="next" href="../proc-rejoindre-cluster-proxmox/">
+        <link rel="next" href="../../runnboks/provisionnement-nouvelle-base-de-donnes-postgresql/">
       
       
         
@@ -27,7 +27,7 @@
     
     
       
-        <title>Installation physique de l'hyperviseur - Documentation infrastructure - LoutikCLOUD</title>
+        <title>Déploiement de l'environnement PostgreSQL - Documentation infrastructure - LoutikCLOUD</title>
       
     
     
@@ -80,7 +80,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#installation-physique-de-lhyperviseur" class="md-skip">
+        <a href="#deploiement-de-lenvironnement-postgresql" class="md-skip">
           Aller au contenu
         </a>
       
@@ -115,7 +115,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Installation physique de l'hyperviseur
+              Déploiement de l'environnement PostgreSQL
             
           </span>
         </div>
@@ -748,8 +748,10 @@
                 
   
   
+    
   
   
+  
     
     
       
@@ -761,11 +763,11 @@
     
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_2" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_2" checked>
         
           
           <label class="md-nav__link" for="__nav_3_2" id="__nav_3_2_label" tabindex="0">
@@ -786,7 +788,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_2_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_2_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_3_2">
             <span class="md-nav__icon md-icon"></span>
             
@@ -801,8 +803,10 @@
                 
   
   
+    
   
   
+  
     
     
       
@@ -812,11 +816,11 @@
     
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_2_1" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_2_1" checked>
         
           
           <label class="md-nav__link" for="__nav_3_2_1" id="__nav_3_2_1_label" tabindex="0">
@@ -837,7 +841,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_3_2_1_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_3_2_1_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_3_2_1">
             <span class="md-nav__icon md-icon"></span>
             
@@ -852,10 +856,37 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../../../base-de-donnees/procedures/deploiement-environnement-postgresql/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Déploiement de l'environnement PostgreSQL
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   
@@ -871,6 +902,92 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table des matières">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table des matières
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1-architecture-et-contexte" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. Architecture et contexte
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-prerequis" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. Prérequis
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-preparation-de-lenvironnement-de-travail-local" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. Préparation de l'environnement de travail local
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-configuration-des-variables-et-gestion-des-secrets" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. Configuration des variables et gestion des secrets
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-deploiement-et-execution-des-playbooks" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5. Déploiement et exécution des Playbooks
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#6-validation-post-deploiement" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6. Validation post-déploiement
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -942,7 +1059,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../base-de-donnees/runnboks/provisionnement-nouvelle-base-de-donnes-postgresql/" class="md-nav__link">
+      <a href="../../runnboks/provisionnement-nouvelle-base-de-donnes-postgresql/" class="md-nav__link">
         
   
   
@@ -983,10 +1100,8 @@
                 
   
   
-    
   
   
-  
     
     
       
@@ -998,11 +1113,11 @@
     
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_3" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_3" >
         
           
           <label class="md-nav__link" for="__nav_3_3" id="__nav_3_3_label" tabindex="0">
@@ -1023,7 +1138,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_3_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_3_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_3_3">
             <span class="md-nav__icon md-icon"></span>
             
@@ -1038,10 +1153,8 @@
                 
   
   
-    
   
   
-  
     
     
       
@@ -1057,11 +1170,11 @@
     
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_3_1" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_3_1" >
         
           
           <label class="md-nav__link" for="__nav_3_3_1" id="__nav_3_3_1_label" tabindex="0">
@@ -1082,7 +1195,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_3_3_1_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_3_3_1_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_3_3_1">
             <span class="md-nav__icon md-icon"></span>
             
@@ -1100,7 +1213,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../proc-configuration-sso-proxmox-via-authentik/" class="md-nav__link">
+      <a href="../../../hyperviseur/procedures/proc-configuration-sso-proxmox-via-authentik/" class="md-nav__link">
         
   
   
@@ -1128,7 +1241,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../proc-creation-cluster-proxmox/" class="md-nav__link">
+      <a href="../../../hyperviseur/procedures/proc-creation-cluster-proxmox/" class="md-nav__link">
         
   
   
@@ -1153,37 +1266,10 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Installation physique de l'hyperviseur
-  
-
-    
-  </span>
-  
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../../../hyperviseur/procedures/proc-installation-physique-proxmox/" class="md-nav__link">
         
   
   
@@ -1199,81 +1285,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table des matières">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table des matières
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#1-architecture-et-contexte" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        1. Architecture et contexte
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#2-prerequis" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        2. Prérequis
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#3-procedure-dinstallation-bare-metal" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        3. Procédure d'installation bare-metal
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#4-validation" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        4. Validation
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#annexe" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Annexe
-      
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -1286,7 +1297,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../proc-rejoindre-cluster-proxmox/" class="md-nav__link">
+      <a href="../../../hyperviseur/procedures/proc-rejoindre-cluster-proxmox/" class="md-nav__link">
         
   
   
@@ -1373,7 +1384,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../runbooks/runbook-sortir-un-noeud-cluster-proxmox/" class="md-nav__link">
+      <a href="../../../hyperviseur/runbooks/runbook-sortir-un-noeud-cluster-proxmox/" class="md-nav__link">
         
   
   
@@ -2162,10 +2173,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#3-procedure-dinstallation-bare-metal" class="md-nav__link">
+  <a href="#3-preparation-de-lenvironnement-de-travail-local" class="md-nav__link">
     <span class="md-ellipsis">
       
-        3. Procédure d'installation bare-metal
+        3. Préparation de l'environnement de travail local
       
     </span>
   </a>
@@ -2173,10 +2184,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#4-validation" class="md-nav__link">
+  <a href="#4-configuration-des-variables-et-gestion-des-secrets" class="md-nav__link">
     <span class="md-ellipsis">
       
-        4. Validation
+        4. Configuration des variables et gestion des secrets
       
     </span>
   </a>
@@ -2184,10 +2195,21 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#annexe" class="md-nav__link">
+  <a href="#5-deploiement-et-execution-des-playbooks" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Annexe
+        5. Déploiement et exécution des Playbooks
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#6-validation-post-deploiement" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6. Validation post-déploiement
       
     </span>
   </a>
@@ -2223,76 +2245,70 @@
   
 
 
-<h1 id="installation-physique-de-lhyperviseur">Installation physique de l'hyperviseur</h1>
+<h1 id="deploiement-de-lenvironnement-postgresql">Déploiement de l'environnement PostgreSQL</h1>
 <p><img alt="Bannière LoutikCLOUD" src="../../../../assets/banniere_loutikcloud.png" /></p>
 <div class="admonition info">
 <p class="admonition-title">Informations</p>
 <ul>
-<li><strong>Date de création</strong> : 2026-05-31</li>
-<li><strong>Service ciblé</strong> : Proxmox</li>
+<li><strong>Date de création</strong> : 2026-07-06</li>
+<li><strong>Service ciblé</strong> : Base de données / PostgreSQL</li>
 <li><strong>Auteur</strong> : Louis MEDO</li>
 <li><strong>Responsable</strong> : Louis MEDO</li>
 </ul>
 </div>
 <h2 id="1-architecture-et-contexte">1. Architecture et contexte</h2>
-<p>L'installation bare-metal de Proxmox VE sur un nouveau serveur physique permet d'initialiser le socle de virtualisation de base de l'infrastructure LoutikCLOUD. Cet hyperviseur hébergera les futures machines virtuelles et les ressources d'orchestration. Il est impératif de placer temporairement l'hyperviseur dans le VLAN de commissionnement (ID: 60). Ce réseau isolé permet un accès temporaire à Internet depuis une IP de management le temps de la configuration initiale.</p>
+<p>Le service de base de données PostgreSQL est le socle de données de l'infrastructure LoutikCLOUD. Son provisionnement est entièrement géré en Infrastructure as Code (IaC) via Ansible. Le serveur cible de production est <code>mlt1-db-vm-prd-01</code>, déployé sur l'adresse IP <code>10.0.17.1</code>. L'architecture respecte les principes Zero Trust avec une séparation des privilèges : les propriétaires de base gèrent la structure (DDL) tandis que les comptes applicatifs limités manipulent la donnée (DML). Les configurations systèmes, incluant le passage par le proxy de la DMZ (<code>debian-proxy</code>), sont orchestrées en amont du provisionnement du moteur.</p>
 <h2 id="2-prerequis">2. Prérequis</h2>
 <ul>
-<li>Télécharger l'image ISO d'installation de l'hyperviseur (<a href="https://www.proxmox.com/en/downloads/proxmox-virtual-environment/iso">lien de téléchargement</a>).</li>
-<li>Disposer d'une connectivité réseau avec un accès à internet actif.</li>
-<li>Le port réseau du commutateur doit être configuré temporairement sur le VLAN de commissionnement (VLAN ID 60).</li>
+<li>Serveur virtuel cible <code>mlt1-db-vm-prd-01</code> instancié et accessible sur le réseau de production.</li>
+<li>Utilisateur système <code>svc-ansible</code> configuré sur le serveur cible avec élévation de privilèges.</li>
+<li>Clé SSH privée <code>~/.ssh/id_ed25519_svc-ansible</code> disponible sur le poste de travail de l'administrateur. (⚠️ Ceci est temporaire le temps que le bastion soit mis en place.)</li>
+<li>Connaissance du mot de passe maître permettant de déchiffrer le fichier <code>secrets/vault.yml</code>.</li>
 </ul>
-<h2 id="3-procedure-dinstallation-bare-metal">3. Procédure d'installation bare-metal</h2>
-<ol>
-<li>
-<p><strong>Démarrage et sélection du mode d'installation.</strong> Amorcer le serveur sur le support d'installation. Cliquer sur l'option "Install Proxmox VE (Graphical)" depuis le menu de démarrage.</p>
-<p><img alt="Proxmox - Lancement de l'installation" src="../assets/proc-installation-physique-proxmox_01-homepage-install.png" /></p>
-</li>
-<li>
-<p><strong>Acceptation des conditions d'utilisation.</strong> Lire et accepter le contrat de licence (EULA) de l'environnement virtuel Proxmox.</p>
-<p><img alt="Proxmox - Conditions d'utilisation" src="../assets/proc-installation-physique-proxmox_02-licence-utilisation.png" /></p>
-</li>
-<li>
-<p><strong>Sélection du disque cible.</strong> Choisir le support de stockage physique qui va héberger le système d'exploitation de l'hyperviseur. Sur l'infrastructure LoutikCLOUD, il faut impérativement sélectionner le disque SSD NVMe. Il ne faut pas sélectionner le disque dur destiné au stockage des futures machines virtuelles.</p>
-<p><img alt="Proxmox - Choix du stockage" src="../assets/proc-installation-physique-proxmox_03-stockage-proxmox.png" /></p>
-</li>
-<li>
-<p><strong>Configuration régionale.</strong> Définir la localisation et le fuseau horaire du serveur. Renseigner le pays ("France"), la zone temporelle ("Europe/Paris") et la disposition du clavier ("French").</p>
-<p><img alt="Proxmox - Choix de la zone d'heure" src="../assets/proc-installation-physique-proxmox_04-choix-time-zone.png" /></p>
-</li>
-<li>
-<p><strong>Paramétrage du compte administrateur système.</strong> Configurer les accès pour le compte root local. Renseigner un mot de passe robuste (mot de passe par défaut pour Ansible : Ansible123456*). Saisir l'adresse email de contact (<code>contact@loutik.fr</code>) pour la réception des alertes critiques de l'hyperviseur.</p>
-<p><img alt="Proxmox - Choix du mot de passe Administrateur" src="../assets/proc-installation-physique-proxmox_05-mdp-admin.png" /></p>
-</li>
-<li>
-<p><strong>Configuration du réseau de management.</strong> Appliquer la configuration IP statique préalablement définie dans l'IPAM de l'infrastructure. Renseigner l'interface de management, le nom d'hôte complet (FQDN), l'adresse IP avec son masque (CIDR), la passerelle par défaut et le serveur DNS.</p>
-<p><img alt="Proxmox - Configuration IP" src="../assets/proc-installation-physique-proxmox_06-configuration-ip.png" /></p>
-</li>
-<li>
-<p><strong>Validation et déploiement.</strong> Vérifier l'exactitude du résumé des paramètres (système de fichiers <code>ext4</code>, disque <code>/dev/sda</code>, réseau). Il est normal que ces paramètres diffèrent de l'exemple selon le nœud. Confirmer l'installation pour lancer le partitionnement. S'assurer que l'option de redémarrage automatique après l'installation est cochée.</p>
-<p><img alt="Proxmox - Confirmation de configuration" src="../assets/proc-installation-physique-proxmox_07-confirmation-configuration.png" /></p>
-</li>
-</ol>
-<h2 id="4-validation">4. Validation</h2>
+<h2 id="3-preparation-de-lenvironnement-de-travail-local">3. Préparation de l'environnement de travail local</h2>
+<p>3.1. <strong>Installation d'Ansible</strong>. Installation du moteur d'automatisation sur la machine locale du collaborateur en fonction de son système d'exploitation.</p>
 <ul>
 <li>
-<p>[ ] Vérifier la disponibilité de l'interface web d'administration après le redémarrage depuis l'accès physique (shell).</p>
-<div class="highlight"><pre><span></span><code>systemctl<span class="w"> </span>status<span class="w"> </span>pveproxy
-</code></pre></div>
-<p><code>systemctl</code> : Utilitaire de contrôle du gestionnaire de système et de services.</p>
-<p><code>status pveproxy</code> : Affiche l'état d'exécution du démon Proxmox VE API Proxy, confirmant que le serveur écoute bien sur le port TCP 8006 pour les accès web sécurisés.</p>
+<p><strong>Linux</strong> : 
+  <div class="highlight"><pre><span></span><code>sudo<span class="w"> </span>apt<span class="w"> </span>update<span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span>sudo<span class="w"> </span>apt<span class="w"> </span>install<span class="w"> </span>ansible
+</code></pre></div></p>
 </li>
 <li>
-<p>[ ] Accès à l'interface d'administration depuis le navigateur internet</p>
-<div class="highlight"><pre><span></span><code>https://&lt;ip-proxmox&gt;:8006
-</code></pre></div>
+<p><strong>MacOS</strong> : 
+  <div class="highlight"><pre><span></span><code>brew<span class="w"> </span>install<span class="w"> </span>ansible
+</code></pre></div></p>
+</li>
+<li>
+<p><strong>Windows</strong> : Ansible n'étant pas nativement supporté, il est impératif d'installer WSL2 (Windows Subsystem for Linux), d'y déployer une distribution (ex: Ubuntu), puis d'exécuter la commande d'installation Linux ci-dessus.</p>
 </li>
 </ul>
-<hr />
-<h2 id="annexe">Annexe</h2>
-<ul>
-<li><a href="https://pve.proxmox.com/pve-docs/chapter-pve-installation.html">Documentation officielle Proxmox VE - Bare-metal Installation</a></li>
-</ul>
+<p>3.2. <strong>Clonage du dépôt d'infrastructure</strong>. Récupération du référentiel Git contenant l'arborescence des inventaires, rôles et playbooks.</p>
+<div class="highlight"><pre><span></span><code>git<span class="w"> </span>clone<span class="w"> </span>https://github.com/loutik/infrastructure-ansible.git
+<span class="nb">cd</span><span class="w"> </span>infrastructure-ansible
+</code></pre></div>
+<p>3.3. <strong>Installation des dépendances</strong>. Ajout de la collection communautaire PostgreSQL, requise pour permettre à Ansible d'interagir avec le moteur de base de données.</p>
+<div class="highlight"><pre><span></span><code>ansible-galaxy<span class="w"> </span>collection<span class="w"> </span>install<span class="w"> </span>community.postgresql
+</code></pre></div>
+<h2 id="4-configuration-des-variables-et-gestion-des-secrets">4. Configuration des variables et gestion des secrets</h2>
+<p>4.1. <strong>Déclaration des bases et du modèle RBAC</strong>. Les nouvelles bases de données (ex: <code>db_authentik</code>, <code>db_netbox</code>), les groupes d'administration associés (<code>role_adm_authentik</code>), et l'affectation des utilisateurs humains (ex: <code>louismedo</code>) s'effectuent dans le fichier de variables d'environnement en clair.</p>
+<div class="highlight"><pre><span></span><code>nano<span class="w"> </span>inventories/production/group_vars/all.yml
+</code></pre></div>
+<p>4.2. <strong>Mise à jour des mots de passe dans le Vault</strong>. Les secrets de production des comptes applicatifs et nominatifs doivent être injectés dans le coffre-fort chiffré Ansible Vault.</p>
+<div class="highlight"><pre><span></span><code>ansible-vault<span class="w"> </span>edit<span class="w"> </span>secrets/vault.yml
+</code></pre></div>
+<h2 id="5-deploiement-et-execution-des-playbooks">5. Déploiement et exécution des Playbooks</h2>
+<p>La logique d'Ansible repose sur des "Playbooks" (les recettes globales) qui exécutent des "Rôles" (les listes de tâches spécifiques). </p>
+<p>5.1. <strong>Initialisation complète du serveur</strong>. Ce playbook global exécute successivement l'application du proxy système (<code>debian-proxy</code>), les paramètres de base OS (<code>debian-common</code>), l'installation du moteur PostgreSQL (<code>postgresql-install</code>), et la configuration RBAC des utilisateurs (<code>postgresql-config</code>). À utiliser <strong>uniquement</strong> lors de la création d'une nouvelle machine.</p>
+<div class="highlight"><pre><span></span><code>ansible-playbook<span class="w"> </span>-i<span class="w"> </span>inventories/production/hosts.yml<span class="w"> </span>playbooks/postgresql-bootstrap.yml<span class="w"> </span>--ask-vault-pass
+</code></pre></div>
+<p><code>-i</code> : Cible le fichier d'inventaire définissant les serveurs de production.</p>
+<p><code>--ask-vault-pass</code> : Invite l'administrateur à saisir le mot de passe pour déchiffrer les secrets.</p>
+<p>5.2. <strong>Mise à jour de la configuration de base de données</strong>. Ce playbook restreint permet d'appliquer les modifications déclaratives (ajout/suppression de bases ou d'utilisateurs) en exécutant uniquement le rôle <code>postgresql-config</code>. À exécuter lors des opérations de maintien en condition opérationnelle (MCO).</p>
+<div class="highlight"><pre><span></span><code>ansible-playbook<span class="w"> </span>-i<span class="w"> </span>inventories/production/hosts.yml<span class="w"> </span>playbooks/postgresql-config.yml<span class="w"> </span>--ask-vault-pass
+</code></pre></div>
+<h2 id="6-validation-post-deploiement">6. Validation post-déploiement</h2>
+<p>6.1. <strong>Validation de l'isolation Zero Trust</strong>. Connexion au moteur de base de données via un client lourd (pgAdmin) ou en CLI (<code>psql</code>) pour confirmer la révocation des privilèges par défaut (<code>PUBLIC</code>).</p>
+<p>6.2. <strong>Validation RBAC</strong>. Vérification de la création des comptes administrateurs avec le flag <code>NOLOGIN</code>, des bases affectées à ces propriétaires exclusifs, et des comptes de services disposant du privilège de connexion <code>CONNECT</code>.</p>
 
 
 
@@ -2325,7 +2341,7 @@
     <span class="md-icon" title="Créé">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M14.47 15.08 11 13V7h1.5v5.25l3.08 1.83c-.41.28-.79.62-1.11 1m-1.39 4.84c-.36.05-.71.08-1.08.08-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8c0 .37-.03.72-.08 1.08.69.1 1.33.32 1.92.64.1-.56.16-1.13.16-1.72 0-5.5-4.5-10-10-10S2 6.5 2 12s4.47 10 10 10c.59 0 1.16-.06 1.72-.16-.32-.59-.54-1.23-.64-1.92M18 15v3h-3v2h3v3h2v-3h3v-2h-3v-3z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-timeago" title="31 mai 2026 16:32:15 UTC"><span class="timeago" datetime="2026-05-31T16:32:15+00:00" locale="fr"></span></span><span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date" title="31 mai 2026 16:32:15 UTC">2026-05-31</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-timeago" title="7 juillet 2026 19:17:45 UTC"><span class="timeago" datetime="2026-07-07T19:17:45+00:00" locale="fr"></span></span><span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date" title="7 juillet 2026 19:17:45 UTC">2026-07-07</span>
   </span>
 
     
