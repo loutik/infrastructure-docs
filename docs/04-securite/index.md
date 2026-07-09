@@ -1,6 +1,6 @@
 # 🚀 Sécurité
 
-![Bannière LoutikCLOUD](../assets/banniere_loutikcloud.png)
+![Bannière LoutikCloud](https://raw.githubusercontent.com/loutik/design-assets/main/loutikcloud/banniere_loutikcloud.png)
 
 ## 📝 Vue d'ensemble
 Cette section centralise les mécanismes de défense active, d'observabilité et de prévention des menaces de l'infrastructure. Elle garantit l'auditabilité des systèmes et la protection proactive des services exposés contre les attaques.

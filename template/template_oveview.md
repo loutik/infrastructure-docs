@@ -16,7 +16,7 @@ TEMPLATE À REMPLIR :
 ```markdown
 # 🚀 [Nom de la Section / Service]
 
-![Bannière LoutikCLOUD](../assets/banniere_loutikcloud.png)
+![Bannière LoutikCloud](https://raw.githubusercontent.com/loutik/design-assets/main/loutikcloud/banniere_loutikcloud.png)
 
 ## 📝 Vue d'ensemble
 [Une ou deux phrases maximum décrivant le service, son utilité principale et son rôle exact dans l'infrastructure globale.]

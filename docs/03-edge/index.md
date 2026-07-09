@@ -1,6 +1,6 @@
 # 🚀 Edge
 
-![Bannière LoutikCLOUD](../assets/banniere_loutikcloud.png)
+![Bannière LoutikCloud](https://raw.githubusercontent.com/loutik/design-assets/main/loutikcloud/banniere_loutikcloud.png)
 
 ## 📝 Vue d'ensemble
 Cette section documente la couche de périphérie exposée aux réseaux publics. Elle gère le point d'entrée unique de l'infrastructure, assurant le routage des flux entrants, la mitigation des menaces et l'accès distant sécurisé.

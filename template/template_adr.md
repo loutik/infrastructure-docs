@@ -33,6 +33,8 @@ tags: [adr, architecture]
 
 # ADR-{{ page.meta.id }} : {{ page.meta.title }}
 
+![Bannière LoutikCloud](https://raw.githubusercontent.com/loutik/design-assets/main/loutikcloud/banniere_loutikcloud.png)
+
 !!! info "Informations"
     * **Date de création** : {{ page.meta.date }}
     * **Statut** : {{ page.meta.status }}

@@ -1,6 +1,6 @@
 # Bienvenue 👋
 
-![Bannière LoutikCLOUD](assets/banniere_loutikcloud.png)
+![Bannière LoutikCloud](https://raw.githubusercontent.com/loutik/design-assets/main/loutikcloud/banniere_loutikcloud.png)
 
 ## 📖 Introduction
 
