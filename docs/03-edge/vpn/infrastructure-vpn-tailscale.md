@@ -31,7 +31,7 @@ Le standard ZTNA repose sur la séparation entre le plan de contrôle (qui gère
 
 ### 2.1. Topologie Logique
 
-![Schéma - plan de contrôle](./assets/edge-vpn-tailscale-schema-plan-controle.svg)
+![Schéma - plan de contrôle](./assets/infrastructure-vpn-tailscale/edge-vpn-tailscale-schema-plan-controle.svg)
 
 **Fonctionnement :**
 
@@ -51,7 +51,7 @@ Pour éviter d'installer un agent VPN sur chaque machine virtuelle (VM) de l'inf
 
 ### 3.1. Topologie de routage
 
-![Schéma - Routage VPN](./assets/edge-vpn-tailscale-schema-routage-vpn.svg)
+![Schéma - Routage VPN](./assets/infrastructure-vpn-tailscale/edge-vpn-tailscale-schema-routage-vpn.svg)
 
 Ce schéma illustre l'intégration de l'OPNsense en tant que passerelle d'accès centralisée (**Subnet Router**). Cette architecture évite d'installer un client VPN sur chaque machine virtuelle tout en garantissant un haut niveau de sécurité.
 
@@ -95,7 +95,7 @@ Les politiques ACL sont évaluées et appliquées directement par le filtre de p
 
 ## 6. Annexes
 
-![Schéma - Overview globale de l'infrastructure VPN](./assets/edge-vpn-tailscale-schema-overview-globale.png)
+![Schéma - Overview globale de l'infrastructure VPN](./assets/infrastructure-vpn-tailscale/edge-vpn-tailscale-schema-overview-globale.png)
 
 **Fonctionnement général dans l'environnement LoutikCLOUD :**
 
