@@ -1,6 +1,6 @@
 # 🚀 Infrastructure Core
 
-![Bannière LoutikCLOUD](../assets/banniere_loutikcloud.png)
+![Bannière LoutikCloud](https://raw.githubusercontent.com/loutik/design-assets/main/loutikcloud/banniere_loutikcloud.png)
 
 ## 📝 Vue d'ensemble
 Cette section documente les fondations matérielles et logiques de l'environnement, englobant la virtualisation, l'orchestration des conteneurs et la topologie réseau. Elle constitue le socle garantissant la haute disponibilité, l'isolation et l'exécution sécurisée de l'ensemble des services hébergés.

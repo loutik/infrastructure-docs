@@ -36,7 +36,7 @@ tags: [postmortem, incident, blameless]
 
 # {{ page.meta.id }} : {{ page.meta.title }}
 
-![Bannière LoutikCLOUD](/assets/banniere_loutikcloud.png)
+![Bannière LoutikCloud](https://raw.githubusercontent.com/loutik/design-assets/main/loutikcloud/banniere_loutikcloud.png)
 
 !!! info "Informations de l'incident"
     * **Date de l'incident** : {{ page.meta.date }}

@@ -1,6 +1,6 @@
 # 🚀 Services
 
-![Bannière LoutikCLOUD](../assets/banniere_loutikcloud.png)
+![Bannière LoutikCloud](https://raw.githubusercontent.com/loutik/design-assets/main/loutikcloud/banniere_loutikcloud.png)
 
 ## 📝 Vue d'ensemble
 Cette section cartographie l'intégralité de la couche applicative de l'infrastructure, englobant les outils d'administration internes, les services d'identité et les plateformes web exposées. Elle détaille le cycle de vie et l'intégration de chaque service au sein de l'écosystème global.
