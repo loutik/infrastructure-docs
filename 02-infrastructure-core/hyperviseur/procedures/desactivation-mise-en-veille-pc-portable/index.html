@@ -10,13 +10,13 @@
         <meta name="author" content="Louis MEDO">
       
       
-        <link rel="canonical" href="https://infra-docs.loutik.fr/02-infrastructure-core/hyperviseur/runbooks/runbook-sortir-un-noeud-cluster-proxmox/">
+        <link rel="canonical" href="https://infra-docs.loutik.fr/02-infrastructure-core/hyperviseur/procedures/desactivation-mise-en-veille-pc-portable/">
       
       
-        <link rel="prev" href="../../procedures/proc-rejoindre-cluster-proxmox/">
+        <link rel="prev" href="../configuration-reseau-proxmox/">
       
       
-        <link rel="next" href="../../../reseau/procedures/configuration-alias-opnsense/">
+        <link rel="next" href="../proc-configuration-sso-proxmox-via-authentik/">
       
       
         
@@ -27,7 +27,7 @@
     
     
       
-        <title>Supprimer un noeud du cluster - Documentation infrastructure - LoutikCLOUD</title>
+        <title>Désactivation de la mise en veille (Serveur Portable) - Documentation infrastructure - LoutikCLOUD</title>
       
     
     
@@ -80,7 +80,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#supprimer-un-noeud-du-cluster" class="md-skip">
+        <a href="#desactivation-de-la-mise-en-veille-serveur-portable" class="md-skip">
           Aller au contenu
         </a>
       
@@ -115,7 +115,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Supprimer un noeud du cluster
+              Désactivation de la mise en veille (Serveur Portable)
             
           </span>
         </div>
@@ -1342,8 +1342,10 @@
                 
   
   
+    
   
   
+  
     
     
       
@@ -1363,11 +1365,11 @@
     
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_4_1" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_4_1" checked>
         
           
           <label class="md-nav__link" for="__nav_3_4_1" id="__nav_3_4_1_label" tabindex="0">
@@ -1388,7 +1390,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_3_4_1_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_3_4_1_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_3_4_1">
             <span class="md-nav__icon md-icon"></span>
             
@@ -1406,7 +1408,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../procedures/configuration-reseau-proxmox/" class="md-nav__link">
+      <a href="../configuration-reseau-proxmox/" class="md-nav__link">
         
   
   
@@ -1431,10 +1433,37 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../../procedures/desactivation-mise-en-veille-pc-portable/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Désactivation de la mise en veille (Serveur Portable)
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   
@@ -1450,6 +1479,59 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table des matières">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table des matières
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1-architecture-et-contexte" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. Architecture et contexte
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-prerequis" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. Prérequis
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-configuration-des-evenements-materiels" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. Configuration des événements matériels
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -1462,7 +1544,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../procedures/proc-configuration-sso-proxmox-via-authentik/" class="md-nav__link">
+      <a href="../proc-configuration-sso-proxmox-via-authentik/" class="md-nav__link">
         
   
   
@@ -1490,7 +1572,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../procedures/proc-creation-cluster-proxmox/" class="md-nav__link">
+      <a href="../proc-creation-cluster-proxmox/" class="md-nav__link">
         
   
   
@@ -1518,7 +1600,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../procedures/proc-installation-physique-proxmox/" class="md-nav__link">
+      <a href="../proc-installation-physique-proxmox/" class="md-nav__link">
         
   
   
@@ -1546,7 +1628,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../procedures/proc-rejoindre-cluster-proxmox/" class="md-nav__link">
+      <a href="../proc-rejoindre-cluster-proxmox/" class="md-nav__link">
         
   
   
@@ -1579,8 +1661,6 @@
                 
   
   
-    
-  
   
   
     
@@ -1592,11 +1672,11 @@
     
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_4_2" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_4_2" >
         
           
           <label class="md-nav__link" for="__nav_3_4_2" id="__nav_3_4_2_label" tabindex="0">
@@ -1617,7 +1697,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_3_4_2_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_3_4_2_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_3_4_2">
             <span class="md-nav__icon md-icon"></span>
             
@@ -1632,37 +1712,10 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Supprimer un noeud du cluster
-  
-
-    
-  </span>
-  
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../../runbooks/runbook-sortir-un-noeud-cluster-proxmox/" class="md-nav__link">
         
   
   
@@ -1678,81 +1731,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table des matières">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table des matières
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#1-contexte-et-objectif" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        1. Contexte et Objectif
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#2-prerequis" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        2. Prérequis
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#3-procedure-dexecution" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        3. Procédure d'exécution
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#4-validation" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        4. Validation
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#5-rollback" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        5. Rollback
-      
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -2806,10 +2784,10 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#1-contexte-et-objectif" class="md-nav__link">
+  <a href="#1-architecture-et-contexte" class="md-nav__link">
     <span class="md-ellipsis">
       
-        1. Contexte et Objectif
+        1. Architecture et contexte
       
     </span>
   </a>
@@ -2828,32 +2806,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#3-procedure-dexecution" class="md-nav__link">
+  <a href="#3-configuration-des-evenements-materiels" class="md-nav__link">
     <span class="md-ellipsis">
       
-        3. Procédure d'exécution
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#4-validation" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        4. Validation
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#5-rollback" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        5. Rollback
+        3. Configuration des événements matériels
       
     </span>
   </a>
@@ -2876,7 +2832,7 @@
   
   
     <div style="text-align: left; font-size: 0.85em; color: var(--md-default-fg-color--light); margin-bottom: 20px;">
-      <strong>Dernière édition :</strong> <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-timeago" title="9 juillet 2026 15:53:06 UTC"><span class="timeago" datetime="2026-07-09T15:53:06+00:00" locale="fr"></span></span><span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date" title="9 juillet 2026 15:53:06 UTC">2026-07-09</span>
+      <strong>Dernière édition :</strong> <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-timeago" title="19 juillet 2026 16:49:47 UTC"><span class="timeago" datetime="2026-07-19T16:49:47+00:00" locale="fr"></span></span><span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date" title="19 juillet 2026 16:49:47 UTC">2026-07-19</span>
     </div>
   
   
@@ -2889,69 +2845,36 @@
   
 
 
-<h1 id="supprimer-un-noeud-du-cluster">Supprimer un noeud du cluster</h1>
+<h1 id="desactivation-de-la-mise-en-veille-serveur-portable">Désactivation de la mise en veille (Serveur Portable)</h1>
 <p><img alt="Bannière LoutikCloud" src="https://raw.githubusercontent.com/loutik/design-assets/main/loutikcloud/banniere_loutikcloud.png" /></p>
 <div class="admonition info">
 <p class="admonition-title">Informations</p>
 <ul>
-<li><strong>Date de mise à jour</strong> : 2026-05-31</li>
-<li><strong>Service ciblé</strong> : Proxmox</li>
+<li><strong>Date de création</strong> : 2026-07-11</li>
+<li><strong>Service ciblé</strong> : Proxmox VE</li>
 <li><strong>Auteur</strong> : Louis MEDO</li>
 <li><strong>Responsable</strong> : Louis MEDO</li>
 </ul>
 </div>
-<h2 id="1-contexte-et-objectif">1. Contexte et Objectif</h2>
-<p>Décommissionnement propre et définitif d'un nœud physique du cluster Proxmox VE au sein de l'infrastructure LoutikCLOUD. Cette procédure doit être exécutée lors d'un retrait de matériel, d'un remplacement de serveur défectueux ou d'une réduction de capacité, afin de maintenir l'intégrité du quorum Corosync sans perturber les services en production.</p>
+<h2 id="1-architecture-et-contexte">1. Architecture et contexte</h2>
+<p>Cette procédure permet de maintenir un nœud hyperviseur Proxmox hébergé sur un ordinateur portable actif lors de la fermeture physique de l'écran.</p>
 <h2 id="2-prerequis">2. Prérequis</h2>
 <ul>
-<li>Accès SSH en <code>root</code> (via clé asymétrique) à un nœud <strong>actif</strong> du cluster (différent de celui à supprimer).</li>
-<li>L'ensemble des machines virtuelles (VM) et conteneurs (LXC) du nœud cible doivent avoir été migrés vers d'autres nœuds ou détruits.</li>
-<li>Vérification que le cluster dispose de suffisamment de nœuds restants pour maintenir le quorum (idéalement un nombre impair &gt; 2).</li>
+<li>Hôte Proxmox VE installé sur un châssis de type ordinateur portable.</li>
+<li>Accès SSH ou console physique avec des privilèges <code>root</code> sur l'hyperviseur.</li>
 </ul>
-<h2 id="3-procedure-dexecution">3. Procédure d'exécution</h2>
-<ol>
-<li>
-<p><strong>Extinction du nœud à décommissionner</strong> :</p>
-<p>Il est strictement impératif d'éteindre le nœud avant sa suppression. Le laisser allumé provoquerait un conflit Corosync et une corruption potentielle du cluster. À exécuter sur le nœud à retirer.</p>
-<div class="highlight"><pre><span></span><code>poweroff
+<h2 id="3-configuration-des-evenements-materiels">3. Configuration des événements matériels</h2>
+<p>3.1. <strong>Modification du comportement du capot.</strong> Altération des règles du gestionnaire de connexion pour ignorer le déclencheur de fermeture de l'écran, tant sur batterie que sur secteur.</p>
+<div class="highlight"><pre><span></span><code>sed<span class="w"> </span>-i<span class="w"> </span><span class="s1">&#39;s/#HandleLidSwitch=suspend/HandleLidSwitch=ignore/g&#39;</span><span class="w"> </span>/etc/systemd/logind.conf
+sed<span class="w"> </span>-i<span class="w"> </span><span class="s1">&#39;s/#HandleLidSwitchExternalPower=suspend/HandleLidSwitchExternalPower=ignore/g&#39;</span><span class="w"> </span>/etc/systemd/logind.conf
 </code></pre></div>
-<ul>
-<li><strong><code>poweroff</code></strong> : Commande système ACPI provoquant l'arrêt propre du système d'exploitation et la mise hors tension de la machine physique.</li>
-</ul>
-</li>
-<li>
-<p><strong>Vérification de la topologie</strong> :</p>
-<p>À exécuter depuis un nœud restant et actif du cluster pour récupérer le nom exact du nœud hors ligne.</p>
-<div class="highlight"><pre><span></span><code>pvecm<span class="w"> </span>nodes
+<p><code>sed -i</code> : Utilitaire d'édition de flux (Stream Editor). L'argument <code>-i</code> (in-place) applique les modifications directement dans le fichier cible sans créer de fichier temporaire manuel.</p>
+<p><code>HandleLidSwitch=ignore</code> : Directive de configuration remplaçant l'action par défaut (<code>suspend</code>). Elle instruit le démon d'ignorer purement et simplement l'événement physique de fermeture du capot.</p>
+<p>3.2. <strong>Application des nouveaux paramètres.</strong> Redémarrage du service de gestion des sessions pour recharger la configuration à chaud.</p>
+<div class="highlight"><pre><span></span><code>systemctl<span class="w"> </span>restart<span class="w"> </span>systemd-logind.service
 </code></pre></div>
-<ul>
-<li><strong><code>pvecm nodes</code></strong> : Argument de l'outil Proxmox VE Cluster Manager affichant la liste des membres du cluster, leur ID et leur statut actuel.</li>
-</ul>
-</li>
-<li>
-<p><strong>Suppression définitive du nœud</strong> :</p>
-<p>À exécuter depuis le même nœud actif. Remplacer <code>nom-du-noeud</code> par la valeur trouvée à l'étape précédente.</p>
-<div class="highlight"><pre><span></span><code>pvecm<span class="w"> </span>delnode<span class="w"> </span>nom-du-noeud
-</code></pre></div>
-<ul>
-<li><strong><code>pvecm delnode</code></strong> : Commande qui supprime les informations du nœud spécifié dans la configuration partagée de Corosync (<code>corosync.conf</code>), isolant ainsi définitivement l'ancien serveur de la grappe.</li>
-<li><strong><code>nom-du-noeud</code></strong> : Le nom d'hôte exact du serveur Proxmox à expulser.</li>
-</ul>
-</li>
-</ol>
-<h2 id="4-validation">4. Validation</h2>
-<p>Vérifier la bonne santé du cluster depuis un nœud actif :</p>
-<ol>
-<li>Exécuter <code>pvecm status</code>. Le champ <code>Expected votes</code> doit avoir diminué de 1 et le statut de <code>Quorum</code> doit indiquer <code>Yes</code>.</li>
-<li>Exécuter <code>pvecm nodes</code>. Le nœud supprimé ne doit plus apparaître dans la liste.</li>
-<li>Vérifier l'interface web (GUI) de Proxmox : le nœud supprimé ne doit plus être visible dans l'arborescence du datacenter (un rafraîchissement de la page ou un redémarrage du service <code>pveproxy</code> peut être nécessaire : <code>systemctl restart pveproxy</code>).</li>
-</ol>
-<h2 id="5-rollback">5. Rollback</h2>
-<p><strong>Attention : Un nœud supprimé d'un cluster Proxmox VE ne peut pas être réintégré tel quel.</strong> Si le nœud a été supprimé par erreur, le retour arrière nécessite la réinstallation complète de l'hyperviseur sur la machine cible :</p>
-<ol>
-<li>Formater et réinstaller Proxmox VE de zéro sur le serveur physique.</li>
-<li>Reprendre la procédure standard "Création d'un cluster" (ou "Jonction d'un nœud") pour ajouter ce "nouveau" nœud vierge au cluster existant.</li>
-</ol>
+<p><code>systemctl restart</code> : Commande d'exécution déclenchant l'arrêt puis le démarrage immédiat du processus ciblé.</p>
+<p><code>systemd-logind.service</code> : Démon système gérant le cycle de vie des sessions et la réponse aux boutons/switchs matériels. Son redémarrage applique les nouvelles directives sans perturber le fonctionnement des machines virtuelles en cours d'exécution.</p>
 
 
 
@@ -2974,7 +2897,7 @@
     <span class="md-icon" title="Dernière mise à jour">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-timeago" title="9 juillet 2026 15:53:06 UTC"><span class="timeago" datetime="2026-07-09T15:53:06+00:00" locale="fr"></span></span><span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date" title="9 juillet 2026 15:53:06 UTC">2026-07-09</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-timeago" title="19 juillet 2026 16:49:47 UTC"><span class="timeago" datetime="2026-07-19T16:49:47+00:00" locale="fr"></span></span><span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date" title="19 juillet 2026 16:49:47 UTC">2026-07-19</span>
   </span>
 
     
@@ -2984,7 +2907,7 @@
     <span class="md-icon" title="Créé">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M14.47 15.08 11 13V7h1.5v5.25l3.08 1.83c-.41.28-.79.62-1.11 1m-1.39 4.84c-.36.05-.71.08-1.08.08-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8c0 .37-.03.72-.08 1.08.69.1 1.33.32 1.92.64.1-.56.16-1.13.16-1.72 0-5.5-4.5-10-10-10S2 6.5 2 12s4.47 10 10 10c.59 0 1.16-.06 1.72-.16-.32-.59-.54-1.23-.64-1.92M18 15v3h-3v2h3v3h2v-3h3v-2h-3v-3z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-timeago" title="31 mai 2026 16:32:15 UTC"><span class="timeago" datetime="2026-05-31T16:32:15+00:00" locale="fr"></span></span><span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date" title="31 mai 2026 16:32:15 UTC">2026-05-31</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-timeago" title="19 juillet 2026 16:49:47 UTC"><span class="timeago" datetime="2026-07-19T16:49:47+00:00" locale="fr"></span></span><span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date" title="19 juillet 2026 16:49:47 UTC">2026-07-19</span>
   </span>
 
     
