@@ -42,7 +42,7 @@ tags: [referentiel, norme, standard, convention]
     * **Catégorie** : {{ page.meta.category }}
     * **Garant de la norme** : {{ page.meta.author }}
 
-## 1. Objectif et périmètre
+## 1. Objectif
 [Définition claire de l'utilité de cette norme et de son périmètre d'application exclusif.]
 
 !!! warning "Limites du périmètre"
