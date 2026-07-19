@@ -28,7 +28,7 @@ Cette procédure décrit la modification de la configuration réseau post-instal
 
 ## 3. Configuration réseau via l'interface graphique
 
-3.1. **Modification du Bridge par défaut (vmbr0).** Dans le menu de gauche, naviguez vers `[Nom_du_nœud] > System > Network`. Sélectionnez l'interface `vmbr0` et cliquez sur `Edit`. Retirez la configuration IP existante et activez le mode VLAN.
+3.1. **Modification du Bridge par défaut (vmbr0).** Dans le menu de gauche, naviguez vers `[Nom_du_nœud] > System > Network`. Sélectionnez l'interface `vmbr0` et cliquez sur `Edit`. Retirez la configuration IP existante et activez le mode VLAN. **Veiller à ce que `Bridge ports` possède la valeur `nic0`**.
 
   ```text
   Action GUI : Édition des propriétés de vmbr0
