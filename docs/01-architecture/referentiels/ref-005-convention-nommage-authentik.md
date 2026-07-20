@@ -27,10 +27,10 @@ La structure globale repose sur un format strict composé de 5 segments séparé
 
 | Segment | Rôle | Valeurs autorisées |
 | :--- | :--- | :--- |
-| **`[domaine]`** (Domaine technique) | Identifie la catégorie d'infrastructure. | `inf` (Infra), `app` (Applicatif), `net` (Réseau) |
+| **`[domaine]`** (Domaine technique) | Identifie la catégorie d'infrastructure. | `inf` (Infra), `app` (Applicatif) |
 | **`[service]`** (Service cible) | Identifie l'application ou le service lié. | `pve` (Proxmox), `ntb` (NetBox), `glpi` |
-| **`[environnement]`** (Environnement) | Définit le contexte de déploiement. | `prd` (Production), `stg` (Staging), `lab` (Lab) |
-| **`[role]`** (Rôle d'accès) | Définit le niveau de permission accordé. | `adm` (Admin), `usr` (User), `aud` (Audit) |
+| **`[environnement]`** (Environnement) | Définit le contexte de déploiement. | `prd` (Production), `stg` (Staging) |
+| **`[role]`** (Rôle d'accès) | Définit le niveau de permission accordé. | `adm` (Admin), `usr` (User) |
 
 !!! note "Contraintes spécifiques"
     L'utilisation de lettres minuscules est strictement obligatoire. Aucun espace ni caractère spécial (hors tiret) n'est toléré pour garantir la compatibilité avec les claims OIDC.

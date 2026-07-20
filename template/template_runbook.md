@@ -43,7 +43,7 @@ tags: [runbook, exploitation, mco]
     * **Auteur** : {{ page.meta.author }}
     * **Responsable** : {{ page.meta.owner }}
 
-## 1. Contexte et Objectif
+## 1. Contexte
 
 [Description précise de l'objectif de ce runbook. Préciser dans quel cas de figure cette procédure doit être exécutée (ex: maintenance planifiée, réponse à une alerte spécifique).]
 
@@ -74,11 +74,11 @@ tags: [runbook, exploitation, mco]
     [Commande exacte à exécuter]
     ```
 
-## 4. Validation (Critères de succès)
+## 4. Validation
 
 [Instructions pour vérifier que la procédure a fonctionné et que le service est dans l'état attendu (ex: requêtes HTTP de test, vérification de l'état des pods, lecture des logs).]
 
-## 5. Rollback (Retour arrière)
+## 5. Rollback
 
 [Procédure exacte et commandes pour annuler les changements et restaurer l'état initial en cas d'échec critique lors de l'exécution.]
 
