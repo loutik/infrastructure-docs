@@ -10,13 +10,13 @@
         <meta name="author" content="Louis MEDO">
       
       
-        <link rel="canonical" href="https://infra-docs.loutik.fr/01-architecture/ADR/adr-004-choix-dns-infrastructure/">
+        <link rel="canonical" href="https://infra-docs.loutik.fr/01-architecture/referentiels/ref-005-convention-nommage-authentik/">
       
       
-        <link rel="prev" href="../adr-003-plateforme-documentation/">
+        <link rel="prev" href="../ref-004-convention-nommage-base-de-donnees/">
       
       
-        <link rel="next" href="../../referentiels/ref-001-convention-nommage-infrastructure/">
+        <link rel="next" href="../../../02-infrastructure-core/">
       
       
         
@@ -27,7 +27,7 @@
     
     
       
-        <title>Choix de la solution DNS pour l'infrastructure on-premise - Documentation infrastructure - LoutikCLOUD</title>
+        <title>Convention de nommage des objets Authentik - Documentation infrastructure - LoutikCLOUD</title>
       
     
     
@@ -80,7 +80,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#adr-4-choix-de-la-solution-dns-pour-linfrastructure-on-premise" class="md-skip">
+        <a href="#ref-5-convention-de-nommage-des-objets-authentik" class="md-skip">
           Aller au contenu
         </a>
       
@@ -115,7 +115,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Choix de la solution DNS pour l'infrastructure on-premise
+              Convention de nommage des objets Authentik
             
           </span>
         </div>
@@ -328,10 +328,8 @@
                 
   
   
-    
   
   
-  
     
     
       
@@ -347,11 +345,11 @@
     
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_2" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_2" >
         
           
           <label class="md-nav__link" for="__nav_2_2" id="__nav_2_2_label" tabindex="0">
@@ -372,7 +370,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_2_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_2_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_2_2">
             <span class="md-nav__icon md-icon"></span>
             
@@ -390,7 +388,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../adr-001-choix-hebergeur-vps-gateway/" class="md-nav__link">
+      <a href="../../ADR/adr-001-choix-hebergeur-vps-gateway/" class="md-nav__link">
         
   
   
@@ -425,7 +423,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../adr-002-choix-plan-adressage/" class="md-nav__link">
+      <a href="../../ADR/adr-002-choix-plan-adressage/" class="md-nav__link">
         
   
   
@@ -460,7 +458,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../adr-003-plateforme-documentation/" class="md-nav__link">
+      <a href="../../ADR/adr-003-plateforme-documentation/" class="md-nav__link">
         
   
   
@@ -492,44 +490,10 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Choix de la solution DNS pour l'infrastructure on-premise
-  
-
-    
-  </span>
-  
-  
-    
-  
-  
-    <span class="md-status md-status--accepted"></span>
-  
-
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../../ADR/adr-004-choix-dns-infrastructure/" class="md-nav__link">
         
   
   
@@ -552,148 +516,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table des matières">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table des matières
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#1-contexte" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        1. Contexte
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#2-cahiers-des-charges" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        2. Cahiers des charges
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#3-les-solutions-du-marche" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        3. Les solutions du marché
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="3. Les solutions du marché">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#31-presentations-des-solutions" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        3.1. Présentations des solutions
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="3.1. Présentations des solutions">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#311-powerdns-authoritative-server" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        3.1.1. PowerDNS (Authoritative Server)
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#312-bind9" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        3.1.2. BIND9
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#313-coredns" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        3.1.3. CoreDNS
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#314-technitium-dns" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        3.1.4. Technitium DNS
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#32-comparatifs-des-solutions" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        3.2. Comparatifs des solutions
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#4-solution-proposee" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        4. Solution proposée
-      
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -711,8 +533,10 @@
                 
   
   
+    
   
   
+  
     
     
       
@@ -730,11 +554,11 @@
     
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_3" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_3" checked>
         
           
           <label class="md-nav__link" for="__nav_2_3" id="__nav_2_3_label" tabindex="0">
@@ -755,7 +579,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_3_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_3_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_2_3">
             <span class="md-nav__icon md-icon"></span>
             
@@ -773,7 +597,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../referentiels/ref-001-convention-nommage-infrastructure/" class="md-nav__link">
+      <a href="../ref-001-convention-nommage-infrastructure/" class="md-nav__link">
         
   
   
@@ -801,7 +625,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../referentiels/ref-002-convention-nommage-git/" class="md-nav__link">
+      <a href="../ref-002-convention-nommage-git/" class="md-nav__link">
         
   
   
@@ -829,7 +653,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../referentiels/ref-003-convention-nommage-reseau-pare-feu/" class="md-nav__link">
+      <a href="../ref-003-convention-nommage-reseau-pare-feu/" class="md-nav__link">
         
   
   
@@ -857,7 +681,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../referentiels/ref-004-convention-nommage-base-de-donnees/" class="md-nav__link">
+      <a href="../ref-004-convention-nommage-base-de-donnees/" class="md-nav__link">
         
   
   
@@ -882,10 +706,37 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../../referentiels/ref-005-convention-nommage-authentik/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Convention de nommage des objets Authentik
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   
@@ -901,6 +752,70 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table des matières">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table des matières
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1-objectif" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. Objectif
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-conventions" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. Conventions
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-exemples-pratiques" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. Exemples pratiques
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-exceptions" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. Exceptions
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -3210,10 +3125,10 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#1-contexte" class="md-nav__link">
+  <a href="#1-objectif" class="md-nav__link">
     <span class="md-ellipsis">
       
-        1. Contexte
+        1. Objectif
       
     </span>
   </a>
@@ -3221,10 +3136,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#2-cahiers-des-charges" class="md-nav__link">
+  <a href="#2-conventions" class="md-nav__link">
     <span class="md-ellipsis">
       
-        2. Cahiers des charges
+        2. Conventions
       
     </span>
   </a>
@@ -3232,99 +3147,21 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#3-les-solutions-du-marche" class="md-nav__link">
+  <a href="#3-exemples-pratiques" class="md-nav__link">
     <span class="md-ellipsis">
       
-        3. Les solutions du marché
+        3. Exemples pratiques
       
     </span>
   </a>
-  
-    <nav class="md-nav" aria-label="3. Les solutions du marché">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#31-presentations-des-solutions" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        3.1. Présentations des solutions
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="3.1. Présentations des solutions">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#311-powerdns-authoritative-server" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        3.1.1. PowerDNS (Authoritative Server)
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#312-bind9" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        3.1.2. BIND9
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#313-coredns" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        3.1.3. CoreDNS
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#314-technitium-dns" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        3.1.4. Technitium DNS
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#32-comparatifs-des-solutions" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        3.2. Comparatifs des solutions
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#4-solution-proposee" class="md-nav__link">
+  <a href="#4-exceptions" class="md-nav__link">
     <span class="md-ellipsis">
       
-        4. Solution proposée
+        4. Exceptions
       
     </span>
   </a>
@@ -3347,7 +3184,7 @@
   
   
     <div style="text-align: left; font-size: 0.85em; color: var(--md-default-fg-color--light); margin-bottom: 20px;">
-      <strong>Dernière édition :</strong> <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-timeago" title="9 juillet 2026 19:56:53 UTC"><span class="timeago" datetime="2026-07-09T19:56:53+00:00" locale="fr"></span></span><span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date" title="9 juillet 2026 19:56:53 UTC">2026-07-09</span>
+      <strong>Dernière édition :</strong> <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-timeago" title="20 juillet 2026 19:00:20 UTC"><span class="timeago" datetime="2026-07-20T19:00:20+00:00" locale="fr"></span></span><span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date" title="20 juillet 2026 19:00:20 UTC">2026-07-20</span>
     </div>
   
   
@@ -3360,159 +3197,74 @@
   
 
 
-<h1 id="adr-4-choix-de-la-solution-dns-pour-linfrastructure-on-premise">ADR-4 : Choix de la solution DNS pour l'infrastructure on-premise</h1>
+<h1 id="ref-5-convention-de-nommage-des-objets-authentik">REF-5 : Convention de nommage des objets Authentik</h1>
 <p><img alt="Bannière LoutikCloud" src="https://raw.githubusercontent.com/loutik/design-assets/main/loutikcloud/banniere_loutikcloud.png" /></p>
 <div class="admonition info">
 <p class="admonition-title">Informations</p>
 <ul>
-<li><strong>Date de création</strong> : 2026-07-09</li>
-<li><strong>Statut</strong> : accepted</li>
-<li><strong>Auteur</strong> : Louis MEDO</li>
-<li><strong>Responsable</strong> : Louis MEDO</li>
+<li><strong>Date d'application</strong> : 2026-07-19</li>
+<li><strong>Catégorie</strong> : Nommage</li>
+<li><strong>Garant de la norme</strong> : Louis MEDO</li>
 </ul>
 </div>
-<h2 id="1-contexte">1. Contexte</h2>
-<p>L'infrastructure on-premise sous-jacente au domaine <code>infra.loutik.fr</code> nécessite une gestion centralisée, dynamique et hautement disponible de ses enregistrements DNS. Actuellement, le provisionnement des machines s'oriente vers des processus automatisés (pipelines CI/CD, playbooks Ansible). L'absence d'un mécanisme d'enregistrement automatisé des noms pleinement qualifiés (FQDN) via API constitue un point de blocage pour l'automatisation globale de l'infrastructure. De plus, la tolérance aux pannes du service DNS (failover) doit être assurée par le déploiement d'une architecture redondante sur deux serveurs distincts.</p>
-<h2 id="2-cahiers-des-charges">2. Cahiers des charges</h2>
+<h2 id="1-objectif">1. Objectif</h2>
+<p>Standardiser le nommage des groupes, applications et fournisseurs (providers) dans Authentik afin de faciliter l'attribution et l'automatisation des droits via OIDC sur l'infrastructure (ex: Proxmox, NetBox).</p>
+<h2 id="2-conventions">2. Conventions</h2>
+<p>La structure globale repose sur un format strict composé de 5 segments séparés par des tirets (<code>-</code>).</p>
+<ul>
+<li><strong>Format d'expression régulière (Regex)</strong> : <code>^[a-z0-9]+(-[a-z0-9]+){3}$</code></li>
+<li><strong>Structure globale</strong> : <code>&lt;domaine&gt;-&lt;service&gt;-&lt;environnement&gt;-&lt;role&gt;</code></li>
+</ul>
 <table>
 <thead>
 <tr>
-<th style="text-align: left;">ID</th>
-<th style="text-align: left;">Type</th>
-<th style="text-align: left;">Exigence</th>
-<th style="text-align: left;">Description</th>
+<th style="text-align: left;">Segment</th>
+<th style="text-align: left;">Rôle</th>
+<th style="text-align: left;">Valeurs autorisées</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;"><strong>REQ-F01</strong></td>
-<td style="text-align: left;">Fonctionnel</td>
-<td style="text-align: left;">API Programmable</td>
-<td style="text-align: left;">Capacité à créer, modifier et supprimer des enregistrements FQDN via des requêtes programmatiques.</td>
+<td style="text-align: left;"><strong><code>[domaine]</code></strong> (Domaine technique)</td>
+<td style="text-align: left;">Identifie la catégorie d'infrastructure.</td>
+<td style="text-align: left;"><code>inf</code> (Infra), <code>app</code> (Applicatif)</td>
 </tr>
 <tr>
-<td style="text-align: left;"><strong>REQ-F02</strong></td>
-<td style="text-align: left;">Fonctionnel</td>
-<td style="text-align: left;">Haute Disponibilité / Failover</td>
-<td style="text-align: left;">Support d'une architecture à deux nœuds pour assurer la continuité de service en cas de panne d'un serveur.</td>
+<td style="text-align: left;"><strong><code>[service]</code></strong> (Service cible)</td>
+<td style="text-align: left;">Identifie l'application ou le service lié.</td>
+<td style="text-align: left;"><code>pve</code> (Proxmox), <code>ntb</code> (NetBox), <code>glpi</code></td>
 </tr>
 <tr>
-<td style="text-align: left;"><strong>REQ-T01</strong></td>
-<td style="text-align: left;">Technique</td>
-<td style="text-align: left;">Intégration Ansible / IaC</td>
-<td style="text-align: left;">Disponibilité de modules ou de providers officiels/communautaires pour s'intégrer dans une philosophie Infrastructure as Code.</td>
+<td style="text-align: left;"><strong><code>[environnement]</code></strong> (Environnement)</td>
+<td style="text-align: left;">Définit le contexte de déploiement.</td>
+<td style="text-align: left;"><code>prd</code> (Production), <code>stg</code> (Staging)</td>
 </tr>
 <tr>
-<td style="text-align: left;"><strong>REQ-T02</strong></td>
-<td style="text-align: left;">Technique</td>
-<td style="text-align: left;">Stockage persistant / Réplication</td>
-<td style="text-align: left;">Flexibilité du backend de stockage permettant une synchronisation ou réplication native et robuste des zones entre les nœuds.</td>
-</tr>
-<tr>
-<td style="text-align: left;"><strong>REQ-T03</strong></td>
-<td style="text-align: left;">Technique</td>
-<td style="text-align: left;">Empreinte ressources</td>
-<td style="text-align: left;">Consommation mémoire et CPU optimisée pour une intégration fluide en environnement de services virtualisés (on-premise).</td>
-</tr>
-<tr>
-<td style="text-align: left;"><strong>REQ-T04</strong></td>
-<td style="text-align: left;">Technique</td>
-<td style="text-align: left;">Compatibilité système (Debian)</td>
-<td style="text-align: left;">Support officiel, installation et maintenance simplifiées via les gestionnaires de paquets (APT) sur un système d'exploitation GNU/Linux Debian.</td>
+<td style="text-align: left;"><strong><code>[role]</code></strong> (Rôle d'accès)</td>
+<td style="text-align: left;">Définit le niveau de permission accordé.</td>
+<td style="text-align: left;"><code>adm</code> (Admin), <code>usr</code> (User)</td>
 </tr>
 </tbody>
 </table>
-<h2 id="3-les-solutions-du-marche">3. Les solutions du marché</h2>
-<h3 id="31-presentations-des-solutions">3.1. Présentations des solutions</h3>
-<h4 id="311-powerdns-authoritative-server">3.1.1. PowerDNS (Authoritative Server)</h4>
+<div class="admonition note">
+<p class="admonition-title">Contraintes spécifiques</p>
+<p>L'utilisation de lettres minuscules est strictement obligatoire. Aucun espace ni caractère spécial (hors tiret) n'est toléré pour garantir la compatibilité avec les claims OIDC.</p>
+</div>
+<h2 id="3-exemples-pratiques">3. Exemples pratiques</h2>
 <ul>
-<li><strong>Présentation générale :</strong> Serveur DNS autoritaire open-source moderne conçu pour les infrastructures à forte charge et les environnements automatisés.</li>
-<li><strong>Fonctionnement :</strong> Contrairement aux serveurs traditionnels basés sur des fichiers de zone plats, PowerDNS s'appuie sur des backends relationnels (PostgreSQL, MySQL, SQLite) pour stocker les données DNS et expose une API REST native.</li>
-<li><strong>Profil :</strong> Solution orientée ingénierie DevOps et production d'entreprise, hautement compatible avec les outils d'automatisation modernes.</li>
+<li>✅ <strong>Conforme</strong> : <ul>
+<li><code>inf-pve-prd-adm</code> (Groupe d'administration infrastructure Proxmox en production géré par LoutikSSO)</li>
+<li><code>app-glpi-lab-usr</code> (Groupe d'utilisateurs standards GLPI en lab géré par LoutikSSO)</li>
 </ul>
-<h4 id="312-bind9">3.1.2. BIND9</h4>
-<ul>
-<li><strong>Présentation générale :</strong> Le serveur DNS de référence historique sur Internet, reconnu pour sa stabilité absolue et son respect strict des RFC.</li>
-<li><strong>Fonctionnement :</strong> Fonctionne de manière native avec des fichiers de configuration texte. Les mises à jour dynamiques s'effectuent via le protocole standard RFC 2136 à l'aide de l'utilitaire <code>nsupdate</code> et de clés TSIG.</li>
-<li><strong>Profil :</strong> Solution traditionnelle, robuste et académique, privilégiant la standardisation historique aux interfaces HTTP modernes.</li>
+</li>
+<li>❌ <strong>Non conforme</strong> : <ul>
+<li><code>INF_PVE_PRD_ADM</code> (Invalide : majuscules, mauvais délimiteur <code>_</code>, manque le segment IDP)</li>
+<li><code>inf-proxmox-prd-admin</code> (Invalide : non-respect des trigrammes de service et de rôle)</li>
 </ul>
-<h4 id="313-coredns">3.1.3. CoreDNS</h4>
-<ul>
-<li><strong>Présentation générale :</strong> Serveur DNS rapide et modulaire écrit en Go, devenu le standard de facto pour la résolution de noms dans l'écosystème Cloud-Native (Kubernetes).</li>
-<li><strong>Fonctionnement :</strong> S'appuie sur une chaîne de plugins configurables via un "Corefile". Il s'interface dynamiquement avec des backends de type clé-valeur distribués comme <code>etcd</code> pour la synchronisation.</li>
-<li><strong>Profil :</strong> Solution hautement spécialisée pour les infrastructures conteneurisées et les architectures micro-services.</li>
+</li>
 </ul>
-<h4 id="314-technitium-dns">3.1.4. Technitium DNS</h4>
-<ul>
-<li><strong>Présentation générale :</strong> Serveur DNS faisant office de serveur autoritaire et de résolveur, développé en C#/.NET, intégrant une interface graphique moderne.</li>
-<li><strong>Fonctionnement :</strong> Gère les zones via des bases locales ou des fichiers, et rend l'intégralité de ses fonctionnalités accessibles via une API HTTP REST.</li>
-<li><strong>Profil :</strong> Solution accessible et polyvalente, adaptée pour les environnements de laboratoires et les infrastructures de PME.</li>
-</ul>
-<h3 id="32-comparatifs-des-solutions">3.2. Comparatifs des solutions</h3>
-<table>
-<thead>
-<tr>
-<th style="text-align: left;">Exigence</th>
-<th style="text-align: left;">PowerDNS</th>
-<th style="text-align: left;">BIND9</th>
-<th style="text-align: left;">CoreDNS</th>
-<th style="text-align: left;">Technitium DNS</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align: left;"><strong>REQ-F01 (API REST Native)</strong></td>
-<td style="text-align: left;">Validé (REST exhaustive)</td>
-<td style="text-align: left;">Non validé (Nécessite RFC 2136)</td>
-<td style="text-align: left;">Non validé (Via plugins/etcd)</td>
-<td style="text-align: left;">Validé (HTTP REST)</td>
-</tr>
-<tr>
-<td style="text-align: left;"><strong>REQ-F02 (Failover / HA)</strong></td>
-<td style="text-align: left;">Validé (Réplication DB ou Master/Slave)</td>
-<td style="text-align: left;">Validé (Transfert AXFR/IXFR natif)</td>
-<td style="text-align: left;">Validé (Via cluster etcd externe)</td>
-<td style="text-align: left;">Validé (Transfert de zone standard)</td>
-</tr>
-<tr>
-<td style="text-align: left;"><strong>REQ-T01 (Intégration IaC)</strong></td>
-<td style="text-align: left;">Excellent (Modules Ansible / Terraform)</td>
-<td style="text-align: left;">Moyen (Modules Ansible spécifiques)</td>
-<td style="text-align: left;">Moyen (Configuration via GitOps)</td>
-<td style="text-align: left;">Faible (API peu intégrée dans l'écosystème Ansible)</td>
-</tr>
-<tr>
-<td style="text-align: left;"><strong>REQ-T02 (Backend de stockage)</strong></td>
-<td style="text-align: left;">Flexible (PostgreSQL, MySQL)</td>
-<td style="text-align: left;">Rigide (Fichiers plats textes)</td>
-<td style="text-align: left;">Spécialisé (etcd, mémoire)</td>
-<td style="text-align: left;">Propriétaire / Fichiers</td>
-</tr>
-<tr>
-<td style="text-align: left;"><strong>REQ-T03 (Légèreté / On-prem)</strong></td>
-<td style="text-align: left;">Excellent</td>
-<td style="text-align: left;">Excellent</td>
-<td style="text-align: left;">Très bon</td>
-<td style="text-align: left;">Moyen (Dépendance runtime .NET)</td>
-</tr>
-<tr>
-<td style="text-align: left;"><strong>REQ-T04 (Compatibilité Debian)</strong></td>
-<td style="text-align: left;">Excellent (Dépôts APT officiels)</td>
-<td style="text-align: left;">Excellent (Paquet standard)</td>
-<td style="text-align: left;">Bon (Binaire unique)</td>
-<td style="text-align: left;">Moyen (Dépendance runtime)</td>
-</tr>
-</tbody>
-</table>
-<h2 id="4-solution-proposee">4. Solution proposée</h2>
-<p>La solution proposée pour l'infrastructure LoutikCloud est <strong>PowerDNS Authoritative Server</strong>.</p>
-<p>L'intégration d'une API REST native au sein de PowerDNS élimine la complexité liée à la gestion des fichiers plats et permet un provisionnement en temps réel des enregistrements FQDN depuis l'infrastructure de déploiement Ansible. La redondance du service et le mécanisme de bascule (failover) seront assurés par le déploiement de deux instances PowerDNS. Ces instances seront adossées à un cluster de base de données PostgreSQL hautement disponible situé dans le VLAN 17 (ZDS), offrant ainsi une synchronisation des enregistrements DNS instantanée et sans perte de données, tout en maintenant les fichiers de configuration système sous le contrôle de la philosophie GitOps.</p>
-<p><strong>Justification du rejet des solutions alternatives :</strong></p>
-<ul>
-<li><strong>BIND9 :</strong> Bien que parfaitement stable et nativement optimisé pour Debian, BIND9 est écarté en raison de l'absence d'une API REST moderne. Le recours obligatoire au protocole RFC 2136 (<code>nsupdate</code>) ajoute une complexité non négligeable pour l'intégration continue et la gestion idempotente via Ansible.</li>
-<li><strong>CoreDNS :</strong> Malgré d'excellentes performances, CoreDNS est rejeté car son architecture est conçue pour des environnements Kubernetes. L'implémentation de la haute disponibilité hors cluster nécessiterait le déploiement et la maintenance d'une base distribuée <code>etcd</code> additionnelle, créant une sur-ingénierie injustifiée pour une infrastructure on-premise basée sur des machines virtuelles classiques.</li>
-<li><strong>Technitium DNS :</strong> Écarté pour des raisons techniques liées au socle d'exploitation. Son développement en C# impose l'installation du runtime .NET sur les serveurs Debian, ce qui alourdit l'empreinte système. De plus, son écosystème communautaire (modules Ansible et providers Terraform) est nettement moins mature que celui de PowerDNS.</li>
-</ul>
+<h2 id="4-exceptions">4. Exceptions</h2>
+<p>Les groupes intégrés par défaut par Authentik (ex: <code>authentik Admins</code>) ne sont pas soumis à cette règle afin de ne pas altérer le fonctionnement interne du système.</p>
 
 
 
@@ -3535,7 +3287,7 @@
     <span class="md-icon" title="Dernière mise à jour">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-timeago" title="9 juillet 2026 19:56:53 UTC"><span class="timeago" datetime="2026-07-09T19:56:53+00:00" locale="fr"></span></span><span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date" title="9 juillet 2026 19:56:53 UTC">2026-07-09</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-timeago" title="20 juillet 2026 19:00:20 UTC"><span class="timeago" datetime="2026-07-20T19:00:20+00:00" locale="fr"></span></span><span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date" title="20 juillet 2026 19:00:20 UTC">2026-07-20</span>
   </span>
 
     
@@ -3545,7 +3297,7 @@
     <span class="md-icon" title="Créé">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M14.47 15.08 11 13V7h1.5v5.25l3.08 1.83c-.41.28-.79.62-1.11 1m-1.39 4.84c-.36.05-.71.08-1.08.08-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8c0 .37-.03.72-.08 1.08.69.1 1.33.32 1.92.64.1-.56.16-1.13.16-1.72 0-5.5-4.5-10-10-10S2 6.5 2 12s4.47 10 10 10c.59 0 1.16-.06 1.72-.16-.32-.59-.54-1.23-.64-1.92M18 15v3h-3v2h3v3h2v-3h3v-2h-3v-3z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-timeago" title="9 juillet 2026 19:56:53 UTC"><span class="timeago" datetime="2026-07-09T19:56:53+00:00" locale="fr"></span></span><span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date" title="9 juillet 2026 19:56:53 UTC">2026-07-09</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-timeago" title="20 juillet 2026 19:00:20 UTC"><span class="timeago" datetime="2026-07-20T19:00:20+00:00" locale="fr"></span></span><span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date" title="20 juillet 2026 19:00:20 UTC">2026-07-20</span>
   </span>
 
     
