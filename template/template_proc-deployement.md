@@ -29,7 +29,6 @@ service: [Service]
 date: [Date]
 author: [Auteur]
 owner: [Responsable]
-tags: [deploiement, iac, mise-en-production]
 ---
 
 # {{ page.meta.title }}

@@ -1,6 +1,6 @@
 ---
 title: Déploiement du datastore PBS
-service: Proxmox Backup Server
+service: Backup
 date: 2026-07-24
 author: Louis MEDO
 owner: Louis MEDO
@@ -35,7 +35,7 @@ Le composant à déployer est le Datastore principal de Proxmox Backup Server (v
   ```
 
   ***Résultat attendu :***
-  
+
   ![Create datastore](./assets/deploiement-datastore-pbs/01capture-ecran-disk-list.png)
 
 3.2. **Créer le système de fichiers.** Initialiser le disque avec un système de fichiers `ext4`. Cette commande formate le disque et crée automatiquement une unité de montage `systemd`.
