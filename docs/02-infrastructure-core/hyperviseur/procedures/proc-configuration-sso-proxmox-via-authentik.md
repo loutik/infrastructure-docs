@@ -1,6 +1,6 @@
 ---
 title: Configuration de l'accès SSO Proxmox via Authentik
-service: Proxmox
+service: Proxmox VE
 date: 2026-05-27
 author: Louis MEDO
 owner: Louis MEDO
@@ -17,7 +17,7 @@ tags: [deploiement, iac, mise-en-production, sso, securite]
     * **Auteur** : {{ page.meta.author }}
     * **Responsable** : {{ page.meta.owner }}
 
-## 1. Architecture et contexte
+## 1. Contexte
 Ce document décrit la procédure d'intégration SSO (OIDC) entre Authentik (v.2026.5.0) et Proxmox VE. L'objectif est de déléguer l'authentification et l'autorisation à Authentik. L'accès est strictement restreint aux utilisateurs membres du groupe `inf-pve-prd-adm`. Proxmox est configuré pour associer automatiquement ce groupe au rôle Administrateur via les claims OIDC, garantissant une gestion des accès centralisée et sécurisée au sein de l'infrastructure LoutikCLOUD.
 
 ## 2. Prérequis

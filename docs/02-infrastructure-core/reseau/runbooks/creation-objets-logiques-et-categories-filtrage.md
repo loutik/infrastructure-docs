@@ -1,10 +1,9 @@
 ---
 title: Création des objets logiques et catégories de filtrage
-service: Réseau
+service: OPNsense
 date: 2026-06-30
 author: Louis MEDO
 owner: Louis MEDO
-tags: [deploiement, reseau, alias, objets-logiques, categories]
 ---
 
 # {{ page.meta.title }}
@@ -17,8 +16,7 @@ tags: [deploiement, reseau, alias, objets-logiques, categories]
     * **Auteur** : {{ page.meta.author }}
     * **Responsable** : {{ page.meta.owner }}
 
-## 1. Architecture et contexte
-
+## 1. Contexte
 Cette procédure formalise la création des objets logiques (Alias) et des structures d'organisation (Catégories) au sein du moteur de filtrage d'OPNsense. Elle abstrait les variables réseau (IP, CIDR, ports) pour découpler l'infrastructure réseau de la logique des règles. La déclaration stricte de ces objets est indispensable avant d'exploiter l'interface de règles modernes `Rules [new]` et garantit la conformité avec la matrice de flux globale de LoutikCLOUD.
 
 ## 2. Prérequis

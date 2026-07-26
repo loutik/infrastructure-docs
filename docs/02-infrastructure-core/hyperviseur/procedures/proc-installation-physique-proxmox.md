@@ -1,10 +1,9 @@
 ---
 title: Installation physique de l'hyperviseur
-service: Proxmox
+service: Proxmox VE
 date: 2026-05-31
 author: Louis MEDO
 owner: Louis MEDO
-tags: [proxmox]
 ---
 
 # {{ page.meta.title }}
@@ -17,7 +16,7 @@ tags: [proxmox]
     * **Auteur** : {{ page.meta.author }}
     * **Responsable** : {{ page.meta.owner }}
 
-## 1. Architecture et contexte
+## 1. Contexte
 L'installation bare-metal de Proxmox VE sur un nouveau serveur physique permet d'initialiser le socle de virtualisation de base de l'infrastructure LoutikCLOUD. Cet hyperviseur hébergera les futures machines virtuelles et les ressources d'orchestration. Il est impératif de placer temporairement l'hyperviseur dans le VLAN de commissionnement (ID: 60). Ce réseau isolé permet un accès temporaire à Internet depuis une IP de management le temps de la configuration initiale.
 
 ## 2. Prérequis

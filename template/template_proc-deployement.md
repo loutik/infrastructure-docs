@@ -41,7 +41,7 @@ owner: [Responsable]
     * **Auteur** : {{ page.meta.author }}
     * **Responsable** : {{ page.meta.owner }}
 
-## 1. Architecture et contexte
+## 1. Contexte
 [Description du composant à déployer. Expliquer comment ce service s'intègre au reste de l'infrastructure LoutikCLOUD (ex: flux réseau, dépendance à la base de données, etc.).]
 
 ## 2. Prérequis

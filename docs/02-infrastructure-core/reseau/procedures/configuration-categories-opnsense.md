@@ -1,10 +1,9 @@
 ---
 title: Configuration des catégories - OPNsense
-service: Réseau
+service: OPNsense
 date: 2026-07-04
 author: Louis MEDO
 owner: Louis MEDO
-tags: [deploiement, opnsense]
 ---
 
 # {{ page.meta.title }}

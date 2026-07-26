@@ -1,10 +1,9 @@
 ---
 title: Création des règles de filtrage
-service: Réseau
+service: OPNsense
 date: 2026-06-30
 author: Louis MEDO
 owner: Louis MEDO
-tags: [deploiement, reseau, firewall, rules-new]
 ---
 
 # {{ page.meta.title }}
@@ -17,8 +16,7 @@ tags: [deploiement, reseau, firewall, rules-new]
     * **Auteur** : {{ page.meta.author }}
     * **Responsable** : {{ page.meta.owner }}
 
-## 1. Architecture et contexte
-
+## 1. Contexte
 Cette procédure décrit l'écriture et l'application des règles de sécurité au sein de la nouvelle interface de filtrage d'OPNsense (`Rules [new]`). Ce framework moderne basé sur l'API MVC structure la matrice de flux de manière granulaire. L'objectif est d'implémenter une politique de sécurité de type *Zero-Trust* inter-VLAN en exploitant les alias et catégories configurés précédemment. Cette approche garantit la compatibilité directe avec le code des playbooks Ansible.
 
 ## 2. Prérequis

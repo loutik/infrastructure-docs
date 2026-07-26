@@ -30,7 +30,6 @@ title: [Titre]
 category: [Catégorie]
 date: [Date d'application]
 author: [Auteur]
-tags: [referentiel, norme, standard, convention]
 ---
 
 # REF-{{ page.meta.id }} : {{ page.meta.title }}

@@ -1,6 +1,6 @@
 ---
 title: Déploiement du datastore PBS
-service: Backup
+service: Proxmox Backup Server
 date: 2026-07-24
 author: Louis MEDO
 owner: Louis MEDO

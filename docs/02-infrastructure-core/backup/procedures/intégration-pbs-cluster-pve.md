@@ -1,6 +1,6 @@
 ---
 title: Intégration de Proxmox Backup Server au cluster Proxmox
-service: Backup
+service: Proxmox Backup Server
 date: 2026-07-24
 author: Louis MEDO
 owner: Louis MEDO

@@ -1,6 +1,6 @@
 ---
 title: Installation de Proxmox Backup Server (PBS) via ISO
-service: Backup
+service: Proxmox Backup Server
 date: 2026-07-24
 author: Louis MEDO
 owner: Louis MEDO

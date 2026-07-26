@@ -1,10 +1,9 @@
 ---
 title: Création d'un cluster
-service: Proxmox
+service: Proxmox VE
 date: 2026-05-31
 author: Louis MEDO
 owner: Louis MEDO
-tags: [proxmox]
 ---
 
 # {{ page.meta.title }}
@@ -17,8 +16,7 @@ tags: [proxmox]
     * **Auteur** : {{ page.meta.author }}
     * **Responsable** : {{ page.meta.owner }}
 
-## 1. Architecture et contexte
-
+## 1. Contexte
 Le cluster Proxmox VE constitue la couche de virtualisation bare-metal de base de l'infrastructure LoutikCLOUD. Sa création permet l'activation de la haute disponibilité (HA), la migration à chaud des machines virtuelles et conteneurs (LXC), ainsi que la gestion centralisée du quorum Corosync. Ce composant est critique pour l'orchestration résiliente des ressources en amont des déploiements K3s.
 
 ## 2. Prérequis

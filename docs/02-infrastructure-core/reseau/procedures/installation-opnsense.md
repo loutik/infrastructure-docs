@@ -1,10 +1,9 @@
 ---
 title: Installation - OPNsense
-service: Réseau
+service: OPNsense
 date: 2026-06-30
 author: Louis MEDO
 owner: Louis MEDO
-tags: [deploiement, iac, mise-en-production]
 ---
 
 # {{ page.meta.title }}
@@ -17,7 +16,7 @@ tags: [deploiement, iac, mise-en-production]
     * **Auteur** : {{ page.meta.author }}
     * **Responsable** : {{ page.meta.owner }}
 
-## 1. Architecture et contexte
+## 1. Contexte
 Mise en production du premier routeur de l'infrastructure LoutikCLOUD sans processus IaC. L'objectif est de provisionner un routeur opérationnel avec un nom de domaine défini, un compte utilisateur sécurisé, et une configuration WAN/LAN de base permettant un accès Internet fonctionnel via NAT. Cette configuration initiale manuelle rendra la console Web accessible depuis le réseau local, constituant ainsi le socle requis pour la future orchestration et configuration automatisée via Ansible.
 
 ## 2. Prérequis

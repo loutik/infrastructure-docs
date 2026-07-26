@@ -1,10 +1,9 @@
 ---
 title: Configuration du système de prévention d'intrusions (IPS - Suricata) - OPNsense
-service: Sécurité
+service: OPNsense
 date: 2026-07-03
 author: Louis MEDO
 owner: Louis MEDO
-tags: [deploiement, iac, mise-en-production, securite, ips, suricata]
 ---
 
 # {{ page.meta.title }}
@@ -17,7 +16,7 @@ tags: [deploiement, iac, mise-en-production, securite, ips, suricata]
     * **Auteur** : {{ page.meta.author }}
     * **Responsable** : {{ page.meta.owner }}
 
-## 1. Architecture et contexte
+## 1. Contexte
 Cette procédure documente l'activation et la configuration du moteur Suricata en mode IPS (Intrusion Prevention System) sur le routeur OPNsense de l'infrastructure LoutikCLOUD. En plus de l'interception et du blocage actif des flux réseaux malveillants identifiés par les signatures via le mode `netmap`, cette procédure intègre une stratégie de "Whitelist" garantissant que le réseau d'administration (ADMOOB) ne soit jamais isolé accidentellement. La gestion des blocages est rationalisée par un ciblage strict des catégories de menaces critiques et une politique de destruction d'états (Kill States) immédiate.
 
 ## 2. Prérequis

@@ -1,10 +1,9 @@
 ---
 title: Déploiement de l'environnement PostgreSQL
-service: Base de données / PostgreSQL
+service: PostgreSQL
 date: 2026-07-06
 author: Louis MEDO
 owner: Louis MEDO
-tags: [deploiement, iac, mise-en-production]
 ---
 
 # {{ page.meta.title }}
@@ -17,7 +16,7 @@ tags: [deploiement, iac, mise-en-production]
     * **Auteur** : {{ page.meta.author }}
     * **Responsable** : {{ page.meta.owner }}
 
-## 1. Architecture et contexte
+## 1. Contexte
 Le service de base de données PostgreSQL est le socle de données de l'infrastructure LoutikCLOUD. Son provisionnement est entièrement géré en Infrastructure as Code (IaC) via Ansible. Le serveur cible de production est `mlt1-db-vm-prd-01`, déployé sur l'adresse IP `10.0.17.1`. L'architecture respecte les principes Zero Trust avec une séparation des privilèges : les propriétaires de base gèrent la structure (DDL) tandis que les comptes applicatifs limités manipulent la donnée (DML). Les configurations systèmes, incluant le passage par le proxy de la DMZ (`debian-proxy`), sont orchestrées en amont du provisionnement du moteur.
 
 ## 2. Prérequis

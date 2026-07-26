@@ -1,6 +1,6 @@
 ---
 title: Configuration de la sauvegarde automatique des VM vers PBS
-service: Backup
+service: Proxmox VE
 date: 2026-07-24
 author: Louis MEDO
 owner: Louis MEDO

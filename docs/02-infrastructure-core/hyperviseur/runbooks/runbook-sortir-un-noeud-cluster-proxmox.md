@@ -1,10 +1,9 @@
 ---
 title: Supprimer un noeud du cluster
-service: Proxmox
+service: Proxmox VE
 date: 2026-05-31
 author: Louis MEDO
 owner: Louis MEDO
-tags: [runbook, exploitation, mco]
 ---
 
 # {{ page.meta.title }}
@@ -18,7 +17,7 @@ tags: [runbook, exploitation, mco]
     * **Auteur** : {{ page.meta.author }}
     * **Responsable** : {{ page.meta.owner }}
 
-## 1. Contexte et Objectif
+## 1. Contexte
 
 Décommissionnement propre et définitif d'un nœud physique du cluster Proxmox VE au sein de l'infrastructure LoutikCLOUD. Cette procédure doit être exécutée lors d'un retrait de matériel, d'un remplacement de serveur défectueux ou d'une réduction de capacité, afin de maintenir l'intégrité du quorum Corosync sans perturber les services en production.
 
