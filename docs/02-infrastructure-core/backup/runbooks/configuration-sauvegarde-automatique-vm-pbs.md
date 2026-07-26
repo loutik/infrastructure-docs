@@ -70,10 +70,10 @@ Configuration d'une tâche de sauvegarde planifiée (Backup Job) au niveau du Da
 
 Dans l'interface graphique, aller dans **Datacenter** > **Backup**. Sélectionner la tâche de sauvegarde erronée et cliquer sur le bouton **Remove**, puis confirmer la suppression.
 
-    **Via CLI :**
+  **Via CLI :**
 
-    ```bash
-    pvesh delete /cluster/backup/backup-xxx
-    ```
+  ```bash
+  pvesh delete /cluster/backup/backup-xxx
+  ```
 
-    * **`pvesh delete`** : Supprime l'entrée correspondante dans le planificateur via l'appel API (remplacer `backup-xxx` par l'ID de la tâche).
+  * **`pvesh delete`** : Supprime l'entrée correspondante dans le planificateur via l'appel API (remplacer `backup-xxx` par l'ID de la tâche).

@@ -70,8 +70,6 @@ Mise en place d'un espace de stockage à froid (cold storage) externalisé sur l
   * `Nom de l'application` : Identifiant textuel pour identifier rapidement la provenance des connexions dans les journaux d'audit.
   * `Mot de passe d'application` : Chaîne de caractères unique générée par le système. Elle contourne la double authentification (2FA) et doit être copiée immédiatement pour être intégrée comme secret dans le client rclone sur le nœud Proxmox.
 
----
-
 ## Annexe
 
 - [Documentation officielle Nextcloud - Clients WebDAV](https://docs.nextcloud.com/server/latest/user_manual/en/files/access_webdav.html)
