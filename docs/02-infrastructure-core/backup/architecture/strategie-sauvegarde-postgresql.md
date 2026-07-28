@@ -16,77 +16,41 @@ owner: Louis MEDO
 
 ## 1. Objectifs de l'implémentation
 
-L'architecture de sauvegarde de la base de données PostgreSQL au sein de LoutikCLOUD repose sur les objectifs :
+L'architecture de sauvegarde de la base de données PostgreSQL pour l'infrastructure LoutikCLOUD répond aux impératifs suivants :
 
-* **Découplage Stateful / Stateless** : Isolation de la donnée (le dump SQL) du système d'exploitation de la machine virtuelle. En cas de compromission, l'OS est détruit et recréé, seule la donnée est restaurée.
-* **Principe KISS (Keep It Simple, Stupid)** : Exécution locale des tâches pour limiter le nombre de dépendances, de points de défaillance réseau et de serveurs intermédiaires (absence de relais NFS).
-* **Résilience via la règle 3-2-1** : Double expédition de la sauvegarde depuis la source vers un stockage local haute performance (PBS) et un stockage externalisé à froid (Nextcloud).
+* **Découplage Stateful / Stateless** : Séparation de la donnée (le dump SQL) et du système d'exploitation. En cas de sinistre, la VM est reconstruite, seule la donnée est restaurée.
+* **Principe KISS (Keep It Simple, Stupid)** : Exécution locale des tâches sur la VM cible. Réduction des dépendances externes et des points de défaillance réseau (absence de relais de type NFS).
+* **Règle 3-2-1** : Double externalisation simultanée. Une sauvegarde chaude sur Proxmox Backup Server (On premise) et une sauvegarde froide sur Nextcloud WebDAV (Cloud).
 
 ## 2. Architecture
 
-L'architecture repose sur un pipeline séquentiel déclenché directement au sein de la machine virtuelle hébergeant l'instance PostgreSQL, piloté par un orchestrateur externe (Ansible).
+Le cycle de sauvegarde est piloté par un orchestrateur externe, qui déclenche les opérations directement sur la VM PostgreSQL de manière séquentielle à l'aide de l'outil Ansible.
 
 ### 2.1. Topologie Logique
 
-```text
-                          [ Orchestrateur Ansible ]
-                                     | (Déclenchement du Playbook)
-                                     v
-+-------------------------------------------------------------------------+
-| VM POSTGRESQL (Stateless)                                               |
-|                                                                         |
-|  1. Extraction Logique                                                  |
-|     (pg_dump)                                                           |
-|         |                                                               |
-|         v                                                               |
-|  [ /tmp/backup.sql ]  -- 2. proxmox-backup-client --+                   |
-|  (Espace Volatile)    --    (Déduplication pxar)    |                   |
-|         |                                           |                   |
-|         +--------------- 3. rclone copy ------------|---+               |
-|                             (Fichier Monolithique)  |   |               |
-|                                                     |   |               |
-|  4. Nettoyage                                       |   |               |
-|     (rm /tmp/...)                                   |   |               |
-+-----------------------------------------------------+   |               |
-                                                      |   |               |
-                     +--------------------------------+   +-----------+   |
-                     |                                                |   |
-                     v                                                v   v
-    +---------------------------------+             +-----------------------------------+
-    | PROXMOX BACKUP SERVER (Chaud)   |             | NEXTCLOUD WEBDAV (Froid)          |
-    |---------------------------------|             |-----------------------------------|
-    | - Haute performance             |             | - Hébergement mutualisé (250 Go)  |
-    | - Transfert Delta (Blocs)       |             | - Isolations par fichiers         |
-    | - Rétention Courte              |             | - Rétention Longue                |
-    +---------------------------------+             +-----------------------------------+
-```
+![Schema flux de travail de la sauvegarde base de données PostgreSQL](./assets/strategie-sauvegarde-postgresql/schema-flux-travail-sauvegarde-base-donnes-postgresql.png)
 
 ### 2.2. Mécanismes de fonctionnement
 
-Le processus d'encapsulation et de transport de la donnée se déroule en quatre phases strictes :
+Le pipeline de traitement s'articule en trois phases :
 
-1. **Extraction (PostgreSQL)** : Exécution de la commande native `pg_dump`. La base de données est exportée sous forme de requêtes SQL brutes dans le répertoire volatile `/tmp/`.
-2. **Sauvegarde chaude (PBS)** : Le client `proxmox-backup-client` découpe (chunking), hache et compare le fichier `.sql` local avec le serveur PBS. Seuls les blocs de données modifiés sont transférés via le port 8007 pour une déduplication optimale.
-3. **Sauvegarde froide (WebDAV)** : L'utilitaire `rclone` utilise la sous-commande `copy` pour téléverser le fichier monolithique généré de `/tmp/` vers le dossier cible sur Nextcloud, évitant la saturation de la base de données de l'hébergeur.
-4. **Nettoyage** : Suppression immédiate de l'archive dans `/tmp/` pour préserver l'espace de stockage de la VM.
+1. **Extraction** : Déclenchement de l'utilitaire natif `pg_dump`. Les données sont extraites et consolidées dans le fichier temporaire `/tmp/backup.sql`.
+2. **Transfert** : Double expédition de la donnée vers les points de stockage :
+    * *Cible Chaude (Proxmox Backup Server)* : Utilisation de `proxmox-backup-client`. Le client assure le découpage et la déduplication à la source avant l'envoi.
+    * *Cible Froide (Nextcloud WebDAV)* : Utilisation de `rclone copy`. Le fichier brut est transféré sans déduplication vers le stockage externalisé.
+3. **Nettoyage** : Exécution de la commande `rm` pour purger le dump local `/tmp/backup.sql` et les éventuels fichiers temporaires liés à rclone, prévenant ainsi la saturation de l'espace disque de la VM.
 
 ## 3. Mécanismes de rétention
 
-La purge des anciennes sauvegardes est gérée directement par le client lors du déroulement du pipeline Ansible, garantissant le respect des quotas de stockage.
+La politique de rétention est uniformisée à **7 jours** pour l'ensemble des cibles. La purge est orchestrée directement par le pipeline Ansible :
 
-* **Datastore PBS** : Exécution de la sous-commande `proxmox-backup-client prune` ciblant le namespace de la base de données, avec le drapeau `--keep-last 7`.
-* **Dossier Nextcloud** : Exécution de la commande `rclone delete` avec le filtre `--min-age 7d`. Ce mécanisme déclaratif ordonne à l'API WebDAV de purger exclusivement les fichiers dépassant l'ancienneté autorisée.
+* **Proxmox Backup Server** : Application de la rétention via la commande de pruning du client natif PBS.
+* **Nextcloud WebDAV** : Exécution de la commande `rclone delete --min-age 7d` pour supprimer de manière déclarative les fichiers bruts obsolètes via l'API WebDAV.
 
 ## 4. Gestion des secrets et Sécurité
 
-Le principe du moindre privilège est appliqué pour garantir que la compromission de la VM de base de données ne permette pas l'altération des sauvegardes ou du système central.
+L'architecture applique le principe du moindre privilège. La compromission éventuelle de la VM PostgreSQL ne doit en aucun cas permettre la compromission des stockages de sauvegarde.
 
-**Configuration Rclone (Nextcloud)** :
-
-* Utilisation exclusive d'un **Mot de passe d'application** spécifique à rclone, généré via l'utilisateur de service `svc-postgresql-backup` sur Nextcloud.
-* Ce mot de passe est rendu illisible dans le fichier `rclone.conf` de la VM via la fonction `rclone obscure`.
-
-**Configuration client (PBS)** :
-
-* Authentification auprès du serveur PBS via un jeton API (API Token) dédié à l'utilisateur `svc-postgresql-backup`, restreint en écriture et en ajout sur le Datastore de sauvegarde.
-* Le mot de passe de la variable d'environnement `PBS_PASSWORD` est provisionné de manière éphémère par Ansible lors de l'exécution, sans jamais être stocké en clair sur le disque de la machine virtuelle.
+* **Authentification Nextcloud** : Utilisation d'un mot de passe d'application dédié à l'utilisateur de service de sauvegarde. Le secret est obfusqué localement via `rclone obscure`.
+* **Authentification PBS** : Utilisation d'un jeton API (API Token) dont les permissions sont restreintes aux seuls droits d'ajout (append) et de purge sur le namespace de destination.
+* **Provisionnement éphémère** : Les secrets critiques (tels que `PBS_PASSWORD`) sont injectés à la volée par Ansible sous forme de variables d'environnement. Aucun secret n'est stocké en clair de manière persistante sur le système de fichiers de la machine virtuelle.
