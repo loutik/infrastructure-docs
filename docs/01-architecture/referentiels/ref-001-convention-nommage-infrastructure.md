@@ -32,8 +32,8 @@ La structure globale repose sur un format strict composé de **5 segments** sép
 
 | Segment | Rôle | Valeurs autorisées |
 | :--- | :--- | :--- |
-| **`loc`** (Localisation) | Identifie l'emplacement physique ou le cloud provider. | **On-Premise :** `trs1` (Tours), `mtl1` (Montlouis).<br>**Cloud :** `ovhgra1` (OVH Gravelines), `infgva1` (Infomaniak Genève), `awspar1` (AWS Paris).<br>**Global :** `glb` (Ressources transverses/logiques). |
-| **`rol`** (Rôle) | Définit la fonction de l'équipement ou du service. | `k3s`, `pve` (Proxmox), `opn` (OPNsense), `core` (Routage central), `edge` (Bordure), `web`, `db`, `runner`. |
+| **`loc`** (Localisation) | Identifie l'emplacement physique ou le cloud provider. | **On-Premise :** `trs1` (Tours), `mlt1` (Montlouis).<br>**Cloud :** `ovhgra1` (OVH Gravelines), `infgva1` (Infomaniak Genève), `awspar1` (AWS Paris).<br>**Global :** `glb` (Ressources transverses/logiques). |
+| **`rol`** (Rôle) | Définit la fonction de l'équipement ou du service. | `k3s`, `pve` (Proxmox), `opn` (OPNsense), `core` (Routage central), `edge` (Bordure), `web`, `db`, `runner`, `bkp` (Backup)|
 | **`typ`** (Type) | Précise la nature matérielle ou logique. | `bm` (Bare-Metal), `vm` (Virtual Machine), `sw` (Switch), `fw` (Firewall), `rt` (Routeur), `vlan`, `ipam`. |
 | **`env`** (Environnement) | Délimite le contexte d'exécution (Trigramme strict). | `prd` (Production), `stg` (Staging), `dev` (Développement), `lab` (Laboratoire). |
 | **`id`** (Identifiant) | Incrément numérique unique sur 2 chiffres. | De `01` à `99`. |
@@ -59,7 +59,7 @@ La structure globale repose sur un format strict composé de **5 segments** sép
 
 * **Objets d'organisation Netbox :** Les noms des objets "Sites" et "Racks" dans Netbox (qui ne sont pas des noms d'hôtes DNS) peuvent conserver des majuscules pour la lisibilité humaine (ex: `DC-TRS1`, `TRS1-RK01`).
 
-* **Clusters :** Les noms des clusters sont allégés pour répondre à la problématique de la taille définie par certains orchestrateurs et hyperviseurs. Ils doivent donc utiliser le format suivant : `<loc>-<loc>-<env>` (ex: `trs1-pve-prd`, `mlt1-pve-prd`, `ovhgra1-pve-prd`).
+* **Clusters :** Les noms des clusters sont allégés pour répondre à la problématique de la taille définie par certains orchestrateurs et hyperviseurs. Ils doivent donc utiliser le format suivant : `<loc>-<loc>-<env>` (ex: `trs1-pve-prd`, `mtl1-pve-prd`, `ovhgra1-pve-prd`).
 
 ## 5. Validation
 
