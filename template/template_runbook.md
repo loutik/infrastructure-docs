@@ -29,7 +29,6 @@ service: [Service]
 date: [Date]
 author: [Auteur]
 owner: [Responsable]
-tags: [runbook, exploitation, mco]
 ---
 
 # {{ page.meta.title }}

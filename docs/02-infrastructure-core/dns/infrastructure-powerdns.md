@@ -1,10 +1,9 @@
 ---
 title: Infrastructure DNS - PowerDNS
-service: DNS
+service: PowerDNS
 date: 2026-07-11
 author: Louis MEDO
 owner: Louis MEDO
-tags: [dns, powerdns, postgresql, iac, opsbricks]
 ---
 
 # {{ page.meta.title }}

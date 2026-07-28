@@ -1,10 +1,9 @@
 ---
-title: Déploiement du serveur DNS autoritaire (PowerDNS)
-service: DNS
+title: Déploiement du serveur DNS autoritaire - PowerDNS
+service: PowerDNS
 date: 2026-07-11
 author: Louis MEDO
 owner: Louis MEDO
-tags: [deploiement, iac, mise-en-production, dns, powerdns]
 ---
 
 # {{ page.meta.title }}
@@ -17,7 +16,7 @@ tags: [deploiement, iac, mise-en-production, dns, powerdns]
     * **Auteur** : {{ page.meta.author }}
     * **Responsable** : {{ page.meta.owner }}
 
-## 1. Architecture et contexte
+## 1. Contexte
 
 Ce composant assure la résolution DNS interne et autoritaire pour l'environnement LoutikCLOUD. Intégré dans l'orchestrateur WandOps, PowerDNS s'exécute selon une architecture *stateless* dans la DMZ Infrastructure (VLAN 13). Il dépend fonctionnellement d'un backend PostgreSQL isolé en Zone de Diffusion Restreinte (ZDR, VLAN 17) pour le stockage persistant des zones et enregistrements. La gestion des zones s'effectue exclusivement via des appels API REST pour garantir l'idempotence et le respect des standards SRE.
 

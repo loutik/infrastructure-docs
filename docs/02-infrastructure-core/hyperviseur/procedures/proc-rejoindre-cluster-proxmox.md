@@ -1,10 +1,9 @@
 ---
 title: Jonction d'un nœud au cluster
-service: Proxmox
+service: Proxmox VE
 date: 2026-05-31
 author: Louis MEDO
 owner: Louis MEDO
-tags: [proxmox]
 ---
 
 # {{ page.meta.title }}
@@ -17,7 +16,7 @@ tags: [proxmox]
     * **Auteur** : {{ page.meta.author }}
     * **Responsable** : {{ page.meta.owner }}
 
-## 1. Architecture et contexte
+## 1. Contexte
 L'ajout d'un nouveau nœud de calcul au cluster Proxmox VE existant de l'infrastructure LoutikCLOUD nécessite de sécuriser les échanges initiaux. La politique de sécurité imposant la désactivation de l'authentification SSH par mot de passe pour le compte `root`, la jonction s'effectue obligatoirement via l'utilisation d'une clé SSH privée asymétrique stockée de manière sécurisée et approuvée par le cluster maître.
 
 ## 2. Prérequis

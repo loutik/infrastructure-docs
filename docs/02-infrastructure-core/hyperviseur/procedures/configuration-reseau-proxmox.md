@@ -4,7 +4,6 @@ service: Proxmox VE
 date: 2026-07-11
 author: Louis MEDO
 owner: Louis MEDO
-tags: [deploiement, iac, mise-en-production, proxmox, reseau, vlan]
 ---
 
 # {{ page.meta.title }}
@@ -17,7 +16,7 @@ tags: [deploiement, iac, mise-en-production, proxmox, reseau, vlan]
     * **Auteur** : {{ page.meta.author }}
     * **Responsable** : {{ page.meta.owner }}
 
-## 1. Architecture et contexte
+## 1. Contexte
 Cette procédure décrit la modification de la configuration réseau post-installation d'un nœud hyperviseur Proxmox VE au sein de l'infrastructure LoutikCLOUD. L'objectif est de segmenter le trafic en activant le support 802.1Q (VLAN aware) sur le commutateur virtuel par défaut, et d'isoler l'interface de management sur un VLAN dédié (VLAN 20 - ADMOOB). Cette topologie sécurise l'accès à l'hyperviseur tout en permettant aux futures machines virtuelles d'être affectées à différentes zones réseau (ex: DMZ, LAN) via un port unique.
 
 ## 2. Prérequis

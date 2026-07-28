@@ -1,10 +1,9 @@
 ---
 title: Création des VLANs et interfaces
-service: Réseau
+service: OPNsense
 date: 2026-06-30
 author: Louis MEDO
 owner: Louis MEDO
-tags: [deploiement, reseau, vlan, segmentation]
 ---
 
 # {{ page.meta.title }}
@@ -17,7 +16,7 @@ tags: [deploiement, reseau, vlan, segmentation]
     * **Auteur** : {{ page.meta.author }}
     * **Responsable** : {{ page.meta.owner }}
 
-## 1. Architecture et contexte
+## 1. Contexte
 Cette procédure décrit la mise en place de la segmentation réseau de niveau 2 (VLAN) et niveau 3 (Routage) sur le pare-feu OPNsense. Elle consiste à déclarer les interfaces virtuelles 802.1Q sur l'interface physique interne, puis à assigner et configurer l'adressage IP statique pour chaque zone isolée (DMZE, DMZI, ZDS, LAN). Cette étape est structurée autour du référentiel de nommage pour garantir la lisibilité et l'automatisation future. C'est un prérequis absolu avant la création des alias de pare-feu et la bascule définitive de l'administration sur le réseau de management dédié.
 
 ## 2. Prérequis

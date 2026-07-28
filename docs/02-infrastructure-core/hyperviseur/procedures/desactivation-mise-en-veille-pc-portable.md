@@ -4,7 +4,6 @@ service: Proxmox VE
 date: 2026-07-11
 author: Louis MEDO
 owner: Louis MEDO
-tags: [deploiement, iac, mise-en-production, proxmox, systemd]
 ---
 
 # {{ page.meta.title }}

@@ -31,7 +31,6 @@ date: [Date de l'incident]
 severity: [Sévérité]
 author: [Auteur]
 owner: [Responsable]
-tags: [postmortem, incident, blameless]
 ---
 
 # {{ page.meta.id }} : {{ page.meta.title }}
@@ -44,7 +43,7 @@ tags: [postmortem, incident, blameless]
     * **Rédacteur** : {{ page.meta.author }}
     * **Incident Commander** : {{ page.meta.owner }}
 
-## 1. Contexte et impact
+## 1. Contexte
 [Description claire de ce qui s'est passé. Préciser la durée totale de l'incident, les services spécifiques touchés (ex: Authentik, hébergement portfolio) et l'impact réel sur les utilisateurs finaux.]
 
 ## 2. Chronologie

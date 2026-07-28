@@ -1,10 +1,9 @@
 ---
 title: Configuration bootstrap - OPNsense
-service: Réseau
+service: OPNsense
 date: 2026-06-30
 author: Louis MEDO
 owner: Louis MEDO
-tags: [deploiement, bootstrap, iac, securite]
 ---
 
 # {{ page.meta.title }}

@@ -1,10 +1,9 @@
 ---
 title: Provisionnement d'une nouvelle base de données applicative
-service: Base de données / PostgreSQL
+service: PostgreSQL
 date: 2026-07-06
 author: Louis MEDO
 owner: Louis MEDO
-tags: [runbook, exploitation, mco]
 ---
 
 # {{ page.meta.title }}
@@ -18,8 +17,7 @@ tags: [runbook, exploitation, mco]
     * **Auteur** : {{ page.meta.author }}
     * **Responsable** : {{ page.meta.owner }}
 
-## 1. Contexte et Objectif
-
+## 1. Contexte
 L'objectif de cette procédure est d'automatiser et de standardiser la création d'une nouvelle base de données isolée au sein du cluster de production LoutikCLOUD. Ce runbook doit être exécuté lors du déploiement d'un nouveau service nécessitant de la persistance (ex: Authentik, Netbox) afin de lui fournir une base de données avec séparation stricte des privilèges (DDL vs DML) respectant l'architecture Zero Trust.
 
 ## 2. Prérequis
