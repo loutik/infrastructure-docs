@@ -25,6 +25,10 @@
          <lastmod>2026-07-29</lastmod>
     </url>
     <url>
+         <loc>https://infra-docs.loutik.fr/01-architecture/ADR/Edge/adr-007-choix-waf-vm-edge/</loc>
+         <lastmod>2026-07-29</lastmod>
+    </url>
+    <url>
          <loc>https://infra-docs.loutik.fr/01-architecture/ADR/Infrastructure/adr-002-choix-plan-adressage/</loc>
          <lastmod>2026-07-29</lastmod>
     </url>
