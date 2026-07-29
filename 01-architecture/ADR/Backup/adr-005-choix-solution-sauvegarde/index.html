@@ -10,31 +10,31 @@
         <meta name="author" content="Louis MEDO">
       
       
-        <link rel="canonical" href="https://infra-docs.loutik.fr/01-architecture/ADR/adr-004-choix-dns-infrastructure/">
+        <link rel="canonical" href="https://infra-docs.loutik.fr/01-architecture/ADR/Backup/adr-005-choix-solution-sauvegarde/">
       
       
-        <link rel="prev" href="../adr-003-plateforme-documentation/">
+        <link rel="prev" href="../../../">
       
       
-        <link rel="next" href="../adr-005-choix-solution-sauvegarde/">
+        <link rel="next" href="../../DNS/adr-004-choix-dns-infrastructure/">
       
       
         
       
       
-      <link rel="icon" href="../../../assets/logo_loutik.png">
+      <link rel="icon" href="../../../../assets/logo_loutik.png">
       <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.6">
     
     
       
-        <title>Choix de la solution DNS pour l'infrastructure on-premise - Documentation infrastructure - LoutikCLOUD</title>
+        <title>Choix de la solution de sauvegarde - Documentation infrastructure - LoutikCLOUD</title>
       
     
     
-      <link rel="stylesheet" href="../../../assets/stylesheets/main.484c7ddc.min.css">
+      <link rel="stylesheet" href="../../../../assets/stylesheets/main.484c7ddc.min.css">
       
         
-        <link rel="stylesheet" href="../../../assets/stylesheets/palette.ab4e12ef.min.css">
+        <link rel="stylesheet" href="../../../../assets/stylesheets/palette.ab4e12ef.min.css">
       
       
 
@@ -53,11 +53,11 @@
       
     
     
-      <link rel="stylesheet" href="../../../css/timeago.css">
+      <link rel="stylesheet" href="../../../../css/timeago.css">
     
-      <link rel="stylesheet" href="../../../assets/css/style.css">
+      <link rel="stylesheet" href="../../../../assets/css/style.css">
     
-    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("../../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
@@ -80,7 +80,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#adr-4-choix-de-la-solution-dns-pour-linfrastructure-on-premise" class="md-skip">
+        <a href="#adr-5-choix-de-la-solution-de-sauvegarde" class="md-skip">
           Aller au contenu
         </a>
       
@@ -96,9 +96,9 @@
 
 <header class="md-header md-header--shadow" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="En-tête">
-    <a href="../../.." title="Documentation infrastructure - LoutikCLOUD" class="md-header__button md-logo" aria-label="Documentation infrastructure - LoutikCLOUD" data-md-component="logo">
+    <a href="../../../.." title="Documentation infrastructure - LoutikCLOUD" class="md-header__button md-logo" aria-label="Documentation infrastructure - LoutikCLOUD" data-md-component="logo">
       
-  <img src="../../../assets/logo_loutik.png" alt="logo">
+  <img src="../../../../assets/logo_loutik.png" alt="logo">
 
     </a>
     <label class="md-header__button md-icon" for="__drawer">
@@ -115,7 +115,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Choix de la solution DNS pour l'infrastructure on-premise
+              Choix de la solution de sauvegarde
             
           </span>
         </div>
@@ -207,9 +207,9 @@
 
 <nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="../../.." title="Documentation infrastructure - LoutikCLOUD" class="md-nav__button md-logo" aria-label="Documentation infrastructure - LoutikCLOUD" data-md-component="logo">
+    <a href="../../../.." title="Documentation infrastructure - LoutikCLOUD" class="md-nav__button md-logo" aria-label="Documentation infrastructure - LoutikCLOUD" data-md-component="logo">
       
-  <img src="../../../assets/logo_loutik.png" alt="logo">
+  <img src="../../../../assets/logo_loutik.png" alt="logo">
 
     </a>
     Documentation infrastructure - LoutikCLOUD
@@ -236,7 +236,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../.." class="md-nav__link">
+      <a href="../../../.." class="md-nav__link">
         
   
   
@@ -287,7 +287,7 @@
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="../../" class="md-nav__link ">
+            <a href="../../../" class="md-nav__link ">
               
   
   
@@ -343,8 +343,6 @@
       
         
       
-        
-      
     
     
     
@@ -389,106 +387,54 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../adr-001-choix-hebergeur-vps-gateway/" class="md-nav__link">
+  
+    
+    
+      
         
-  
-  
-  <span class="md-ellipsis">
+      
     
-  
-    Choix de l'hébergeur pour le VPS Gateway
-  
-
     
-  </span>
-  
-  
     
-  
-  
-    <span class="md-status md-status--accepted"></span>
-  
-
-  
-
-      </a>
-    </li>
-  
-
-              
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_2_1" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_2_2_1" id="__nav_2_2_1_label" tabindex="0">
             
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../adr-002-choix-plan-adressage/" class="md-nav__link">
-        
   
   
   <span class="md-ellipsis">
     
   
-    Choix plan d'adressage V1
+    Backup
   
 
     
   </span>
   
   
-    
-  
-  
-    <span class="md-status md-status--accepted"></span>
-  
 
-  
-
-      </a>
-    </li>
-  
-
-              
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_2_2_1_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2_2_1">
+            <span class="md-nav__icon md-icon"></span>
             
-              
-                
   
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../adr-003-plateforme-documentation/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Choix de la plateforme pour la documentation
+    Backup
   
 
-    
-  </span>
-  
-  
-    
-  
-  
-    <span class="md-status md-status--accepted"></span>
-  
-
-  
-
-      </a>
-    </li>
-  
-
-              
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
             
               
                 
@@ -513,7 +459,7 @@
   <span class="md-ellipsis">
     
   
-    Choix de la solution DNS pour l'infrastructure on-premise
+    Choix de la solution de sauvegarde
   
 
     
@@ -538,7 +484,7 @@
   <span class="md-ellipsis">
     
   
-    Choix de la solution DNS pour l'infrastructure on-premise
+    Choix de la solution de sauvegarde
   
 
     
@@ -617,10 +563,10 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#311-powerdns-authoritative-server" class="md-nav__link">
+  <a href="#311-proxmox-backup-server-pbs" class="md-nav__link">
     <span class="md-ellipsis">
       
-        3.1.1. PowerDNS (Authoritative Server)
+        3.1.1. Proxmox Backup Server (PBS)
       
     </span>
   </a>
@@ -628,10 +574,10 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#312-bind9" class="md-nav__link">
+  <a href="#312-restic" class="md-nav__link">
     <span class="md-ellipsis">
       
-        3.1.2. BIND9
+        3.1.2. Restic
       
     </span>
   </a>
@@ -639,21 +585,10 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#313-coredns" class="md-nav__link">
+  <a href="#313-kopia" class="md-nav__link">
     <span class="md-ellipsis">
       
-        3.1.3. CoreDNS
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#314-technitium-dns" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        3.1.4. Technitium DNS
+        3.1.3. Kopia
       
     </span>
   </a>
@@ -701,6 +636,65 @@
 
               
             
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_2_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_2_2" id="__nav_2_2_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    DNS
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_2_2_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_2_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    DNS
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
               
                 
   
@@ -708,14 +702,14 @@
   
   
     <li class="md-nav__item">
-      <a href="../adr-005-choix-solution-sauvegarde/" class="md-nav__link">
+      <a href="../../DNS/adr-004-choix-dns-infrastructure/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    Choix de la solution de sauvegarde
+    Choix de la solution DNS pour l'infrastructure on-premise
   
 
     
@@ -731,6 +725,276 @@
   
 
       </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_2_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_2_3" id="__nav_2_2_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Edge
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_2_2_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_2_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Edge
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Edge/adr-001-choix-hebergeur-vps-gateway/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Choix de l'hébergeur pour le VPS Gateway
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--accepted"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Edge/adr-006-choix-reverse-proxy-vps-edge/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Choix du Reverse Proxy pour la VM Edge
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--accepted"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_2_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_2_4" id="__nav_2_2_4_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Infrastructure
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_2_2_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_2_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Infrastructure
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Infrastructure/adr-002-choix-plan-adressage/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Choix plan d'adressage V1
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--accepted"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Infrastructure/adr-003-plateforme-documentation/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Choix de la plateforme pour la documentation
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--accepted"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
     </li>
   
 
@@ -810,7 +1074,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../referentiels/ref-001-convention-nommage-infrastructure/" class="md-nav__link">
+      <a href="../../../referentiels/ref-001-convention-nommage-infrastructure/" class="md-nav__link">
         
   
   
@@ -838,7 +1102,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../referentiels/ref-002-convention-nommage-git/" class="md-nav__link">
+      <a href="../../../referentiels/ref-002-convention-nommage-git/" class="md-nav__link">
         
   
   
@@ -866,7 +1130,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../referentiels/ref-003-convention-nommage-reseau-pare-feu/" class="md-nav__link">
+      <a href="../../../referentiels/ref-003-convention-nommage-reseau-pare-feu/" class="md-nav__link">
         
   
   
@@ -894,7 +1158,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../referentiels/ref-004-convention-nommage-base-de-donnees/" class="md-nav__link">
+      <a href="../../../referentiels/ref-004-convention-nommage-base-de-donnees/" class="md-nav__link">
         
   
   
@@ -922,7 +1186,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../referentiels/ref-005-convention-nommage-authentik/" class="md-nav__link">
+      <a href="../../../referentiels/ref-005-convention-nommage-authentik/" class="md-nav__link">
         
   
   
@@ -993,7 +1257,7 @@
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="../../../02-infrastructure-core/" class="md-nav__link ">
+            <a href="../../../../02-infrastructure-core/" class="md-nav__link ">
               
   
   
@@ -1145,7 +1409,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../02-infrastructure-core/backup/architecture/strategie-sauvegarde-opnsense/" class="md-nav__link">
+      <a href="../../../../02-infrastructure-core/backup/architecture/strategie-sauvegarde-opnsense/" class="md-nav__link">
         
   
   
@@ -1173,7 +1437,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../02-infrastructure-core/backup/architecture/strategie-sauvegarde-postgresql/" class="md-nav__link">
+      <a href="../../../../02-infrastructure-core/backup/architecture/strategie-sauvegarde-postgresql/" class="md-nav__link">
         
   
   
@@ -1268,7 +1532,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../02-infrastructure-core/backup/procedures/configuration-montage-rclone-webdav/" class="md-nav__link">
+      <a href="../../../../02-infrastructure-core/backup/procedures/configuration-montage-rclone-webdav/" class="md-nav__link">
         
   
   
@@ -1296,7 +1560,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../02-infrastructure-core/backup/procedures/deploiement-datastore-pbs/" class="md-nav__link">
+      <a href="../../../../02-infrastructure-core/backup/procedures/deploiement-datastore-pbs/" class="md-nav__link">
         
   
   
@@ -1324,7 +1588,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../02-infrastructure-core/backup/procedures/installation-pbs-via-iso/" class="md-nav__link">
+      <a href="../../../../02-infrastructure-core/backup/procedures/installation-pbs-via-iso/" class="md-nav__link">
         
   
   
@@ -1352,7 +1616,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../02-infrastructure-core/backup/procedures/int%C3%A9gration-pbs-cluster-pve/" class="md-nav__link">
+      <a href="../../../../02-infrastructure-core/backup/procedures/int%C3%A9gration-pbs-cluster-pve/" class="md-nav__link">
         
   
   
@@ -1380,7 +1644,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../02-infrastructure-core/backup/procedures/preparation-stockage-externalise-nextcloud-proxmox/" class="md-nav__link">
+      <a href="../../../../02-infrastructure-core/backup/procedures/preparation-stockage-externalise-nextcloud-proxmox/" class="md-nav__link">
         
   
   
@@ -1469,7 +1733,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../02-infrastructure-core/backup/runbooks/configuration-sauvegarde-automatique-vm-pbs/" class="md-nav__link">
+      <a href="../../../../02-infrastructure-core/backup/runbooks/configuration-sauvegarde-automatique-vm-pbs/" class="md-nav__link">
         
   
   
@@ -1497,7 +1761,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../02-infrastructure-core/backup/runbooks/creation-espace-stockage-sauvegarde-service/" class="md-nav__link">
+      <a href="../../../../02-infrastructure-core/backup/runbooks/creation-espace-stockage-sauvegarde-service/" class="md-nav__link">
         
   
   
@@ -1645,7 +1909,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../02-infrastructure-core/base-de-donnees/procedures/deploiement-environnement-postgresql/" class="md-nav__link">
+      <a href="../../../../02-infrastructure-core/base-de-donnees/procedures/deploiement-environnement-postgresql/" class="md-nav__link">
         
   
   
@@ -1732,7 +1996,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../02-infrastructure-core/base-de-donnees/runnboks/provisionnement-nouvelle-base-de-donnes-postgresql/" class="md-nav__link">
+      <a href="../../../../02-infrastructure-core/base-de-donnees/runnboks/provisionnement-nouvelle-base-de-donnes-postgresql/" class="md-nav__link">
         
   
   
@@ -1831,7 +2095,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../02-infrastructure-core/dns/infrastructure-powerdns/" class="md-nav__link">
+      <a href="../../../../02-infrastructure-core/dns/infrastructure-powerdns/" class="md-nav__link">
         
   
   
@@ -1910,7 +2174,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../02-infrastructure-core/dns/procedures/deploiement-serveur-dns-powerdns/" class="md-nav__link">
+      <a href="../../../../02-infrastructure-core/dns/procedures/deploiement-serveur-dns-powerdns/" class="md-nav__link">
         
   
   
@@ -1997,7 +2261,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../02-infrastructure-core/dns/runbooks/exploitation-api-powerdns/" class="md-nav__link">
+      <a href="../../../../02-infrastructure-core/dns/runbooks/exploitation-api-powerdns/" class="md-nav__link">
         
   
   
@@ -2157,7 +2421,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../02-infrastructure-core/hyperviseur/procedures/configuration-reseau-proxmox/" class="md-nav__link">
+      <a href="../../../../02-infrastructure-core/hyperviseur/procedures/configuration-reseau-proxmox/" class="md-nav__link">
         
   
   
@@ -2185,7 +2449,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../02-infrastructure-core/hyperviseur/procedures/configuration-serveur-smtp-pve/" class="md-nav__link">
+      <a href="../../../../02-infrastructure-core/hyperviseur/procedures/configuration-serveur-smtp-pve/" class="md-nav__link">
         
   
   
@@ -2213,7 +2477,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../02-infrastructure-core/hyperviseur/procedures/desactivation-mise-en-veille-pc-portable/" class="md-nav__link">
+      <a href="../../../../02-infrastructure-core/hyperviseur/procedures/desactivation-mise-en-veille-pc-portable/" class="md-nav__link">
         
   
   
@@ -2241,7 +2505,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../02-infrastructure-core/hyperviseur/procedures/proc-configuration-sso-proxmox-via-authentik/" class="md-nav__link">
+      <a href="../../../../02-infrastructure-core/hyperviseur/procedures/proc-configuration-sso-proxmox-via-authentik/" class="md-nav__link">
         
   
   
@@ -2269,7 +2533,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../02-infrastructure-core/hyperviseur/procedures/proc-creation-cluster-proxmox/" class="md-nav__link">
+      <a href="../../../../02-infrastructure-core/hyperviseur/procedures/proc-creation-cluster-proxmox/" class="md-nav__link">
         
   
   
@@ -2297,7 +2561,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../02-infrastructure-core/hyperviseur/procedures/proc-installation-physique-proxmox/" class="md-nav__link">
+      <a href="../../../../02-infrastructure-core/hyperviseur/procedures/proc-installation-physique-proxmox/" class="md-nav__link">
         
   
   
@@ -2325,7 +2589,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../02-infrastructure-core/hyperviseur/procedures/proc-rejoindre-cluster-proxmox/" class="md-nav__link">
+      <a href="../../../../02-infrastructure-core/hyperviseur/procedures/proc-rejoindre-cluster-proxmox/" class="md-nav__link">
         
   
   
@@ -2412,7 +2676,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../02-infrastructure-core/hyperviseur/runbooks/runbook-sortir-un-noeud-cluster-proxmox/" class="md-nav__link">
+      <a href="../../../../02-infrastructure-core/hyperviseur/runbooks/runbook-sortir-un-noeud-cluster-proxmox/" class="md-nav__link">
         
   
   
@@ -2572,7 +2836,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../02-infrastructure-core/reseau/procedures/configuration-alias-opnsense/" class="md-nav__link">
+      <a href="../../../../02-infrastructure-core/reseau/procedures/configuration-alias-opnsense/" class="md-nav__link">
         
   
   
@@ -2600,7 +2864,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../02-infrastructure-core/reseau/procedures/configuration-boostrap-opnsense/" class="md-nav__link">
+      <a href="../../../../02-infrastructure-core/reseau/procedures/configuration-boostrap-opnsense/" class="md-nav__link">
         
   
   
@@ -2628,7 +2892,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../02-infrastructure-core/reseau/procedures/configuration-categories-opnsense/" class="md-nav__link">
+      <a href="../../../../02-infrastructure-core/reseau/procedures/configuration-categories-opnsense/" class="md-nav__link">
         
   
   
@@ -2656,7 +2920,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../02-infrastructure-core/reseau/procedures/configuration-dns-recursif-opnsense/" class="md-nav__link">
+      <a href="../../../../02-infrastructure-core/reseau/procedures/configuration-dns-recursif-opnsense/" class="md-nav__link">
         
   
   
@@ -2684,7 +2948,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../02-infrastructure-core/reseau/procedures/configuration-ips-suricata-opnsense/" class="md-nav__link">
+      <a href="../../../../02-infrastructure-core/reseau/procedures/configuration-ips-suricata-opnsense/" class="md-nav__link">
         
   
   
@@ -2712,7 +2976,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../02-infrastructure-core/reseau/procedures/installation-opnsense/" class="md-nav__link">
+      <a href="../../../../02-infrastructure-core/reseau/procedures/installation-opnsense/" class="md-nav__link">
         
   
   
@@ -2791,7 +3055,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../02-infrastructure-core/reseau/procedures/regles-filtrage/configuration-regles-filtrage-vlan-admoob-opnsense/" class="md-nav__link">
+      <a href="../../../../02-infrastructure-core/reseau/procedures/regles-filtrage/configuration-regles-filtrage-vlan-admoob-opnsense/" class="md-nav__link">
         
   
   
@@ -2892,7 +3156,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../02-infrastructure-core/reseau/runbooks/creation-compte-service-opnsense/" class="md-nav__link">
+      <a href="../../../../02-infrastructure-core/reseau/runbooks/creation-compte-service-opnsense/" class="md-nav__link">
         
   
   
@@ -2920,7 +3184,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../02-infrastructure-core/reseau/runbooks/creation-objets-logiques-et-categories-filtrage/" class="md-nav__link">
+      <a href="../../../../02-infrastructure-core/reseau/runbooks/creation-objets-logiques-et-categories-filtrage/" class="md-nav__link">
         
   
   
@@ -2948,7 +3212,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../02-infrastructure-core/reseau/runbooks/creation-regles-filtrage/" class="md-nav__link">
+      <a href="../../../../02-infrastructure-core/reseau/runbooks/creation-regles-filtrage/" class="md-nav__link">
         
   
   
@@ -2976,7 +3240,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../02-infrastructure-core/reseau/runbooks/creation-vlan-opnsense/" class="md-nav__link">
+      <a href="../../../../02-infrastructure-core/reseau/runbooks/creation-vlan-opnsense/" class="md-nav__link">
         
   
   
@@ -3047,7 +3311,7 @@
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="../../../03-edge/" class="md-nav__link ">
+            <a href="../../../../03-edge/" class="md-nav__link ">
               
   
   
@@ -3146,7 +3410,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../03-edge/vpn/infrastructure-vpn-tailscale/" class="md-nav__link">
+      <a href="../../../../03-edge/vpn/infrastructure-vpn-tailscale/" class="md-nav__link">
         
   
   
@@ -3225,7 +3489,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../03-edge/vpn/procedures/installation-configuration-tailscale-opnsense/" class="md-nav__link">
+      <a href="../../../../03-edge/vpn/procedures/installation-configuration-tailscale-opnsense/" class="md-nav__link">
         
   
   
@@ -3314,7 +3578,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../03-edge/vpn/runbooks/ajout-subnet-tailscale/" class="md-nav__link">
+      <a href="../../../../03-edge/vpn/runbooks/ajout-subnet-tailscale/" class="md-nav__link">
         
   
   
@@ -3342,7 +3606,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../03-edge/vpn/runbooks/gestion-acl-tailscale/" class="md-nav__link">
+      <a href="../../../../03-edge/vpn/runbooks/gestion-acl-tailscale/" class="md-nav__link">
         
   
   
@@ -3411,7 +3675,7 @@
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="../../../04-securite/" class="md-nav__link ">
+            <a href="../../../../04-securite/" class="md-nav__link ">
               
   
   
@@ -3477,7 +3741,7 @@
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="../../../05-services/" class="md-nav__link ">
+            <a href="../../../../05-services/" class="md-nav__link ">
               
   
   
@@ -3627,7 +3891,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../05-services/SSO/procedures/configuration-mapping-oidc-export-groupes/" class="md-nav__link">
+      <a href="../../../../05-services/SSO/procedures/configuration-mapping-oidc-export-groupes/" class="md-nav__link">
         
   
   
@@ -3655,7 +3919,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../05-services/SSO/procedures/implementation-politique-acces-globale/" class="md-nav__link">
+      <a href="../../../../05-services/SSO/procedures/implementation-politique-acces-globale/" class="md-nav__link">
         
   
   
@@ -3744,7 +4008,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../05-services/SSO/runbooks/application-politique-restriction-acces-applications/" class="md-nav__link">
+      <a href="../../../../05-services/SSO/runbooks/application-politique-restriction-acces-applications/" class="md-nav__link">
         
   
   
@@ -3772,7 +4036,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../05-services/SSO/runbooks/configuration-injection-groupes/" class="md-nav__link">
+      <a href="../../../../05-services/SSO/runbooks/configuration-injection-groupes/" class="md-nav__link">
         
   
   
@@ -3889,10 +4153,10 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#311-powerdns-authoritative-server" class="md-nav__link">
+  <a href="#311-proxmox-backup-server-pbs" class="md-nav__link">
     <span class="md-ellipsis">
       
-        3.1.1. PowerDNS (Authoritative Server)
+        3.1.1. Proxmox Backup Server (PBS)
       
     </span>
   </a>
@@ -3900,10 +4164,10 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#312-bind9" class="md-nav__link">
+  <a href="#312-restic" class="md-nav__link">
     <span class="md-ellipsis">
       
-        3.1.2. BIND9
+        3.1.2. Restic
       
     </span>
   </a>
@@ -3911,21 +4175,10 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#313-coredns" class="md-nav__link">
+  <a href="#313-kopia" class="md-nav__link">
     <span class="md-ellipsis">
       
-        3.1.3. CoreDNS
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#314-technitium-dns" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        3.1.4. Technitium DNS
+        3.1.3. Kopia
       
     </span>
   </a>
@@ -3980,7 +4233,7 @@
   
   
     <div style="text-align: left; font-size: 0.85em; color: var(--md-default-fg-color--light); margin-bottom: 20px;">
-      <strong>Dernière édition :</strong> <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-timeago" title="9 juillet 2026 19:56:53 UTC"><span class="timeago" datetime="2026-07-09T19:56:53+00:00" locale="fr"></span></span><span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date" title="9 juillet 2026 19:56:53 UTC">2026-07-09</span>
+      <strong>Dernière édition :</strong> <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-timeago" title="22 juillet 2026 18:59:12 UTC"><span class="timeago" datetime="2026-07-22T18:59:12+00:00" locale="fr"></span></span><span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date" title="22 juillet 2026 18:59:12 UTC">2026-07-22</span>
     </div>
   
   
@@ -3993,19 +4246,20 @@
   
 
 
-<h1 id="adr-4-choix-de-la-solution-dns-pour-linfrastructure-on-premise">ADR-4 : Choix de la solution DNS pour l'infrastructure on-premise</h1>
+<h1 id="adr-5-choix-de-la-solution-de-sauvegarde">ADR-5 : Choix de la solution de sauvegarde</h1>
 <p><img alt="Bannière LoutikCloud" src="https://raw.githubusercontent.com/loutik/design-assets/main/loutikcloud/banniere_loutikcloud.png" /></p>
 <div class="admonition info">
 <p class="admonition-title">Informations</p>
 <ul>
-<li><strong>Date de création</strong> : 2026-07-09</li>
+<li><strong>Date de création</strong> : 22/07/2026</li>
 <li><strong>Statut</strong> : accepted</li>
 <li><strong>Auteur</strong> : Louis MEDO</li>
 <li><strong>Responsable</strong> : Louis MEDO</li>
 </ul>
 </div>
 <h2 id="1-contexte">1. Contexte</h2>
-<p>L'infrastructure on-premise sous-jacente au domaine <code>infra.loutik.fr</code> nécessite une gestion centralisée, dynamique et hautement disponible de ses enregistrements DNS. Actuellement, le provisionnement des machines s'oriente vers des processus automatisés (pipelines CI/CD, playbooks Ansible). L'absence d'un mécanisme d'enregistrement automatisé des noms pleinement qualifiés (FQDN) via API constitue un point de blocage pour l'automatisation globale de l'infrastructure. De plus, la tolérance aux pannes du service DNS (failover) doit être assurée par le déploiement d'une architecture redondante sur deux serveurs distincts.</p>
+<p>L'infrastructure actuelle, hébergée sur un cluster de trois nœuds Proxmox VE (dont un nœud de 1To dédié aux sauvegardes et deux nœuds de 500Go), nécessite une stratégie de sauvegarde centralisée, homogène et respectant le principe KISS. L'écosystème comprend des machines virtuelles complètes, des bases de données transactionnelles (PostgreSQL, MongoDB), un serveur de fichiers NFS, ainsi qu'un pare-feu physique OPNsense en bordure de réseau.</p>
+<p>Le besoin métier exige d'automatiser les cycles de vie des sauvegardes avec une rétention stricte de 7 jours, de garantir la cohérence des données lors des exports de bases de données, et de permettre une externalisation vers un stockage Cloud tout en respectant une contrainte budgétaire stricte (inférieure à 2€/mois) ou en exploitant les quotas étudiants disponibles (WebDAV 200Go). L'objectif est d'éviter la multiplication des outils de sauvegarde tout en couvrant des périmètres hétérogènes (hyperviseur, fichiers, configurations réseau).</p>
 <h2 id="2-cahiers-des-charges">2. Cahiers des charges</h2>
 <table>
 <thead>
@@ -4020,131 +4274,112 @@
 <tr>
 <td style="text-align: left;"><strong>REQ-F01</strong></td>
 <td style="text-align: left;">Fonctionnel</td>
-<td style="text-align: left;">API Programmable</td>
-<td style="text-align: left;">Capacité à créer, modifier et supprimer des enregistrements FQDN via des requêtes programmatiques.</td>
+<td style="text-align: left;">Sauvegarde unifiée</td>
+<td style="text-align: left;">La solution doit pouvoir traiter à la fois des images disques de VM (à chaud) et des arborescences de fichiers de manière centralisée.</td>
 </tr>
 <tr>
 <td style="text-align: left;"><strong>REQ-F02</strong></td>
 <td style="text-align: left;">Fonctionnel</td>
-<td style="text-align: left;">Haute Disponibilité / Failover</td>
-<td style="text-align: left;">Support d'une architecture à deux nœuds pour assurer la continuité de service en cas de panne d'un serveur.</td>
+<td style="text-align: left;">Cycle de vie automatisé</td>
+<td style="text-align: left;">Capacité à planifier les sauvegardes (ex: 00h00) et à appliquer automatiquement une politique de rétention (suppression après 7 jours).</td>
 </tr>
 <tr>
 <td style="text-align: left;"><strong>REQ-T01</strong></td>
 <td style="text-align: left;">Technique</td>
-<td style="text-align: left;">Intégration Ansible / IaC</td>
-<td style="text-align: left;">Disponibilité de modules ou de providers officiels/communautaires pour s'intégrer dans une philosophie Infrastructure as Code.</td>
+<td style="text-align: left;">Optimisation du stockage</td>
+<td style="text-align: left;">Nécessité d'employer la déduplication et des méthodes incrémentales pour limiter l'empreinte sur le nœud de 1To.</td>
 </tr>
 <tr>
 <td style="text-align: left;"><strong>REQ-T02</strong></td>
 <td style="text-align: left;">Technique</td>
-<td style="text-align: left;">Stockage persistant / Réplication</td>
-<td style="text-align: left;">Flexibilité du backend de stockage permettant une synchronisation ou réplication native et robuste des zones entre les nœuds.</td>
+<td style="text-align: left;">Cohérence des bases de données</td>
+<td style="text-align: left;">L'outil doit s'intégrer post-export logique (dump) pour ne pas corrompre les données en cours d'écriture (PostgreSQL/MongoDB).</td>
 </tr>
 <tr>
 <td style="text-align: left;"><strong>REQ-T03</strong></td>
 <td style="text-align: left;">Technique</td>
-<td style="text-align: left;">Empreinte ressources</td>
-<td style="text-align: left;">Consommation mémoire et CPU optimisée pour une intégration fluide en environnement de services virtualisés (on-premise).</td>
-</tr>
-<tr>
-<td style="text-align: left;"><strong>REQ-T04</strong></td>
-<td style="text-align: left;">Technique</td>
-<td style="text-align: left;">Compatibilité système (Debian)</td>
-<td style="text-align: left;">Support officiel, installation et maintenance simplifiées via les gestionnaires de paquets (APT) sur un système d'exploitation GNU/Linux Debian.</td>
+<td style="text-align: left;">Extensibilité et Cloud</td>
+<td style="text-align: left;">Capacité à exporter les archives de manière sécurisée (chiffrement) vers une cible distante (S3 ou WebDAV).</td>
 </tr>
 </tbody>
 </table>
 <h2 id="3-les-solutions-du-marche">3. Les solutions du marché</h2>
 <h3 id="31-presentations-des-solutions">3.1. Présentations des solutions</h3>
-<h4 id="311-powerdns-authoritative-server">3.1.1. PowerDNS (Authoritative Server)</h4>
+<h4 id="311-proxmox-backup-server-pbs">3.1.1. Proxmox Backup Server (PBS)</h4>
 <ul>
-<li><strong>Présentation générale :</strong> Serveur DNS autoritaire open-source moderne conçu pour les infrastructures à forte charge et les environnements automatisés.</li>
-<li><strong>Fonctionnement :</strong> Contrairement aux serveurs traditionnels basés sur des fichiers de zone plats, PowerDNS s'appuie sur des backends relationnels (PostgreSQL, MySQL, SQLite) pour stocker les données DNS et expose une API REST native.</li>
-<li><strong>Profil :</strong> Solution orientée ingénierie DevOps et production d'entreprise, hautement compatible avec les outils d'automatisation modernes.</li>
+<li><strong>Présentation générale :</strong> Solution open-source native développée par l'éditeur de Proxmox VE, conçue spécifiquement pour la sauvegarde d'infrastructures d'entreprise.</li>
+<li><strong>Fonctionnement :</strong> Utilise les <em>QEMU dirty bitmaps</em> pour des sauvegardes incrémentales de VM ultra-rapides, et propose un agent CLI (<code>proxmox-backup-client</code>) pour créer des archives de fichiers dédupliquées (<code>.pxar</code>).</li>
+<li><strong>Profil :</strong> Infrastructures virtualisées sous Proxmox cherchant une intégration sans friction (agentless pour les VM) et une déduplication agressive.</li>
 </ul>
-<h4 id="312-bind9">3.1.2. BIND9</h4>
+<h4 id="312-restic">3.1.2. Restic</h4>
 <ul>
-<li><strong>Présentation générale :</strong> Le serveur DNS de référence historique sur Internet, reconnu pour sa stabilité absolue et son respect strict des RFC.</li>
-<li><strong>Fonctionnement :</strong> Fonctionne de manière native avec des fichiers de configuration texte. Les mises à jour dynamiques s'effectuent via le protocole standard RFC 2136 à l'aide de l'utilitaire <code>nsupdate</code> et de clés TSIG.</li>
-<li><strong>Profil :</strong> Solution traditionnelle, robuste et académique, privilégiant la standardisation historique aux interfaces HTTP modernes.</li>
+<li><strong>Présentation générale :</strong> Outil en ligne de commande (CLI) open-source, rapide, spécialisé dans la sauvegarde de fichiers de manière sécurisée.</li>
+<li><strong>Fonctionnement :</strong> Réalise des sauvegardes incrémentales au niveau fichier, avec déduplication et chiffrement robustes par défaut, vers de multiples backends (Local, S3, WebDAV, SFTP).</li>
+<li><strong>Profil :</strong> Administrateurs système et ingénieurs DevOps cherchant un outil léger, portable et scriptable pour sécuriser des données applicatives et des fichiers.</li>
 </ul>
-<h4 id="313-coredns">3.1.3. CoreDNS</h4>
+<h4 id="313-kopia">3.1.3. Kopia</h4>
 <ul>
-<li><strong>Présentation générale :</strong> Serveur DNS rapide et modulaire écrit en Go, devenu le standard de facto pour la résolution de noms dans l'écosystème Cloud-Native (Kubernetes).</li>
-<li><strong>Fonctionnement :</strong> S'appuie sur une chaîne de plugins configurables via un "Corefile". Il s'interface dynamiquement avec des backends de type clé-valeur distribués comme <code>etcd</code> pour la synchronisation.</li>
-<li><strong>Profil :</strong> Solution hautement spécialisée pour les infrastructures conteneurisées et les architectures micro-services.</li>
-</ul>
-<h4 id="314-technitium-dns">3.1.4. Technitium DNS</h4>
-<ul>
-<li><strong>Présentation générale :</strong> Serveur DNS faisant office de serveur autoritaire et de résolveur, développé en C#/.NET, intégrant une interface graphique moderne.</li>
-<li><strong>Fonctionnement :</strong> Gère les zones via des bases locales ou des fichiers, et rend l'intégralité de ses fonctionnalités accessibles via une API HTTP REST.</li>
-<li><strong>Profil :</strong> Solution accessible et polyvalente, adaptée pour les environnements de laboratoires et les infrastructures de PME.</li>
+<li><strong>Présentation générale :</strong> Solution de sauvegarde moderne open-source combinant une interface graphique (GUI) et une interface en ligne de commande (CLI).</li>
+<li><strong>Fonctionnement :</strong> S'appuie sur la création de snapshots de répertoires avec déduplication, compression et chiffrement de bout en bout avant l'envoi vers un dépôt distant.</li>
+<li><strong>Profil :</strong> Utilisateurs nécessitant la flexibilité d'une interface visuelle tout en sauvegardant des fichiers vers diverses solutions de stockage cloud.</li>
 </ul>
 <h3 id="32-comparatifs-des-solutions">3.2. Comparatifs des solutions</h3>
 <table>
 <thead>
 <tr>
 <th style="text-align: left;">Exigence</th>
-<th style="text-align: left;">PowerDNS</th>
-<th style="text-align: left;">BIND9</th>
-<th style="text-align: left;">CoreDNS</th>
-<th style="text-align: left;">Technitium DNS</th>
+<th style="text-align: left;">Proxmox Backup Server (PBS)</th>
+<th style="text-align: left;">Restic</th>
+<th style="text-align: left;">Kopia</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;"><strong>REQ-F01 (API REST Native)</strong></td>
-<td style="text-align: left;">Validé (REST exhaustive)</td>
-<td style="text-align: left;">Non validé (Nécessite RFC 2136)</td>
-<td style="text-align: left;">Non validé (Via plugins/etcd)</td>
-<td style="text-align: left;">Validé (HTTP REST)</td>
+<td style="text-align: left;"><strong>REQ-F01 (Unifiée)</strong></td>
+<td style="text-align: left;">Validé (VMs natives + CLI Fichiers)</td>
+<td style="text-align: left;">Non validé (Fichiers uniquement, pas de VM natives)</td>
+<td style="text-align: left;">Non validé (Fichiers uniquement)</td>
 </tr>
 <tr>
-<td style="text-align: left;"><strong>REQ-F02 (Failover / HA)</strong></td>
-<td style="text-align: left;">Validé (Réplication DB ou Master/Slave)</td>
-<td style="text-align: left;">Validé (Transfert AXFR/IXFR natif)</td>
-<td style="text-align: left;">Validé (Via cluster etcd externe)</td>
-<td style="text-align: left;">Validé (Transfert de zone standard)</td>
+<td style="text-align: left;"><strong>REQ-F02 (Cycle de vie)</strong></td>
+<td style="text-align: left;">Validé (Gestion native via Datastore)</td>
+<td style="text-align: left;">Validé (Via cron et flags CLI <code>--keep-last</code>)</td>
+<td style="text-align: left;">Validé (Politiques configurables via UI/CLI)</td>
 </tr>
 <tr>
-<td style="text-align: left;"><strong>REQ-T01 (Intégration IaC)</strong></td>
-<td style="text-align: left;">Excellent (Modules Ansible / Terraform)</td>
-<td style="text-align: left;">Moyen (Modules Ansible spécifiques)</td>
-<td style="text-align: left;">Moyen (Configuration via GitOps)</td>
-<td style="text-align: left;">Faible (API peu intégrée dans l'écosystème Ansible)</td>
+<td style="text-align: left;"><strong>REQ-T01 (Optimisation)</strong></td>
+<td style="text-align: left;">Validé (Déduplication globale excellente)</td>
+<td style="text-align: left;">Validé (Déduplication forte)</td>
+<td style="text-align: left;">Validé (Déduplication et compression)</td>
 </tr>
 <tr>
-<td style="text-align: left;"><strong>REQ-T02 (Backend de stockage)</strong></td>
-<td style="text-align: left;">Flexible (PostgreSQL, MySQL)</td>
-<td style="text-align: left;">Rigide (Fichiers plats textes)</td>
-<td style="text-align: left;">Spécialisé (etcd, mémoire)</td>
-<td style="text-align: left;">Propriétaire / Fichiers</td>
+<td style="text-align: left;"><strong>REQ-T02 (Cohérence DB)</strong></td>
+<td style="text-align: left;">Validé (Sauvegarde les dossiers de dump)</td>
+<td style="text-align: left;">Validé (Sauvegarde les dossiers de dump)</td>
+<td style="text-align: left;">Validé (Sauvegarde les dossiers de dump)</td>
 </tr>
 <tr>
-<td style="text-align: left;"><strong>REQ-T03 (Légèreté / On-prem)</strong></td>
-<td style="text-align: left;">Excellent</td>
-<td style="text-align: left;">Excellent</td>
-<td style="text-align: left;">Très bon</td>
-<td style="text-align: left;">Moyen (Dépendance runtime .NET)</td>
-</tr>
-<tr>
-<td style="text-align: left;"><strong>REQ-T04 (Compatibilité Debian)</strong></td>
-<td style="text-align: left;">Excellent (Dépôts APT officiels)</td>
-<td style="text-align: left;">Excellent (Paquet standard)</td>
-<td style="text-align: left;">Bon (Binaire unique)</td>
-<td style="text-align: left;">Moyen (Dépendance runtime)</td>
+<td style="text-align: left;"><strong>REQ-T03 (Cloud)</strong></td>
+<td style="text-align: left;">Évaluation (Nécessite PBS Sync ou outil tiers pour S3/WebDAV)</td>
+<td style="text-align: left;">Validé (Support natif de multiples backends cloud)</td>
+<td style="text-align: left;">Validé (Support natif de multiples backends cloud)</td>
 </tr>
 </tbody>
 </table>
 <h2 id="4-solution-proposee">4. Solution proposée</h2>
-<p>La solution proposée pour l'infrastructure LoutikCloud est <strong>PowerDNS Authoritative Server</strong>.</p>
-<p>L'intégration d'une API REST native au sein de PowerDNS élimine la complexité liée à la gestion des fichiers plats et permet un provisionnement en temps réel des enregistrements FQDN depuis l'infrastructure de déploiement Ansible. La redondance du service et le mécanisme de bascule (failover) seront assurés par le déploiement de deux instances PowerDNS. Ces instances seront adossées à un cluster de base de données PostgreSQL hautement disponible situé dans le VLAN 17 (ZDS), offrant ainsi une synchronisation des enregistrements DNS instantanée et sans perte de données, tout en maintenant les fichiers de configuration système sous le contrôle de la philosophie GitOps.</p>
+<p>La solution proposée pour l'infrastructure est <strong>Proxmox Backup Server (PBS)</strong> complété par une orchestration <strong>Ansible</strong> pour les équipements non gérés nativement.</p>
+<p><strong>Intégration architecturale :</strong></p>
+<p>PBS sera déployé directement sur le nœud disposant d'une capacité de 1To. L'architecture se décline en trois axes :</p>
+<ol>
+<li><strong>Machines Virtuelles :</strong> Proxmox VE est connecté nativement au PBS. Les sauvegardes s'exécutent en mode <em>agentless</em> via l'hyperviseur, exploitant les QEMU dirty bitmaps pour ne transférer que les blocs modifiés depuis la veille.</li>
+<li><strong>Fichiers et Bases de données (PostgreSQL/MongoDB) :</strong> Un processus chronométré génère des dumps SQL locaux. L'utilitaire <code>proxmox-backup-client</code> installé sur la VM NFS prend ensuite le relais pour envoyer le contenu du serveur de fichiers (incluant les dumps) vers PBS sous forme d'archives compressées et dédupliquées.</li>
+<li><strong>Pare-feu OPNsense :</strong> Une VM orchestrateur exécute un playbook Ansible qui requiert l'API d'OPNsense pour télécharger le <code>config.xml</code>. Le fichier est ensuite déposé de manière sécurisée (via rebond SSH / ProxyJump) sur le serveur NFS dans un répertoire restreint, avant d'être avalé par la sauvegarde globale du client PBS.</li>
+</ol>
+<p>Cette architecture centralise 100% des données au sein d'un seul coffre-fort (datastore) PBS, avec une politique de rétention globale fixée à 7 jours. L'externalisation (vers l'offre étudiante WebDAV ou un bucket S3 économique) sera gérée par une tâche de synchronisation du datastore sous-jacent.</p>
 <p><strong>Justification du rejet des solutions alternatives :</strong></p>
 <ul>
-<li><strong>BIND9 :</strong> Bien que parfaitement stable et nativement optimisé pour Debian, BIND9 est écarté en raison de l'absence d'une API REST moderne. Le recours obligatoire au protocole RFC 2136 (<code>nsupdate</code>) ajoute une complexité non négligeable pour l'intégration continue et la gestion idempotente via Ansible.</li>
-<li><strong>CoreDNS :</strong> Malgré d'excellentes performances, CoreDNS est rejeté car son architecture est conçue pour des environnements Kubernetes. L'implémentation de la haute disponibilité hors cluster nécessiterait le déploiement et la maintenance d'une base distribuée <code>etcd</code> additionnelle, créant une sur-ingénierie injustifiée pour une infrastructure on-premise basée sur des machines virtuelles classiques.</li>
-<li><strong>Technitium DNS :</strong> Écarté pour des raisons techniques liées au socle d'exploitation. Son développement en C# impose l'installation du runtime .NET sur les serveurs Debian, ce qui alourdit l'empreinte système. De plus, son écosystème communautaire (modules Ansible et providers Terraform) est nettement moins mature que celui de PowerDNS.</li>
+<li><strong>Restic :</strong> Bien que performant pour la gestion des fichiers isolés et du transfert direct vers le Cloud, Restic ne permet pas de sauvegarder l'état complet et à chaud des machines virtuelles (images disques) de manière efficiente. Utiliser Restic obligerait à empiler une solution tierce pour les VM, ce qui viole la contrainte de centralisation et augmente la complexité opérationnelle.</li>
+<li><strong>Kopia :</strong> Kopia souffre de la même limitation fondamentale que Restic (incapacité à interagir avec l'hyperviseur pour des snapshots de niveau bloc). De plus, l'ajout d'une interface graphique pour la simple sauvegarde de fichiers est considéré comme de la sur-ingénierie dans un contexte où l'infrastructure privilégie les CLI et l'Infrastructure as Code (IaC).</li>
 </ul>
 
 
@@ -4168,7 +4403,7 @@
     <span class="md-icon" title="Dernière mise à jour">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-timeago" title="9 juillet 2026 19:56:53 UTC"><span class="timeago" datetime="2026-07-09T19:56:53+00:00" locale="fr"></span></span><span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date" title="9 juillet 2026 19:56:53 UTC">2026-07-09</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-timeago" title="22 juillet 2026 18:59:12 UTC"><span class="timeago" datetime="2026-07-22T18:59:12+00:00" locale="fr"></span></span><span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date" title="22 juillet 2026 18:59:12 UTC">2026-07-22</span>
   </span>
 
     
@@ -4178,7 +4413,7 @@
     <span class="md-icon" title="Créé">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M14.47 15.08 11 13V7h1.5v5.25l3.08 1.83c-.41.28-.79.62-1.11 1m-1.39 4.84c-.36.05-.71.08-1.08.08-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8c0 .37-.03.72-.08 1.08.69.1 1.33.32 1.92.64.1-.56.16-1.13.16-1.72 0-5.5-4.5-10-10-10S2 6.5 2 12s4.47 10 10 10c.59 0 1.16-.06 1.72-.16-.32-.59-.54-1.23-.64-1.92M18 15v3h-3v2h3v3h2v-3h3v-2h-3v-3z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-timeago" title="9 juillet 2026 19:56:53 UTC"><span class="timeago" datetime="2026-07-09T19:56:53+00:00" locale="fr"></span></span><span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date" title="9 juillet 2026 19:56:53 UTC">2026-07-09</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-timeago" title="22 juillet 2026 18:59:12 UTC"><span class="timeago" datetime="2026-07-22T18:59:12+00:00" locale="fr"></span></span><span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date" title="22 juillet 2026 18:59:12 UTC">2026-07-22</span>
   </span>
 
     
@@ -4238,14 +4473,14 @@
     
       
       
-      <script id="__config" type="application/json">{"annotate": null, "base": "../../..", "features": ["navigation.top", "search.suggest", "search.highlight", "content.code.copy", "navigation.indexes"], "search": "../../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copi\u00e9 dans le presse-papier", "clipboard.copy": "Copier dans le presse-papier", "search.result.more.one": "1 de plus sur cette page", "search.result.more.other": "# de plus sur cette page", "search.result.none": "Aucun document trouv\u00e9", "search.result.one": "1 document trouv\u00e9", "search.result.other": "# documents trouv\u00e9s", "search.result.placeholder": "Taper pour d\u00e9marrer la recherche", "search.result.term.missing": "Non trouv\u00e9", "select.version": "S\u00e9lectionner la version"}, "version": null}</script>
+      <script id="__config" type="application/json">{"annotate": null, "base": "../../../..", "features": ["navigation.top", "search.suggest", "search.highlight", "content.code.copy", "navigation.indexes"], "search": "../../../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copi\u00e9 dans le presse-papier", "clipboard.copy": "Copier dans le presse-papier", "search.result.more.one": "1 de plus sur cette page", "search.result.more.other": "# de plus sur cette page", "search.result.none": "Aucun document trouv\u00e9", "search.result.one": "1 document trouv\u00e9", "search.result.other": "# documents trouv\u00e9s", "search.result.placeholder": "Taper pour d\u00e9marrer la recherche", "search.result.term.missing": "Non trouv\u00e9", "select.version": "S\u00e9lectionner la version"}, "version": null}</script>
     
     
-      <script src="../../../assets/javascripts/bundle.79ae519e.min.js"></script>
+      <script src="../../../../assets/javascripts/bundle.79ae519e.min.js"></script>
       
-        <script src="../../../js/timeago.min.js"></script>
+        <script src="../../../../js/timeago.min.js"></script>
       
-        <script src="../../../js/timeago_mkdocs_material.js"></script>
+        <script src="../../../../js/timeago_mkdocs_material.js"></script>
       
     
   </body>

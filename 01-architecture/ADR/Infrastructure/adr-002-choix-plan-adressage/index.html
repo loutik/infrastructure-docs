@@ -10,31 +10,31 @@
         <meta name="author" content="Louis MEDO">
       
       
-        <link rel="canonical" href="https://infra-docs.loutik.fr/01-architecture/ADR/adr-003-plateforme-documentation/">
+        <link rel="canonical" href="https://infra-docs.loutik.fr/01-architecture/ADR/Infrastructure/adr-002-choix-plan-adressage/">
       
       
-        <link rel="prev" href="../adr-002-choix-plan-adressage/">
+        <link rel="prev" href="../../Edge/adr-006-choix-reverse-proxy-vps-edge/">
       
       
-        <link rel="next" href="../adr-004-choix-dns-infrastructure/">
+        <link rel="next" href="../adr-003-plateforme-documentation/">
       
       
         
       
       
-      <link rel="icon" href="../../../assets/logo_loutik.png">
+      <link rel="icon" href="../../../../assets/logo_loutik.png">
       <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.6">
     
     
       
-        <title>Choix de la plateforme pour la documentation - Documentation infrastructure - LoutikCLOUD</title>
+        <title>Choix plan d'adressage V1 - Documentation infrastructure - LoutikCLOUD</title>
       
     
     
-      <link rel="stylesheet" href="../../../assets/stylesheets/main.484c7ddc.min.css">
+      <link rel="stylesheet" href="../../../../assets/stylesheets/main.484c7ddc.min.css">
       
         
-        <link rel="stylesheet" href="../../../assets/stylesheets/palette.ab4e12ef.min.css">
+        <link rel="stylesheet" href="../../../../assets/stylesheets/palette.ab4e12ef.min.css">
       
       
 
@@ -53,11 +53,11 @@
       
     
     
-      <link rel="stylesheet" href="../../../css/timeago.css">
+      <link rel="stylesheet" href="../../../../css/timeago.css">
     
-      <link rel="stylesheet" href="../../../assets/css/style.css">
+      <link rel="stylesheet" href="../../../../assets/css/style.css">
     
-    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("../../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
@@ -80,7 +80,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#adr-3-choix-de-la-plateforme-pour-la-documentation" class="md-skip">
+        <a href="#adr-2-choix-plan-dadressage-v1" class="md-skip">
           Aller au contenu
         </a>
       
@@ -96,9 +96,9 @@
 
 <header class="md-header md-header--shadow" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="En-tête">
-    <a href="../../.." title="Documentation infrastructure - LoutikCLOUD" class="md-header__button md-logo" aria-label="Documentation infrastructure - LoutikCLOUD" data-md-component="logo">
+    <a href="../../../.." title="Documentation infrastructure - LoutikCLOUD" class="md-header__button md-logo" aria-label="Documentation infrastructure - LoutikCLOUD" data-md-component="logo">
       
-  <img src="../../../assets/logo_loutik.png" alt="logo">
+  <img src="../../../../assets/logo_loutik.png" alt="logo">
 
     </a>
     <label class="md-header__button md-icon" for="__drawer">
@@ -115,7 +115,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Choix de la plateforme pour la documentation
+              Choix plan d'adressage V1
             
           </span>
         </div>
@@ -207,9 +207,9 @@
 
 <nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="../../.." title="Documentation infrastructure - LoutikCLOUD" class="md-nav__button md-logo" aria-label="Documentation infrastructure - LoutikCLOUD" data-md-component="logo">
+    <a href="../../../.." title="Documentation infrastructure - LoutikCLOUD" class="md-nav__button md-logo" aria-label="Documentation infrastructure - LoutikCLOUD" data-md-component="logo">
       
-  <img src="../../../assets/logo_loutik.png" alt="logo">
+  <img src="../../../../assets/logo_loutik.png" alt="logo">
 
     </a>
     Documentation infrastructure - LoutikCLOUD
@@ -236,7 +236,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../.." class="md-nav__link">
+      <a href="../../../.." class="md-nav__link">
         
   
   
@@ -287,7 +287,7 @@
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="../../" class="md-nav__link ">
+            <a href="../../../" class="md-nav__link ">
               
   
   
@@ -343,8 +343,6 @@
       
         
       
-        
-      
     
     
     
@@ -391,8 +389,249 @@
   
   
   
+    
+    
+      
+        
+      
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_2_1" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_2_1" id="__nav_2_2_1_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Backup
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_2_2_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_2_1">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Backup
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
     <li class="md-nav__item">
-      <a href="../adr-001-choix-hebergeur-vps-gateway/" class="md-nav__link">
+      <a href="../../Backup/adr-005-choix-solution-sauvegarde/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Choix de la solution de sauvegarde
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--accepted"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_2_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_2_2" id="__nav_2_2_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    DNS
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_2_2_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_2_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    DNS
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../DNS/adr-004-choix-dns-infrastructure/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Choix de la solution DNS pour l'infrastructure on-premise
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--accepted"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_2_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_2_3" id="__nav_2_2_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Edge
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_2_2_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_2_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Edge
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Edge/adr-001-choix-hebergeur-vps-gateway/" class="md-nav__link">
         
   
   
@@ -427,14 +666,14 @@
   
   
     <li class="md-nav__item">
-      <a href="../adr-002-choix-plan-adressage/" class="md-nav__link">
+      <a href="../../Edge/adr-006-choix-reverse-proxy-vps-edge/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    Choix plan d'adressage V1
+    Choix du Reverse Proxy pour la VM Edge
   
 
     
@@ -454,6 +693,69 @@
   
 
               
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_2_4" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_2_2_4" id="__nav_2_2_4_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Infrastructure
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_2_2_4_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2_2_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Infrastructure
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
             
               
                 
@@ -478,7 +780,7 @@
   <span class="md-ellipsis">
     
   
-    Choix de la plateforme pour la documentation
+    Choix plan d'adressage V1
   
 
     
@@ -503,7 +805,7 @@
   <span class="md-ellipsis">
     
   
-    Choix de la plateforme pour la documentation
+    Choix plan d'adressage V1
   
 
     
@@ -555,16 +857,33 @@
     </span>
   </a>
   
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#3-consequences" class="md-nav__link">
+    <nav class="md-nav" aria-label="2. Décision">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#a-plan-de-segmentation" class="md-nav__link">
     <span class="md-ellipsis">
       
-        3. Conséquences
+        A. Plan de segmentation
       
     </span>
   </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#b-plan-dadressage" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        B. Plan d'adressage
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -584,14 +903,14 @@
   
   
     <li class="md-nav__item">
-      <a href="../adr-004-choix-dns-infrastructure/" class="md-nav__link">
+      <a href="../adr-003-plateforme-documentation/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    Choix de la solution DNS pour l'infrastructure on-premise
+    Choix de la plateforme pour la documentation
   
 
     
@@ -612,36 +931,9 @@
 
               
             
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../adr-005-choix-solution-sauvegarde/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Choix de la solution de sauvegarde
-  
-
-    
-  </span>
-  
-  
-    
-  
-  
-    <span class="md-status md-status--accepted"></span>
-  
-
-  
-
-      </a>
+          </ul>
+        </nav>
+      
     </li>
   
 
@@ -721,7 +1013,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../referentiels/ref-001-convention-nommage-infrastructure/" class="md-nav__link">
+      <a href="../../../referentiels/ref-001-convention-nommage-infrastructure/" class="md-nav__link">
         
   
   
@@ -749,7 +1041,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../referentiels/ref-002-convention-nommage-git/" class="md-nav__link">
+      <a href="../../../referentiels/ref-002-convention-nommage-git/" class="md-nav__link">
         
   
   
@@ -777,7 +1069,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../referentiels/ref-003-convention-nommage-reseau-pare-feu/" class="md-nav__link">
+      <a href="../../../referentiels/ref-003-convention-nommage-reseau-pare-feu/" class="md-nav__link">
         
   
   
@@ -805,7 +1097,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../referentiels/ref-004-convention-nommage-base-de-donnees/" class="md-nav__link">
+      <a href="../../../referentiels/ref-004-convention-nommage-base-de-donnees/" class="md-nav__link">
         
   
   
@@ -833,7 +1125,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../referentiels/ref-005-convention-nommage-authentik/" class="md-nav__link">
+      <a href="../../../referentiels/ref-005-convention-nommage-authentik/" class="md-nav__link">
         
   
   
@@ -904,7 +1196,7 @@
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="../../../02-infrastructure-core/" class="md-nav__link ">
+            <a href="../../../../02-infrastructure-core/" class="md-nav__link ">
               
   
   
@@ -1056,7 +1348,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../02-infrastructure-core/backup/architecture/strategie-sauvegarde-opnsense/" class="md-nav__link">
+      <a href="../../../../02-infrastructure-core/backup/architecture/strategie-sauvegarde-opnsense/" class="md-nav__link">
         
   
   
@@ -1084,7 +1376,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../02-infrastructure-core/backup/architecture/strategie-sauvegarde-postgresql/" class="md-nav__link">
+      <a href="../../../../02-infrastructure-core/backup/architecture/strategie-sauvegarde-postgresql/" class="md-nav__link">
         
   
   
@@ -1179,7 +1471,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../02-infrastructure-core/backup/procedures/configuration-montage-rclone-webdav/" class="md-nav__link">
+      <a href="../../../../02-infrastructure-core/backup/procedures/configuration-montage-rclone-webdav/" class="md-nav__link">
         
   
   
@@ -1207,7 +1499,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../02-infrastructure-core/backup/procedures/deploiement-datastore-pbs/" class="md-nav__link">
+      <a href="../../../../02-infrastructure-core/backup/procedures/deploiement-datastore-pbs/" class="md-nav__link">
         
   
   
@@ -1235,7 +1527,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../02-infrastructure-core/backup/procedures/installation-pbs-via-iso/" class="md-nav__link">
+      <a href="../../../../02-infrastructure-core/backup/procedures/installation-pbs-via-iso/" class="md-nav__link">
         
   
   
@@ -1263,7 +1555,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../02-infrastructure-core/backup/procedures/int%C3%A9gration-pbs-cluster-pve/" class="md-nav__link">
+      <a href="../../../../02-infrastructure-core/backup/procedures/int%C3%A9gration-pbs-cluster-pve/" class="md-nav__link">
         
   
   
@@ -1291,7 +1583,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../02-infrastructure-core/backup/procedures/preparation-stockage-externalise-nextcloud-proxmox/" class="md-nav__link">
+      <a href="../../../../02-infrastructure-core/backup/procedures/preparation-stockage-externalise-nextcloud-proxmox/" class="md-nav__link">
         
   
   
@@ -1380,7 +1672,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../02-infrastructure-core/backup/runbooks/configuration-sauvegarde-automatique-vm-pbs/" class="md-nav__link">
+      <a href="../../../../02-infrastructure-core/backup/runbooks/configuration-sauvegarde-automatique-vm-pbs/" class="md-nav__link">
         
   
   
@@ -1408,7 +1700,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../02-infrastructure-core/backup/runbooks/creation-espace-stockage-sauvegarde-service/" class="md-nav__link">
+      <a href="../../../../02-infrastructure-core/backup/runbooks/creation-espace-stockage-sauvegarde-service/" class="md-nav__link">
         
   
   
@@ -1556,7 +1848,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../02-infrastructure-core/base-de-donnees/procedures/deploiement-environnement-postgresql/" class="md-nav__link">
+      <a href="../../../../02-infrastructure-core/base-de-donnees/procedures/deploiement-environnement-postgresql/" class="md-nav__link">
         
   
   
@@ -1643,7 +1935,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../02-infrastructure-core/base-de-donnees/runnboks/provisionnement-nouvelle-base-de-donnes-postgresql/" class="md-nav__link">
+      <a href="../../../../02-infrastructure-core/base-de-donnees/runnboks/provisionnement-nouvelle-base-de-donnes-postgresql/" class="md-nav__link">
         
   
   
@@ -1742,7 +2034,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../02-infrastructure-core/dns/infrastructure-powerdns/" class="md-nav__link">
+      <a href="../../../../02-infrastructure-core/dns/infrastructure-powerdns/" class="md-nav__link">
         
   
   
@@ -1821,7 +2113,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../02-infrastructure-core/dns/procedures/deploiement-serveur-dns-powerdns/" class="md-nav__link">
+      <a href="../../../../02-infrastructure-core/dns/procedures/deploiement-serveur-dns-powerdns/" class="md-nav__link">
         
   
   
@@ -1908,7 +2200,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../02-infrastructure-core/dns/runbooks/exploitation-api-powerdns/" class="md-nav__link">
+      <a href="../../../../02-infrastructure-core/dns/runbooks/exploitation-api-powerdns/" class="md-nav__link">
         
   
   
@@ -2068,7 +2360,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../02-infrastructure-core/hyperviseur/procedures/configuration-reseau-proxmox/" class="md-nav__link">
+      <a href="../../../../02-infrastructure-core/hyperviseur/procedures/configuration-reseau-proxmox/" class="md-nav__link">
         
   
   
@@ -2096,7 +2388,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../02-infrastructure-core/hyperviseur/procedures/configuration-serveur-smtp-pve/" class="md-nav__link">
+      <a href="../../../../02-infrastructure-core/hyperviseur/procedures/configuration-serveur-smtp-pve/" class="md-nav__link">
         
   
   
@@ -2124,7 +2416,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../02-infrastructure-core/hyperviseur/procedures/desactivation-mise-en-veille-pc-portable/" class="md-nav__link">
+      <a href="../../../../02-infrastructure-core/hyperviseur/procedures/desactivation-mise-en-veille-pc-portable/" class="md-nav__link">
         
   
   
@@ -2152,7 +2444,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../02-infrastructure-core/hyperviseur/procedures/proc-configuration-sso-proxmox-via-authentik/" class="md-nav__link">
+      <a href="../../../../02-infrastructure-core/hyperviseur/procedures/proc-configuration-sso-proxmox-via-authentik/" class="md-nav__link">
         
   
   
@@ -2180,7 +2472,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../02-infrastructure-core/hyperviseur/procedures/proc-creation-cluster-proxmox/" class="md-nav__link">
+      <a href="../../../../02-infrastructure-core/hyperviseur/procedures/proc-creation-cluster-proxmox/" class="md-nav__link">
         
   
   
@@ -2208,7 +2500,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../02-infrastructure-core/hyperviseur/procedures/proc-installation-physique-proxmox/" class="md-nav__link">
+      <a href="../../../../02-infrastructure-core/hyperviseur/procedures/proc-installation-physique-proxmox/" class="md-nav__link">
         
   
   
@@ -2236,7 +2528,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../02-infrastructure-core/hyperviseur/procedures/proc-rejoindre-cluster-proxmox/" class="md-nav__link">
+      <a href="../../../../02-infrastructure-core/hyperviseur/procedures/proc-rejoindre-cluster-proxmox/" class="md-nav__link">
         
   
   
@@ -2323,7 +2615,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../02-infrastructure-core/hyperviseur/runbooks/runbook-sortir-un-noeud-cluster-proxmox/" class="md-nav__link">
+      <a href="../../../../02-infrastructure-core/hyperviseur/runbooks/runbook-sortir-un-noeud-cluster-proxmox/" class="md-nav__link">
         
   
   
@@ -2483,7 +2775,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../02-infrastructure-core/reseau/procedures/configuration-alias-opnsense/" class="md-nav__link">
+      <a href="../../../../02-infrastructure-core/reseau/procedures/configuration-alias-opnsense/" class="md-nav__link">
         
   
   
@@ -2511,7 +2803,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../02-infrastructure-core/reseau/procedures/configuration-boostrap-opnsense/" class="md-nav__link">
+      <a href="../../../../02-infrastructure-core/reseau/procedures/configuration-boostrap-opnsense/" class="md-nav__link">
         
   
   
@@ -2539,7 +2831,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../02-infrastructure-core/reseau/procedures/configuration-categories-opnsense/" class="md-nav__link">
+      <a href="../../../../02-infrastructure-core/reseau/procedures/configuration-categories-opnsense/" class="md-nav__link">
         
   
   
@@ -2567,7 +2859,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../02-infrastructure-core/reseau/procedures/configuration-dns-recursif-opnsense/" class="md-nav__link">
+      <a href="../../../../02-infrastructure-core/reseau/procedures/configuration-dns-recursif-opnsense/" class="md-nav__link">
         
   
   
@@ -2595,7 +2887,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../02-infrastructure-core/reseau/procedures/configuration-ips-suricata-opnsense/" class="md-nav__link">
+      <a href="../../../../02-infrastructure-core/reseau/procedures/configuration-ips-suricata-opnsense/" class="md-nav__link">
         
   
   
@@ -2623,7 +2915,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../02-infrastructure-core/reseau/procedures/installation-opnsense/" class="md-nav__link">
+      <a href="../../../../02-infrastructure-core/reseau/procedures/installation-opnsense/" class="md-nav__link">
         
   
   
@@ -2702,7 +2994,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../02-infrastructure-core/reseau/procedures/regles-filtrage/configuration-regles-filtrage-vlan-admoob-opnsense/" class="md-nav__link">
+      <a href="../../../../02-infrastructure-core/reseau/procedures/regles-filtrage/configuration-regles-filtrage-vlan-admoob-opnsense/" class="md-nav__link">
         
   
   
@@ -2803,7 +3095,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../02-infrastructure-core/reseau/runbooks/creation-compte-service-opnsense/" class="md-nav__link">
+      <a href="../../../../02-infrastructure-core/reseau/runbooks/creation-compte-service-opnsense/" class="md-nav__link">
         
   
   
@@ -2831,7 +3123,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../02-infrastructure-core/reseau/runbooks/creation-objets-logiques-et-categories-filtrage/" class="md-nav__link">
+      <a href="../../../../02-infrastructure-core/reseau/runbooks/creation-objets-logiques-et-categories-filtrage/" class="md-nav__link">
         
   
   
@@ -2859,7 +3151,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../02-infrastructure-core/reseau/runbooks/creation-regles-filtrage/" class="md-nav__link">
+      <a href="../../../../02-infrastructure-core/reseau/runbooks/creation-regles-filtrage/" class="md-nav__link">
         
   
   
@@ -2887,7 +3179,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../02-infrastructure-core/reseau/runbooks/creation-vlan-opnsense/" class="md-nav__link">
+      <a href="../../../../02-infrastructure-core/reseau/runbooks/creation-vlan-opnsense/" class="md-nav__link">
         
   
   
@@ -2958,7 +3250,7 @@
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="../../../03-edge/" class="md-nav__link ">
+            <a href="../../../../03-edge/" class="md-nav__link ">
               
   
   
@@ -3057,7 +3349,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../03-edge/vpn/infrastructure-vpn-tailscale/" class="md-nav__link">
+      <a href="../../../../03-edge/vpn/infrastructure-vpn-tailscale/" class="md-nav__link">
         
   
   
@@ -3136,7 +3428,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../03-edge/vpn/procedures/installation-configuration-tailscale-opnsense/" class="md-nav__link">
+      <a href="../../../../03-edge/vpn/procedures/installation-configuration-tailscale-opnsense/" class="md-nav__link">
         
   
   
@@ -3225,7 +3517,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../03-edge/vpn/runbooks/ajout-subnet-tailscale/" class="md-nav__link">
+      <a href="../../../../03-edge/vpn/runbooks/ajout-subnet-tailscale/" class="md-nav__link">
         
   
   
@@ -3253,7 +3545,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../03-edge/vpn/runbooks/gestion-acl-tailscale/" class="md-nav__link">
+      <a href="../../../../03-edge/vpn/runbooks/gestion-acl-tailscale/" class="md-nav__link">
         
   
   
@@ -3322,7 +3614,7 @@
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="../../../04-securite/" class="md-nav__link ">
+            <a href="../../../../04-securite/" class="md-nav__link ">
               
   
   
@@ -3388,7 +3680,7 @@
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="../../../05-services/" class="md-nav__link ">
+            <a href="../../../../05-services/" class="md-nav__link ">
               
   
   
@@ -3538,7 +3830,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../05-services/SSO/procedures/configuration-mapping-oidc-export-groupes/" class="md-nav__link">
+      <a href="../../../../05-services/SSO/procedures/configuration-mapping-oidc-export-groupes/" class="md-nav__link">
         
   
   
@@ -3566,7 +3858,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../05-services/SSO/procedures/implementation-politique-acces-globale/" class="md-nav__link">
+      <a href="../../../../05-services/SSO/procedures/implementation-politique-acces-globale/" class="md-nav__link">
         
   
   
@@ -3655,7 +3947,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../05-services/SSO/runbooks/application-politique-restriction-acces-applications/" class="md-nav__link">
+      <a href="../../../../05-services/SSO/runbooks/application-politique-restriction-acces-applications/" class="md-nav__link">
         
   
   
@@ -3683,7 +3975,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../05-services/SSO/runbooks/configuration-injection-groupes/" class="md-nav__link">
+      <a href="../../../../05-services/SSO/runbooks/configuration-injection-groupes/" class="md-nav__link">
         
   
   
@@ -3773,16 +4065,33 @@
     </span>
   </a>
   
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#3-consequences" class="md-nav__link">
+    <nav class="md-nav" aria-label="2. Décision">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#a-plan-de-segmentation" class="md-nav__link">
     <span class="md-ellipsis">
       
-        3. Conséquences
+        A. Plan de segmentation
       
     </span>
   </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#b-plan-dadressage" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        B. Plan d'adressage
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -3815,7 +4124,7 @@
   
 
 
-<h1 id="adr-3-choix-de-la-plateforme-pour-la-documentation">ADR-3 : Choix de la plateforme pour la documentation</h1>
+<h1 id="adr-2-choix-plan-dadressage-v1">ADR-2 : Choix plan d'adressage V1</h1>
 <p><img alt="Bannière LoutikCloud" src="https://raw.githubusercontent.com/loutik/design-assets/main/loutikcloud/banniere_loutikcloud.png" /></p>
 <div class="admonition info">
 <p class="admonition-title">Informations</p>
@@ -3826,56 +4135,97 @@
 <li><strong>Responsable</strong> : Louis MEDO</li>
 </ul>
 </div>
+<hr />
 <h2 id="1-contexte">1. Contexte</h2>
-<p>Notre plateforme de documentation actuelle, basée sur Docusaurus, présente des frictions opérationnelles. La maintenance quotidienne est contraignante et impose aux équipes de cloner un dépôt volumineux. Par ailleurs, la complexité de l'arborescence des fichiers ralentit l'intégration et la contribution des collaborateurs débutants.</p>
+<p>Suite à l'acquisition d'un nouveau routeur, une segmentation des réseaux est nécessaire pour garantir la sécurité et contrôler les flux.</p>
 <h2 id="2-decision">2. Décision</h2>
-<p>Nous avons pris la décision de migrer vers <strong>MkDocs</strong>. Cette solution a été retenue pour sa légèreté, sa sobriété et son faible coût de fonctionnement par rapport à Docusaurus. MkDocs propose une structure de fichiers nativement plus simple, éliminant la surcharge technique liée aux écosystèmes plus complexes.</p>
-<h2 id="3-consequences">3. Conséquences</h2>
-<p>Analyse comparative par rapport à nos besoins opérationnels :</p>
+<p>Nous implémentons une segmentation logique basée sur des VLANs dédiés, avec un adressage IPv4 en /24 pour les sous-réseaux standards et un sous-réseau restreint en /30 pour le réseau GATEWAY qui comprend la connexion inter-site VPN.</p>
+<h3 id="a-plan-de-segmentation">A. Plan de segmentation</h3>
 <table>
 <thead>
 <tr>
-<th style="text-align: left;">Besoin / Critère</th>
-<th style="text-align: left;">Docusaurus</th>
-<th style="text-align: left;">MkDocs</th>
+<th><strong>Nom VLAN</strong></th>
+<th><strong>Description</strong></th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;"><strong>Poids du dépôt</strong></td>
-<td style="text-align: left;">Lourd</td>
-<td style="text-align: left;">Léger</td>
+<td>MANAGEMENT</td>
+<td>Gestion de l'infrastructure, interfaces d'administration (switch, routeur, Proxmox).</td>
 </tr>
 <tr>
-<td style="text-align: left;"><strong>Gestion de l'arborescence</strong></td>
-<td style="text-align: left;">Complexe pour les débutants</td>
-<td style="text-align: left;">Simple et intuitive</td>
+<td>UTILISATEURS</td>
+<td>Réseau dédié aux équipements clients (ordinateurs, téléphones).</td>
 </tr>
 <tr>
-<td style="text-align: left;"><strong>Maintenance quotidienne</strong></td>
-<td style="text-align: left;">Contraignante</td>
-<td style="text-align: left;">Allégée</td>
+<td>GATEWAY</td>
+<td>SAS de sécurité pour la liaison VPN avec le VPS distant.</td>
 </tr>
 <tr>
-<td style="text-align: left;"><strong>Coût d'exploitation</strong></td>
-<td style="text-align: left;">Élevé</td>
-<td style="text-align: left;">Moindre coût</td>
+<td>INFRASTRUCTURES</td>
+<td>Services centraux (DNS, VPN d'accès, etc.).</td>
+</tr>
+<tr>
+<td>SERVICES</td>
+<td>Services hébergés sur les nœuds Kubernetes et Proxmox.</td>
 </tr>
 </tbody>
 </table>
-<ul>
-<li><strong>Impacts positifs</strong> :<ul>
-<li>Les équipes n'ont plus à télécharger un lourd dépôt pour contribuer.</li>
-<li>L'arborescence simplifiée rend la courbe d'apprentissage beaucoup plus rapide pour les débutants.</li>
-<li>Alignement facilité pour structurer notre contenu selon le framework documentaire Diátaxis.</li>
-</ul>
-</li>
-<li><strong>Impacts négatifs (dette technique / risques)</strong> :<ul>
-<li>Effort initial nécessaire pour la migration du contenu existant et l'adaptation du pipeline de déploiement continu.</li>
-<li>Perte des composants interactifs (React) natifs à Docusaurus.</li>
-</ul>
-</li>
-</ul>
+<h3 id="b-plan-dadressage">B. Plan d'adressage</h3>
+<table>
+<thead>
+<tr>
+<th><strong>N° VLAN</strong></th>
+<th><strong>Nom</strong></th>
+<th><strong>Réseau</strong></th>
+<th><strong>Masque</strong></th>
+<th><strong>Passerelle</strong></th>
+<th><strong>Diffusion</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>99</td>
+<td>MANAGEMENT</td>
+<td>192.168.1.0</td>
+<td>255.255.255.0 (/24)</td>
+<td>192.168.1.254</td>
+<td>192.168.1.255</td>
+</tr>
+<tr>
+<td>10</td>
+<td>UTILISATEURS</td>
+<td>192.168.10.0</td>
+<td>255.255.255.0 (/24)</td>
+<td>192.168.10.254</td>
+<td>192.168.10.255</td>
+</tr>
+<tr>
+<td>20</td>
+<td>INFRASTRUCTURES</td>
+<td>192.168.20.0</td>
+<td>255.255.255.0 (/24)</td>
+<td>192.168.20.254</td>
+<td>192.168.20.255</td>
+</tr>
+<tr>
+<td>30</td>
+<td>SERVICES</td>
+<td>192.168.30.0</td>
+<td>255.255.255.0 (/24)</td>
+<td>192.168.30.254</td>
+<td>192.168.30.255</td>
+</tr>
+<tr>
+<td>40</td>
+<td>GATEWAY</td>
+<td>192.168.40.0</td>
+<td>255.255.255.252 (/30)</td>
+<td>192.168.40.2</td>
+<td>192.168.40.3</td>
+</tr>
+</tbody>
+</table>
 
 
 
@@ -3968,14 +4318,14 @@
     
       
       
-      <script id="__config" type="application/json">{"annotate": null, "base": "../../..", "features": ["navigation.top", "search.suggest", "search.highlight", "content.code.copy", "navigation.indexes"], "search": "../../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copi\u00e9 dans le presse-papier", "clipboard.copy": "Copier dans le presse-papier", "search.result.more.one": "1 de plus sur cette page", "search.result.more.other": "# de plus sur cette page", "search.result.none": "Aucun document trouv\u00e9", "search.result.one": "1 document trouv\u00e9", "search.result.other": "# documents trouv\u00e9s", "search.result.placeholder": "Taper pour d\u00e9marrer la recherche", "search.result.term.missing": "Non trouv\u00e9", "select.version": "S\u00e9lectionner la version"}, "version": null}</script>
+      <script id="__config" type="application/json">{"annotate": null, "base": "../../../..", "features": ["navigation.top", "search.suggest", "search.highlight", "content.code.copy", "navigation.indexes"], "search": "../../../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copi\u00e9 dans le presse-papier", "clipboard.copy": "Copier dans le presse-papier", "search.result.more.one": "1 de plus sur cette page", "search.result.more.other": "# de plus sur cette page", "search.result.none": "Aucun document trouv\u00e9", "search.result.one": "1 document trouv\u00e9", "search.result.other": "# documents trouv\u00e9s", "search.result.placeholder": "Taper pour d\u00e9marrer la recherche", "search.result.term.missing": "Non trouv\u00e9", "select.version": "S\u00e9lectionner la version"}, "version": null}</script>
     
     
-      <script src="../../../assets/javascripts/bundle.79ae519e.min.js"></script>
+      <script src="../../../../assets/javascripts/bundle.79ae519e.min.js"></script>
       
-        <script src="../../../js/timeago.min.js"></script>
+        <script src="../../../../js/timeago.min.js"></script>
       
-        <script src="../../../js/timeago_mkdocs_material.js"></script>
+        <script src="../../../../js/timeago_mkdocs_material.js"></script>
       
     
   </body>
