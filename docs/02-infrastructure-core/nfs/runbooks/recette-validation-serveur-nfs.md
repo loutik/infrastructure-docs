@@ -1,6 +1,6 @@
 ---
-title: Fiche Recette - Serveur NFS
-service: Serveur NFS
+title: Fiche recette - Serveur NFS
+service: Stockage / NFS
 date: 2026-08-04
 author: Louis MEDO
 owner: Louis MEDO
