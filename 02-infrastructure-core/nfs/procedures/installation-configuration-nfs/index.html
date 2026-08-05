@@ -10,13 +10,13 @@
         <meta name="author" content="Louis MEDO">
       
       
-        <link rel="canonical" href="https://infra-docs.loutik.fr/02-infrastructure-core/hyperviseur/runbooks/runbook-sortir-un-noeud-cluster-proxmox/">
+        <link rel="canonical" href="https://infra-docs.loutik.fr/02-infrastructure-core/nfs/procedures/installation-configuration-nfs/">
       
       
-        <link rel="prev" href="../../procedures/proc-rejoindre-cluster-proxmox/">
+        <link rel="prev" href="../../../hyperviseur/runbooks/runbook-sortir-un-noeud-cluster-proxmox/">
       
       
-        <link rel="next" href="../../../nfs/procedures/installation-configuration-nfs/">
+        <link rel="next" href="../../runbooks/commandes-debogage-serveur-nfs/">
       
       
         
@@ -27,7 +27,7 @@
     
     
       
-        <title>Supprimer un noeud du cluster - Documentation infrastructure - LoutikCLOUD</title>
+        <title>Installation et configuration manuelle de NFS - Documentation infrastructure - LoutikCLOUD</title>
       
     
     
@@ -80,7 +80,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#supprimer-un-noeud-du-cluster" class="md-skip">
+        <a href="#installation-et-configuration-manuelle-de-nfs" class="md-skip">
           Aller au contenu
         </a>
       
@@ -115,7 +115,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Supprimer un noeud du cluster
+              Installation et configuration manuelle de NFS
             
           </span>
         </div>
@@ -2172,10 +2172,8 @@
                 
   
   
-    
   
   
-  
     
     
       
@@ -2187,11 +2185,11 @@
     
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_5" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_5" >
         
           
           <label class="md-nav__link" for="__nav_3_5" id="__nav_3_5_label" tabindex="0">
@@ -2212,7 +2210,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_5_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_5_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_3_5">
             <span class="md-nav__icon md-icon"></span>
             
@@ -2293,7 +2291,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../procedures/configuration-reseau-proxmox/" class="md-nav__link">
+      <a href="../../../hyperviseur/procedures/configuration-reseau-proxmox/" class="md-nav__link">
         
   
   
@@ -2321,7 +2319,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../procedures/configuration-serveur-smtp-pve/" class="md-nav__link">
+      <a href="../../../hyperviseur/procedures/configuration-serveur-smtp-pve/" class="md-nav__link">
         
   
   
@@ -2349,7 +2347,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../procedures/desactivation-mise-en-veille-pc-portable/" class="md-nav__link">
+      <a href="../../../hyperviseur/procedures/desactivation-mise-en-veille-pc-portable/" class="md-nav__link">
         
   
   
@@ -2377,7 +2375,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../procedures/proc-configuration-sso-proxmox-via-authentik/" class="md-nav__link">
+      <a href="../../../hyperviseur/procedures/proc-configuration-sso-proxmox-via-authentik/" class="md-nav__link">
         
   
   
@@ -2405,7 +2403,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../procedures/proc-creation-cluster-proxmox/" class="md-nav__link">
+      <a href="../../../hyperviseur/procedures/proc-creation-cluster-proxmox/" class="md-nav__link">
         
   
   
@@ -2433,7 +2431,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../procedures/proc-installation-physique-proxmox/" class="md-nav__link">
+      <a href="../../../hyperviseur/procedures/proc-installation-physique-proxmox/" class="md-nav__link">
         
   
   
@@ -2461,7 +2459,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../procedures/proc-rejoindre-cluster-proxmox/" class="md-nav__link">
+      <a href="../../../hyperviseur/procedures/proc-rejoindre-cluster-proxmox/" class="md-nav__link">
         
   
   
@@ -2494,8 +2492,6 @@
                 
   
   
-    
-  
   
   
     
@@ -2507,11 +2503,11 @@
     
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_5_2" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_5_2" >
         
           
           <label class="md-nav__link" for="__nav_3_5_2" id="__nav_3_5_2_label" tabindex="0">
@@ -2532,12 +2528,164 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_3_5_2_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_3_5_2_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_3_5_2">
             <span class="md-nav__icon md-icon"></span>
             
   
     Runbooks
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../hyperviseur/runbooks/runbook-sortir-un-noeud-cluster-proxmox/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Supprimer un noeud du cluster
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_6" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_3_6" id="__nav_3_6_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Nfs
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_6_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_3_6">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Nfs
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+      
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_6_1" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_3_6_1" id="__nav_3_6_1_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Procedures
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_3_6_1_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_3_6_1">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Procedures
   
 
           </label>
@@ -2566,7 +2714,7 @@
   <span class="md-ellipsis">
     
   
-    Supprimer un noeud du cluster
+    Installation et configuration manuelle de NFS
   
 
     
@@ -2584,7 +2732,7 @@
   <span class="md-ellipsis">
     
   
-    Supprimer un noeud du cluster
+    Installation et configuration manuelle de NFS
   
 
     
@@ -2632,10 +2780,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#3-procedure-dexecution" class="md-nav__link">
+  <a href="#3-procedure-de-deploiement" class="md-nav__link">
     <span class="md-ellipsis">
       
-        3. Procédure d'exécution
+        3. Procédure de déploiement
       
     </span>
   </a>
@@ -2643,21 +2791,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#4-validation" class="md-nav__link">
+  <a href="#4-annexe" class="md-nav__link">
     <span class="md-ellipsis">
       
-        4. Validation
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#5-rollback" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        5. Rollback
+        4. Annexe
       
     </span>
   </a>
@@ -2668,154 +2805,6 @@
   
 </nav>
       
-    </li>
-  
-
-              
-            
-          </ul>
-        </nav>
-      
-    </li>
-  
-
-              
-            
-          </ul>
-        </nav>
-      
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    
-    
-      
-        
-      
-        
-      
-    
-    
-    
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-        
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_6" >
-        
-          
-          <label class="md-nav__link" for="__nav_3_6" id="__nav_3_6_label" tabindex="0">
-            
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Nfs
-  
-
-    
-  </span>
-  
-  
-
-            <span class="md-nav__icon md-icon"></span>
-          </label>
-        
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_6_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_3_6">
-            <span class="md-nav__icon md-icon"></span>
-            
-  
-    Nfs
-  
-
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-                
-  
-  
-  
-  
-    
-    
-      
-        
-      
-    
-    
-    
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-        
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_6_1" >
-        
-          
-          <label class="md-nav__link" for="__nav_3_6_1" id="__nav_3_6_1_label" tabindex="0">
-            
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Procedures
-  
-
-    
-  </span>
-  
-  
-
-            <span class="md-nav__icon md-icon"></span>
-          </label>
-        
-        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_3_6_1_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_3_6_1">
-            <span class="md-nav__icon md-icon"></span>
-            
-  
-    Procedures
-  
-
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../../nfs/procedures/installation-configuration-nfs/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Installation et configuration manuelle de NFS
-  
-
-    
-  </span>
-  
-  
-
-      </a>
     </li>
   
 
@@ -2891,7 +2880,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../nfs/runbooks/commandes-debogage-serveur-nfs/" class="md-nav__link">
+      <a href="../../runbooks/commandes-debogage-serveur-nfs/" class="md-nav__link">
         
   
   
@@ -2919,7 +2908,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../nfs/runbooks/creation-partage-nfs/" class="md-nav__link">
+      <a href="../../runbooks/creation-partage-nfs/" class="md-nav__link">
         
   
   
@@ -2947,7 +2936,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../nfs/runbooks/recette-validation-serveur-nfs/" class="md-nav__link">
+      <a href="../../runbooks/recette-validation-serveur-nfs/" class="md-nav__link">
         
   
   
@@ -4400,10 +4389,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#3-procedure-dexecution" class="md-nav__link">
+  <a href="#3-procedure-de-deploiement" class="md-nav__link">
     <span class="md-ellipsis">
       
-        3. Procédure d'exécution
+        3. Procédure de déploiement
       
     </span>
   </a>
@@ -4411,21 +4400,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#4-validation" class="md-nav__link">
+  <a href="#4-annexe" class="md-nav__link">
     <span class="md-ellipsis">
       
-        4. Validation
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#5-rollback" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        5. Rollback
+        4. Annexe
       
     </span>
   </a>
@@ -4448,7 +4426,7 @@
   
   
     <div style="text-align: left; font-size: 0.85em; color: var(--md-default-fg-color--light); margin-bottom: 20px;">
-      <strong>Dernière édition :</strong> <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-timeago" title="28 juillet 2026 19:28:43 UTC"><span class="timeago" datetime="2026-07-28T19:28:43+00:00" locale="fr"></span></span><span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date" title="28 juillet 2026 19:28:43 UTC">2026-07-28</span>
+      <strong>Dernière édition :</strong> <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-timeago" title="5 août 2026 08:26:26 UTC"><span class="timeago" datetime="2026-08-05T08:26:26+00:00" locale="fr"></span></span><span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date" title="5 août 2026 08:26:26 UTC">2026-08-05</span>
     </div>
   
   
@@ -4461,69 +4439,86 @@
   
 
 
-<h1 id="supprimer-un-noeud-du-cluster">Supprimer un noeud du cluster</h1>
+<h1 id="installation-et-configuration-manuelle-de-nfs">Installation et configuration manuelle de NFS</h1>
 <p><img alt="Bannière LoutikCloud" src="https://raw.githubusercontent.com/loutik/design-assets/main/loutikcloud/banniere_loutikcloud.png" /></p>
 <div class="admonition info">
 <p class="admonition-title">Informations</p>
 <ul>
-<li><strong>Date de mise à jour</strong> : 2026-05-31</li>
-<li><strong>Service ciblé</strong> : Proxmox VE</li>
+<li><strong>Date de création</strong> : 2026-08-05</li>
+<li><strong>Service ciblé</strong> : Stockage / NFS</li>
 <li><strong>Auteur</strong> : Louis MEDO</li>
 <li><strong>Responsable</strong> : Louis MEDO</li>
 </ul>
 </div>
+<div class="admonition warning">
+<p class="admonition-title">Avertissement</p>
+<p>La configuration et l'installation de cette infrastructure sont gérées intégralement par Ansible. Les commandes présentées ci-dessous illustrent le processus manuel équivalent à des fins de compréhension ou de débogage. Aucune création ou modification manuelle ne doit être effectuée dans des conditions de production.</p>
+</div>
 <h2 id="1-contexte">1. Contexte</h2>
-<p>Décommissionnement propre et définitif d'un nœud physique du cluster Proxmox VE au sein de l'infrastructure LoutikCLOUD. Cette procédure doit être exécutée lors d'un retrait de matériel, d'un remplacement de serveur défectueux ou d'une réduction de capacité, afin de maintenir l'intégrité du quorum Corosync sans perturber les services en production.</p>
+<p>Déploiement du composant serveur NFS fournissant les volumes de stockage partagés. Ce service s'intègre à l'infrastructure LoutikCLOUD en exposant des espaces persistants pour les nœuds Proxmox et les clusters Kubernetes. La configuration isole chaque partage avec des utilisateurs dédiés et restreint le protocole à la version 4.</p>
 <h2 id="2-prerequis">2. Prérequis</h2>
 <ul>
-<li>Accès SSH en <code>root</code> (via clé asymétrique) à un nœud <strong>actif</strong> du cluster (différent de celui à supprimer).</li>
-<li>L'ensemble des machines virtuelles (VM) et conteneurs (LXC) du nœud cible doivent avoir été migrés vers d'autres nœuds ou détruits.</li>
-<li>Vérification que le cluster dispose de suffisamment de nœuds restants pour maintenir le quorum (idéalement un nombre impair &gt; 2).</li>
+<li>VM Debian/Ubuntu allouée et accessible en SSH avec privilèges <code>sudo</code>.</li>
+<li>Espace de stockage (LVM ou partition) monté et disponible.</li>
+<li>Variables de déploiement identifiées (chemins, UIDs, GIDs, IPs autorisées).</li>
 </ul>
-<h2 id="3-procedure-dexecution">3. Procédure d'exécution</h2>
-<ol>
-<li>
-<p><strong>Extinction du nœud à décommissionner</strong> :</p>
-<p>Il est strictement impératif d'éteindre le nœud avant sa suppression. Le laisser allumé provoquerait un conflit Corosync et une corruption potentielle du cluster. À exécuter sur le nœud à retirer.</p>
-<div class="highlight"><pre><span></span><code>poweroff
+<h2 id="3-procedure-de-deploiement">3. Procédure de déploiement</h2>
+<p>3.1. <strong>Installation du serveur NFS.</strong> Installation des paquets requis pour le service.</p>
+<div class="highlight"><pre><span></span><code>sudo<span class="w"> </span>apt-get<span class="w"> </span>update<span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span>sudo<span class="w"> </span>apt-get<span class="w"> </span>install<span class="w"> </span>-y<span class="w"> </span>nfs-kernel-server
 </code></pre></div>
 <ul>
-<li><strong><code>poweroff</code></strong> : Commande système ACPI provoquant l'arrêt propre du système d'exploitation et la mise hors tension de la machine physique.</li>
+<li><code>-y</code> : Valide automatiquement les demandes de confirmation d'installation.</li>
+<li><code>nfs-kernel-server</code> : Paquet fournissant le démon serveur NFS natif du noyau Linux.</li>
 </ul>
-</li>
-<li>
-<p><strong>Vérification de la topologie</strong> :</p>
-<p>À exécuter depuis un nœud restant et actif du cluster pour récupérer le nom exact du nœud hors ligne.</p>
-<div class="highlight"><pre><span></span><code>pvecm<span class="w"> </span>nodes
+<p>3.2. <strong>Création du répertoire de surcharge.</strong> Préparation de l'arborescence pour la configuration modulaire.</p>
+<div class="highlight"><pre><span></span><code>sudo<span class="w"> </span>mkdir<span class="w"> </span>-p<span class="w"> </span>/etc/nfs.conf.d<span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span>sudo<span class="w"> </span>chmod<span class="w"> </span><span class="m">0755</span><span class="w"> </span>/etc/nfs.conf.d
 </code></pre></div>
 <ul>
-<li><strong><code>pvecm nodes</code></strong> : Argument de l'outil Proxmox VE Cluster Manager affichant la liste des membres du cluster, leur ID et leur statut actuel.</li>
+<li><code>mkdir -p</code> : Crée le répertoire cible ainsi que les répertoires parents manquants.</li>
+<li><code>chmod 0755</code> : Attribue les droits de lecture/exécution pour tous, et d'écriture uniquement au propriétaire.</li>
 </ul>
-</li>
-<li>
-<p><strong>Suppression définitive du nœud</strong> :</p>
-<p>À exécuter depuis le même nœud actif. Remplacer <code>nom-du-noeud</code> par la valeur trouvée à l'étape précédente.</p>
-<div class="highlight"><pre><span></span><code>pvecm<span class="w"> </span>delnode<span class="w"> </span>nom-du-noeud
+<p>3.3. <strong>Restriction du protocole à NFSv4.</strong> Désactivation des anciennes versions.</p>
+<div class="highlight"><pre><span></span><code><span class="nb">echo</span><span class="w"> </span>-e<span class="w"> </span><span class="s2">&quot;[nfsd]\nvers2=n\nvers3=n\nvers4=y&quot;</span><span class="w"> </span><span class="p">|</span><span class="w"> </span>sudo<span class="w"> </span>tee<span class="w"> </span>/etc/nfs.conf.d/10-nfsv4-only.conf
 </code></pre></div>
 <ul>
-<li><strong><code>pvecm delnode</code></strong> : Commande qui supprime les informations du nœud spécifié dans la configuration partagée de Corosync (<code>corosync.conf</code>), isolant ainsi définitivement l'ancien serveur de la grappe.</li>
-<li><strong><code>nom-du-noeud</code></strong> : Le nom d'hôte exact du serveur Proxmox à expulser.</li>
+<li><code>echo -e</code> : Interprète les caractères d'échappement (comme <code>\n</code> pour les sauts de ligne) pour générer le bloc de configuration.</li>
+<li><code>tee</code> : Lit l'entrée standard et l'écrit dans un fichier avec élévation de privilèges.</li>
 </ul>
-</li>
-</ol>
-<h2 id="4-validation">4. Validation</h2>
-<p>Vérifier la bonne santé du cluster depuis un nœud actif :</p>
-<ol>
-<li>Exécuter <code>pvecm status</code>. Le champ <code>Expected votes</code> doit avoir diminué de 1 et le statut de <code>Quorum</code> doit indiquer <code>Yes</code>.</li>
-<li>Exécuter <code>pvecm nodes</code>. Le nœud supprimé ne doit plus apparaître dans la liste.</li>
-<li>Vérifier l'interface web (GUI) de Proxmox : le nœud supprimé ne doit plus être visible dans l'arborescence du datacenter (un rafraîchissement de la page ou un redémarrage du service <code>pveproxy</code> peut être nécessaire : <code>systemctl restart pveproxy</code>).</li>
-</ol>
-<h2 id="5-rollback">5. Rollback</h2>
-<p><strong>Attention : Un nœud supprimé d'un cluster Proxmox VE ne peut pas être réintégré tel quel.</strong> Si le nœud a été supprimé par erreur, le retour arrière nécessite la réinstallation complète de l'hyperviseur sur la machine cible :</p>
-<ol>
-<li>Formater et réinstaller Proxmox VE de zéro sur le serveur physique.</li>
-<li>Reprendre la procédure standard "Création d'un cluster" (ou "Jonction d'un nœud") pour ajouter ce "nouveau" nœud vierge au cluster existant.</li>
-</ol>
+<p>3.4. <strong>Création des groupes d'isolation système.</strong> Mise en place d'un groupe dédié par partage.</p>
+<div class="highlight"><pre><span></span><code>sudo<span class="w"> </span>groupadd<span class="w"> </span>--system<span class="w"> </span>--gid<span class="w"> </span><span class="m">2000</span><span class="w"> </span>sharegroup
+</code></pre></div>
+<ul>
+<li><code>--system</code> : Crée un groupe système (GID généralement &lt; 1000, n'apparaissant pas dans les interfaces de connexion).</li>
+<li><code>--gid 2000</code> : Assigne manuellement un identifiant de groupe statique pour garantir la cohérence inter-serveurs.</li>
+</ul>
+<p>3.5. <strong>Création des utilisateurs d'isolation.</strong> Génération d'un compte de service restreint associé au groupe.</p>
+<div class="highlight"><pre><span></span><code>sudo<span class="w"> </span>useradd<span class="w"> </span>--system<span class="w"> </span>--uid<span class="w"> </span><span class="m">2000</span><span class="w"> </span>--gid<span class="w"> </span>sharegroup<span class="w"> </span>--no-create-home<span class="w"> </span>--shell<span class="w"> </span>/usr/sbin/nologin<span class="w"> </span>shareuser
+</code></pre></div>
+<ul>
+<li><code>--no-create-home</code> : Empêche la création d'un répertoire personnel standard dans <code>/home</code>.</li>
+<li><code>--shell /usr/sbin/nologin</code> : Bloque toute tentative de connexion interactive pour des raisons de sécurité.</li>
+</ul>
+<p>3.6. <strong>Création et sécurisation de l'espace de stockage.</strong> Initialisation du répertoire de partage avec les bons droits.</p>
+<div class="highlight"><pre><span></span><code>sudo<span class="w"> </span>mkdir<span class="w"> </span>-p<span class="w"> </span>/srv/nfs/share<span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span>sudo<span class="w"> </span>chown<span class="w"> </span><span class="m">2000</span>:2000<span class="w"> </span>/srv/nfs/share<span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span>sudo<span class="w"> </span>chmod<span class="w"> </span><span class="m">0750</span><span class="w"> </span>/srv/nfs/share
+</code></pre></div>
+<ul>
+<li><code>chown 2000:2000</code> : Attribue la propriété du dossier à l'UID et au GID de service créés précédemment.</li>
+<li><code>chmod 0750</code> : Autorise la lecture/écriture/exécution pour le propriétaire, lecture/exécution pour le groupe, aucun droit pour les autres.</li>
+</ul>
+<p>3.7. <strong>Génération et application des exports.</strong> Déclaration du partage et redémarrage du service.</p>
+<div class="highlight"><pre><span></span><code><span class="nb">echo</span><span class="w"> </span><span class="s2">&quot;/srv/nfs/share 192.168.1.0/24(rw,sync,root_squash,all_squash,anonuid=2000,anongid=2000)&quot;</span><span class="w"> </span><span class="p">|</span><span class="w"> </span>sudo<span class="w"> </span>tee<span class="w"> </span>-a<span class="w"> </span>/etc/exports
+sudo<span class="w"> </span>exportfs<span class="w"> </span>-ra
+sudo<span class="w"> </span>systemctl<span class="w"> </span>restart<span class="w"> </span>nfs-kernel-server
+</code></pre></div>
+<ul>
+<li><code>tee -a</code> : Ajoute (append) la nouvelle ligne à la fin du fichier <code>/etc/exports</code> existant.</li>
+<li><code>exportfs -ra</code> : Recharge entièrement la table des exports NFS en mémoire à partir du fichier de configuration.</li>
+<li><code>systemctl restart</code> : Redémarre complètement le démon système pour appliquer les surcharges NFSv4.</li>
+</ul>
+<h2 id="4-annexe">4. Annexe</h2>
+<ul>
+<li><a href="https://blog.stephane-robert.info/docs/services/stockage/nfs/">Stéphane Robert - Utiliser NFS sur Linux</a></li>
+</ul>
 
 
 
@@ -4546,7 +4541,7 @@
     <span class="md-icon" title="Dernière mise à jour">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-timeago" title="28 juillet 2026 19:28:43 UTC"><span class="timeago" datetime="2026-07-28T19:28:43+00:00" locale="fr"></span></span><span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date" title="28 juillet 2026 19:28:43 UTC">2026-07-28</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-timeago" title="5 août 2026 08:26:26 UTC"><span class="timeago" datetime="2026-08-05T08:26:26+00:00" locale="fr"></span></span><span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date" title="5 août 2026 08:26:26 UTC">2026-08-05</span>
   </span>
 
     
@@ -4556,7 +4551,7 @@
     <span class="md-icon" title="Créé">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M14.47 15.08 11 13V7h1.5v5.25l3.08 1.83c-.41.28-.79.62-1.11 1m-1.39 4.84c-.36.05-.71.08-1.08.08-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8c0 .37-.03.72-.08 1.08.69.1 1.33.32 1.92.64.1-.56.16-1.13.16-1.72 0-5.5-4.5-10-10-10S2 6.5 2 12s4.47 10 10 10c.59 0 1.16-.06 1.72-.16-.32-.59-.54-1.23-.64-1.92M18 15v3h-3v2h3v3h2v-3h3v-2h-3v-3z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-timeago" title="31 mai 2026 16:32:15 UTC"><span class="timeago" datetime="2026-05-31T16:32:15+00:00" locale="fr"></span></span><span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date" title="31 mai 2026 16:32:15 UTC">2026-05-31</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-timeago" title="5 août 2026 08:26:26 UTC"><span class="timeago" datetime="2026-08-05T08:26:26+00:00" locale="fr"></span></span><span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date" title="5 août 2026 08:26:26 UTC">2026-08-05</span>
   </span>
 
     

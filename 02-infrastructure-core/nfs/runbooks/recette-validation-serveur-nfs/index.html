@@ -10,13 +10,13 @@
         <meta name="author" content="Louis MEDO">
       
       
-        <link rel="canonical" href="https://infra-docs.loutik.fr/02-infrastructure-core/hyperviseur/runbooks/runbook-sortir-un-noeud-cluster-proxmox/">
+        <link rel="canonical" href="https://infra-docs.loutik.fr/02-infrastructure-core/nfs/runbooks/recette-validation-serveur-nfs/">
       
       
-        <link rel="prev" href="../../procedures/proc-rejoindre-cluster-proxmox/">
+        <link rel="prev" href="../creation-partage-nfs/">
       
       
-        <link rel="next" href="../../../nfs/procedures/installation-configuration-nfs/">
+        <link rel="next" href="../../../reseau/procedures/configuration-alias-opnsense/">
       
       
         
@@ -27,7 +27,7 @@
     
     
       
-        <title>Supprimer un noeud du cluster - Documentation infrastructure - LoutikCLOUD</title>
+        <title>Fiche recette - Serveur NFS - Documentation infrastructure - LoutikCLOUD</title>
       
     
     
@@ -80,7 +80,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#supprimer-un-noeud-du-cluster" class="md-skip">
+        <a href="#fiche-recette-serveur-nfs" class="md-skip">
           Aller au contenu
         </a>
       
@@ -115,7 +115,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Supprimer un noeud du cluster
+              Fiche recette - Serveur NFS
             
           </span>
         </div>
@@ -2172,10 +2172,8 @@
                 
   
   
-    
   
   
-  
     
     
       
@@ -2187,11 +2185,11 @@
     
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_5" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_5" >
         
           
           <label class="md-nav__link" for="__nav_3_5" id="__nav_3_5_label" tabindex="0">
@@ -2212,7 +2210,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_5_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_5_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_3_5">
             <span class="md-nav__icon md-icon"></span>
             
@@ -2293,7 +2291,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../procedures/configuration-reseau-proxmox/" class="md-nav__link">
+      <a href="../../../hyperviseur/procedures/configuration-reseau-proxmox/" class="md-nav__link">
         
   
   
@@ -2321,7 +2319,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../procedures/configuration-serveur-smtp-pve/" class="md-nav__link">
+      <a href="../../../hyperviseur/procedures/configuration-serveur-smtp-pve/" class="md-nav__link">
         
   
   
@@ -2349,7 +2347,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../procedures/desactivation-mise-en-veille-pc-portable/" class="md-nav__link">
+      <a href="../../../hyperviseur/procedures/desactivation-mise-en-veille-pc-portable/" class="md-nav__link">
         
   
   
@@ -2377,7 +2375,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../procedures/proc-configuration-sso-proxmox-via-authentik/" class="md-nav__link">
+      <a href="../../../hyperviseur/procedures/proc-configuration-sso-proxmox-via-authentik/" class="md-nav__link">
         
   
   
@@ -2405,7 +2403,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../procedures/proc-creation-cluster-proxmox/" class="md-nav__link">
+      <a href="../../../hyperviseur/procedures/proc-creation-cluster-proxmox/" class="md-nav__link">
         
   
   
@@ -2433,7 +2431,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../procedures/proc-installation-physique-proxmox/" class="md-nav__link">
+      <a href="../../../hyperviseur/procedures/proc-installation-physique-proxmox/" class="md-nav__link">
         
   
   
@@ -2461,7 +2459,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../procedures/proc-rejoindre-cluster-proxmox/" class="md-nav__link">
+      <a href="../../../hyperviseur/procedures/proc-rejoindre-cluster-proxmox/" class="md-nav__link">
         
   
   
@@ -2494,8 +2492,6 @@
                 
   
   
-    
-  
   
   
     
@@ -2507,11 +2503,11 @@
     
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_5_2" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_5_2" >
         
           
           <label class="md-nav__link" for="__nav_3_5_2" id="__nav_3_5_2_label" tabindex="0">
@@ -2532,7 +2528,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_3_5_2_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_3_5_2_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_3_5_2">
             <span class="md-nav__icon md-icon"></span>
             
@@ -2547,37 +2543,10 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Supprimer un noeud du cluster
-  
-
-    
-  </span>
-  
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../../../hyperviseur/runbooks/runbook-sortir-un-noeud-cluster-proxmox/" class="md-nav__link">
         
   
   
@@ -2593,81 +2562,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table des matières">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table des matières
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#1-contexte" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        1. Contexte
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#2-prerequis" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        2. Prérequis
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#3-procedure-dexecution" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        3. Procédure d'exécution
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#4-validation" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        4. Validation
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#5-rollback" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        5. Rollback
-      
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -2693,8 +2587,10 @@
                 
   
   
+    
   
   
+  
     
     
       
@@ -2706,11 +2602,11 @@
     
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_6" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_6" checked>
         
           
           <label class="md-nav__link" for="__nav_3_6" id="__nav_3_6_label" tabindex="0">
@@ -2731,7 +2627,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_6_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_6_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_3_6">
             <span class="md-nav__icon md-icon"></span>
             
@@ -2800,7 +2696,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../nfs/procedures/installation-configuration-nfs/" class="md-nav__link">
+      <a href="../../procedures/installation-configuration-nfs/" class="md-nav__link">
         
   
   
@@ -2833,8 +2729,10 @@
                 
   
   
+    
   
   
+  
     
     
       
@@ -2848,11 +2746,11 @@
     
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_6_2" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_6_2" checked>
         
           
           <label class="md-nav__link" for="__nav_3_6_2" id="__nav_3_6_2_label" tabindex="0">
@@ -2873,7 +2771,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_3_6_2_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_3_6_2_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_3_6_2">
             <span class="md-nav__icon md-icon"></span>
             
@@ -2891,7 +2789,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../nfs/runbooks/commandes-debogage-serveur-nfs/" class="md-nav__link">
+      <a href="../commandes-debogage-serveur-nfs/" class="md-nav__link">
         
   
   
@@ -2919,7 +2817,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../nfs/runbooks/creation-partage-nfs/" class="md-nav__link">
+      <a href="../creation-partage-nfs/" class="md-nav__link">
         
   
   
@@ -2944,10 +2842,37 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../../../nfs/runbooks/recette-validation-serveur-nfs/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Fiche recette - Serveur NFS
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   
@@ -2963,6 +2888,59 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table des matières">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table des matières
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1-contexte" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. Contexte
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-prerequis" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. Prérequis
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-validation-du-fonctionnement-et-de-la-securite" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. Validation du fonctionnement et de la sécurité
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -4400,32 +4378,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#3-procedure-dexecution" class="md-nav__link">
+  <a href="#3-validation-du-fonctionnement-et-de-la-securite" class="md-nav__link">
     <span class="md-ellipsis">
       
-        3. Procédure d'exécution
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#4-validation" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        4. Validation
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#5-rollback" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        5. Rollback
+        3. Validation du fonctionnement et de la sécurité
       
     </span>
   </a>
@@ -4448,7 +4404,7 @@
   
   
     <div style="text-align: left; font-size: 0.85em; color: var(--md-default-fg-color--light); margin-bottom: 20px;">
-      <strong>Dernière édition :</strong> <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-timeago" title="28 juillet 2026 19:28:43 UTC"><span class="timeago" datetime="2026-07-28T19:28:43+00:00" locale="fr"></span></span><span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date" title="28 juillet 2026 19:28:43 UTC">2026-07-28</span>
+      <strong>Dernière édition :</strong> <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-timeago" title="5 août 2026 08:26:26 UTC"><span class="timeago" datetime="2026-08-05T08:26:26+00:00" locale="fr"></span></span><span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date" title="5 août 2026 08:26:26 UTC">2026-08-05</span>
     </div>
   
   
@@ -4461,69 +4417,63 @@
   
 
 
-<h1 id="supprimer-un-noeud-du-cluster">Supprimer un noeud du cluster</h1>
+<h1 id="fiche-recette-serveur-nfs">Fiche recette - Serveur NFS</h1>
 <p><img alt="Bannière LoutikCloud" src="https://raw.githubusercontent.com/loutik/design-assets/main/loutikcloud/banniere_loutikcloud.png" /></p>
 <div class="admonition info">
 <p class="admonition-title">Informations</p>
 <ul>
-<li><strong>Date de mise à jour</strong> : 2026-05-31</li>
-<li><strong>Service ciblé</strong> : Proxmox VE</li>
+<li><strong>Date de création</strong> : 2026-08-04</li>
+<li><strong>Service ciblé</strong> : Stockage / NFS</li>
 <li><strong>Auteur</strong> : Louis MEDO</li>
 <li><strong>Responsable</strong> : Louis MEDO</li>
 </ul>
 </div>
 <h2 id="1-contexte">1. Contexte</h2>
-<p>Décommissionnement propre et définitif d'un nœud physique du cluster Proxmox VE au sein de l'infrastructure LoutikCLOUD. Cette procédure doit être exécutée lors d'un retrait de matériel, d'un remplacement de serveur défectueux ou d'une réduction de capacité, afin de maintenir l'intégrité du quorum Corosync sans perturber les services en production.</p>
+<p>Ce composant agit en tant que backend de stockage persistant pour les applications de l'infrastructure LoutikCLOUD. Il s'intègre en fournissant des espaces isolés par service, où chaque dossier est verrouillé par un couple UID/GID dédié. Les flux réseaux sont restreints aux adresses IP spécifiques des clients déclarés, et la sécurité est renforcée par l'utilisation exclusive du protocole NFSv4.</p>
 <h2 id="2-prerequis">2. Prérequis</h2>
 <ul>
-<li>Accès SSH en <code>root</code> (via clé asymétrique) à un nœud <strong>actif</strong> du cluster (différent de celui à supprimer).</li>
-<li>L'ensemble des machines virtuelles (VM) et conteneurs (LXC) du nœud cible doivent avoir été migrés vers d'autres nœuds ou détruits.</li>
-<li>Vérification que le cluster dispose de suffisamment de nœuds restants pour maintenir le quorum (idéalement un nombre impair &gt; 2).</li>
+<li>Serveur NFS déployé et configuré via le rôle Ansible <code>debian-nfs</code>.</li>
+<li>Une machine cliente disposant du paquet <code>nfs-common</code> et dont l'IP est autorisée dans la configuration (ex: 10.0.0.10).</li>
+<li>Une machine tierce (IP non déclarée) pour valider l'isolation réseau.</li>
 </ul>
-<h2 id="3-procedure-dexecution">3. Procédure d'exécution</h2>
-<ol>
-<li>
-<p><strong>Extinction du nœud à décommissionner</strong> :</p>
-<p>Il est strictement impératif d'éteindre le nœud avant sa suppression. Le laisser allumé provoquerait un conflit Corosync et une corruption potentielle du cluster. À exécuter sur le nœud à retirer.</p>
-<div class="highlight"><pre><span></span><code>poweroff
+<h2 id="3-validation-du-fonctionnement-et-de-la-securite">3. Validation du fonctionnement et de la sécurité</h2>
+<p>3.1. <strong>Vérification des versions actives sur le serveur.</strong> S'assurer que le serveur n'expose que le protocole sécurisé NFSv4 et que les anciennes versions (v2/v3) sont bien inactives.</p>
+<div class="highlight"><pre><span></span><code>rpcinfo<span class="w"> </span>-p<span class="w"> </span><span class="m">127</span>.0.0.1<span class="w"> </span><span class="p">|</span><span class="w"> </span>grep<span class="w"> </span>nfs
 </code></pre></div>
 <ul>
-<li><strong><code>poweroff</code></strong> : Commande système ACPI provoquant l'arrêt propre du système d'exploitation et la mise hors tension de la machine physique.</li>
+<li><code>rpcinfo -p</code> : Affiche les programmes RPC enregistrés sur le serveur. La sortie ne doit mentionner que la version 4.</li>
+<li><code>grep nfs</code> : Filtre la sortie pour isoler le composant serveur NFS.</li>
 </ul>
-</li>
-<li>
-<p><strong>Vérification de la topologie</strong> :</p>
-<p>À exécuter depuis un nœud restant et actif du cluster pour récupérer le nom exact du nœud hors ligne.</p>
-<div class="highlight"><pre><span></span><code>pvecm<span class="w"> </span>nodes
+<p><strong>Retour attendu :</strong></p>
+<div class="highlight"><pre><span></span><code><span class="m">100003</span><span class="w">    </span><span class="m">4</span><span class="w">   </span>tcp<span class="w">   </span><span class="m">2049</span><span class="w">  </span>nfs
+</code></pre></div>
+<p>3.2. <strong>Test de montage depuis un client autorisé.</strong> Valider que le client disposant de l'IP déclarée peut accéder au partage réseau et le monter localement.</p>
+<div class="highlight"><pre><span></span><code>sudo<span class="w"> </span>mount<span class="w"> </span>-t<span class="w"> </span>nfs4<span class="w"> </span><span class="m">10</span>.0.0.5:/srv/nfs/web<span class="w"> </span>/mnt/test_nfs
 </code></pre></div>
 <ul>
-<li><strong><code>pvecm nodes</code></strong> : Argument de l'outil Proxmox VE Cluster Manager affichant la liste des membres du cluster, leur ID et leur statut actuel.</li>
+<li><code>-t nfs4</code> : Force le client à utiliser le protocole NFS version 4 pour initier la connexion.</li>
+<li><code>10.0.0.5:/srv/nfs/web</code> : IP du serveur NFS suivie du chemin absolu exporté.</li>
 </ul>
-</li>
-<li>
-<p><strong>Suppression définitive du nœud</strong> :</p>
-<p>À exécuter depuis le même nœud actif. Remplacer <code>nom-du-noeud</code> par la valeur trouvée à l'étape précédente.</p>
-<div class="highlight"><pre><span></span><code>pvecm<span class="w"> </span>delnode<span class="w"> </span>nom-du-noeud
+<p><strong>Retour attendu :</strong></p>
+<div class="highlight"><pre><span></span><code>Aucun message (retour sans erreur)
+</code></pre></div>
+<p>3.3. <strong>Validation du mappage des droits (UID/GID).</strong> Confirmer que l'option <code>all_squash</code> attribue correctement l'identité du compte de service (ex: 2001) aux nouveaux fichiers créés.</p>
+<div class="highlight"><pre><span></span><code>touch<span class="w"> </span>/mnt/test_nfs/test.txt<span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span>ls<span class="w"> </span>-ln<span class="w"> </span>/mnt/test_nfs/test.txt
 </code></pre></div>
 <ul>
-<li><strong><code>pvecm delnode</code></strong> : Commande qui supprime les informations du nœud spécifié dans la configuration partagée de Corosync (<code>corosync.conf</code>), isolant ainsi définitivement l'ancien serveur de la grappe.</li>
-<li><strong><code>nom-du-noeud</code></strong> : Le nom d'hôte exact du serveur Proxmox à expulser.</li>
+<li><code>touch</code> : Tente de créer un fichier vide sur le montage NFS avec l'utilisateur du client.</li>
+<li><code>ls -ln</code> : Affiche les permissions avec les identifiants numériques (UID et GID doivent correspondre à 2001, indépendamment de l'utilisateur ayant exécuté le <code>touch</code>).</li>
 </ul>
-</li>
-</ol>
-<h2 id="4-validation">4. Validation</h2>
-<p>Vérifier la bonne santé du cluster depuis un nœud actif :</p>
-<ol>
-<li>Exécuter <code>pvecm status</code>. Le champ <code>Expected votes</code> doit avoir diminué de 1 et le statut de <code>Quorum</code> doit indiquer <code>Yes</code>.</li>
-<li>Exécuter <code>pvecm nodes</code>. Le nœud supprimé ne doit plus apparaître dans la liste.</li>
-<li>Vérifier l'interface web (GUI) de Proxmox : le nœud supprimé ne doit plus être visible dans l'arborescence du datacenter (un rafraîchissement de la page ou un redémarrage du service <code>pveproxy</code> peut être nécessaire : <code>systemctl restart pveproxy</code>).</li>
-</ol>
-<h2 id="5-rollback">5. Rollback</h2>
-<p><strong>Attention : Un nœud supprimé d'un cluster Proxmox VE ne peut pas être réintégré tel quel.</strong> Si le nœud a été supprimé par erreur, le retour arrière nécessite la réinstallation complète de l'hyperviseur sur la machine cible :</p>
-<ol>
-<li>Formater et réinstaller Proxmox VE de zéro sur le serveur physique.</li>
-<li>Reprendre la procédure standard "Création d'un cluster" (ou "Jonction d'un nœud") pour ajouter ce "nouveau" nœud vierge au cluster existant.</li>
-</ol>
+<p><strong>Retour attendu :</strong></p>
+<div class="highlight"><pre><span></span><code>-rw-rw-r--<span class="w"> </span><span class="m">1</span><span class="w"> </span><span class="m">2001</span><span class="w"> </span><span class="m">2001</span><span class="w"> </span><span class="m">0</span><span class="w"> </span>Aug<span class="w">  </span><span class="m">4</span><span class="w"> </span><span class="m">15</span>:53<span class="w"> </span>/mnt/test_nfs/test.txt
+</code></pre></div>
+<p>3.4. <strong>Test de rejet d'une adresse IP non autorisée.</strong> Tenter d'accéder au partage réseau depuis une machine dont l'adresse IP ne figure pas dans le fichier <code>/etc/exports</code>.</p>
+<div class="highlight"><pre><span></span><code>sudo<span class="w"> </span>mount<span class="w"> </span>-t<span class="w"> </span>nfs4<span class="w"> </span><span class="m">10</span>.0.0.5:/srv/nfs/web<span class="w"> </span>/mnt/test_nfs
+</code></pre></div>
+<ul>
+<li><code>mount</code> : La commande d'exécution. Elle doit se solder par une erreur bloquante : <code>access denied by server while mounting</code>.</li>
+<li><code>10.0.0.5:/srv/nfs/web</code> : La cible du montage que le pare-feu logiciel NFS refusera, confirmant la sécurité périmétrique.</li>
+</ul>
 
 
 
@@ -4546,7 +4496,7 @@
     <span class="md-icon" title="Dernière mise à jour">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-timeago" title="28 juillet 2026 19:28:43 UTC"><span class="timeago" datetime="2026-07-28T19:28:43+00:00" locale="fr"></span></span><span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date" title="28 juillet 2026 19:28:43 UTC">2026-07-28</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-timeago" title="5 août 2026 08:26:26 UTC"><span class="timeago" datetime="2026-08-05T08:26:26+00:00" locale="fr"></span></span><span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date" title="5 août 2026 08:26:26 UTC">2026-08-05</span>
   </span>
 
     
@@ -4556,7 +4506,7 @@
     <span class="md-icon" title="Créé">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M14.47 15.08 11 13V7h1.5v5.25l3.08 1.83c-.41.28-.79.62-1.11 1m-1.39 4.84c-.36.05-.71.08-1.08.08-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8c0 .37-.03.72-.08 1.08.69.1 1.33.32 1.92.64.1-.56.16-1.13.16-1.72 0-5.5-4.5-10-10-10S2 6.5 2 12s4.47 10 10 10c.59 0 1.16-.06 1.72-.16-.32-.59-.54-1.23-.64-1.92M18 15v3h-3v2h3v3h2v-3h3v-2h-3v-3z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-timeago" title="31 mai 2026 16:32:15 UTC"><span class="timeago" datetime="2026-05-31T16:32:15+00:00" locale="fr"></span></span><span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date" title="31 mai 2026 16:32:15 UTC">2026-05-31</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-timeago" title="5 août 2026 08:26:26 UTC"><span class="timeago" datetime="2026-08-05T08:26:26+00:00" locale="fr"></span></span><span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date" title="5 août 2026 08:26:26 UTC">2026-08-05</span>
   </span>
 
     

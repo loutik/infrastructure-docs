@@ -2,238 +2,254 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
          <loc>https://infra-docs.loutik.fr/</loc>
-         <lastmod>2026-07-29</lastmod>
+         <lastmod>2026-08-05</lastmod>
     </url>
     <url>
          <loc>https://infra-docs.loutik.fr/01-architecture/</loc>
-         <lastmod>2026-07-29</lastmod>
+         <lastmod>2026-08-05</lastmod>
     </url>
     <url>
          <loc>https://infra-docs.loutik.fr/01-architecture/ADR/Backup/adr-005-choix-solution-sauvegarde/</loc>
-         <lastmod>2026-07-29</lastmod>
+         <lastmod>2026-08-05</lastmod>
     </url>
     <url>
          <loc>https://infra-docs.loutik.fr/01-architecture/ADR/DNS/adr-004-choix-dns-infrastructure/</loc>
-         <lastmod>2026-07-29</lastmod>
+         <lastmod>2026-08-05</lastmod>
     </url>
     <url>
          <loc>https://infra-docs.loutik.fr/01-architecture/ADR/Edge/adr-001-choix-hebergeur-vps-gateway/</loc>
-         <lastmod>2026-07-29</lastmod>
+         <lastmod>2026-08-05</lastmod>
     </url>
     <url>
          <loc>https://infra-docs.loutik.fr/01-architecture/ADR/Edge/adr-006-choix-reverse-proxy-vps-edge/</loc>
-         <lastmod>2026-07-29</lastmod>
+         <lastmod>2026-08-05</lastmod>
     </url>
     <url>
          <loc>https://infra-docs.loutik.fr/01-architecture/ADR/Edge/adr-007-choix-waf-vm-edge/</loc>
-         <lastmod>2026-07-29</lastmod>
+         <lastmod>2026-08-05</lastmod>
     </url>
     <url>
          <loc>https://infra-docs.loutik.fr/01-architecture/ADR/Infrastructure/adr-002-choix-plan-adressage/</loc>
-         <lastmod>2026-07-29</lastmod>
+         <lastmod>2026-08-05</lastmod>
     </url>
     <url>
          <loc>https://infra-docs.loutik.fr/01-architecture/ADR/Infrastructure/adr-003-plateforme-documentation/</loc>
-         <lastmod>2026-07-29</lastmod>
+         <lastmod>2026-08-05</lastmod>
     </url>
     <url>
          <loc>https://infra-docs.loutik.fr/01-architecture/referentiels/ref-001-convention-nommage-infrastructure/</loc>
-         <lastmod>2026-07-29</lastmod>
+         <lastmod>2026-08-05</lastmod>
     </url>
     <url>
          <loc>https://infra-docs.loutik.fr/01-architecture/referentiels/ref-002-convention-nommage-git/</loc>
-         <lastmod>2026-07-29</lastmod>
+         <lastmod>2026-08-05</lastmod>
     </url>
     <url>
          <loc>https://infra-docs.loutik.fr/01-architecture/referentiels/ref-003-convention-nommage-reseau-pare-feu/</loc>
-         <lastmod>2026-07-29</lastmod>
+         <lastmod>2026-08-05</lastmod>
     </url>
     <url>
          <loc>https://infra-docs.loutik.fr/01-architecture/referentiels/ref-004-convention-nommage-base-de-donnees/</loc>
-         <lastmod>2026-07-29</lastmod>
+         <lastmod>2026-08-05</lastmod>
     </url>
     <url>
          <loc>https://infra-docs.loutik.fr/01-architecture/referentiels/ref-005-convention-nommage-authentik/</loc>
-         <lastmod>2026-07-29</lastmod>
+         <lastmod>2026-08-05</lastmod>
     </url>
     <url>
          <loc>https://infra-docs.loutik.fr/02-infrastructure-core/</loc>
-         <lastmod>2026-07-29</lastmod>
+         <lastmod>2026-08-05</lastmod>
     </url>
     <url>
          <loc>https://infra-docs.loutik.fr/02-infrastructure-core/backup/architecture/strategie-sauvegarde-opnsense/</loc>
-         <lastmod>2026-07-29</lastmod>
+         <lastmod>2026-08-05</lastmod>
     </url>
     <url>
          <loc>https://infra-docs.loutik.fr/02-infrastructure-core/backup/architecture/strategie-sauvegarde-postgresql/</loc>
-         <lastmod>2026-07-29</lastmod>
+         <lastmod>2026-08-05</lastmod>
     </url>
     <url>
          <loc>https://infra-docs.loutik.fr/02-infrastructure-core/backup/procedures/configuration-montage-rclone-webdav/</loc>
-         <lastmod>2026-07-29</lastmod>
+         <lastmod>2026-08-05</lastmod>
     </url>
     <url>
          <loc>https://infra-docs.loutik.fr/02-infrastructure-core/backup/procedures/deploiement-datastore-pbs/</loc>
-         <lastmod>2026-07-29</lastmod>
+         <lastmod>2026-08-05</lastmod>
     </url>
     <url>
          <loc>https://infra-docs.loutik.fr/02-infrastructure-core/backup/procedures/installation-pbs-via-iso/</loc>
-         <lastmod>2026-07-29</lastmod>
+         <lastmod>2026-08-05</lastmod>
     </url>
     <url>
          <loc>https://infra-docs.loutik.fr/02-infrastructure-core/backup/procedures/int%C3%A9gration-pbs-cluster-pve/</loc>
-         <lastmod>2026-07-29</lastmod>
+         <lastmod>2026-08-05</lastmod>
     </url>
     <url>
          <loc>https://infra-docs.loutik.fr/02-infrastructure-core/backup/procedures/preparation-stockage-externalise-nextcloud-proxmox/</loc>
-         <lastmod>2026-07-29</lastmod>
+         <lastmod>2026-08-05</lastmod>
     </url>
     <url>
          <loc>https://infra-docs.loutik.fr/02-infrastructure-core/backup/runbooks/configuration-sauvegarde-automatique-vm-pbs/</loc>
-         <lastmod>2026-07-29</lastmod>
+         <lastmod>2026-08-05</lastmod>
     </url>
     <url>
          <loc>https://infra-docs.loutik.fr/02-infrastructure-core/backup/runbooks/creation-espace-stockage-sauvegarde-service/</loc>
-         <lastmod>2026-07-29</lastmod>
+         <lastmod>2026-08-05</lastmod>
     </url>
     <url>
          <loc>https://infra-docs.loutik.fr/02-infrastructure-core/base-de-donnees/procedures/deploiement-environnement-postgresql/</loc>
-         <lastmod>2026-07-29</lastmod>
+         <lastmod>2026-08-05</lastmod>
     </url>
     <url>
          <loc>https://infra-docs.loutik.fr/02-infrastructure-core/base-de-donnees/runnboks/provisionnement-nouvelle-base-de-donnes-postgresql/</loc>
-         <lastmod>2026-07-29</lastmod>
+         <lastmod>2026-08-05</lastmod>
     </url>
     <url>
          <loc>https://infra-docs.loutik.fr/02-infrastructure-core/dns/infrastructure-powerdns/</loc>
-         <lastmod>2026-07-29</lastmod>
+         <lastmod>2026-08-05</lastmod>
     </url>
     <url>
          <loc>https://infra-docs.loutik.fr/02-infrastructure-core/dns/procedures/deploiement-serveur-dns-powerdns/</loc>
-         <lastmod>2026-07-29</lastmod>
+         <lastmod>2026-08-05</lastmod>
     </url>
     <url>
          <loc>https://infra-docs.loutik.fr/02-infrastructure-core/dns/runbooks/exploitation-api-powerdns/</loc>
-         <lastmod>2026-07-29</lastmod>
+         <lastmod>2026-08-05</lastmod>
     </url>
     <url>
          <loc>https://infra-docs.loutik.fr/02-infrastructure-core/hyperviseur/procedures/configuration-reseau-proxmox/</loc>
-         <lastmod>2026-07-29</lastmod>
+         <lastmod>2026-08-05</lastmod>
     </url>
     <url>
          <loc>https://infra-docs.loutik.fr/02-infrastructure-core/hyperviseur/procedures/configuration-serveur-smtp-pve/</loc>
-         <lastmod>2026-07-29</lastmod>
+         <lastmod>2026-08-05</lastmod>
     </url>
     <url>
          <loc>https://infra-docs.loutik.fr/02-infrastructure-core/hyperviseur/procedures/desactivation-mise-en-veille-pc-portable/</loc>
-         <lastmod>2026-07-29</lastmod>
+         <lastmod>2026-08-05</lastmod>
     </url>
     <url>
          <loc>https://infra-docs.loutik.fr/02-infrastructure-core/hyperviseur/procedures/proc-configuration-sso-proxmox-via-authentik/</loc>
-         <lastmod>2026-07-29</lastmod>
+         <lastmod>2026-08-05</lastmod>
     </url>
     <url>
          <loc>https://infra-docs.loutik.fr/02-infrastructure-core/hyperviseur/procedures/proc-creation-cluster-proxmox/</loc>
-         <lastmod>2026-07-29</lastmod>
+         <lastmod>2026-08-05</lastmod>
     </url>
     <url>
          <loc>https://infra-docs.loutik.fr/02-infrastructure-core/hyperviseur/procedures/proc-installation-physique-proxmox/</loc>
-         <lastmod>2026-07-29</lastmod>
+         <lastmod>2026-08-05</lastmod>
     </url>
     <url>
          <loc>https://infra-docs.loutik.fr/02-infrastructure-core/hyperviseur/procedures/proc-rejoindre-cluster-proxmox/</loc>
-         <lastmod>2026-07-29</lastmod>
+         <lastmod>2026-08-05</lastmod>
     </url>
     <url>
          <loc>https://infra-docs.loutik.fr/02-infrastructure-core/hyperviseur/runbooks/runbook-sortir-un-noeud-cluster-proxmox/</loc>
-         <lastmod>2026-07-29</lastmod>
+         <lastmod>2026-08-05</lastmod>
+    </url>
+    <url>
+         <loc>https://infra-docs.loutik.fr/02-infrastructure-core/nfs/procedures/installation-configuration-nfs/</loc>
+         <lastmod>2026-08-05</lastmod>
+    </url>
+    <url>
+         <loc>https://infra-docs.loutik.fr/02-infrastructure-core/nfs/runbooks/commandes-debogage-serveur-nfs/</loc>
+         <lastmod>2026-08-05</lastmod>
+    </url>
+    <url>
+         <loc>https://infra-docs.loutik.fr/02-infrastructure-core/nfs/runbooks/creation-partage-nfs/</loc>
+         <lastmod>2026-08-05</lastmod>
+    </url>
+    <url>
+         <loc>https://infra-docs.loutik.fr/02-infrastructure-core/nfs/runbooks/recette-validation-serveur-nfs/</loc>
+         <lastmod>2026-08-05</lastmod>
     </url>
     <url>
          <loc>https://infra-docs.loutik.fr/02-infrastructure-core/reseau/procedures/configuration-alias-opnsense/</loc>
-         <lastmod>2026-07-29</lastmod>
+         <lastmod>2026-08-05</lastmod>
     </url>
     <url>
          <loc>https://infra-docs.loutik.fr/02-infrastructure-core/reseau/procedures/configuration-boostrap-opnsense/</loc>
-         <lastmod>2026-07-29</lastmod>
+         <lastmod>2026-08-05</lastmod>
     </url>
     <url>
          <loc>https://infra-docs.loutik.fr/02-infrastructure-core/reseau/procedures/configuration-categories-opnsense/</loc>
-         <lastmod>2026-07-29</lastmod>
+         <lastmod>2026-08-05</lastmod>
     </url>
     <url>
          <loc>https://infra-docs.loutik.fr/02-infrastructure-core/reseau/procedures/configuration-dns-recursif-opnsense/</loc>
-         <lastmod>2026-07-29</lastmod>
+         <lastmod>2026-08-05</lastmod>
     </url>
     <url>
          <loc>https://infra-docs.loutik.fr/02-infrastructure-core/reseau/procedures/configuration-ips-suricata-opnsense/</loc>
-         <lastmod>2026-07-29</lastmod>
+         <lastmod>2026-08-05</lastmod>
     </url>
     <url>
          <loc>https://infra-docs.loutik.fr/02-infrastructure-core/reseau/procedures/installation-opnsense/</loc>
-         <lastmod>2026-07-29</lastmod>
+         <lastmod>2026-08-05</lastmod>
     </url>
     <url>
          <loc>https://infra-docs.loutik.fr/02-infrastructure-core/reseau/procedures/regles-filtrage/configuration-regles-filtrage-vlan-admoob-opnsense/</loc>
-         <lastmod>2026-07-29</lastmod>
+         <lastmod>2026-08-05</lastmod>
     </url>
     <url>
          <loc>https://infra-docs.loutik.fr/02-infrastructure-core/reseau/runbooks/creation-compte-service-opnsense/</loc>
-         <lastmod>2026-07-29</lastmod>
+         <lastmod>2026-08-05</lastmod>
     </url>
     <url>
          <loc>https://infra-docs.loutik.fr/02-infrastructure-core/reseau/runbooks/creation-objets-logiques-et-categories-filtrage/</loc>
-         <lastmod>2026-07-29</lastmod>
+         <lastmod>2026-08-05</lastmod>
     </url>
     <url>
          <loc>https://infra-docs.loutik.fr/02-infrastructure-core/reseau/runbooks/creation-regles-filtrage/</loc>
-         <lastmod>2026-07-29</lastmod>
+         <lastmod>2026-08-05</lastmod>
     </url>
     <url>
          <loc>https://infra-docs.loutik.fr/02-infrastructure-core/reseau/runbooks/creation-vlan-opnsense/</loc>
-         <lastmod>2026-07-29</lastmod>
+         <lastmod>2026-08-05</lastmod>
     </url>
     <url>
          <loc>https://infra-docs.loutik.fr/03-edge/</loc>
-         <lastmod>2026-07-29</lastmod>
+         <lastmod>2026-08-05</lastmod>
     </url>
     <url>
          <loc>https://infra-docs.loutik.fr/03-edge/vpn/infrastructure-vpn-tailscale/</loc>
-         <lastmod>2026-07-29</lastmod>
+         <lastmod>2026-08-05</lastmod>
     </url>
     <url>
          <loc>https://infra-docs.loutik.fr/03-edge/vpn/procedures/installation-configuration-tailscale-opnsense/</loc>
-         <lastmod>2026-07-29</lastmod>
+         <lastmod>2026-08-05</lastmod>
     </url>
     <url>
          <loc>https://infra-docs.loutik.fr/03-edge/vpn/runbooks/ajout-subnet-tailscale/</loc>
-         <lastmod>2026-07-29</lastmod>
+         <lastmod>2026-08-05</lastmod>
     </url>
     <url>
          <loc>https://infra-docs.loutik.fr/03-edge/vpn/runbooks/gestion-acl-tailscale/</loc>
-         <lastmod>2026-07-29</lastmod>
+         <lastmod>2026-08-05</lastmod>
     </url>
     <url>
          <loc>https://infra-docs.loutik.fr/04-securite/</loc>
-         <lastmod>2026-07-29</lastmod>
+         <lastmod>2026-08-05</lastmod>
     </url>
     <url>
          <loc>https://infra-docs.loutik.fr/05-services/</loc>
-         <lastmod>2026-07-29</lastmod>
+         <lastmod>2026-08-05</lastmod>
     </url>
     <url>
          <loc>https://infra-docs.loutik.fr/05-services/SSO/procedures/configuration-mapping-oidc-export-groupes/</loc>
-         <lastmod>2026-07-29</lastmod>
+         <lastmod>2026-08-05</lastmod>
     </url>
     <url>
          <loc>https://infra-docs.loutik.fr/05-services/SSO/procedures/implementation-politique-acces-globale/</loc>
-         <lastmod>2026-07-29</lastmod>
+         <lastmod>2026-08-05</lastmod>
     </url>
     <url>
          <loc>https://infra-docs.loutik.fr/05-services/SSO/runbooks/application-politique-restriction-acces-applications/</loc>
-         <lastmod>2026-07-29</lastmod>
+         <lastmod>2026-08-05</lastmod>
     </url>
     <url>
          <loc>https://infra-docs.loutik.fr/05-services/SSO/runbooks/configuration-injection-groupes/</loc>
-         <lastmod>2026-07-29</lastmod>
+         <lastmod>2026-08-05</lastmod>
     </url>
 </urlset>
