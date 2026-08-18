@@ -1,5 +1,4 @@
 ---
-id: 001
 title: Choix de l'hébergeur pour le VPS Gateway
 date: 2026-05-17
 status: accepted
@@ -8,7 +7,7 @@ owner: Louis MEDO
 tags: [adr, architecture]
 ---
 
-# ADR-{{ page.meta.id }} : {{ page.meta.title }}
+# ADR : {{ page.meta.title }}
 
 ![Bannière LoutikCloud](https://raw.githubusercontent.com/loutik/design-assets/main/loutikcloud/banniere_loutikcloud.png)
 
