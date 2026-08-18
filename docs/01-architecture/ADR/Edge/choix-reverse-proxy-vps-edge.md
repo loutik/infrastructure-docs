@@ -1,5 +1,4 @@
 ---
-id: 0005
 title: Choix du Reverse Proxy pour la VM Edge
 date: 2026-07-29
 status: accepted
@@ -8,7 +7,7 @@ owner: Louis MEDO
 tags: [adr, architecture, reseau, securite]
 ---
 
-# ADR-{{ page.meta.id }} : {{ page.meta.title }}
+# ADR : {{ page.meta.title }}
 
 ![Bannière LoutikCloud](https://raw.githubusercontent.com/loutik/design-assets/main/loutikcloud/banniere_loutikcloud.png)
 

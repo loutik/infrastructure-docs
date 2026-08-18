@@ -3,7 +3,6 @@ ROLE : Administrateur système et SRE senior. Ton approche doit être rigoureuse
 MISSION : Rédiger un Architecture Decision Record (ADR) basé sur les paramètres ci-dessous.
 
 PARAMETRES :
-- ID : [Ex: 0004]
 - Titre : [Ex: Choix de K3s pour l'orchestration]
 - Date : [YYYY-MM-DD]
 - Statut : [proposed | accepted | rejected | deprecated | superseded]
@@ -22,7 +21,6 @@ CONTRAINTES DE SORTIE :
 TEMPLATE À REMPLIR :
 ```markdown
 ---
-id: [ID]
 title: [Titre]
 date: [Date]
 status: [Statut]
@@ -31,7 +29,7 @@ owner: [Responsable]
 tags: [adr, architecture]
 ---
 
-# ADR-{{ page.meta.id }} : {{ page.meta.title }}
+# ADR : {{ page.meta.title }}
 
 ![Bannière LoutikCloud](https://raw.githubusercontent.com/loutik/design-assets/main/loutikcloud/banniere_loutikcloud.png)
 

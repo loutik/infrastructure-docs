@@ -1,5 +1,4 @@
 ---
-id: 004
 title: Choix de la solution DNS pour l'infrastructure on-premise
 date: 2026-07-09
 status: accepted
@@ -8,7 +7,7 @@ owner: Louis MEDO
 tags: [adr, architecture, dns]
 ---
 
-# ADR-{{ page.meta.id }} : {{ page.meta.title }}
+# ADR : {{ page.meta.title }}
 
 ![Bannière LoutikCloud](https://raw.githubusercontent.com/loutik/design-assets/main/loutikcloud/banniere_loutikcloud.png)
 
