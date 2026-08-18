@@ -10,13 +10,13 @@
         <meta name="author" content="Louis MEDO">
       
       
-        <link rel="canonical" href="https://infra-docs.loutik.fr/01-architecture/ADR/DNS/adr-004-choix-dns-infrastructure/">
+        <link rel="canonical" href="https://infra-docs.loutik.fr/01-architecture/ADR/Edge/choix-waf-vm-edge/">
       
       
-        <link rel="prev" href="../../Backup/adr-005-choix-solution-sauvegarde/">
+        <link rel="prev" href="../choix-reverse-proxy-vps-edge/">
       
       
-        <link rel="next" href="../../Edge/adr-001-choix-hebergeur-vps-gateway/">
+        <link rel="next" href="../../Infrastructure/choix-plan-adressage/">
       
       
         
@@ -27,7 +27,7 @@
     
     
       
-        <title>Choix de la solution DNS pour l'infrastructure on-premise - Documentation infrastructure - LoutikCLOUD</title>
+        <title>Choix du WAF et IPS pour la VM Edge - Documentation infrastructure - LoutikCLOUD</title>
       
     
     
@@ -80,7 +80,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#adr-4-choix-de-la-solution-dns-pour-linfrastructure-on-premise" class="md-skip">
+        <a href="#adr-choix-du-waf-et-ips-pour-la-vm-edge" class="md-skip">
           Aller au contenu
         </a>
       
@@ -115,7 +115,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Choix de la solution DNS pour l'infrastructure on-premise
+              Choix du WAF et IPS pour la VM Edge
             
           </span>
         </div>
@@ -343,6 +343,8 @@
       
         
       
+        
+      
     
     
     
@@ -441,7 +443,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Backup/adr-005-choix-solution-sauvegarde/" class="md-nav__link">
+      <a href="../../Backup/choix-solution-sauvegarde/" class="md-nav__link">
         
   
   
@@ -449,6 +451,100 @@
     
   
     Choix de la solution de sauvegarde
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--accepted"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_2_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_2_2" id="__nav_2_2_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    DNS
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_2_2_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_2_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    DNS
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../DNS/choix-dns-infrastructure/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Choix de la solution DNS pour l'infrastructure on-premise
   
 
     
@@ -490,6 +586,10 @@
       
         
       
+        
+      
+        
+      
     
     
     
@@ -498,17 +598,17 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_2_2" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_2_3" checked>
         
           
-          <label class="md-nav__link" for="__nav_2_2_2" id="__nav_2_2_2_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_2_2_3" id="__nav_2_2_3_label" tabindex="0">
             
   
   
   <span class="md-ellipsis">
     
   
-    DNS
+    Edge
   
 
     
@@ -519,16 +619,86 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_2_2_2_label" aria-expanded="true">
-          <label class="md-nav__title" for="__nav_2_2_2">
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_2_2_3_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2_2_3">
             <span class="md-nav__icon md-icon"></span>
             
   
-    DNS
+    Edge
   
 
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../choix-hebergeur-vps-gateway/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Choix de l'hébergeur pour le VPS Gateway
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--accepted"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../choix-reverse-proxy-vps-edge/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Choix du Reverse Proxy pour la VM Edge
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--accepted"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
             
               
                 
@@ -553,7 +723,7 @@
   <span class="md-ellipsis">
     
   
-    Choix de la solution DNS pour l'infrastructure on-premise
+    Choix du WAF et IPS pour la VM Edge
   
 
     
@@ -578,7 +748,7 @@
   <span class="md-ellipsis">
     
   
-    Choix de la solution DNS pour l'infrastructure on-premise
+    Choix du WAF et IPS pour la VM Edge
   
 
     
@@ -657,10 +827,10 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#311-powerdns-authoritative-server" class="md-nav__link">
+  <a href="#311-modsecurity" class="md-nav__link">
     <span class="md-ellipsis">
       
-        3.1.1. PowerDNS (Authoritative Server)
+        3.1.1. ModSecurity
       
     </span>
   </a>
@@ -668,10 +838,10 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#312-bind9" class="md-nav__link">
+  <a href="#312-coraza-waf-couple-a-fail2ban" class="md-nav__link">
     <span class="md-ellipsis">
       
-        3.1.2. BIND9
+        3.1.2. Coraza WAF couplé à Fail2Ban
       
     </span>
   </a>
@@ -679,21 +849,10 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#313-coredns" class="md-nav__link">
+  <a href="#313-crowdsec" class="md-nav__link">
     <span class="md-ellipsis">
       
-        3.1.3. CoreDNS
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#314-technitium-dns" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        3.1.4. Technitium DNS
+        3.1.3. CrowdSec
       
     </span>
   </a>
@@ -736,174 +895,6 @@
   
 </nav>
       
-    </li>
-  
-
-              
-            
-          </ul>
-        </nav>
-      
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    
-    
-      
-        
-      
-        
-      
-        
-      
-    
-    
-    
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-        
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_2_3" >
-        
-          
-          <label class="md-nav__link" for="__nav_2_2_3" id="__nav_2_2_3_label" tabindex="0">
-            
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Edge
-  
-
-    
-  </span>
-  
-  
-
-            <span class="md-nav__icon md-icon"></span>
-          </label>
-        
-        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_2_2_3_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_2_2_3">
-            <span class="md-nav__icon md-icon"></span>
-            
-  
-    Edge
-  
-
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../Edge/adr-001-choix-hebergeur-vps-gateway/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Choix de l'hébergeur pour le VPS Gateway
-  
-
-    
-  </span>
-  
-  
-    
-  
-  
-    <span class="md-status md-status--accepted"></span>
-  
-
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../Edge/adr-006-choix-reverse-proxy-vps-edge/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Choix du Reverse Proxy pour la VM Edge
-  
-
-    
-  </span>
-  
-  
-    
-  
-  
-    <span class="md-status md-status--accepted"></span>
-  
-
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../Edge/adr-007-choix-waf-vm-edge/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Choix du WAF et IPS pour la VM Edge
-  
-
-    
-  </span>
-  
-  
-    
-  
-  
-    <span class="md-status md-status--accepted"></span>
-  
-
-  
-
-      </a>
     </li>
   
 
@@ -977,7 +968,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Infrastructure/adr-002-choix-plan-adressage/" class="md-nav__link">
+      <a href="../../Infrastructure/choix-plan-adressage/" class="md-nav__link">
         
   
   
@@ -1012,7 +1003,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Infrastructure/adr-003-plateforme-documentation/" class="md-nav__link">
+      <a href="../../Infrastructure/plateforme-documentation/" class="md-nav__link">
         
   
   
@@ -1020,6 +1011,137 @@
     
   
     Choix de la plateforme pour la documentation
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--accepted"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_2_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_2_5" id="__nav_2_2_5_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Orchestrateur
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_2_2_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_2_5">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Orchestrateur
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../orchestrateur/choix-argocd/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Choix de ArgoCD
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--accepted"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../orchestrateur/choix-orchestrateur-kubernetes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Choix de l'orchestrateur kubernetes
   
 
     
@@ -1281,6 +1403,8 @@
       
         
           
+        
+      
         
       
         
@@ -3069,8 +3193,6 @@
       
         
       
-        
-      
     
     
     
@@ -3089,7 +3211,7 @@
   <span class="md-ellipsis">
     
   
-    Reseau
+    Orchestrateur
   
 
     
@@ -3102,6 +3224,244 @@
         
         <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_7_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_3_7">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Orchestrateur
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_7_1" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_7_1" id="__nav_3_7_1_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Architecture
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_3_7_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_7_1">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Architecture
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../02-infrastructure-core/orchestrateur/architecture/fonctionnement-argocd/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Fonctionnement de Argocd
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../02-infrastructure-core/orchestrateur/architecture/fonctionnement-k3s/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Fonctionnement de K3s
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../02-infrastructure-core/orchestrateur/architecture/infrastructure-logique-kubernetes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Architecture cluster Kubernetes
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../02-infrastructure-core/orchestrateur/architecture/kube-vip/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Kube-VIP
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_8" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_8" id="__nav_3_8_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Reseau
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_8_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_8">
             <span class="md-nav__icon md-icon"></span>
             
   
@@ -3142,10 +3502,10 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_7_1" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_8_1" >
         
           
-          <label class="md-nav__link" for="__nav_3_7_1" id="__nav_3_7_1_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_3_8_1" id="__nav_3_8_1_label" tabindex="0">
             
   
   
@@ -3163,8 +3523,8 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_3_7_1_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_3_7_1">
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_3_8_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_8_1">
             <span class="md-nav__icon md-icon"></span>
             
   
@@ -3361,10 +3721,10 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_7_1_7" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_8_1_7" >
         
           
-          <label class="md-nav__link" for="__nav_3_7_1_7" id="__nav_3_7_1_7_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_3_8_1_7" id="__nav_3_8_1_7_label" tabindex="0">
             
   
   
@@ -3382,8 +3742,8 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_3_7_1_7_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_3_7_1_7">
+        <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_3_8_1_7_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_8_1_7">
             <span class="md-nav__icon md-icon"></span>
             
   
@@ -3462,10 +3822,10 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_7_2" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_8_2" >
         
           
-          <label class="md-nav__link" for="__nav_3_7_2" id="__nav_3_7_2_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_3_8_2" id="__nav_3_8_2_label" tabindex="0">
             
   
   
@@ -3483,8 +3843,8 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_3_7_2_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_3_7_2">
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_3_8_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_8_2">
             <span class="md-nav__icon md-icon"></span>
             
   
@@ -4498,10 +4858,10 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#311-powerdns-authoritative-server" class="md-nav__link">
+  <a href="#311-modsecurity" class="md-nav__link">
     <span class="md-ellipsis">
       
-        3.1.1. PowerDNS (Authoritative Server)
+        3.1.1. ModSecurity
       
     </span>
   </a>
@@ -4509,10 +4869,10 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#312-bind9" class="md-nav__link">
+  <a href="#312-coraza-waf-couple-a-fail2ban" class="md-nav__link">
     <span class="md-ellipsis">
       
-        3.1.2. BIND9
+        3.1.2. Coraza WAF couplé à Fail2Ban
       
     </span>
   </a>
@@ -4520,21 +4880,10 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#313-coredns" class="md-nav__link">
+  <a href="#313-crowdsec" class="md-nav__link">
     <span class="md-ellipsis">
       
-        3.1.3. CoreDNS
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#314-technitium-dns" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        3.1.4. Technitium DNS
+        3.1.3. CrowdSec
       
     </span>
   </a>
@@ -4589,7 +4938,7 @@
   
   
     <div style="text-align: left; font-size: 0.85em; color: var(--md-default-fg-color--light); margin-bottom: 20px;">
-      <strong>Dernière édition :</strong> <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-timeago" title="9 juillet 2026 19:56:53 UTC"><span class="timeago" datetime="2026-07-09T19:56:53+00:00" locale="fr"></span></span><span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date" title="9 juillet 2026 19:56:53 UTC">2026-07-09</span>
+      <strong>Dernière édition :</strong> <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-timeago" title="29 juillet 2026 12:24:25 UTC"><span class="timeago" datetime="2026-07-29T12:24:25+00:00" locale="fr"></span></span><span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date" title="29 juillet 2026 12:24:25 UTC">2026-07-29</span>
     </div>
   
   
@@ -4602,19 +4951,19 @@
   
 
 
-<h1 id="adr-4-choix-de-la-solution-dns-pour-linfrastructure-on-premise">ADR-4 : Choix de la solution DNS pour l'infrastructure on-premise</h1>
+<h1 id="adr-choix-du-waf-et-ips-pour-la-vm-edge">ADR : Choix du WAF et IPS pour la VM Edge</h1>
 <p><img alt="Bannière LoutikCloud" src="https://raw.githubusercontent.com/loutik/design-assets/main/loutikcloud/banniere_loutikcloud.png" /></p>
 <div class="admonition info">
 <p class="admonition-title">Informations</p>
 <ul>
-<li><strong>Date de création</strong> : 2026-07-09</li>
+<li><strong>Date de création</strong> : 2026-07-29</li>
 <li><strong>Statut</strong> : accepted</li>
 <li><strong>Auteur</strong> : Louis MEDO</li>
 <li><strong>Responsable</strong> : Louis MEDO</li>
 </ul>
 </div>
 <h2 id="1-contexte">1. Contexte</h2>
-<p>L'infrastructure on-premise sous-jacente au domaine <code>infra.loutik.fr</code> nécessite une gestion centralisée, dynamique et hautement disponible de ses enregistrements DNS. Actuellement, le provisionnement des machines s'oriente vers des processus automatisés (pipelines CI/CD, playbooks Ansible). L'absence d'un mécanisme d'enregistrement automatisé des noms pleinement qualifiés (FQDN) via API constitue un point de blocage pour l'automatisation globale de l'infrastructure. De plus, la tolérance aux pannes du service DNS (failover) doit être assurée par le déploiement d'une architecture redondante sur deux serveurs distincts.</p>
+<p>Dans le cadre de la sécurisation de la VM "Edge" exposée sur Internet, il est nécessaire de filtrer les requêtes HTTP/HTTPS malveillantes (rôle du WAF). Cependant, cette VM est également exposée à des attaques réseau globales (bruteforce SSH, scans de ports). L'objectif est de sélectionner une solution unifiée, gratuite et automatisable (IaC) capable de couvrir de manière centralisée les couches réseau (IPS) et applicative (WAF), tout en exploitant des listes de réputation d'IP publiques mises à jour en continu. La solution doit nativement exporter ses métriques vers Prometheus et permettre une gestion fine des faux positifs pour les applications internes générant un fort volume de requêtes.</p>
 <h2 id="2-cahiers-des-charges">2. Cahiers des charges</h2>
 <table>
 <thead>
@@ -4627,133 +4976,96 @@
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;"><strong>REQ-F01</strong></td>
+<td style="text-align: left;"><strong>[REQ-F01]</strong></td>
 <td style="text-align: left;">Fonctionnel</td>
-<td style="text-align: left;">API Programmable</td>
-<td style="text-align: left;">Capacité à créer, modifier et supprimer des enregistrements FQDN via des requêtes programmatiques.</td>
+<td style="text-align: left;">Protection unifiée (WAF + IPS)</td>
+<td style="text-align: left;">Capacité à bloquer simultanément les attaques applicatives (injections, XSS) et les attaques réseau (SSH bruteforce, scans).</td>
 </tr>
 <tr>
-<td style="text-align: left;"><strong>REQ-F02</strong></td>
+<td style="text-align: left;"><strong>[REQ-F02]</strong></td>
 <td style="text-align: left;">Fonctionnel</td>
-<td style="text-align: left;">Haute Disponibilité / Failover</td>
-<td style="text-align: left;">Support d'une architecture à deux nœuds pour assurer la continuité de service en cas de panne d'un serveur.</td>
+<td style="text-align: left;">Threat Intelligence collaborative</td>
+<td style="text-align: left;">Utilisation et mise à jour automatique de listes publiques d'IP malveillantes (Blocklists) mutualisées par la communauté.</td>
 </tr>
 <tr>
-<td style="text-align: left;"><strong>REQ-T01</strong></td>
+<td style="text-align: left;"><strong>[REQ-T01]</strong></td>
 <td style="text-align: left;">Technique</td>
-<td style="text-align: left;">Intégration Ansible / IaC</td>
-<td style="text-align: left;">Disponibilité de modules ou de providers officiels/communautaires pour s'intégrer dans une philosophie Infrastructure as Code.</td>
+<td style="text-align: left;">Gestion des faux positifs (Allowlist)</td>
+<td style="text-align: left;">Configuration simple as-code de listes blanches pour éviter le blocage des IP d'administration et des outils internes légitimes (ex: Grafana).</td>
 </tr>
 <tr>
-<td style="text-align: left;"><strong>REQ-T02</strong></td>
+<td style="text-align: left;"><strong>[REQ-T02]</strong></td>
 <td style="text-align: left;">Technique</td>
-<td style="text-align: left;">Stockage persistant / Réplication</td>
-<td style="text-align: left;">Flexibilité du backend de stockage permettant une synchronisation ou réplication native et robuste des zones entre les nœuds.</td>
-</tr>
-<tr>
-<td style="text-align: left;"><strong>REQ-T03</strong></td>
-<td style="text-align: left;">Technique</td>
-<td style="text-align: left;">Empreinte ressources</td>
-<td style="text-align: left;">Consommation mémoire et CPU optimisée pour une intégration fluide en environnement de services virtualisés (on-premise).</td>
-</tr>
-<tr>
-<td style="text-align: left;"><strong>REQ-T04</strong></td>
-<td style="text-align: left;">Technique</td>
-<td style="text-align: left;">Compatibilité système (Debian)</td>
-<td style="text-align: left;">Support officiel, installation et maintenance simplifiées via les gestionnaires de paquets (APT) sur un système d'exploitation GNU/Linux Debian.</td>
+<td style="text-align: left;">Observabilité Prometheus</td>
+<td style="text-align: left;">Export natif des métriques (alertes déclenchées, décisions de blocage, scénarios) pour le scraping par Prometheus.</td>
 </tr>
 </tbody>
 </table>
 <h2 id="3-les-solutions-du-marche">3. Les solutions du marché</h2>
 <h3 id="31-presentations-des-solutions">3.1. Présentations des solutions</h3>
-<h4 id="311-powerdns-authoritative-server">3.1.1. PowerDNS (Authoritative Server)</h4>
+<h4 id="311-modsecurity">3.1.1. ModSecurity</h4>
 <ul>
-<li><strong>Présentation générale :</strong> Serveur DNS autoritaire open-source moderne conçu pour les infrastructures à forte charge et les environnements automatisés.</li>
-<li><strong>Fonctionnement :</strong> Contrairement aux serveurs traditionnels basés sur des fichiers de zone plats, PowerDNS s'appuie sur des backends relationnels (PostgreSQL, MySQL, SQLite) pour stocker les données DNS et expose une API REST native.</li>
-<li><strong>Profil :</strong> Solution orientée ingénierie DevOps et production d'entreprise, hautement compatible avec les outils d'automatisation modernes.</li>
+<li><strong>Présentation générale :</strong> Le WAF open-source historique de référence.</li>
+<li><strong>Fonctionnement :</strong> Analyse le trafic HTTP entrant via un module serveur web (connecteur dynamique).</li>
+<li><strong>Profil :</strong> Strictement limité à la couche applicative (L7), vieillissant et sans intégration native des menaces réseau.</li>
 </ul>
-<h4 id="312-bind9">3.1.2. BIND9</h4>
+<h4 id="312-coraza-waf-couple-a-fail2ban">3.1.2. Coraza WAF couplé à Fail2Ban</h4>
 <ul>
-<li><strong>Présentation générale :</strong> Le serveur DNS de référence historique sur Internet, reconnu pour sa stabilité absolue et son respect strict des RFC.</li>
-<li><strong>Fonctionnement :</strong> Fonctionne de manière native avec des fichiers de configuration texte. Les mises à jour dynamiques s'effectuent via le protocole standard RFC 2136 à l'aide de l'utilitaire <code>nsupdate</code> et de clés TSIG.</li>
-<li><strong>Profil :</strong> Solution traditionnelle, robuste et académique, privilégiant la standardisation historique aux interfaces HTTP modernes.</li>
+<li><strong>Présentation générale :</strong> WAF nouvelle génération en Go (Coraza), associé à l'IPS historique (Fail2Ban) pour le réseau.</li>
+<li><strong>Fonctionnement :</strong> Coraza filtre le trafic HTTP (OWASP CRS), tandis que Fail2Ban parse les logs système pour bannir les IP sur le pare-feu local (iptables/nftables).</li>
+<li><strong>Profil :</strong> Couvre l'ensemble du périmètre, mais multiplie les agents de sécurité indépendants sans intelligence collaborative.</li>
 </ul>
-<h4 id="313-coredns">3.1.3. CoreDNS</h4>
+<h4 id="313-crowdsec">3.1.3. CrowdSec</h4>
 <ul>
-<li><strong>Présentation générale :</strong> Serveur DNS rapide et modulaire écrit en Go, devenu le standard de facto pour la résolution de noms dans l'écosystème Cloud-Native (Kubernetes).</li>
-<li><strong>Fonctionnement :</strong> S'appuie sur une chaîne de plugins configurables via un "Corefile". Il s'interface dynamiquement avec des backends de type clé-valeur distribués comme <code>etcd</code> pour la synchronisation.</li>
-<li><strong>Profil :</strong> Solution hautement spécialisée pour les infrastructures conteneurisées et les architectures micro-services.</li>
-</ul>
-<h4 id="314-technitium-dns">3.1.4. Technitium DNS</h4>
-<ul>
-<li><strong>Présentation générale :</strong> Serveur DNS faisant office de serveur autoritaire et de résolveur, développé en C#/.NET, intégrant une interface graphique moderne.</li>
-<li><strong>Fonctionnement :</strong> Gère les zones via des bases locales ou des fichiers, et rend l'intégralité de ses fonctionnalités accessibles via une API HTTP REST.</li>
-<li><strong>Profil :</strong> Solution accessible et polyvalente, adaptée pour les environnements de laboratoires et les infrastructures de PME.</li>
+<li><strong>Présentation générale :</strong> Moteur IPS moderne, collaboratif, doté d'un composant AppSec (WAF).</li>
+<li><strong>Fonctionnement :</strong> Analyse les logs de multiples services (SSH, système) et inspecte le trafic HTTP à la volée via un <em>Bouncer</em> lié au reverse proxy. Partage et récupère les IP malveillantes via une API centrale.</li>
+<li><strong>Profil :</strong> Solution de sécurité holistique (réseau et applicatif) orientée automatisation (DevSecOps) et Threat Intelligence.</li>
 </ul>
 <h3 id="32-comparatifs-des-solutions">3.2. Comparatifs des solutions</h3>
 <table>
 <thead>
 <tr>
 <th style="text-align: left;">Exigence</th>
-<th style="text-align: left;">PowerDNS</th>
-<th style="text-align: left;">BIND9</th>
-<th style="text-align: left;">CoreDNS</th>
-<th style="text-align: left;">Technitium DNS</th>
+<th style="text-align: left;">ModSecurity</th>
+<th style="text-align: left;">Coraza + Fail2Ban</th>
+<th style="text-align: left;">CrowdSec</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;"><strong>REQ-F01 (API REST Native)</strong></td>
-<td style="text-align: left;">Validé (REST exhaustive)</td>
-<td style="text-align: left;">Non validé (Nécessite RFC 2136)</td>
-<td style="text-align: left;">Non validé (Via plugins/etcd)</td>
-<td style="text-align: left;">Validé (HTTP REST)</td>
+<td style="text-align: left;"><strong>[REQ-F01 (WAF + IPS)]</strong></td>
+<td style="text-align: left;">Non validé (WAF uniquement)</td>
+<td style="text-align: left;">Validé (Mais nécessite deux stacks distinctes)</td>
+<td style="text-align: left;">Validé (Agent unique avec module AppSec)</td>
 </tr>
 <tr>
-<td style="text-align: left;"><strong>REQ-F02 (Failover / HA)</strong></td>
-<td style="text-align: left;">Validé (Réplication DB ou Master/Slave)</td>
-<td style="text-align: left;">Validé (Transfert AXFR/IXFR natif)</td>
-<td style="text-align: left;">Validé (Via cluster etcd externe)</td>
-<td style="text-align: left;">Validé (Transfert de zone standard)</td>
+<td style="text-align: left;"><strong>[REQ-F02 (Listes IP)]</strong></td>
+<td style="text-align: left;">Non validé</td>
+<td style="text-align: left;">Non validé (Protection isolée localement)</td>
+<td style="text-align: left;">Validé (Base de réputation mondiale intégrée)</td>
 </tr>
 <tr>
-<td style="text-align: left;"><strong>REQ-T01 (Intégration IaC)</strong></td>
-<td style="text-align: left;">Excellent (Modules Ansible / Terraform)</td>
-<td style="text-align: left;">Moyen (Modules Ansible spécifiques)</td>
-<td style="text-align: left;">Moyen (Configuration via GitOps)</td>
-<td style="text-align: left;">Faible (API peu intégrée dans l'écosystème Ansible)</td>
+<td style="text-align: left;"><strong>[REQ-T01 (Allowlist)]</strong></td>
+<td style="text-align: left;">Validé (Exceptions via SecLang)</td>
+<td style="text-align: left;">Validé</td>
+<td style="text-align: left;">Validé (Via fichiers YAML dédiés au whitelisting)</td>
 </tr>
 <tr>
-<td style="text-align: left;"><strong>REQ-T02 (Backend de stockage)</strong></td>
-<td style="text-align: left;">Flexible (PostgreSQL, MySQL)</td>
-<td style="text-align: left;">Rigide (Fichiers plats textes)</td>
-<td style="text-align: left;">Spécialisé (etcd, mémoire)</td>
-<td style="text-align: left;">Propriétaire / Fichiers</td>
-</tr>
-<tr>
-<td style="text-align: left;"><strong>REQ-T03 (Légèreté / On-prem)</strong></td>
-<td style="text-align: left;">Excellent</td>
-<td style="text-align: left;">Excellent</td>
-<td style="text-align: left;">Très bon</td>
-<td style="text-align: left;">Moyen (Dépendance runtime .NET)</td>
-</tr>
-<tr>
-<td style="text-align: left;"><strong>REQ-T04 (Compatibilité Debian)</strong></td>
-<td style="text-align: left;">Excellent (Dépôts APT officiels)</td>
-<td style="text-align: left;">Excellent (Paquet standard)</td>
-<td style="text-align: left;">Bon (Binaire unique)</td>
-<td style="text-align: left;">Moyen (Dépendance runtime)</td>
+<td style="text-align: left;"><strong>[REQ-T02 (Metrics)]</strong></td>
+<td style="text-align: left;">Non validé</td>
+<td style="text-align: left;">Validé pour Coraza, complexe pour Fail2Ban</td>
+<td style="text-align: left;">Validé (Exporteur Prometheus natif unifié)</td>
 </tr>
 </tbody>
 </table>
 <h2 id="4-solution-proposee">4. Solution proposée</h2>
-<p>La solution proposée pour l'infrastructure LoutikCloud est <strong>PowerDNS Authoritative Server</strong>.</p>
-<p>L'intégration d'une API REST native au sein de PowerDNS élimine la complexité liée à la gestion des fichiers plats et permet un provisionnement en temps réel des enregistrements FQDN depuis l'infrastructure de déploiement Ansible. La redondance du service et le mécanisme de bascule (failover) seront assurés par le déploiement de deux instances PowerDNS. Ces instances seront adossées à un cluster de base de données PostgreSQL hautement disponible situé dans le VLAN 17 (ZDS), offrant ainsi une synchronisation des enregistrements DNS instantanée et sans perte de données, tout en maintenant les fichiers de configuration système sous le contrôle de la philosophie GitOps.</p>
+<p>La solution proposée pour l'infrastructure est <strong>CrowdSec</strong>.</p>
+<p>Le choix de CrowdSec permet de consolider l'architecture de sécurité de la VM Edge autour d'un agent unique. Il répond au besoin de filtrage applicatif (WAF) via son module AppSec, tout en protégeant les couches système et réseau (IPS), notamment le port SSH. Cette unification réduit considérablement la dette technique et simplifie le déploiement via Ansible. L'atout majeur de l'outil réside dans son moteur collaboratif : la VM Edge bénéficie préventivement de listes publiques d'adresses IP malveillantes constamment mises à jour, bloquant les botnets avant même qu'ils n'atteignent nos services.</p>
+<p>Pour maîtriser le risque de faux positifs inhérent aux IPS sur des applications bavardes (comme les appels API fréquents de Grafana), la configuration Ansible déploiera des fichiers d'allowlist stricts, garantissant que les adresses IP d'administration et les réseaux internes ne soient jamais bloqués. Enfin, l'observabilité est totalement intégrée avec un exporteur Prometheus natif centralisant les métriques de sécurité.</p>
 <p><strong>Justification du rejet des solutions alternatives :</strong></p>
 <ul>
-<li><strong>BIND9 :</strong> Bien que parfaitement stable et nativement optimisé pour Debian, BIND9 est écarté en raison de l'absence d'une API REST moderne. Le recours obligatoire au protocole RFC 2136 (<code>nsupdate</code>) ajoute une complexité non négligeable pour l'intégration continue et la gestion idempotente via Ansible.</li>
-<li><strong>CoreDNS :</strong> Malgré d'excellentes performances, CoreDNS est rejeté car son architecture est conçue pour des environnements Kubernetes. L'implémentation de la haute disponibilité hors cluster nécessiterait le déploiement et la maintenance d'une base distribuée <code>etcd</code> additionnelle, créant une sur-ingénierie injustifiée pour une infrastructure on-premise basée sur des machines virtuelles classiques.</li>
-<li><strong>Technitium DNS :</strong> Écarté pour des raisons techniques liées au socle d'exploitation. Son développement en C# impose l'installation du runtime .NET sur les serveurs Debian, ce qui alourdit l'empreinte système. De plus, son écosystème communautaire (modules Ansible et providers Terraform) est nettement moins mature que celui de PowerDNS.</li>
+<li><strong>Coraza WAF (+ Fail2Ban) :</strong> Bien que Coraza soit un excellent WAF, il ne couvre pas les attaques sur le port SSH. L'ajout d'un second outil comme Fail2Ban pour combler ce manque créerait une architecture fragmentée et complexe à maintenir as-code. De plus, cette combinaison ne bénéficie d'aucune Threat Intelligence communautaire (les blocages ne se font qu'en réaction à des attaques locales).</li>
+<li><strong>ModSecurity :</strong> Solution purement L7, techniquement vieillissante, sans protection réseau globale ni export Prometheus natif. Son adoption pour une infrastructure moderne constituerait une régression architecturale.</li>
 </ul>
 
 
@@ -4777,7 +5089,7 @@
     <span class="md-icon" title="Dernière mise à jour">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-timeago" title="9 juillet 2026 19:56:53 UTC"><span class="timeago" datetime="2026-07-09T19:56:53+00:00" locale="fr"></span></span><span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date" title="9 juillet 2026 19:56:53 UTC">2026-07-09</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-timeago" title="29 juillet 2026 12:24:25 UTC"><span class="timeago" datetime="2026-07-29T12:24:25+00:00" locale="fr"></span></span><span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date" title="29 juillet 2026 12:24:25 UTC">2026-07-29</span>
   </span>
 
     
@@ -4787,7 +5099,7 @@
     <span class="md-icon" title="Créé">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M14.47 15.08 11 13V7h1.5v5.25l3.08 1.83c-.41.28-.79.62-1.11 1m-1.39 4.84c-.36.05-.71.08-1.08.08-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8c0 .37-.03.72-.08 1.08.69.1 1.33.32 1.92.64.1-.56.16-1.13.16-1.72 0-5.5-4.5-10-10-10S2 6.5 2 12s4.47 10 10 10c.59 0 1.16-.06 1.72-.16-.32-.59-.54-1.23-.64-1.92M18 15v3h-3v2h3v3h2v-3h3v-2h-3v-3z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-timeago" title="9 juillet 2026 19:56:53 UTC"><span class="timeago" datetime="2026-07-09T19:56:53+00:00" locale="fr"></span></span><span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date" title="9 juillet 2026 19:56:53 UTC">2026-07-09</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-timeago" title="29 juillet 2026 12:24:25 UTC"><span class="timeago" datetime="2026-07-29T12:24:25+00:00" locale="fr"></span></span><span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date" title="29 juillet 2026 12:24:25 UTC">2026-07-29</span>
   </span>
 
     

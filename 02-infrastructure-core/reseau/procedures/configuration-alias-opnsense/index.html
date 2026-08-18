@@ -13,7 +13,7 @@
         <link rel="canonical" href="https://infra-docs.loutik.fr/02-infrastructure-core/reseau/procedures/configuration-alias-opnsense/">
       
       
-        <link rel="prev" href="../../../nfs/runbooks/recette-validation-serveur-nfs/">
+        <link rel="prev" href="../../../orchestrateur/architecture/kube-vip/">
       
       
         <link rel="next" href="../configuration-boostrap-opnsense/">
@@ -339,6 +339,8 @@
       
         
       
+        
+      
     
     
     
@@ -437,7 +439,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../01-architecture/ADR/Backup/adr-005-choix-solution-sauvegarde/" class="md-nav__link">
+      <a href="../../../../01-architecture/ADR/Backup/choix-solution-sauvegarde/" class="md-nav__link">
         
   
   
@@ -531,7 +533,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../01-architecture/ADR/DNS/adr-004-choix-dns-infrastructure/" class="md-nav__link">
+      <a href="../../../../01-architecture/ADR/DNS/choix-dns-infrastructure/" class="md-nav__link">
         
   
   
@@ -629,7 +631,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../01-architecture/ADR/Edge/adr-001-choix-hebergeur-vps-gateway/" class="md-nav__link">
+      <a href="../../../../01-architecture/ADR/Edge/choix-hebergeur-vps-gateway/" class="md-nav__link">
         
   
   
@@ -664,7 +666,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../01-architecture/ADR/Edge/adr-006-choix-reverse-proxy-vps-edge/" class="md-nav__link">
+      <a href="../../../../01-architecture/ADR/Edge/choix-reverse-proxy-vps-edge/" class="md-nav__link">
         
   
   
@@ -699,7 +701,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../01-architecture/ADR/Edge/adr-007-choix-waf-vm-edge/" class="md-nav__link">
+      <a href="../../../../01-architecture/ADR/Edge/choix-waf-vm-edge/" class="md-nav__link">
         
   
   
@@ -795,7 +797,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../01-architecture/ADR/Infrastructure/adr-002-choix-plan-adressage/" class="md-nav__link">
+      <a href="../../../../01-architecture/ADR/Infrastructure/choix-plan-adressage/" class="md-nav__link">
         
   
   
@@ -830,7 +832,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../01-architecture/ADR/Infrastructure/adr-003-plateforme-documentation/" class="md-nav__link">
+      <a href="../../../../01-architecture/ADR/Infrastructure/plateforme-documentation/" class="md-nav__link">
         
   
   
@@ -838,6 +840,137 @@
     
   
     Choix de la plateforme pour la documentation
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--accepted"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_2_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_2_5" id="__nav_2_2_5_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Orchestrateur
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_2_2_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_2_5">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Orchestrateur
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../01-architecture/ADR/orchestrateur/choix-argocd/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Choix de ArgoCD
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--accepted"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../01-architecture/ADR/orchestrateur/choix-orchestrateur-kubernetes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Choix de l'orchestrateur kubernetes
   
 
     
@@ -1101,6 +1234,8 @@
       
         
           
+        
+      
         
       
         
@@ -2882,6 +3017,242 @@
                 
   
   
+  
+  
+    
+    
+      
+        
+      
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_7" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_7" id="__nav_3_7_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Orchestrateur
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_7_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_7">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Orchestrateur
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_7_1" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_7_1" id="__nav_3_7_1_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Architecture
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_3_7_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_7_1">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Architecture
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../orchestrateur/architecture/fonctionnement-argocd/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Fonctionnement de Argocd
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../orchestrateur/architecture/fonctionnement-k3s/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Fonctionnement de K3s
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../orchestrateur/architecture/infrastructure-logique-kubernetes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Architecture cluster Kubernetes
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../orchestrateur/architecture/kube-vip/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Kube-VIP
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
     
   
   
@@ -2901,10 +3272,10 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_7" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_8" checked>
         
           
-          <label class="md-nav__link" for="__nav_3_7" id="__nav_3_7_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_3_8" id="__nav_3_8_label" tabindex="0">
             
   
   
@@ -2922,8 +3293,8 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_7_label" aria-expanded="true">
-          <label class="md-nav__title" for="__nav_3_7">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_8_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_3_8">
             <span class="md-nav__icon md-icon"></span>
             
   
@@ -2966,10 +3337,10 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_7_1" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_8_1" checked>
         
           
-          <label class="md-nav__link" for="__nav_3_7_1" id="__nav_3_7_1_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_3_8_1" id="__nav_3_8_1_label" tabindex="0">
             
   
   
@@ -2987,8 +3358,8 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_3_7_1_label" aria-expanded="true">
-          <label class="md-nav__title" for="__nav_3_7_1">
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_3_8_1_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_3_8_1">
             <span class="md-nav__icon md-icon"></span>
             
   
@@ -3304,10 +3675,10 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_7_1_7" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_8_1_7" >
         
           
-          <label class="md-nav__link" for="__nav_3_7_1_7" id="__nav_3_7_1_7_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_3_8_1_7" id="__nav_3_8_1_7_label" tabindex="0">
             
   
   
@@ -3325,8 +3696,8 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_3_7_1_7_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_3_7_1_7">
+        <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_3_8_1_7_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_8_1_7">
             <span class="md-nav__icon md-icon"></span>
             
   
@@ -3405,10 +3776,10 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_7_2" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_8_2" >
         
           
-          <label class="md-nav__link" for="__nav_3_7_2" id="__nav_3_7_2_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_3_8_2" id="__nav_3_8_2_label" tabindex="0">
             
   
   
@@ -3426,8 +3797,8 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_3_7_2_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_3_7_2">
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_3_8_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_8_2">
             <span class="md-nav__icon md-icon"></span>
             
   
