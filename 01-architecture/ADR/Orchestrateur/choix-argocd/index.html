@@ -7,32 +7,34 @@
       <meta name="viewport" content="width=device-width,initial-scale=1">
       
       
-      
-        <link rel="canonical" href="https://infra-docs.loutik.fr/05-services/">
-      
-      
-        <link rel="prev" href="../04-securite/">
+        <meta name="author" content="Louis MEDO">
       
       
-        <link rel="next" href="SSO/procedures/configuration-mapping-oidc-export-groupes/">
+        <link rel="canonical" href="https://infra-docs.loutik.fr/01-architecture/ADR/Orchestrateur/choix-argocd/">
+      
+      
+        <link rel="prev" href="../../Monitoring/choix-solution-monitoring/">
+      
+      
+        <link rel="next" href="../choix-orchestrateur-kubernetes/">
       
       
         
       
       
-      <link rel="icon" href="../assets/logo_loutik.png">
+      <link rel="icon" href="../../../../assets/logo_loutik.png">
       <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.6">
     
     
       
-        <title>🚀 Services - Documentation infrastructure - LoutikCLOUD</title>
+        <title>Choix de ArgoCD - Documentation infrastructure - LoutikCLOUD</title>
       
     
     
-      <link rel="stylesheet" href="../assets/stylesheets/main.484c7ddc.min.css">
+      <link rel="stylesheet" href="../../../../assets/stylesheets/main.484c7ddc.min.css">
       
         
-        <link rel="stylesheet" href="../assets/stylesheets/palette.ab4e12ef.min.css">
+        <link rel="stylesheet" href="../../../../assets/stylesheets/palette.ab4e12ef.min.css">
       
       
 
@@ -51,11 +53,11 @@
       
     
     
-      <link rel="stylesheet" href="../css/timeago.css">
+      <link rel="stylesheet" href="../../../../css/timeago.css">
     
-      <link rel="stylesheet" href="../assets/css/style.css">
+      <link rel="stylesheet" href="../../../../assets/css/style.css">
     
-    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("../../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
@@ -78,7 +80,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#services" class="md-skip">
+        <a href="#adr-choix-de-argocd" class="md-skip">
           Aller au contenu
         </a>
       
@@ -94,9 +96,9 @@
 
 <header class="md-header md-header--shadow" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="En-tête">
-    <a href=".." title="Documentation infrastructure - LoutikCLOUD" class="md-header__button md-logo" aria-label="Documentation infrastructure - LoutikCLOUD" data-md-component="logo">
+    <a href="../../../.." title="Documentation infrastructure - LoutikCLOUD" class="md-header__button md-logo" aria-label="Documentation infrastructure - LoutikCLOUD" data-md-component="logo">
       
-  <img src="../assets/logo_loutik.png" alt="logo">
+  <img src="../../../../assets/logo_loutik.png" alt="logo">
 
     </a>
     <label class="md-header__button md-icon" for="__drawer">
@@ -113,7 +115,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              🚀 Services
+              Choix de ArgoCD
             
           </span>
         </div>
@@ -205,9 +207,9 @@
 
 <nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href=".." title="Documentation infrastructure - LoutikCLOUD" class="md-nav__button md-logo" aria-label="Documentation infrastructure - LoutikCLOUD" data-md-component="logo">
+    <a href="../../../.." title="Documentation infrastructure - LoutikCLOUD" class="md-nav__button md-logo" aria-label="Documentation infrastructure - LoutikCLOUD" data-md-component="logo">
       
-  <img src="../assets/logo_loutik.png" alt="logo">
+  <img src="../../../../assets/logo_loutik.png" alt="logo">
 
     </a>
     Documentation infrastructure - LoutikCLOUD
@@ -234,7 +236,7 @@
   
   
     <li class="md-nav__item">
-      <a href=".." class="md-nav__link">
+      <a href="../../../.." class="md-nav__link">
         
   
   
@@ -258,6 +260,8 @@
       
   
   
+    
+  
   
   
     
@@ -275,15 +279,15 @@
     
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="../01-architecture/" class="md-nav__link ">
+            <a href="../../../" class="md-nav__link ">
               
   
   
@@ -307,7 +311,7 @@
             
           </div>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_2">
             <span class="md-nav__icon md-icon"></span>
             
@@ -324,8 +328,10 @@
                 
   
   
+    
   
   
+  
     
     
       
@@ -345,11 +351,11 @@
     
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_2" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_2" checked>
         
           
           <label class="md-nav__link" for="__nav_2_2" id="__nav_2_2_label" tabindex="0">
@@ -370,7 +376,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_2_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_2_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_2_2">
             <span class="md-nav__icon md-icon"></span>
             
@@ -439,7 +445,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../01-architecture/ADR/Backup/choix-solution-sauvegarde/" class="md-nav__link">
+      <a href="../../Backup/choix-solution-sauvegarde/" class="md-nav__link">
         
   
   
@@ -533,7 +539,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../01-architecture/ADR/DNS/choix-dns-infrastructure/" class="md-nav__link">
+      <a href="../../DNS/choix-dns-infrastructure/" class="md-nav__link">
         
   
   
@@ -631,7 +637,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../01-architecture/ADR/Edge/choix-hebergeur-vps-gateway/" class="md-nav__link">
+      <a href="../../Edge/choix-hebergeur-vps-gateway/" class="md-nav__link">
         
   
   
@@ -666,7 +672,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../01-architecture/ADR/Edge/choix-reverse-proxy-vps-edge/" class="md-nav__link">
+      <a href="../../Edge/choix-reverse-proxy-vps-edge/" class="md-nav__link">
         
   
   
@@ -701,7 +707,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../01-architecture/ADR/Edge/choix-waf-vm-edge/" class="md-nav__link">
+      <a href="../../Edge/choix-waf-vm-edge/" class="md-nav__link">
         
   
   
@@ -797,7 +803,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../01-architecture/ADR/Infrastructure/choix-plan-adressage/" class="md-nav__link">
+      <a href="../../Infrastructure/choix-plan-adressage/" class="md-nav__link">
         
   
   
@@ -832,7 +838,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../01-architecture/ADR/Infrastructure/plateforme-documentation/" class="md-nav__link">
+      <a href="../../Infrastructure/plateforme-documentation/" class="md-nav__link">
         
   
   
@@ -926,7 +932,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../01-architecture/ADR/Monitoring/choix-solution-monitoring/" class="md-nav__link">
+      <a href="../../Monitoring/choix-solution-monitoring/" class="md-nav__link">
         
   
   
@@ -966,8 +972,10 @@
                 
   
   
+    
   
   
+  
     
     
       
@@ -979,11 +987,11 @@
     
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_2_6" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_2_6" checked>
         
           
           <label class="md-nav__link" for="__nav_2_2_6" id="__nav_2_2_6_label" tabindex="0">
@@ -1004,7 +1012,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_2_2_6_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_2_2_6_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_2_2_6">
             <span class="md-nav__icon md-icon"></span>
             
@@ -1019,10 +1027,44 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../01-architecture/ADR/Orchestrateur/choix-argocd/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Choix de ArgoCD
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--accepted"></span>
+  
+
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   
@@ -1045,6 +1087,137 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table des matières">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table des matières
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1-contexte" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. Contexte
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-cahiers-des-charges" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. Cahiers des charges
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-les-solutions-du-marche" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. Les solutions du marché
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="3. Les solutions du marché">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#31-presentations-des-solutions" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.1. Présentations des solutions
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="3.1. Présentations des solutions">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#311-argocd" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.1.1. ArgoCD
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#312-fluxcd" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.1.2. FluxCD
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#313-gitlab-agent-pour-kubernetes" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.1.3. GitLab Agent pour Kubernetes
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#32-comparatifs-des-solutions" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.2. Comparatifs des solutions
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-solution-proposee" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. Solution proposée
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -1057,7 +1230,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../01-architecture/ADR/Orchestrateur/choix-orchestrateur-kubernetes/" class="md-nav__link">
+      <a href="../choix-orchestrateur-kubernetes/" class="md-nav__link">
         
   
   
@@ -1167,7 +1340,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../01-architecture/referentiels/ref-001-convention-nommage-infrastructure/" class="md-nav__link">
+      <a href="../../../referentiels/ref-001-convention-nommage-infrastructure/" class="md-nav__link">
         
   
   
@@ -1195,7 +1368,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../01-architecture/referentiels/ref-002-convention-nommage-git/" class="md-nav__link">
+      <a href="../../../referentiels/ref-002-convention-nommage-git/" class="md-nav__link">
         
   
   
@@ -1223,7 +1396,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../01-architecture/referentiels/ref-003-convention-nommage-reseau-pare-feu/" class="md-nav__link">
+      <a href="../../../referentiels/ref-003-convention-nommage-reseau-pare-feu/" class="md-nav__link">
         
   
   
@@ -1251,7 +1424,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../01-architecture/referentiels/ref-004-convention-nommage-base-de-donnees/" class="md-nav__link">
+      <a href="../../../referentiels/ref-004-convention-nommage-base-de-donnees/" class="md-nav__link">
         
   
   
@@ -1279,7 +1452,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../01-architecture/referentiels/ref-005-convention-nommage-authentik/" class="md-nav__link">
+      <a href="../../../referentiels/ref-005-convention-nommage-authentik/" class="md-nav__link">
         
   
   
@@ -1354,7 +1527,7 @@
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="../02-infrastructure-core/" class="md-nav__link ">
+            <a href="../../../../02-infrastructure-core/" class="md-nav__link ">
               
   
   
@@ -1506,7 +1679,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../02-infrastructure-core/backup/architecture/strategie-sauvegarde-opnsense/" class="md-nav__link">
+      <a href="../../../../02-infrastructure-core/backup/architecture/strategie-sauvegarde-opnsense/" class="md-nav__link">
         
   
   
@@ -1534,7 +1707,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../02-infrastructure-core/backup/architecture/strategie-sauvegarde-postgresql/" class="md-nav__link">
+      <a href="../../../../02-infrastructure-core/backup/architecture/strategie-sauvegarde-postgresql/" class="md-nav__link">
         
   
   
@@ -1629,7 +1802,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../02-infrastructure-core/backup/procedures/configuration-montage-rclone-webdav/" class="md-nav__link">
+      <a href="../../../../02-infrastructure-core/backup/procedures/configuration-montage-rclone-webdav/" class="md-nav__link">
         
   
   
@@ -1657,7 +1830,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../02-infrastructure-core/backup/procedures/deploiement-datastore-pbs/" class="md-nav__link">
+      <a href="../../../../02-infrastructure-core/backup/procedures/deploiement-datastore-pbs/" class="md-nav__link">
         
   
   
@@ -1685,7 +1858,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../02-infrastructure-core/backup/procedures/installation-pbs-via-iso/" class="md-nav__link">
+      <a href="../../../../02-infrastructure-core/backup/procedures/installation-pbs-via-iso/" class="md-nav__link">
         
   
   
@@ -1713,7 +1886,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../02-infrastructure-core/backup/procedures/int%C3%A9gration-pbs-cluster-pve/" class="md-nav__link">
+      <a href="../../../../02-infrastructure-core/backup/procedures/int%C3%A9gration-pbs-cluster-pve/" class="md-nav__link">
         
   
   
@@ -1741,7 +1914,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../02-infrastructure-core/backup/procedures/preparation-stockage-externalise-nextcloud-proxmox/" class="md-nav__link">
+      <a href="../../../../02-infrastructure-core/backup/procedures/preparation-stockage-externalise-nextcloud-proxmox/" class="md-nav__link">
         
   
   
@@ -1830,7 +2003,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../02-infrastructure-core/backup/runbooks/configuration-sauvegarde-automatique-vm-pbs/" class="md-nav__link">
+      <a href="../../../../02-infrastructure-core/backup/runbooks/configuration-sauvegarde-automatique-vm-pbs/" class="md-nav__link">
         
   
   
@@ -1858,7 +2031,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../02-infrastructure-core/backup/runbooks/creation-espace-stockage-sauvegarde-service/" class="md-nav__link">
+      <a href="../../../../02-infrastructure-core/backup/runbooks/creation-espace-stockage-sauvegarde-service/" class="md-nav__link">
         
   
   
@@ -2006,7 +2179,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../02-infrastructure-core/base-de-donnees/procedures/deploiement-environnement-postgresql/" class="md-nav__link">
+      <a href="../../../../02-infrastructure-core/base-de-donnees/procedures/deploiement-environnement-postgresql/" class="md-nav__link">
         
   
   
@@ -2093,7 +2266,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../02-infrastructure-core/base-de-donnees/runnboks/provisionnement-nouvelle-base-de-donnes-postgresql/" class="md-nav__link">
+      <a href="../../../../02-infrastructure-core/base-de-donnees/runnboks/provisionnement-nouvelle-base-de-donnes-postgresql/" class="md-nav__link">
         
   
   
@@ -2192,7 +2365,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../02-infrastructure-core/dns/infrastructure-powerdns/" class="md-nav__link">
+      <a href="../../../../02-infrastructure-core/dns/infrastructure-powerdns/" class="md-nav__link">
         
   
   
@@ -2271,7 +2444,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../02-infrastructure-core/dns/procedures/deploiement-serveur-dns-powerdns/" class="md-nav__link">
+      <a href="../../../../02-infrastructure-core/dns/procedures/deploiement-serveur-dns-powerdns/" class="md-nav__link">
         
   
   
@@ -2358,7 +2531,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../02-infrastructure-core/dns/runbooks/exploitation-api-powerdns/" class="md-nav__link">
+      <a href="../../../../02-infrastructure-core/dns/runbooks/exploitation-api-powerdns/" class="md-nav__link">
         
   
   
@@ -2518,7 +2691,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../02-infrastructure-core/hyperviseur/procedures/configuration-reseau-proxmox/" class="md-nav__link">
+      <a href="../../../../02-infrastructure-core/hyperviseur/procedures/configuration-reseau-proxmox/" class="md-nav__link">
         
   
   
@@ -2546,7 +2719,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../02-infrastructure-core/hyperviseur/procedures/configuration-serveur-smtp-pve/" class="md-nav__link">
+      <a href="../../../../02-infrastructure-core/hyperviseur/procedures/configuration-serveur-smtp-pve/" class="md-nav__link">
         
   
   
@@ -2574,7 +2747,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../02-infrastructure-core/hyperviseur/procedures/desactivation-mise-en-veille-pc-portable/" class="md-nav__link">
+      <a href="../../../../02-infrastructure-core/hyperviseur/procedures/desactivation-mise-en-veille-pc-portable/" class="md-nav__link">
         
   
   
@@ -2602,7 +2775,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../02-infrastructure-core/hyperviseur/procedures/proc-configuration-sso-proxmox-via-authentik/" class="md-nav__link">
+      <a href="../../../../02-infrastructure-core/hyperviseur/procedures/proc-configuration-sso-proxmox-via-authentik/" class="md-nav__link">
         
   
   
@@ -2630,7 +2803,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../02-infrastructure-core/hyperviseur/procedures/proc-creation-cluster-proxmox/" class="md-nav__link">
+      <a href="../../../../02-infrastructure-core/hyperviseur/procedures/proc-creation-cluster-proxmox/" class="md-nav__link">
         
   
   
@@ -2658,7 +2831,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../02-infrastructure-core/hyperviseur/procedures/proc-installation-physique-proxmox/" class="md-nav__link">
+      <a href="../../../../02-infrastructure-core/hyperviseur/procedures/proc-installation-physique-proxmox/" class="md-nav__link">
         
   
   
@@ -2686,7 +2859,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../02-infrastructure-core/hyperviseur/procedures/proc-rejoindre-cluster-proxmox/" class="md-nav__link">
+      <a href="../../../../02-infrastructure-core/hyperviseur/procedures/proc-rejoindre-cluster-proxmox/" class="md-nav__link">
         
   
   
@@ -2773,7 +2946,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../02-infrastructure-core/hyperviseur/runbooks/runbook-sortir-un-noeud-cluster-proxmox/" class="md-nav__link">
+      <a href="../../../../02-infrastructure-core/hyperviseur/runbooks/runbook-sortir-un-noeud-cluster-proxmox/" class="md-nav__link">
         
   
   
@@ -2921,7 +3094,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../02-infrastructure-core/nfs/procedures/installation-configuration-nfs/" class="md-nav__link">
+      <a href="../../../../02-infrastructure-core/nfs/procedures/installation-configuration-nfs/" class="md-nav__link">
         
   
   
@@ -3012,7 +3185,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../02-infrastructure-core/nfs/runbooks/commandes-debogage-serveur-nfs/" class="md-nav__link">
+      <a href="../../../../02-infrastructure-core/nfs/runbooks/commandes-debogage-serveur-nfs/" class="md-nav__link">
         
   
   
@@ -3040,7 +3213,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../02-infrastructure-core/nfs/runbooks/creation-partage-nfs/" class="md-nav__link">
+      <a href="../../../../02-infrastructure-core/nfs/runbooks/creation-partage-nfs/" class="md-nav__link">
         
   
   
@@ -3068,7 +3241,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../02-infrastructure-core/nfs/runbooks/recette-validation-serveur-nfs/" class="md-nav__link">
+      <a href="../../../../02-infrastructure-core/nfs/runbooks/recette-validation-serveur-nfs/" class="md-nav__link">
         
   
   
@@ -3220,7 +3393,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../02-infrastructure-core/orchestrateur/architecture/fonctionnement-argocd/" class="md-nav__link">
+      <a href="../../../../02-infrastructure-core/orchestrateur/architecture/fonctionnement-argocd/" class="md-nav__link">
         
   
   
@@ -3248,7 +3421,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../02-infrastructure-core/orchestrateur/architecture/fonctionnement-k3s/" class="md-nav__link">
+      <a href="../../../../02-infrastructure-core/orchestrateur/architecture/fonctionnement-k3s/" class="md-nav__link">
         
   
   
@@ -3276,7 +3449,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../02-infrastructure-core/orchestrateur/architecture/infrastructure-logique-kubernetes/" class="md-nav__link">
+      <a href="../../../../02-infrastructure-core/orchestrateur/architecture/infrastructure-logique-kubernetes/" class="md-nav__link">
         
   
   
@@ -3304,7 +3477,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../02-infrastructure-core/orchestrateur/architecture/kube-vip/" class="md-nav__link">
+      <a href="../../../../02-infrastructure-core/orchestrateur/architecture/kube-vip/" class="md-nav__link">
         
   
   
@@ -3464,7 +3637,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../02-infrastructure-core/reseau/procedures/configuration-alias-opnsense/" class="md-nav__link">
+      <a href="../../../../02-infrastructure-core/reseau/procedures/configuration-alias-opnsense/" class="md-nav__link">
         
   
   
@@ -3492,7 +3665,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../02-infrastructure-core/reseau/procedures/configuration-boostrap-opnsense/" class="md-nav__link">
+      <a href="../../../../02-infrastructure-core/reseau/procedures/configuration-boostrap-opnsense/" class="md-nav__link">
         
   
   
@@ -3520,7 +3693,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../02-infrastructure-core/reseau/procedures/configuration-categories-opnsense/" class="md-nav__link">
+      <a href="../../../../02-infrastructure-core/reseau/procedures/configuration-categories-opnsense/" class="md-nav__link">
         
   
   
@@ -3548,7 +3721,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../02-infrastructure-core/reseau/procedures/configuration-dns-recursif-opnsense/" class="md-nav__link">
+      <a href="../../../../02-infrastructure-core/reseau/procedures/configuration-dns-recursif-opnsense/" class="md-nav__link">
         
   
   
@@ -3576,7 +3749,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../02-infrastructure-core/reseau/procedures/configuration-ips-suricata-opnsense/" class="md-nav__link">
+      <a href="../../../../02-infrastructure-core/reseau/procedures/configuration-ips-suricata-opnsense/" class="md-nav__link">
         
   
   
@@ -3604,7 +3777,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../02-infrastructure-core/reseau/procedures/installation-opnsense/" class="md-nav__link">
+      <a href="../../../../02-infrastructure-core/reseau/procedures/installation-opnsense/" class="md-nav__link">
         
   
   
@@ -3683,7 +3856,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../02-infrastructure-core/reseau/procedures/regles-filtrage/configuration-regles-filtrage-vlan-admoob-opnsense/" class="md-nav__link">
+      <a href="../../../../02-infrastructure-core/reseau/procedures/regles-filtrage/configuration-regles-filtrage-vlan-admoob-opnsense/" class="md-nav__link">
         
   
   
@@ -3784,7 +3957,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../02-infrastructure-core/reseau/runbooks/creation-compte-service-opnsense/" class="md-nav__link">
+      <a href="../../../../02-infrastructure-core/reseau/runbooks/creation-compte-service-opnsense/" class="md-nav__link">
         
   
   
@@ -3812,7 +3985,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../02-infrastructure-core/reseau/runbooks/creation-objets-logiques-et-categories-filtrage/" class="md-nav__link">
+      <a href="../../../../02-infrastructure-core/reseau/runbooks/creation-objets-logiques-et-categories-filtrage/" class="md-nav__link">
         
   
   
@@ -3840,7 +4013,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../02-infrastructure-core/reseau/runbooks/creation-regles-filtrage/" class="md-nav__link">
+      <a href="../../../../02-infrastructure-core/reseau/runbooks/creation-regles-filtrage/" class="md-nav__link">
         
   
   
@@ -3868,7 +4041,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../02-infrastructure-core/reseau/runbooks/creation-vlan-opnsense/" class="md-nav__link">
+      <a href="../../../../02-infrastructure-core/reseau/runbooks/creation-vlan-opnsense/" class="md-nav__link">
         
   
   
@@ -3939,7 +4112,7 @@
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="../03-edge/" class="md-nav__link ">
+            <a href="../../../../03-edge/" class="md-nav__link ">
               
   
   
@@ -4038,7 +4211,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../03-edge/vpn/infrastructure-vpn-tailscale/" class="md-nav__link">
+      <a href="../../../../03-edge/vpn/infrastructure-vpn-tailscale/" class="md-nav__link">
         
   
   
@@ -4117,7 +4290,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../03-edge/vpn/procedures/installation-configuration-tailscale-opnsense/" class="md-nav__link">
+      <a href="../../../../03-edge/vpn/procedures/installation-configuration-tailscale-opnsense/" class="md-nav__link">
         
   
   
@@ -4206,7 +4379,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../03-edge/vpn/runbooks/ajout-subnet-tailscale/" class="md-nav__link">
+      <a href="../../../../03-edge/vpn/runbooks/ajout-subnet-tailscale/" class="md-nav__link">
         
   
   
@@ -4234,7 +4407,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../03-edge/vpn/runbooks/gestion-acl-tailscale/" class="md-nav__link">
+      <a href="../../../../03-edge/vpn/runbooks/gestion-acl-tailscale/" class="md-nav__link">
         
   
   
@@ -4303,7 +4476,7 @@
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="../04-securite/" class="md-nav__link ">
+            <a href="../../../../04-securite/" class="md-nav__link ">
               
   
   
@@ -4346,8 +4519,6 @@
       
   
   
-    
-  
   
   
     
@@ -4363,15 +4534,15 @@
     
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" >
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="./" class="md-nav__link md-nav__link--active">
+            <a href="../../../../05-services/" class="md-nav__link ">
               
   
   
@@ -4389,13 +4560,13 @@
             </a>
             
               
-              <label class="md-nav__link md-nav__link--active" for="__nav_6" id="__nav_6_label" tabindex="0">
+              <label class="md-nav__link " for="__nav_6" id="__nav_6_label" tabindex="0">
                 <span class="md-nav__icon md-icon"></span>
               </label>
             
           </div>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_6">
             <span class="md-nav__icon md-icon"></span>
             
@@ -4521,7 +4692,7 @@
   
   
     <li class="md-nav__item">
-      <a href="SSO/procedures/configuration-mapping-oidc-export-groupes/" class="md-nav__link">
+      <a href="../../../../05-services/SSO/procedures/configuration-mapping-oidc-export-groupes/" class="md-nav__link">
         
   
   
@@ -4549,7 +4720,7 @@
   
   
     <li class="md-nav__item">
-      <a href="SSO/procedures/implementation-politique-acces-globale/" class="md-nav__link">
+      <a href="../../../../05-services/SSO/procedures/implementation-politique-acces-globale/" class="md-nav__link">
         
   
   
@@ -4638,7 +4809,7 @@
   
   
     <li class="md-nav__item">
-      <a href="SSO/runbooks/application-politique-restriction-acces-applications/" class="md-nav__link">
+      <a href="../../../../05-services/SSO/runbooks/application-politique-restriction-acces-applications/" class="md-nav__link">
         
   
   
@@ -4666,7 +4837,7 @@
   
   
     <li class="md-nav__item">
-      <a href="SSO/runbooks/configuration-injection-groupes/" class="md-nav__link">
+      <a href="../../../../05-services/SSO/runbooks/configuration-injection-groupes/" class="md-nav__link">
         
   
   
@@ -4737,10 +4908,10 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#vue-densemble" class="md-nav__link">
+  <a href="#1-contexte" class="md-nav__link">
     <span class="md-ellipsis">
       
-        📝 Vue d'ensemble
+        1. Contexte
       
     </span>
   </a>
@@ -4748,10 +4919,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#perimetre-et-objectifs" class="md-nav__link">
+  <a href="#2-cahiers-des-charges" class="md-nav__link">
     <span class="md-ellipsis">
       
-        🎯 Périmètre et objectifs
+        2. Cahiers des charges
       
     </span>
   </a>
@@ -4759,10 +4930,88 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#navigation" class="md-nav__link">
+  <a href="#3-les-solutions-du-marche" class="md-nav__link">
     <span class="md-ellipsis">
       
-        🗺️ Navigation
+        3. Les solutions du marché
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="3. Les solutions du marché">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#31-presentations-des-solutions" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.1. Présentations des solutions
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="3.1. Présentations des solutions">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#311-argocd" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.1.1. ArgoCD
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#312-fluxcd" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.1.2. FluxCD
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#313-gitlab-agent-pour-kubernetes" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.1.3. GitLab Agent pour Kubernetes
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#32-comparatifs-des-solutions" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.2. Comparatifs des solutions
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-solution-proposee" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. Solution proposée
       
     </span>
   </a>
@@ -4785,7 +5034,7 @@
   
   
     <div style="text-align: left; font-size: 0.85em; color: var(--md-default-fg-color--light); margin-bottom: 20px;">
-      <strong>Dernière édition :</strong> <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-timeago" title="9 juillet 2026 15:53:06 UTC"><span class="timeago" datetime="2026-07-09T15:53:06+00:00" locale="fr"></span></span><span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date" title="9 juillet 2026 15:53:06 UTC">2026-07-09</span>
+      <strong>Dernière édition :</strong> <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-timeago" title="18 août 2026 22:28:46 UTC"><span class="timeago" datetime="2026-08-18T22:28:46+00:00" locale="fr"></span></span><span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date" title="18 août 2026 22:28:46 UTC">2026-08-18</span>
     </div>
   
   
@@ -4798,25 +5047,134 @@
   
 
 
-<h1 id="services">🚀 Services</h1>
+<h1 id="adr-choix-de-argocd">ADR : Choix de ArgoCD</h1>
 <p><img alt="Bannière LoutikCloud" src="https://raw.githubusercontent.com/loutik/design-assets/main/loutikcloud/banniere_loutikcloud.png" /></p>
-<h2 id="vue-densemble">📝 Vue d'ensemble</h2>
-<p>Cette section cartographie l'intégralité de la couche applicative de l'infrastructure, englobant les outils d'administration internes, les services d'identité et les plateformes web exposées. Elle détaille le cycle de vie et l'intégration de chaque service au sein de l'écosystème global.</p>
-<h2 id="perimetre-et-objectifs">🎯 Périmètre et objectifs</h2>
+<div class="admonition info">
+<p class="admonition-title">Informations</p>
 <ul>
-<li><strong>Hébergement Web</strong> : Déployer les applications publiques de manière automatisée. Garantir l'isolation stricte des environnements (portfolios, boutique en ligne).</li>
-<li><strong>Identity Access Management (IAM)</strong> : Centraliser l'authentification globale. Sécuriser le contrôle d'accès aux ressources internes.</li>
-<li><strong>Observabilité</strong> : Assurer la supervision continue des systèmes. </li>
-<li><strong>Outillage</strong> : Mettre à disposition les utilitaires de diagnostic technique.</li>
+<li><strong>Date de création</strong> : 2026-08-18</li>
+<li><strong>Statut</strong> : accepted</li>
+<li><strong>Auteur</strong> : Louis MEDO</li>
+<li><strong>Responsable</strong> : Louis MEDO</li>
 </ul>
-<h2 id="navigation">🗺️ Navigation</h2>
+</div>
+<h2 id="1-contexte">1. Contexte</h2>
+<p>L'infrastructure s'appuie sur un cluster Kubernetes hautement disponible, composé de trois nœuds "control plane" et de deux nœuds "worker". Pour rationaliser les opérations, il est nécessaire d'adopter une approche GitOps permettant d'automatiser le cycle de vie des applications. Le besoin métier est de s'assurer que les manifests Kubernetes stockés dans un dépôt Git soient la seule source de vérité et soient automatiquement synchronisés sur le cluster.</p>
+<p>Au-delà de l'automatisation technique, il est impératif de disposer d'une solution simple à maintenir, offrant un tableau de bord visuel pour identifier rapidement l'état des ressources déployées. L'outil retenu doit également être un standard de l'industrie afin de servir de plateforme de formation professionnelle, tout en s'intégrant dans la stack d'observabilité de l'infrastructure (exposition de métriques pour Prometheus ou Zabbix).</p>
+<h2 id="2-cahiers-des-charges">2. Cahiers des charges</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">ID</th>
+<th style="text-align: left;">Type</th>
+<th style="text-align: left;">Exigence</th>
+<th style="text-align: left;">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>[REQ-F01]</strong></td>
+<td style="text-align: left;">Fonctionnel</td>
+<td style="text-align: left;">Automatisation GitOps</td>
+<td style="text-align: left;">L'outil doit appliquer automatiquement les manifests Kubernetes stockés dans un dépôt Git vers le cluster.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>[REQ-F02]</strong></td>
+<td style="text-align: left;">Fonctionnel</td>
+<td style="text-align: left;">Interface utilisateur (Dashboard)</td>
+<td style="text-align: left;">L'outil doit fournir une interface web native et intuitive pour visualiser l'état de synchronisation et de santé des ressources.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>[REQ-F03]</strong></td>
+<td style="text-align: left;">Fonctionnel</td>
+<td style="text-align: left;">Standard entreprise</td>
+<td style="text-align: left;">La solution doit être largement adoptée en entreprise pour garantir une montée en compétence valorisable.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>[REQ-T01]</strong></td>
+<td style="text-align: left;">Technique</td>
+<td style="text-align: left;">Simplicité de maintenance</td>
+<td style="text-align: left;">L'architecture de la solution doit être simple à déployer, à configurer et à maintenir au quotidien.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>[REQ-T02]</strong></td>
+<td style="text-align: left;">Technique</td>
+<td style="text-align: left;">Observabilité</td>
+<td style="text-align: left;">La solution doit exposer des métriques de performance et d'état récupérables par Prometheus ou Zabbix.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="3-les-solutions-du-marche">3. Les solutions du marché</h2>
+<h3 id="31-presentations-des-solutions">3.1. Présentations des solutions</h3>
+<h4 id="311-argocd">3.1.1. ArgoCD</h4>
 <ul>
-<li><strong>Dashboard</strong> - Point d'entrée centralisé pour l'administration et l'accès rapide aux outils de l'infrastructure.</li>
-<li><strong>Portfolio</strong> - Architecture d'hébergement web isolée (Apache/PHP-FPM) dédiée aux environnements des étudiants du BTS SIO.</li>
-<li><strong>Speedtest</strong> - Utilitaire de diagnostic interne pour mesurer et valider les performances de la bande passante réseau.</li>
-<li><strong>SSO</strong> - Configuration du fournisseur d'identité (Authentik) pour la gestion des accès et l'authentification unique (OIDC).</li>
-<li><strong>Supervision</strong> - Stack d'observabilité assurant la collecte de métriques et le monitoring continu des systèmes.</li>
-<li><strong>Website-storefront</strong> - Environnement de déploiement et d'hébergement sécurisé pour la boutique en ligne haut de gamme.</li>
+<li><strong>Présentation générale :</strong> Outil open-source de livraison continue (CD) déclaratif et orienté GitOps spécifiquement conçu pour Kubernetes.</li>
+<li><strong>Fonctionnement :</strong> Utilise un contrôleur Kubernetes qui surveille en permanence les applications en cours d'exécution et compare l'état réel avec l'état désiré spécifié dans le dépôt Git (pull-based).</li>
+<li><strong>Profil :</strong> Standard de l'industrie, ciblant les équipes d'ingénierie DevOps et SRE. Réputé pour son interface web très aboutie et sa simplicité d'intégration.</li>
+</ul>
+<h4 id="312-fluxcd">3.1.2. FluxCD</h4>
+<ul>
+<li><strong>Présentation générale :</strong> Solution open-source GitOps pour Kubernetes, développée par Weaveworks et incubée par la CNCF.</li>
+<li><strong>Fonctionnement :</strong> Architecture modulaire basée sur des "GitOps Toolkit components" (source-controller, kustomize-controller, etc.) qui réconcilient l'état du cluster (pull-based).</li>
+<li><strong>Profil :</strong> Très orienté automatisation CLI et infrastructure as code pure. Conçu pour des intégrations techniques poussées en entreprise.</li>
+</ul>
+<h4 id="313-gitlab-agent-pour-kubernetes">3.1.3. GitLab Agent pour Kubernetes</h4>
+<ul>
+<li><strong>Présentation générale :</strong> Composant intégré à l'écosystème GitLab permettant de connecter un cluster Kubernetes aux pipelines CI/CD de GitLab.</li>
+<li><strong>Fonctionnement :</strong> Un agent tourne dans le cluster et tire (pull) les configurations directement depuis les projets GitLab associés.</li>
+<li><strong>Profil :</strong> Orienté développeurs et équipes utilisant exclusivement GitLab comme forge logicielle et registre central.</li>
+</ul>
+<h3 id="32-comparatifs-des-solutions">3.2. Comparatifs des solutions</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Exigence</th>
+<th style="text-align: left;">ArgoCD</th>
+<th style="text-align: left;">FluxCD</th>
+<th style="text-align: left;">GitLab Agent</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>[REQ-F01 (GitOps)]</strong></td>
+<td style="text-align: left;">Validé</td>
+<td style="text-align: left;">Validé</td>
+<td style="text-align: left;">Validé</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>[REQ-F02 (Dashboard)]</strong></td>
+<td style="text-align: left;">Validé (UI native et complète)</td>
+<td style="text-align: left;">Non validé (UI nécessitant des addons externes)</td>
+<td style="text-align: left;">Partiel (Intégré à l'UI GitLab, moins spécifique au cluster)</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>[REQ-F03 (Standard Entreprise)]</strong></td>
+<td style="text-align: left;">Validé (Très forte demande)</td>
+<td style="text-align: left;">Validé</td>
+<td style="text-align: left;">Évaluation (Dépend de la stack de l'entreprise)</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>[REQ-T01 (Simplicité)]</strong></td>
+<td style="text-align: left;">Validé</td>
+<td style="text-align: left;">Évaluation (Courbe d'apprentissage liée à l'architecture modulaire)</td>
+<td style="text-align: left;">Évaluation (Couplage fort avec GitLab)</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>[REQ-T02 (Observabilité)]</strong></td>
+<td style="text-align: left;">Validé (Métriques Prometheus natives)</td>
+<td style="text-align: left;">Validé (Métriques Prometheus natives)</td>
+<td style="text-align: left;">Évaluation</td>
+</tr>
+</tbody>
+</table>
+<h2 id="4-solution-proposee">4. Solution proposée</h2>
+<p>La solution proposée pour l'infrastructure est <strong>ArgoCD</strong>.</p>
+<p>L'intégration d'ArgoCD au sein du cluster Kubernetes (3 control planes, 2 workers) répond parfaitement aux exigences de simplicité, d'automatisation et de visibilité. ArgoCD sera déployé en tant que contrôleur dans un namespace dédié. Il se connectera de manière sécurisée aux dépôts Git contenant les manifests (YAML, Kustomize ou Helm) et assurera la boucle de réconciliation automatique. </p>
+<p>L'interface web native d'ArgoCD offre un atout décisif pour visualiser en temps réel l'arbre des ressources déployées, facilitant grandement le débogage et la formation aux concepts Kubernetes. De plus, ArgoCD expose nativement un endpoint <code>/metrics</code> au format Prometheus, ce qui permet de configurer des alertes (ex: désynchronisation d'une application, état dégradé) et des tableaux de bord directement via la stack de supervision de l'infrastructure.</p>
+<p><strong>Justification du rejet des solutions alternatives :</strong></p>
+<ul>
+<li><strong>FluxCD :</strong> Bien que FluxCD soit un excellent moteur GitOps (déjà expérimenté dans d'autres contextes d'automatisation), il est écarté pour ce besoin spécifique en raison de l'absence d'un tableau de bord natif et intuitif. La nécessité de déployer des composants supplémentaires (comme Weave GitOps) pour obtenir une interface graphique complexifie la maintenance par rapport à l'approche tout-en-un d'ArgoCD.</li>
+<li><strong>GitLab Agent pour Kubernetes :</strong> Cette solution a été rejetée car elle crée un couplage fort avec l'écosystème GitLab. L'objectif est de conserver une indépendance de la forge logicielle pour les déploiements (capacité à utiliser n'importe quel dépôt Git) et de bénéficier d'une interface centrée exclusivement sur l'état du cluster Kubernetes, ce qu'ArgoCD fait de manière beaucoup plus spécialisée.</li>
 </ul>
 
 
@@ -4840,7 +5198,7 @@
     <span class="md-icon" title="Dernière mise à jour">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-timeago" title="9 juillet 2026 15:53:06 UTC"><span class="timeago" datetime="2026-07-09T15:53:06+00:00" locale="fr"></span></span><span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date" title="9 juillet 2026 15:53:06 UTC">2026-07-09</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-timeago" title="18 août 2026 22:28:46 UTC"><span class="timeago" datetime="2026-08-18T22:28:46+00:00" locale="fr"></span></span><span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date" title="18 août 2026 22:28:46 UTC">2026-08-18</span>
   </span>
 
     
@@ -4850,7 +5208,7 @@
     <span class="md-icon" title="Créé">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M14.47 15.08 11 13V7h1.5v5.25l3.08 1.83c-.41.28-.79.62-1.11 1m-1.39 4.84c-.36.05-.71.08-1.08.08-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8c0 .37-.03.72-.08 1.08.69.1 1.33.32 1.92.64.1-.56.16-1.13.16-1.72 0-5.5-4.5-10-10-10S2 6.5 2 12s4.47 10 10 10c.59 0 1.16-.06 1.72-.16-.32-.59-.54-1.23-.64-1.92M18 15v3h-3v2h3v3h2v-3h3v-2h-3v-3z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-timeago" title="17 mai 2026 10:00:26 UTC"><span class="timeago" datetime="2026-05-17T10:00:26+00:00" locale="fr"></span></span><span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date" title="17 mai 2026 10:00:26 UTC">2026-05-17</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-timeago" title="18 août 2026 22:28:46 UTC"><span class="timeago" datetime="2026-08-18T22:28:46+00:00" locale="fr"></span></span><span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date" title="18 août 2026 22:28:46 UTC">2026-08-18</span>
   </span>
 
     
@@ -4910,14 +5268,14 @@
     
       
       
-      <script id="__config" type="application/json">{"annotate": null, "base": "..", "features": ["navigation.top", "search.suggest", "search.highlight", "content.code.copy", "navigation.indexes"], "search": "../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copi\u00e9 dans le presse-papier", "clipboard.copy": "Copier dans le presse-papier", "search.result.more.one": "1 de plus sur cette page", "search.result.more.other": "# de plus sur cette page", "search.result.none": "Aucun document trouv\u00e9", "search.result.one": "1 document trouv\u00e9", "search.result.other": "# documents trouv\u00e9s", "search.result.placeholder": "Taper pour d\u00e9marrer la recherche", "search.result.term.missing": "Non trouv\u00e9", "select.version": "S\u00e9lectionner la version"}, "version": null}</script>
+      <script id="__config" type="application/json">{"annotate": null, "base": "../../../..", "features": ["navigation.top", "search.suggest", "search.highlight", "content.code.copy", "navigation.indexes"], "search": "../../../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copi\u00e9 dans le presse-papier", "clipboard.copy": "Copier dans le presse-papier", "search.result.more.one": "1 de plus sur cette page", "search.result.more.other": "# de plus sur cette page", "search.result.none": "Aucun document trouv\u00e9", "search.result.one": "1 document trouv\u00e9", "search.result.other": "# documents trouv\u00e9s", "search.result.placeholder": "Taper pour d\u00e9marrer la recherche", "search.result.term.missing": "Non trouv\u00e9", "select.version": "S\u00e9lectionner la version"}, "version": null}</script>
     
     
-      <script src="../assets/javascripts/bundle.79ae519e.min.js"></script>
+      <script src="../../../../assets/javascripts/bundle.79ae519e.min.js"></script>
       
-        <script src="../js/timeago.min.js"></script>
+        <script src="../../../../js/timeago.min.js"></script>
       
-        <script src="../js/timeago_mkdocs_material.js"></script>
+        <script src="../../../../js/timeago_mkdocs_material.js"></script>
       
     
   </body>

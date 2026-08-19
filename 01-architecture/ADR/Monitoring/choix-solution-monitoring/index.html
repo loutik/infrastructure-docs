@@ -10,13 +10,13 @@
         <meta name="author" content="Louis MEDO">
       
       
-        <link rel="canonical" href="https://infra-docs.loutik.fr/01-architecture/ADR/orchestrateur/choix-orchestrateur-kubernetes/">
+        <link rel="canonical" href="https://infra-docs.loutik.fr/01-architecture/ADR/Monitoring/choix-solution-monitoring/">
       
       
-        <link rel="prev" href="../choix-argocd/">
+        <link rel="prev" href="../../Infrastructure/plateforme-documentation/">
       
       
-        <link rel="next" href="../../../referentiels/ref-001-convention-nommage-infrastructure/">
+        <link rel="next" href="../../Orchestrateur/choix-argocd/">
       
       
         
@@ -27,7 +27,7 @@
     
     
       
-        <title>Choix de l'orchestrateur kubernetes - Documentation infrastructure - LoutikCLOUD</title>
+        <title>Choix de la solution de supervision - Documentation infrastructure - LoutikCLOUD</title>
       
     
     
@@ -80,7 +80,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#adr-choix-de-lorchestrateur-kubernetes" class="md-skip">
+        <a href="#adr-choix-de-la-solution-de-supervision" class="md-skip">
           Aller au contenu
         </a>
       
@@ -115,7 +115,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Choix de l'orchestrateur kubernetes
+              Choix de la solution de supervision
             
           </span>
         </div>
@@ -334,6 +334,8 @@
   
     
     
+      
+        
       
         
       
@@ -885,8 +887,6 @@
       
         
       
-        
-      
     
     
     
@@ -905,7 +905,7 @@
   <span class="md-ellipsis">
     
   
-    Orchestrateur
+    Monitoring
   
 
     
@@ -921,46 +921,11 @@
             <span class="md-nav__icon md-icon"></span>
             
   
-    Orchestrateur
+    Monitoring
   
 
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../choix-argocd/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Choix de ArgoCD
-  
-
-    
-  </span>
-  
-  
-    
-  
-  
-    <span class="md-status md-status--accepted"></span>
-  
-
-  
-
-      </a>
-    </li>
-  
-
-              
             
               
                 
@@ -985,7 +950,7 @@
   <span class="md-ellipsis">
     
   
-    Choix de l'orchestrateur kubernetes
+    Choix de la solution de supervision
   
 
     
@@ -1010,7 +975,7 @@
   <span class="md-ellipsis">
     
   
-    Choix de l'orchestrateur kubernetes
+    Choix de la solution de supervision
   
 
     
@@ -1089,10 +1054,10 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#311-k3s" class="md-nav__link">
+  <a href="#311-stack-prometheus-grafana" class="md-nav__link">
     <span class="md-ellipsis">
       
-        3.1.1. K3s
+        3.1.1. Stack Prometheus &amp; Grafana
       
     </span>
   </a>
@@ -1100,21 +1065,10 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#312-kubernetes-vanilla-kubeadm" class="md-nav__link">
+  <a href="#312-zabbix" class="md-nav__link">
     <span class="md-ellipsis">
       
-        3.1.2. Kubernetes Vanilla (Kubeadm)
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#313-microk8s" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        3.1.3. MicroK8s
+        3.1.2. Zabbix
       
     </span>
   </a>
@@ -1157,6 +1111,137 @@
   
 </nav>
       
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_2_6" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_2_6" id="__nav_2_2_6_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Orchestrateur
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_2_2_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_2_6">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Orchestrateur
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Orchestrateur/choix-argocd/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Choix de ArgoCD
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--accepted"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Orchestrateur/choix-orchestrateur-kubernetes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Choix de l'orchestrateur kubernetes
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--accepted"></span>
+  
+
+  
+
+      </a>
     </li>
   
 
@@ -4858,10 +4943,10 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#311-k3s" class="md-nav__link">
+  <a href="#311-stack-prometheus-grafana" class="md-nav__link">
     <span class="md-ellipsis">
       
-        3.1.1. K3s
+        3.1.1. Stack Prometheus &amp; Grafana
       
     </span>
   </a>
@@ -4869,21 +4954,10 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#312-kubernetes-vanilla-kubeadm" class="md-nav__link">
+  <a href="#312-zabbix" class="md-nav__link">
     <span class="md-ellipsis">
       
-        3.1.2. Kubernetes Vanilla (Kubeadm)
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#313-microk8s" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        3.1.3. MicroK8s
+        3.1.2. Zabbix
       
     </span>
   </a>
@@ -4938,7 +5012,7 @@
   
   
     <div style="text-align: left; font-size: 0.85em; color: var(--md-default-fg-color--light); margin-bottom: 20px;">
-      <strong>Dernière édition :</strong> <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-timeago" title="18 août 2026 22:28:46 UTC"><span class="timeago" datetime="2026-08-18T22:28:46+00:00" locale="fr"></span></span><span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date" title="18 août 2026 22:28:46 UTC">2026-08-18</span>
+      <strong>Dernière édition :</strong> <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-timeago" title="19 août 2026 21:23:55 UTC"><span class="timeago" datetime="2026-08-19T21:23:55+00:00" locale="fr"></span></span><span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date" title="19 août 2026 21:23:55 UTC">2026-08-19</span>
     </div>
   
   
@@ -4951,19 +5025,19 @@
   
 
 
-<h1 id="adr-choix-de-lorchestrateur-kubernetes">ADR : Choix de l'orchestrateur kubernetes</h1>
+<h1 id="adr-choix-de-la-solution-de-supervision">ADR : Choix de la solution de supervision</h1>
 <p><img alt="Bannière LoutikCloud" src="https://raw.githubusercontent.com/loutik/design-assets/main/loutikcloud/banniere_loutikcloud.png" /></p>
 <div class="admonition info">
 <p class="admonition-title">Informations</p>
 <ul>
-<li><strong>Date de création</strong> : 2026-08-18</li>
+<li><strong>Date de création</strong> : 2026-08-19</li>
 <li><strong>Statut</strong> : accepted</li>
 <li><strong>Auteur</strong> : Louis MEDO</li>
 <li><strong>Responsable</strong> : Louis MEDO</li>
 </ul>
 </div>
 <h2 id="1-contexte">1. Contexte</h2>
-<p>L'infrastructure sous-jacente repose sur un cluster de trois serveurs physiques Proxmox VE. Le besoin est de déployer une plateforme d'orchestration de conteneurs hautement disponible (HA) pour héberger les services de l'environnement homelab. L'architecture cible doit intégrer trois nœuds Control Plane (distribués à raison d'un par nœud Proxmox) exposés via une adresse IP virtuelle (VIP), ainsi que deux nœuds Workers (répartis sur PVE1 et PVE2). L'environnement étant contraint, la solution requiert une grande simplicité d'exploitation et une consommation de ressources optimisée.</p>
+<p>L'infrastructure LoutikCLOUD repose sur un environnement hétérogène incluant un pare-feu OPNsense, des machines virtuelles Debian et un cluster Kubernetes. Actuellement, la visibilité sur l'état des services est fragmentée. Il est nécessaire d'implémenter une solution de supervision centralisée pour monitorer les métriques clés (taux d'erreurs du proxy NGINX, requêtes DNS, état des pods Kubernetes). La solution doit être légère, gratuite, facilement maintenable, s'intégrer avec Authentik via OIDC, et permettre le partage public de tableaux de bord sans authentification.</p>
 <h2 id="2-cahiers-des-charges">2. Cahiers des charges</h2>
 <table>
 <thead>
@@ -4978,98 +5052,93 @@
 <tr>
 <td style="text-align: left;"><strong>[REQ-F01]</strong></td>
 <td style="text-align: left;">Fonctionnel</td>
-<td style="text-align: left;">Haute Disponibilité (HA)</td>
-<td style="text-align: left;">Le cluster doit tolérer la perte d'un serveur physique Proxmox sans interruption du service d'orchestration.</td>
-</tr>
-<tr>
-<td style="text-align: left;"><strong>[REQ-T01]</strong></td>
-<td style="text-align: left;">Technique</td>
-<td style="text-align: left;">Topologie 3 CP + 2 Workers</td>
-<td style="text-align: left;">Capacité à déployer une architecture multi-master avec une VIP pour l'API Server.</td>
-</tr>
-<tr>
-<td style="text-align: left;"><strong>[REQ-T02]</strong></td>
-<td style="text-align: left;">Technique</td>
-<td style="text-align: left;">Faible empreinte ressource</td>
-<td style="text-align: left;">Optimisation de la consommation RAM et CPU pour préserver les ressources de l'homelab.</td>
+<td style="text-align: left;">Centralisation</td>
+<td style="text-align: left;">Agrégation des métriques d'OPNsense, Debian et K8s sur une interface unique.</td>
 </tr>
 <tr>
 <td style="text-align: left;"><strong>[REQ-F02]</strong></td>
 <td style="text-align: left;">Fonctionnel</td>
-<td style="text-align: left;">Simplicité d'exploitation</td>
-<td style="text-align: left;">Installation, configuration et gestion quotidienne aisées via des outils d'automatisation.</td>
+<td style="text-align: left;">Tableaux de bord publics</td>
+<td style="text-align: left;">Possibilité d'exposer des tableaux de bord en lecture seule sans connexion préalable.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>[REQ-T01]</strong></td>
+<td style="text-align: left;">Technique</td>
+<td style="text-align: left;">Empreinte réduite</td>
+<td style="text-align: left;">La solution doit être légère, peu consommatrice en ressources et facile à maintenir.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>[REQ-T02]</strong></td>
+<td style="text-align: left;">Technique</td>
+<td style="text-align: left;">Compatibilité OIDC</td>
+<td style="text-align: left;">Intégration native avec le fournisseur d'identité Authentik.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>[REQ-T03]</strong></td>
+<td style="text-align: left;">Technique</td>
+<td style="text-align: left;">Gratuité</td>
+<td style="text-align: left;">Solution 100% gratuite.</td>
 </tr>
 </tbody>
 </table>
 <h2 id="3-les-solutions-du-marche">3. Les solutions du marché</h2>
 <h3 id="31-presentations-des-solutions">3.1. Présentations des solutions</h3>
-<h4 id="311-k3s">3.1.1. K3s</h4>
+<h4 id="311-stack-prometheus-grafana">3.1.1. Stack Prometheus &amp; Grafana</h4>
 <ul>
-<li><strong>Présentation générale :</strong> Distribution Kubernetes certifiée, allégée et open-source développée par Rancher.</li>
-<li><strong>Fonctionnement :</strong> Empaquette les composants Kubernetes dans un binaire unique. Gère la HA avec un backend etcd embarqué.</li>
-<li><strong>Profil :</strong> Conçu pour l'Edge computing, l'IoT, le CI/CD et les environnements homelab/ressources limitées.</li>
+<li><strong>Présentation générale :</strong> Suite open-source standard du marché cloud-native. Prometheus collecte les métriques (mode pull) et Grafana assure la visualisation.</li>
+<li><strong>Fonctionnement :</strong> Des "exporters" (node-exporter, kube-state-metrics) exposent les métriques, scrapées par Prometheus. Grafana interroge Prometheus en tant que source de données.</li>
+<li><strong>Profil :</strong> Idéal pour les environnements dynamiques (Kubernetes) et l'automatisation déclarative.</li>
 </ul>
-<h4 id="312-kubernetes-vanilla-kubeadm">3.1.2. Kubernetes Vanilla (Kubeadm)</h4>
+<h4 id="312-zabbix">3.1.2. Zabbix</h4>
 <ul>
-<li><strong>Présentation générale :</strong> Distribution officielle standard (upstream) du projet Kubernetes.</li>
-<li><strong>Fonctionnement :</strong> Déploiement modulaire complet nécessitant l'installation et la configuration de chaque composant (etcd, API, scheduler) de manière isolée.</li>
-<li><strong>Profil :</strong> Datacenters et environnements de production d'entreprise (Enterprise Grade).</li>
-</ul>
-<h4 id="313-microk8s">3.1.3. MicroK8s</h4>
-<ul>
-<li><strong>Présentation générale :</strong> Distribution Kubernetes minimaliste maintenue par Canonical.</li>
-<li><strong>Fonctionnement :</strong> S'installe de manière conteneurisée et packagée via le gestionnaire Snap. </li>
-<li><strong>Profil :</strong> Stations de travail de développement, tests locaux et environnements Edge sous Ubuntu.</li>
+<li><strong>Présentation générale :</strong> Outil de supervision monolithique open-source d'entreprise.</li>
+<li><strong>Fonctionnement :</strong> Utilise des agents installés sur les cibles et stocke la configuration/métriques dans une base de données relationnelle (PostgreSQL/MySQL).</li>
+<li><strong>Profil :</strong> Adapté aux infrastructures traditionnelles et à la gestion centralisée des alertes, moins agile pour les conteneurs.</li>
 </ul>
 <h3 id="32-comparatifs-des-solutions">3.2. Comparatifs des solutions</h3>
 <table>
 <thead>
 <tr>
 <th style="text-align: left;">Exigence</th>
-<th style="text-align: left;">K3s</th>
-<th style="text-align: left;">Kubernetes Vanilla</th>
-<th style="text-align: left;">MicroK8s</th>
+<th style="text-align: left;">Stack Prometheus &amp; Grafana</th>
+<th style="text-align: left;">Zabbix</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;"><strong>[REQ-F01 (HA)]</strong></td>
-<td style="text-align: left;">Validé (etcd embarqué)</td>
-<td style="text-align: left;">Validé (etcd externe)</td>
-<td style="text-align: left;">Validé (dqlite)</td>
+<td style="text-align: left;"><strong>[REQ-F01] Centralisation</strong></td>
+<td style="text-align: left;">Validé</td>
+<td style="text-align: left;">Validé</td>
 </tr>
 <tr>
-<td style="text-align: left;"><strong>[REQ-T01 (Topologie)]</strong></td>
-<td style="text-align: left;">Validé (kube-vip natif)</td>
-<td style="text-align: left;">Validé (HAProxy/Keepalived)</td>
-<td style="text-align: left;">Évaluation (VIP complexe)</td>
+<td style="text-align: left;"><strong>[REQ-F02] TdB Publics</strong></td>
+<td style="text-align: left;">Validé (Fonction <em>Anonymous Access</em> native)</td>
+<td style="text-align: left;">Limité (Nécessite la création complexe d'un compte invité restrictif)</td>
 </tr>
 <tr>
-<td style="text-align: left;"><strong>[REQ-T02 (Ressources)]</strong></td>
-<td style="text-align: left;">Validé (Très léger)</td>
-<td style="text-align: left;">Non validé (Overhead élevé)</td>
-<td style="text-align: left;">Évaluation (Moyen)</td>
+<td style="text-align: left;"><strong>[REQ-T01] Empreinte réduite</strong></td>
+<td style="text-align: left;">Validé (Architecture découplée et légère)</td>
+<td style="text-align: left;">Non validé (Lourd, base de données relationnelle exigée)</td>
 </tr>
 <tr>
-<td style="text-align: left;"><strong>[REQ-F02 (Simplicité)]</strong></td>
-<td style="text-align: left;">Validé (Binaire unique)</td>
-<td style="text-align: left;">Non validé (PKI complexe)</td>
-<td style="text-align: left;">Validé (Commandes Snap)</td>
+<td style="text-align: left;"><strong>[REQ-T02] OIDC</strong></td>
+<td style="text-align: left;">Validé (Support natif dans Grafana)</td>
+<td style="text-align: left;">Validé</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>[REQ-T03] Gratuité</strong></td>
+<td style="text-align: left;">Validé</td>
+<td style="text-align: left;">Validé</td>
 </tr>
 </tbody>
 </table>
 <h2 id="4-solution-proposee">4. Solution proposée</h2>
-<p>La solution proposée pour l'infrastructure est <strong>K3s</strong>.</p>
-<p>K3s s'intègre parfaitement aux contraintes matérielles de l'homelab grâce à sa très faible empreinte mémoire et CPU. L'architecture déployée consistera en trois machines virtuelles Control Plane avec etcd embarqué (une par hyperviseur Proxmox pour garantir le quorum) couplées au démon <code>kube-vip</code> gérant la Virtual IP (VIP) en mode ARP ou BGP pour l'accès à l'API Server. Les deux machines virtuelles Workers seront instanciées sur PVE1 et PVE2 pour exécuter les charges de travail. Cette topologie assure une résilience complète face à la perte d'un nœud physique.</p>
-<p><strong>Conséquences et impacts :</strong></p>
-<ul>
-<li><strong>Impacts positifs :</strong> Réduction drastique de la consommation des ressources à vide, déploiement extrêmement rapide et automatisable, tolérance de panne validée.</li>
-<li><strong>Risques :</strong> L'architecture nécessite une supervision stricte du quorum etcd (la perte simultanée de deux nœuds PVE entraînerait un blocage en écriture du cluster) et une configuration réseau précise pour le basculement transparent de la VIP via <code>kube-vip</code>.</li>
-</ul>
+<p>La solution proposée pour l'infrastructure est la <strong>Stack Prometheus &amp; Grafana</strong>.</p>
+<p>Cette stack s'intègre nativement à l'écosystème Kubernetes de LoutikCLOUD, garantissant une maintenance minimale en cohérence avec les pratiques d'Infrastructure as Code. Grafana sera configuré avec son intégration OIDC pointant vers Authentik pour l'administration sécurisée. Prometheus interrogera les exportateurs déployés sur les instances Debian, le cluster K8s et le pare-feu OPNsense pour offrir un point d'observation unifié des métriques (taux d'erreur NGINX, requêtes DNS, etc.).</p>
 <p><strong>Justification du rejet des solutions alternatives :</strong></p>
 <ul>
-<li><strong>Kubernetes Vanilla (Kubeadm) :</strong> Rejeté en raison de son overhead de ressources (consommation à vide trop importante pour un homelab) et de la lourdeur de maintenance opérationnelle (gestion manuelle de la PKI et du cluster etcd externe).</li>
-<li><strong>MicroK8s :</strong> Rejeté à cause de sa forte dépendance à l'écosystème Canonical et au démon Snap, ce qui restreint le choix de la distribution Linux sous-jacente et ajoute une couche de complexité non désirée pour l'administration système globale.</li>
+<li><strong>Zabbix :</strong> Écarté en raison de sa consommation de ressources plus élevée et de la nécessité de maintenir une infrastructure de base de données relationnelle lourde, ce qui viole l'exigence de légèreté.</li>
+<li><strong>Solutions SaaS (Datadog, New Relic) :</strong> Écartées car elles ne respectent pas l'exigence stricte de gratuité et impliquent une dépendance forte envers un service cloud externe.</li>
 </ul>
 
 
@@ -5093,7 +5162,7 @@
     <span class="md-icon" title="Dernière mise à jour">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-timeago" title="18 août 2026 22:28:46 UTC"><span class="timeago" datetime="2026-08-18T22:28:46+00:00" locale="fr"></span></span><span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date" title="18 août 2026 22:28:46 UTC">2026-08-18</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-timeago" title="19 août 2026 21:23:55 UTC"><span class="timeago" datetime="2026-08-19T21:23:55+00:00" locale="fr"></span></span><span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date" title="19 août 2026 21:23:55 UTC">2026-08-19</span>
   </span>
 
     
@@ -5103,7 +5172,7 @@
     <span class="md-icon" title="Créé">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M14.47 15.08 11 13V7h1.5v5.25l3.08 1.83c-.41.28-.79.62-1.11 1m-1.39 4.84c-.36.05-.71.08-1.08.08-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8c0 .37-.03.72-.08 1.08.69.1 1.33.32 1.92.64.1-.56.16-1.13.16-1.72 0-5.5-4.5-10-10-10S2 6.5 2 12s4.47 10 10 10c.59 0 1.16-.06 1.72-.16-.32-.59-.54-1.23-.64-1.92M18 15v3h-3v2h3v3h2v-3h3v-2h-3v-3z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-timeago" title="18 août 2026 22:28:46 UTC"><span class="timeago" datetime="2026-08-18T22:28:46+00:00" locale="fr"></span></span><span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date" title="18 août 2026 22:28:46 UTC">2026-08-18</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-timeago" title="19 août 2026 21:23:55 UTC"><span class="timeago" datetime="2026-08-19T21:23:55+00:00" locale="fr"></span></span><span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date" title="19 août 2026 21:23:55 UTC">2026-08-19</span>
   </span>
 
     

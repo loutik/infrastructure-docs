@@ -10,13 +10,13 @@
         <meta name="author" content="Louis MEDO">
       
       
-        <link rel="canonical" href="https://infra-docs.loutik.fr/01-architecture/ADR/orchestrateur/choix-argocd/">
+        <link rel="canonical" href="https://infra-docs.loutik.fr/01-architecture/ADR/Orchestrateur/choix-orchestrateur-kubernetes/">
       
       
-        <link rel="prev" href="../../Infrastructure/plateforme-documentation/">
+        <link rel="prev" href="../choix-argocd/">
       
       
-        <link rel="next" href="../choix-orchestrateur-kubernetes/">
+        <link rel="next" href="../../../referentiels/ref-001-convention-nommage-infrastructure/">
       
       
         
@@ -27,7 +27,7 @@
     
     
       
-        <title>Choix de ArgoCD - Documentation infrastructure - LoutikCLOUD</title>
+        <title>Choix de l'orchestrateur kubernetes - Documentation infrastructure - LoutikCLOUD</title>
       
     
     
@@ -80,7 +80,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#adr-choix-de-argocd" class="md-skip">
+        <a href="#adr-choix-de-lorchestrateur-kubernetes" class="md-skip">
           Aller au contenu
         </a>
       
@@ -115,7 +115,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Choix de ArgoCD
+              Choix de l'orchestrateur kubernetes
             
           </span>
         </div>
@@ -334,6 +334,8 @@
   
     
     
+      
+        
       
         
       
@@ -876,6 +878,100 @@
                 
   
   
+  
+  
+    
+    
+      
+        
+      
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_2_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_2_5" id="__nav_2_2_5_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Monitoring
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_2_2_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_2_5">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Monitoring
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Monitoring/choix-solution-monitoring/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Choix de la solution de supervision
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--accepted"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
     
   
   
@@ -895,10 +991,10 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_2_5" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_2_6" checked>
         
           
-          <label class="md-nav__link" for="__nav_2_2_5" id="__nav_2_2_5_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_2_2_6" id="__nav_2_2_6_label" tabindex="0">
             
   
   
@@ -916,8 +1012,8 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_2_2_5_label" aria-expanded="true">
-          <label class="md-nav__title" for="__nav_2_2_5">
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_2_2_6_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2_2_6">
             <span class="md-nav__icon md-icon"></span>
             
   
@@ -926,6 +1022,41 @@
 
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../choix-argocd/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Choix de ArgoCD
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--accepted"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
             
               
                 
@@ -950,7 +1081,7 @@
   <span class="md-ellipsis">
     
   
-    Choix de ArgoCD
+    Choix de l'orchestrateur kubernetes
   
 
     
@@ -975,7 +1106,7 @@
   <span class="md-ellipsis">
     
   
-    Choix de ArgoCD
+    Choix de l'orchestrateur kubernetes
   
 
     
@@ -1054,10 +1185,10 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#311-argocd" class="md-nav__link">
+  <a href="#311-k3s" class="md-nav__link">
     <span class="md-ellipsis">
       
-        3.1.1. ArgoCD
+        3.1.1. K3s
       
     </span>
   </a>
@@ -1065,10 +1196,10 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#312-fluxcd" class="md-nav__link">
+  <a href="#312-kubernetes-vanilla-kubeadm" class="md-nav__link">
     <span class="md-ellipsis">
       
-        3.1.2. FluxCD
+        3.1.2. Kubernetes Vanilla (Kubeadm)
       
     </span>
   </a>
@@ -1076,10 +1207,10 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#313-gitlab-agent-pour-kubernetes" class="md-nav__link">
+  <a href="#313-microk8s" class="md-nav__link">
     <span class="md-ellipsis">
       
-        3.1.3. GitLab Agent pour Kubernetes
+        3.1.3. MicroK8s
       
     </span>
   </a>
@@ -1122,41 +1253,6 @@
   
 </nav>
       
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../choix-orchestrateur-kubernetes/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Choix de l'orchestrateur kubernetes
-  
-
-    
-  </span>
-  
-  
-    
-  
-  
-    <span class="md-status md-status--accepted"></span>
-  
-
-  
-
-      </a>
     </li>
   
 
@@ -4858,10 +4954,10 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#311-argocd" class="md-nav__link">
+  <a href="#311-k3s" class="md-nav__link">
     <span class="md-ellipsis">
       
-        3.1.1. ArgoCD
+        3.1.1. K3s
       
     </span>
   </a>
@@ -4869,10 +4965,10 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#312-fluxcd" class="md-nav__link">
+  <a href="#312-kubernetes-vanilla-kubeadm" class="md-nav__link">
     <span class="md-ellipsis">
       
-        3.1.2. FluxCD
+        3.1.2. Kubernetes Vanilla (Kubeadm)
       
     </span>
   </a>
@@ -4880,10 +4976,10 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#313-gitlab-agent-pour-kubernetes" class="md-nav__link">
+  <a href="#313-microk8s" class="md-nav__link">
     <span class="md-ellipsis">
       
-        3.1.3. GitLab Agent pour Kubernetes
+        3.1.3. MicroK8s
       
     </span>
   </a>
@@ -4951,7 +5047,7 @@
   
 
 
-<h1 id="adr-choix-de-argocd">ADR : Choix de ArgoCD</h1>
+<h1 id="adr-choix-de-lorchestrateur-kubernetes">ADR : Choix de l'orchestrateur kubernetes</h1>
 <p><img alt="Bannière LoutikCloud" src="https://raw.githubusercontent.com/loutik/design-assets/main/loutikcloud/banniere_loutikcloud.png" /></p>
 <div class="admonition info">
 <p class="admonition-title">Informations</p>
@@ -4963,8 +5059,7 @@
 </ul>
 </div>
 <h2 id="1-contexte">1. Contexte</h2>
-<p>L'infrastructure s'appuie sur un cluster Kubernetes hautement disponible, composé de trois nœuds "control plane" et de deux nœuds "worker". Pour rationaliser les opérations, il est nécessaire d'adopter une approche GitOps permettant d'automatiser le cycle de vie des applications. Le besoin métier est de s'assurer que les manifests Kubernetes stockés dans un dépôt Git soient la seule source de vérité et soient automatiquement synchronisés sur le cluster.</p>
-<p>Au-delà de l'automatisation technique, il est impératif de disposer d'une solution simple à maintenir, offrant un tableau de bord visuel pour identifier rapidement l'état des ressources déployées. L'outil retenu doit également être un standard de l'industrie afin de servir de plateforme de formation professionnelle, tout en s'intégrant dans la stack d'observabilité de l'infrastructure (exposition de métriques pour Prometheus ou Zabbix).</p>
+<p>L'infrastructure sous-jacente repose sur un cluster de trois serveurs physiques Proxmox VE. Le besoin est de déployer une plateforme d'orchestration de conteneurs hautement disponible (HA) pour héberger les services de l'environnement homelab. L'architecture cible doit intégrer trois nœuds Control Plane (distribués à raison d'un par nœud Proxmox) exposés via une adresse IP virtuelle (VIP), ainsi que deux nœuds Workers (répartis sur PVE1 et PVE2). L'environnement étant contraint, la solution requiert une grande simplicité d'exploitation et une consommation de ressources optimisée.</p>
 <h2 id="2-cahiers-des-charges">2. Cahiers des charges</h2>
 <table>
 <thead>
@@ -4979,106 +5074,98 @@
 <tr>
 <td style="text-align: left;"><strong>[REQ-F01]</strong></td>
 <td style="text-align: left;">Fonctionnel</td>
-<td style="text-align: left;">Automatisation GitOps</td>
-<td style="text-align: left;">L'outil doit appliquer automatiquement les manifests Kubernetes stockés dans un dépôt Git vers le cluster.</td>
-</tr>
-<tr>
-<td style="text-align: left;"><strong>[REQ-F02]</strong></td>
-<td style="text-align: left;">Fonctionnel</td>
-<td style="text-align: left;">Interface utilisateur (Dashboard)</td>
-<td style="text-align: left;">L'outil doit fournir une interface web native et intuitive pour visualiser l'état de synchronisation et de santé des ressources.</td>
-</tr>
-<tr>
-<td style="text-align: left;"><strong>[REQ-F03]</strong></td>
-<td style="text-align: left;">Fonctionnel</td>
-<td style="text-align: left;">Standard entreprise</td>
-<td style="text-align: left;">La solution doit être largement adoptée en entreprise pour garantir une montée en compétence valorisable.</td>
+<td style="text-align: left;">Haute Disponibilité (HA)</td>
+<td style="text-align: left;">Le cluster doit tolérer la perte d'un serveur physique Proxmox sans interruption du service d'orchestration.</td>
 </tr>
 <tr>
 <td style="text-align: left;"><strong>[REQ-T01]</strong></td>
 <td style="text-align: left;">Technique</td>
-<td style="text-align: left;">Simplicité de maintenance</td>
-<td style="text-align: left;">L'architecture de la solution doit être simple à déployer, à configurer et à maintenir au quotidien.</td>
+<td style="text-align: left;">Topologie 3 CP + 2 Workers</td>
+<td style="text-align: left;">Capacité à déployer une architecture multi-master avec une VIP pour l'API Server.</td>
 </tr>
 <tr>
 <td style="text-align: left;"><strong>[REQ-T02]</strong></td>
 <td style="text-align: left;">Technique</td>
-<td style="text-align: left;">Observabilité</td>
-<td style="text-align: left;">La solution doit exposer des métriques de performance et d'état récupérables par Prometheus ou Zabbix.</td>
+<td style="text-align: left;">Faible empreinte ressource</td>
+<td style="text-align: left;">Optimisation de la consommation RAM et CPU pour préserver les ressources de l'homelab.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>[REQ-F02]</strong></td>
+<td style="text-align: left;">Fonctionnel</td>
+<td style="text-align: left;">Simplicité d'exploitation</td>
+<td style="text-align: left;">Installation, configuration et gestion quotidienne aisées via des outils d'automatisation.</td>
 </tr>
 </tbody>
 </table>
 <h2 id="3-les-solutions-du-marche">3. Les solutions du marché</h2>
 <h3 id="31-presentations-des-solutions">3.1. Présentations des solutions</h3>
-<h4 id="311-argocd">3.1.1. ArgoCD</h4>
+<h4 id="311-k3s">3.1.1. K3s</h4>
 <ul>
-<li><strong>Présentation générale :</strong> Outil open-source de livraison continue (CD) déclaratif et orienté GitOps spécifiquement conçu pour Kubernetes.</li>
-<li><strong>Fonctionnement :</strong> Utilise un contrôleur Kubernetes qui surveille en permanence les applications en cours d'exécution et compare l'état réel avec l'état désiré spécifié dans le dépôt Git (pull-based).</li>
-<li><strong>Profil :</strong> Standard de l'industrie, ciblant les équipes d'ingénierie DevOps et SRE. Réputé pour son interface web très aboutie et sa simplicité d'intégration.</li>
+<li><strong>Présentation générale :</strong> Distribution Kubernetes certifiée, allégée et open-source développée par Rancher.</li>
+<li><strong>Fonctionnement :</strong> Empaquette les composants Kubernetes dans un binaire unique. Gère la HA avec un backend etcd embarqué.</li>
+<li><strong>Profil :</strong> Conçu pour l'Edge computing, l'IoT, le CI/CD et les environnements homelab/ressources limitées.</li>
 </ul>
-<h4 id="312-fluxcd">3.1.2. FluxCD</h4>
+<h4 id="312-kubernetes-vanilla-kubeadm">3.1.2. Kubernetes Vanilla (Kubeadm)</h4>
 <ul>
-<li><strong>Présentation générale :</strong> Solution open-source GitOps pour Kubernetes, développée par Weaveworks et incubée par la CNCF.</li>
-<li><strong>Fonctionnement :</strong> Architecture modulaire basée sur des "GitOps Toolkit components" (source-controller, kustomize-controller, etc.) qui réconcilient l'état du cluster (pull-based).</li>
-<li><strong>Profil :</strong> Très orienté automatisation CLI et infrastructure as code pure. Conçu pour des intégrations techniques poussées en entreprise.</li>
+<li><strong>Présentation générale :</strong> Distribution officielle standard (upstream) du projet Kubernetes.</li>
+<li><strong>Fonctionnement :</strong> Déploiement modulaire complet nécessitant l'installation et la configuration de chaque composant (etcd, API, scheduler) de manière isolée.</li>
+<li><strong>Profil :</strong> Datacenters et environnements de production d'entreprise (Enterprise Grade).</li>
 </ul>
-<h4 id="313-gitlab-agent-pour-kubernetes">3.1.3. GitLab Agent pour Kubernetes</h4>
+<h4 id="313-microk8s">3.1.3. MicroK8s</h4>
 <ul>
-<li><strong>Présentation générale :</strong> Composant intégré à l'écosystème GitLab permettant de connecter un cluster Kubernetes aux pipelines CI/CD de GitLab.</li>
-<li><strong>Fonctionnement :</strong> Un agent tourne dans le cluster et tire (pull) les configurations directement depuis les projets GitLab associés.</li>
-<li><strong>Profil :</strong> Orienté développeurs et équipes utilisant exclusivement GitLab comme forge logicielle et registre central.</li>
+<li><strong>Présentation générale :</strong> Distribution Kubernetes minimaliste maintenue par Canonical.</li>
+<li><strong>Fonctionnement :</strong> S'installe de manière conteneurisée et packagée via le gestionnaire Snap. </li>
+<li><strong>Profil :</strong> Stations de travail de développement, tests locaux et environnements Edge sous Ubuntu.</li>
 </ul>
 <h3 id="32-comparatifs-des-solutions">3.2. Comparatifs des solutions</h3>
 <table>
 <thead>
 <tr>
 <th style="text-align: left;">Exigence</th>
-<th style="text-align: left;">ArgoCD</th>
-<th style="text-align: left;">FluxCD</th>
-<th style="text-align: left;">GitLab Agent</th>
+<th style="text-align: left;">K3s</th>
+<th style="text-align: left;">Kubernetes Vanilla</th>
+<th style="text-align: left;">MicroK8s</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;"><strong>[REQ-F01 (GitOps)]</strong></td>
-<td style="text-align: left;">Validé</td>
-<td style="text-align: left;">Validé</td>
-<td style="text-align: left;">Validé</td>
+<td style="text-align: left;"><strong>[REQ-F01 (HA)]</strong></td>
+<td style="text-align: left;">Validé (etcd embarqué)</td>
+<td style="text-align: left;">Validé (etcd externe)</td>
+<td style="text-align: left;">Validé (dqlite)</td>
 </tr>
 <tr>
-<td style="text-align: left;"><strong>[REQ-F02 (Dashboard)]</strong></td>
-<td style="text-align: left;">Validé (UI native et complète)</td>
-<td style="text-align: left;">Non validé (UI nécessitant des addons externes)</td>
-<td style="text-align: left;">Partiel (Intégré à l'UI GitLab, moins spécifique au cluster)</td>
+<td style="text-align: left;"><strong>[REQ-T01 (Topologie)]</strong></td>
+<td style="text-align: left;">Validé (kube-vip natif)</td>
+<td style="text-align: left;">Validé (HAProxy/Keepalived)</td>
+<td style="text-align: left;">Évaluation (VIP complexe)</td>
 </tr>
 <tr>
-<td style="text-align: left;"><strong>[REQ-F03 (Standard Entreprise)]</strong></td>
-<td style="text-align: left;">Validé (Très forte demande)</td>
-<td style="text-align: left;">Validé</td>
-<td style="text-align: left;">Évaluation (Dépend de la stack de l'entreprise)</td>
+<td style="text-align: left;"><strong>[REQ-T02 (Ressources)]</strong></td>
+<td style="text-align: left;">Validé (Très léger)</td>
+<td style="text-align: left;">Non validé (Overhead élevé)</td>
+<td style="text-align: left;">Évaluation (Moyen)</td>
 </tr>
 <tr>
-<td style="text-align: left;"><strong>[REQ-T01 (Simplicité)]</strong></td>
-<td style="text-align: left;">Validé</td>
-<td style="text-align: left;">Évaluation (Courbe d'apprentissage liée à l'architecture modulaire)</td>
-<td style="text-align: left;">Évaluation (Couplage fort avec GitLab)</td>
-</tr>
-<tr>
-<td style="text-align: left;"><strong>[REQ-T02 (Observabilité)]</strong></td>
-<td style="text-align: left;">Validé (Métriques Prometheus natives)</td>
-<td style="text-align: left;">Validé (Métriques Prometheus natives)</td>
-<td style="text-align: left;">Évaluation</td>
+<td style="text-align: left;"><strong>[REQ-F02 (Simplicité)]</strong></td>
+<td style="text-align: left;">Validé (Binaire unique)</td>
+<td style="text-align: left;">Non validé (PKI complexe)</td>
+<td style="text-align: left;">Validé (Commandes Snap)</td>
 </tr>
 </tbody>
 </table>
 <h2 id="4-solution-proposee">4. Solution proposée</h2>
-<p>La solution proposée pour l'infrastructure est <strong>ArgoCD</strong>.</p>
-<p>L'intégration d'ArgoCD au sein du cluster Kubernetes (3 control planes, 2 workers) répond parfaitement aux exigences de simplicité, d'automatisation et de visibilité. ArgoCD sera déployé en tant que contrôleur dans un namespace dédié. Il se connectera de manière sécurisée aux dépôts Git contenant les manifests (YAML, Kustomize ou Helm) et assurera la boucle de réconciliation automatique. </p>
-<p>L'interface web native d'ArgoCD offre un atout décisif pour visualiser en temps réel l'arbre des ressources déployées, facilitant grandement le débogage et la formation aux concepts Kubernetes. De plus, ArgoCD expose nativement un endpoint <code>/metrics</code> au format Prometheus, ce qui permet de configurer des alertes (ex: désynchronisation d'une application, état dégradé) et des tableaux de bord directement via la stack de supervision de l'infrastructure.</p>
+<p>La solution proposée pour l'infrastructure est <strong>K3s</strong>.</p>
+<p>K3s s'intègre parfaitement aux contraintes matérielles de l'homelab grâce à sa très faible empreinte mémoire et CPU. L'architecture déployée consistera en trois machines virtuelles Control Plane avec etcd embarqué (une par hyperviseur Proxmox pour garantir le quorum) couplées au démon <code>kube-vip</code> gérant la Virtual IP (VIP) en mode ARP ou BGP pour l'accès à l'API Server. Les deux machines virtuelles Workers seront instanciées sur PVE1 et PVE2 pour exécuter les charges de travail. Cette topologie assure une résilience complète face à la perte d'un nœud physique.</p>
+<p><strong>Conséquences et impacts :</strong></p>
+<ul>
+<li><strong>Impacts positifs :</strong> Réduction drastique de la consommation des ressources à vide, déploiement extrêmement rapide et automatisable, tolérance de panne validée.</li>
+<li><strong>Risques :</strong> L'architecture nécessite une supervision stricte du quorum etcd (la perte simultanée de deux nœuds PVE entraînerait un blocage en écriture du cluster) et une configuration réseau précise pour le basculement transparent de la VIP via <code>kube-vip</code>.</li>
+</ul>
 <p><strong>Justification du rejet des solutions alternatives :</strong></p>
 <ul>
-<li><strong>FluxCD :</strong> Bien que FluxCD soit un excellent moteur GitOps (déjà expérimenté dans d'autres contextes d'automatisation), il est écarté pour ce besoin spécifique en raison de l'absence d'un tableau de bord natif et intuitif. La nécessité de déployer des composants supplémentaires (comme Weave GitOps) pour obtenir une interface graphique complexifie la maintenance par rapport à l'approche tout-en-un d'ArgoCD.</li>
-<li><strong>GitLab Agent pour Kubernetes :</strong> Cette solution a été rejetée car elle crée un couplage fort avec l'écosystème GitLab. L'objectif est de conserver une indépendance de la forge logicielle pour les déploiements (capacité à utiliser n'importe quel dépôt Git) et de bénéficier d'une interface centrée exclusivement sur l'état du cluster Kubernetes, ce qu'ArgoCD fait de manière beaucoup plus spécialisée.</li>
+<li><strong>Kubernetes Vanilla (Kubeadm) :</strong> Rejeté en raison de son overhead de ressources (consommation à vide trop importante pour un homelab) et de la lourdeur de maintenance opérationnelle (gestion manuelle de la PKI et du cluster etcd externe).</li>
+<li><strong>MicroK8s :</strong> Rejeté à cause de sa forte dépendance à l'écosystème Canonical et au démon Snap, ce qui restreint le choix de la distribution Linux sous-jacente et ajoute une couche de complexité non désirée pour l'administration système globale.</li>
 </ul>
 
 
