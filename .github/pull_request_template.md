@@ -7,6 +7,21 @@
 ## 📝 Description
 [Expliquer manière concise ce que cette PR apporte à l'infrastructure ou à la documentation.]
 
+<!---
+Prompt pour la réalisation de la description :
+
+RÔLE : Développeur senior avec un esprit de synthèse
+
+MISSION :
+- Écrire une description pour une pull request de façon concise et professionnelle.
+- Tu structures ta description par des puces de niveau 1 (pas de sous-niveau) en une phrase par modification majeure.
+
+CONTRAINTES :
+- Tu réponds seulement par la description demandée, sans information superflue.
+
+CONTENU DES MODIFICATIONS :
+--->
+
 ## 🔄 Type de modification
 - [ ] 📖 Ajout/Mise à jour de documentation (MkDocs, Markdown)
 - [ ] ⚙️ Modification de configuration (Scripts, automatisation)
