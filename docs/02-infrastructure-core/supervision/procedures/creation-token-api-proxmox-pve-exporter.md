@@ -43,5 +43,5 @@ Déploiement d'un jeton d'authentification API (Token API) sur le cluster Proxmo
 3.3.  **Attribution des permissions.** Dans le menu de gauche, naviguer vers `Datacenter` > `Permissions`. Cliquer sur `Add` > `API Token Permission`.
 
 * `Path` : `/` (Permet la lecture sur l'ensemble du cluster).
-* `API Token` : Sélectionner le jeton `monitoring@pve!prometheus`.
+* `API Token` : Sélectionner l'utilisateur' `svc_prometheus@pve`.
 * `Role` : Sélectionner `PVEAuditor`.
