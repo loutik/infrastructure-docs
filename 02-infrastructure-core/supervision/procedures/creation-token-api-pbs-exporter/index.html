@@ -10,13 +10,13 @@
         <meta name="author" content="Louis MEDO">
       
       
-        <link rel="canonical" href="https://infra-docs.loutik.fr/02-infrastructure-core/reseau/runbooks/creation-vlan-opnsense/">
+        <link rel="canonical" href="https://infra-docs.loutik.fr/02-infrastructure-core/supervision/procedures/creation-token-api-pbs-exporter/">
       
       
-        <link rel="prev" href="../creation-regles-filtrage/">
+        <link rel="prev" href="../../../reseau/runbooks/creation-vlan-opnsense/">
       
       
-        <link rel="next" href="../../../supervision/procedures/creation-token-api-pbs-exporter/">
+        <link rel="next" href="../creation-token-api-proxmox-pve-exporter/">
       
       
         
@@ -27,7 +27,7 @@
     
     
       
-        <title>Création des VLANs et interfaces - Documentation infrastructure - LoutikCLOUD</title>
+        <title>Création du token API Prometheus pour PBS - Documentation infrastructure - LoutikCLOUD</title>
       
     
     
@@ -80,7 +80,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#creation-des-vlans-et-interfaces" class="md-skip">
+        <a href="#creation-du-token-api-prometheus-pour-pbs" class="md-skip">
           Aller au contenu
         </a>
       
@@ -115,7 +115,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Création des VLANs et interfaces
+              Création du token API Prometheus pour PBS
             
           </span>
         </div>
@@ -3351,10 +3351,8 @@
                 
   
   
-    
   
   
-  
     
     
       
@@ -3366,11 +3364,11 @@
     
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_8" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_8" >
         
           
           <label class="md-nav__link" for="__nav_3_8" id="__nav_3_8_label" tabindex="0">
@@ -3391,7 +3389,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_8_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_8_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_3_8">
             <span class="md-nav__icon md-icon"></span>
             
@@ -3472,7 +3470,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../procedures/configuration-alias-opnsense/" class="md-nav__link">
+      <a href="../../../reseau/procedures/configuration-alias-opnsense/" class="md-nav__link">
         
   
   
@@ -3500,7 +3498,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../procedures/configuration-boostrap-opnsense/" class="md-nav__link">
+      <a href="../../../reseau/procedures/configuration-boostrap-opnsense/" class="md-nav__link">
         
   
   
@@ -3528,7 +3526,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../procedures/configuration-categories-opnsense/" class="md-nav__link">
+      <a href="../../../reseau/procedures/configuration-categories-opnsense/" class="md-nav__link">
         
   
   
@@ -3556,7 +3554,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../procedures/configuration-dns-recursif-opnsense/" class="md-nav__link">
+      <a href="../../../reseau/procedures/configuration-dns-recursif-opnsense/" class="md-nav__link">
         
   
   
@@ -3584,7 +3582,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../procedures/configuration-ips-suricata-opnsense/" class="md-nav__link">
+      <a href="../../../reseau/procedures/configuration-ips-suricata-opnsense/" class="md-nav__link">
         
   
   
@@ -3612,7 +3610,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../procedures/installation-opnsense/" class="md-nav__link">
+      <a href="../../../reseau/procedures/installation-opnsense/" class="md-nav__link">
         
   
   
@@ -3691,7 +3689,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../procedures/regles-filtrage/configuration-regles-filtrage-vlan-admoob-opnsense/" class="md-nav__link">
+      <a href="../../../reseau/procedures/regles-filtrage/configuration-regles-filtrage-vlan-admoob-opnsense/" class="md-nav__link">
         
   
   
@@ -3732,10 +3730,8 @@
                 
   
   
-    
   
   
-  
     
     
       
@@ -3751,11 +3747,11 @@
     
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_8_2" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_8_2" >
         
           
           <label class="md-nav__link" for="__nav_3_8_2" id="__nav_3_8_2_label" tabindex="0">
@@ -3776,7 +3772,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_3_8_2_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_3_8_2_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_3_8_2">
             <span class="md-nav__icon md-icon"></span>
             
@@ -3794,7 +3790,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../creation-compte-service-opnsense/" class="md-nav__link">
+      <a href="../../../reseau/runbooks/creation-compte-service-opnsense/" class="md-nav__link">
         
   
   
@@ -3822,7 +3818,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../creation-objets-logiques-et-categories-filtrage/" class="md-nav__link">
+      <a href="../../../reseau/runbooks/creation-objets-logiques-et-categories-filtrage/" class="md-nav__link">
         
   
   
@@ -3850,7 +3846,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../creation-regles-filtrage/" class="md-nav__link">
+      <a href="../../../reseau/runbooks/creation-regles-filtrage/" class="md-nav__link">
         
   
   
@@ -3875,6 +3871,158 @@
                 
   
   
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../reseau/runbooks/creation-vlan-opnsense/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Création des VLANs et interfaces
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+      
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_9" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_3_9" id="__nav_3_9_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Supervision
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_9_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_3_9">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Supervision
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_9_1" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_3_9_1" id="__nav_3_9_1_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Procedures
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_3_9_1_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_3_9_1">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Procedures
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
     
   
   
@@ -3894,7 +4042,7 @@
   <span class="md-ellipsis">
     
   
-    Création des VLANs et interfaces
+    Création du token API Prometheus pour PBS
   
 
     
@@ -3912,7 +4060,7 @@
   <span class="md-ellipsis">
     
   
-    Création des VLANs et interfaces
+    Création du token API Prometheus pour PBS
   
 
     
@@ -3960,10 +4108,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#3-creation-logique-des-vlans-8021q" class="md-nav__link">
+  <a href="#3-creation-de-lutilisateur-de-service" class="md-nav__link">
     <span class="md-ellipsis">
       
-        3. Création logique des VLANs (802.1Q)
+        3. Création de l'utilisateur de service
       
     </span>
   </a>
@@ -3971,10 +4119,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#4-assignation-des-nouvelles-interfaces" class="md-nav__link">
+  <a href="#4-creation-du-token-api" class="md-nav__link">
     <span class="md-ellipsis">
       
-        4. Assignation des nouvelles interfaces
+        4. Création du Token API
       
     </span>
   </a>
@@ -3982,21 +4130,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#5-configuration-de-ladressage-ip-statique" class="md-nav__link">
+  <a href="#5-attribution-des-permissions" class="md-nav__link">
     <span class="md-ellipsis">
       
-        5. Configuration de l'adressage IP (Statique)
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#annexe" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Annexe
+        5. Attribution des permissions
       
     </span>
   </a>
@@ -4012,126 +4149,6 @@
 
               
             
-          </ul>
-        </nav>
-      
-    </li>
-  
-
-              
-            
-          </ul>
-        </nav>
-      
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    
-    
-      
-        
-      
-    
-    
-    
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-        
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_9" >
-        
-          
-          <label class="md-nav__link" for="__nav_3_9" id="__nav_3_9_label" tabindex="0">
-            
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Supervision
-  
-
-    
-  </span>
-  
-  
-
-            <span class="md-nav__icon md-icon"></span>
-          </label>
-        
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_9_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_3_9">
-            <span class="md-nav__icon md-icon"></span>
-            
-  
-    Supervision
-  
-
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-                
-  
-  
-  
-  
-    
-    
-      
-        
-      
-        
-      
-    
-    
-    
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-        
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_9_1" >
-        
-          
-          <label class="md-nav__link" for="__nav_3_9_1" id="__nav_3_9_1_label" tabindex="0">
-            
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Procedures
-  
-
-    
-  </span>
-  
-  
-
-            <span class="md-nav__icon md-icon"></span>
-          </label>
-        
-        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_3_9_1_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_3_9_1">
-            <span class="md-nav__icon md-icon"></span>
-            
-  
-    Procedures
-  
-
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
               
                 
   
@@ -4139,35 +4156,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../supervision/procedures/creation-token-api-pbs-exporter/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Création du token API Prometheus pour PBS
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../../supervision/procedures/creation-token-api-proxmox-pve-exporter/" class="md-nav__link">
+      <a href="../creation-token-api-proxmox-pve-exporter/" class="md-nav__link">
         
   
   
@@ -5056,10 +5045,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#3-creation-logique-des-vlans-8021q" class="md-nav__link">
+  <a href="#3-creation-de-lutilisateur-de-service" class="md-nav__link">
     <span class="md-ellipsis">
       
-        3. Création logique des VLANs (802.1Q)
+        3. Création de l'utilisateur de service
       
     </span>
   </a>
@@ -5067,10 +5056,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#4-assignation-des-nouvelles-interfaces" class="md-nav__link">
+  <a href="#4-creation-du-token-api" class="md-nav__link">
     <span class="md-ellipsis">
       
-        4. Assignation des nouvelles interfaces
+        4. Création du Token API
       
     </span>
   </a>
@@ -5078,21 +5067,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#5-configuration-de-ladressage-ip-statique" class="md-nav__link">
+  <a href="#5-attribution-des-permissions" class="md-nav__link">
     <span class="md-ellipsis">
       
-        5. Configuration de l'adressage IP (Statique)
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#annexe" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Annexe
+        5. Attribution des permissions
       
     </span>
   </a>
@@ -5115,7 +5093,7 @@
   
   
     <div style="text-align: left; font-size: 0.85em; color: var(--md-default-fg-color--light); margin-bottom: 20px;">
-      <strong>Dernière édition :</strong> <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-timeago" title="28 juillet 2026 19:28:43 UTC"><span class="timeago" datetime="2026-07-28T19:28:43+00:00" locale="fr"></span></span><span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date" title="28 juillet 2026 19:28:43 UTC">2026-07-28</span>
+      <strong>Dernière édition :</strong> <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-timeago" title="25 août 2026 17:19:31 UTC"><span class="timeago" datetime="2026-08-25T17:19:31+00:00" locale="fr"></span></span><span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date" title="25 août 2026 17:19:31 UTC">2026-08-25</span>
     </div>
   
   
@@ -5128,57 +5106,58 @@
   
 
 
-<h1 id="creation-des-vlans-et-interfaces">Création des VLANs et interfaces</h1>
+<h1 id="creation-du-token-api-prometheus-pour-pbs">Création du token API Prometheus pour PBS</h1>
 <p><img alt="Bannière LoutikCloud" src="https://raw.githubusercontent.com/loutik/design-assets/main/loutikcloud/banniere_loutikcloud.png" /></p>
 <div class="admonition info">
 <p class="admonition-title">Informations</p>
 <ul>
-<li><strong>Date de création</strong> : 2026-06-30</li>
-<li><strong>Service ciblé</strong> : OPNsense</li>
+<li><strong>Date de création</strong> : 2026-08-25</li>
+<li><strong>Service ciblé</strong> : Proxmox Backup Server</li>
 <li><strong>Auteur</strong> : Louis MEDO</li>
 <li><strong>Responsable</strong> : Louis MEDO</li>
 </ul>
 </div>
 <h2 id="1-contexte">1. Contexte</h2>
-<p>Cette procédure décrit la mise en place de la segmentation réseau de niveau 2 (VLAN) et niveau 3 (Routage) sur le pare-feu OPNsense. Elle consiste à déclarer les interfaces virtuelles 802.1Q sur l'interface physique interne, puis à assigner et configurer l'adressage IP statique pour chaque zone isolée (DMZE, DMZI, ZDS, LAN). Cette étape est structurée autour du référentiel de nommage pour garantir la lisibilité et l'automatisation future. C'est un prérequis absolu avant la création des alias de pare-feu et la bascule définitive de l'administration sur le réseau de management dédié.</p>
+<p>Déploiement d'un compte de service et d'un jeton d'API (Token) sur Proxmox Backup Server (PBS). Cette configuration permet à la stack de supervision LoutikCLOUD, via le conteneur <code>pbs-exporter</code>, de s'authentifier et de collecter les métriques du service (état des datastores, statut des sauvegardes) en mode pull (Prometheus), tout en respectant le principe du moindre privilège (lecture seule).</p>
 <h2 id="2-prerequis">2. Prérequis</h2>
 <ul>
-<li>Routeur OPNsense installé et configuration de Bootstrap validée (accès via l'interface LAN initiale).</li>
-<li>Interface réseau physique interne (ex: <code>hn1</code>, <code>vmx1</code> ou <code>em1</code>) configurée et connectée à un commutateur gérant le protocole 802.1Q (Trunk).</li>
-<li>Consultation du référentiel <strong>REF-003 (Convention de nommage réseau et pare-feu)</strong> pour connaître les valeurs autorisées des segments de nommage.</li>
+<li>Accès administrateur (<code>root@pam</code>) à l'interface web du Proxmox Backup Server cible.</li>
+<li>Le gestionnaire de secrets (Vault) prêt à réceptionner la clé de l'API générée.</li>
+<li>Architecture de supervision (Prometheus / pbs-exporter) en cours de déploiement.</li>
 </ul>
-<h2 id="3-creation-logique-des-vlans-8021q">3. Création logique des VLANs (802.1Q)</h2>
-<p>3.1. <strong>Déclaration des tags VLAN.</strong> Depuis l'interface Web, naviguez dans <code>Interfaces &gt; Devices &gt; VLAN</code> et cliquez sur le bouton "+" pour créer les réseaux virtuels un par un.</p>
-<div class="highlight"><pre><span></span><code>Parent<span class="w"> </span>interface<span class="w"> </span>:<span class="w"> </span>hn1
-VLAN<span class="w"> </span>tag<span class="w"> </span>:<span class="w"> </span><span class="m">12</span>
-VLAN<span class="w"> </span>priority<span class="w"> </span>:<span class="w"> </span><span class="m">0</span>
-Description<span class="w"> </span>:<span class="w"> </span>DMZI_SVC_12
+<h2 id="3-creation-de-lutilisateur-de-service">3. Création de l'utilisateur de service</h2>
+<p>3.1. <strong>Ajout du compte utilisateur.</strong> Depuis l'interface web PBS, naviguer dans <code>Configuration</code> &gt; <code>Access Control</code> &gt; <code>User Management</code> et cliquer sur <code>Add</code>.</p>
+<p><img alt="PBS ADD USER" src="../assets/creation-token-api-pbs-exporter/01-pbs-add-user.png" /></p>
+<div class="highlight"><pre><span></span><code>User name: svc_prometheus
+Realm: Proxmox Backup authentication server
 </code></pre></div>
-<p><code>Parent interface</code> : L'interface physique interne (Trunk) qui transportera le trafic tagué pour les réseaux LAN et DMZ.</p>
-<p><code>VLAN tag</code> : L'identifiant 802.1Q numérique du réseau.</p>
-<p><code>Description</code> : Nommage strict respectant le format <code>[ZONE]_[FONCTION]_[ID]</code> et les valeurs autorisées (ex: <code>DMZI</code> et <code>SVC</code>) définies dans le <strong>REF-003, Section 2.1</strong>.</p>
-<h2 id="4-assignation-des-nouvelles-interfaces">4. Assignation des nouvelles interfaces</h2>
-<p>4.1. <strong>Attachement au système de routage.</strong> Se rendre dans <code>Interfaces &gt; Assignments</code> pour lier les VLANs créés à des interfaces logiques OPNsense exploitables par le pare-feu.</p>
-<div class="highlight"><pre><span></span><code>New<span class="w"> </span>interface<span class="w"> </span>:<span class="w"> </span>vlan0.12<span class="w"> </span><span class="o">(</span>DMZI_SVC_12<span class="o">)</span>
-Description<span class="w"> </span>:<span class="w"> </span>DMZI_SVC_12
+<p><code>User name</code> : Identifiant standardisé du compte de service.</p>
+<p><code>Realm</code> : Domaine de sécurité interne à PBS (pas de dépendance PAM).</p>
+<h2 id="4-creation-du-token-api">4. Création du Token API</h2>
+<p>4.1. <strong>Génération du jeton.</strong> Toujours dans <code>Access Control</code>, basculer sur l'onglet <code>API Token</code> et cliquer sur <code>Add</code>. </p>
+<p><img alt="PBS ADD API TOKEN" src="../assets/creation-token-api-pbs-exporter/02-pbs-add-api-token.png" /></p>
+<div class="highlight"><pre><span></span><code>User: svc_prometheus@pbs
+Token Name: prometheus
 </code></pre></div>
-<p><code>New interface</code> : Sélectionnez le VLAN précédemment créé dans la liste déroulante en bas de page, puis cliquez sur le bouton "+".</p>
-<p><code>Description</code> : Renommez immédiatement l'interface assignée (ex: <code>OPT1</code>) avec exactement le même nom que le VLAN en respectant la casse (majuscules obligatoires), tel qu'exigé par le <strong>REF-003, Section 2.1</strong>.</p>
-<p><img alt="Affectation du vlan à l'interface parent" src="../assets/creation-vlan-opnsense/opnsense_capture-ecran_assignements-vlan.png" /></p>
-<h2 id="5-configuration-de-ladressage-ip-statique">5. Configuration de l'adressage IP (Statique)</h2>
-<p>5.1. <strong>Activation et configuration IPv4.</strong> Pour chaque interface nouvellement assignée (qui apparaît désormais dans le menu de gauche sous <code>Interfaces</code>), configurez l'adresse IP qui servira de passerelle pour cette zone.</p>
-<div class="highlight"><pre><span></span><code>Enable<span class="w"> </span>:<span class="w"> </span>Coché
-IPv4<span class="w"> </span>Configuration<span class="w"> </span>Type<span class="w"> </span>:<span class="w"> </span>Static<span class="w"> </span>IPv4
-IPv4<span class="w"> </span>address<span class="w"> </span>:<span class="w"> </span><span class="m">10</span>.0.12.254<span class="w"> </span>/<span class="w"> </span><span class="m">24</span>
-IPv4<span class="w"> </span>Upstream<span class="w"> </span>Gateway<span class="w"> </span>:<span class="w"> </span>Auto<span class="w"> </span>/<span class="w"> </span>None
+<p><code>User</code> : Sélection de l'utilisateur créé à l'étape 3.1.</p>
+<p><code>Token Name</code> : Nom d'identification du jeton. L'identifiant complet deviendra <code>svc_prometheus@pbs!prometheus</code>. (⚠️ Le "Secret" affiché à la validation doit être immédiatement sauvegardé dans le Vault).</p>
+<h2 id="5-attribution-des-permissions">5. Attribution des permissions</h2>
+<p>5.1. <strong>Affectation du rôle sur l'utilisateur.</strong> Naviguer dans <code>Configuration</code> &gt; <code>Access Control</code> &gt; <code>Permissions</code>. Cliquer sur <code>Add</code> puis <code>User Permission</code>.</p>
+<p><img alt="PBS USER PERMISSION" src="../assets/creation-token-api-pbs-exporter/03-pbs-user-permission.png" /></p>
+<div class="highlight"><pre><span></span><code>Path: /
+User: svc_prometheus@pbs
+Role: Audit
 </code></pre></div>
-<p><code>Enable</code> : Cochez cette case pour allumer l'interface.</p>
-<p><code>IPv4 address</code> : Renseignez l'adresse IP statique du routeur pour ce sous-réseau, suivie de son masque CIDR.</p>
-<p><code>IPv4 Upstream Gateway</code> : Ce champ doit impérativement rester vide (None ou Auto) pour les interfaces locales afin d'éviter la création de boucles de routage. Le routeur est lui-même la passerelle de ces réseaux.</p>
-<h2 id="annexe">Annexe</h2>
-<ul>
-<li><a href="../../../../01-architecture/referentiels/ref-003-convention-nommage-reseau-pare-feu/">REF-003 - Convention de nommage réseau et pare-feu</a></li>
-</ul>
+<p><code>Path</code> : Chemin racine permettant d'auditer l'ensemble des datastores et tâches.</p>
+<p><code>Role</code> : Rôle limitant l'accès strictement à la lecture seule (Audit).</p>
+<p>5.2. <strong>Affectation du rôle sur le Token API.</strong> Dans le même menu <code>Permissions</code>, cliquer de nouveau sur <code>Add</code> puis <code>API Token Permission</code>.</p>
+<p><img alt="PBS API TOKEN PERMISSION" src="../assets/creation-token-api-pbs-exporter/04-pbs-api-token-permission.png" /></p>
+<div class="highlight"><pre><span></span><code>Path: /
+API Token: svc_prometheus@pbs!prometheus
+Role: Audit
+</code></pre></div>
+<p><code>API Token</code> : Sélection du jeton spécifique utilisé par l'exporter.</p>
+<p><code>Role</code> : Application redondante et explicite du rôle de lecture seule sur le jeton lui-même, conformément aux exigences de sécurité du déploiement.</p>
 
 
 
@@ -5201,7 +5180,7 @@ IPv4<span class="w"> </span>Upstream<span class="w"> </span>Gateway<span class="
     <span class="md-icon" title="Dernière mise à jour">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-timeago" title="28 juillet 2026 19:28:43 UTC"><span class="timeago" datetime="2026-07-28T19:28:43+00:00" locale="fr"></span></span><span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date" title="28 juillet 2026 19:28:43 UTC">2026-07-28</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-timeago" title="25 août 2026 17:19:31 UTC"><span class="timeago" datetime="2026-08-25T17:19:31+00:00" locale="fr"></span></span><span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date" title="25 août 2026 17:19:31 UTC">2026-08-25</span>
   </span>
 
     
@@ -5211,7 +5190,7 @@ IPv4<span class="w"> </span>Upstream<span class="w"> </span>Gateway<span class="
     <span class="md-icon" title="Créé">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M14.47 15.08 11 13V7h1.5v5.25l3.08 1.83c-.41.28-.79.62-1.11 1m-1.39 4.84c-.36.05-.71.08-1.08.08-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8c0 .37-.03.72-.08 1.08.69.1 1.33.32 1.92.64.1-.56.16-1.13.16-1.72 0-5.5-4.5-10-10-10S2 6.5 2 12s4.47 10 10 10c.59 0 1.16-.06 1.72-.16-.32-.59-.54-1.23-.64-1.92M18 15v3h-3v2h3v3h2v-3h3v-2h-3v-3z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-timeago" title="4 juillet 2026 13:28:52 UTC"><span class="timeago" datetime="2026-07-04T13:28:52+00:00" locale="fr"></span></span><span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date" title="4 juillet 2026 13:28:52 UTC">2026-07-04</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-timeago" title="25 août 2026 17:19:31 UTC"><span class="timeago" datetime="2026-08-25T17:19:31+00:00" locale="fr"></span></span><span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date" title="25 août 2026 17:19:31 UTC">2026-08-25</span>
   </span>
 
     
