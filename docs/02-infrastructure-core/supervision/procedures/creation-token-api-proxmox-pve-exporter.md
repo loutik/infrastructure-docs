@@ -1,5 +1,5 @@
 ---
-title: Création du Token API Proxmox pour PVE Exporter
+title: Création du token API Proxmox pour PVE Exporter
 service: Proxmox VE / Prometheus
 date: 2026-08-23
 author: Louis MEDO
