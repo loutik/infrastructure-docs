@@ -1,5 +1,5 @@
 ---
-title: Fonctionnement de Prometheus sur l'infrastructure
+title: Fonctionnement de Prometheus
 service: Supervision
 date: 2026-08-26
 author: Louis MEDO
