@@ -10,13 +10,13 @@
         <meta name="author" content="Louis MEDO">
       
       
-        <link rel="canonical" href="https://infra-docs.loutik.fr/02-infrastructure-core/reseau/runbooks/creation-regles-filtrage/">
+        <link rel="canonical" href="https://infra-docs.loutik.fr/02-infrastructure-core/supervision/architecture/fonctionnement-grafana/">
       
       
-        <link rel="prev" href="../creation-objets-logiques-et-categories-filtrage/">
+        <link rel="prev" href="../../../reseau/runbooks/creation-vlan-opnsense/">
       
       
-        <link rel="next" href="../creation-vlan-opnsense/">
+        <link rel="next" href="../fonctionnement-prometheus/">
       
       
         
@@ -27,7 +27,7 @@
     
     
       
-        <title>Création des règles de filtrage - Documentation infrastructure - LoutikCLOUD</title>
+        <title>Fonctionnement de Grafana - Documentation infrastructure - LoutikCLOUD</title>
       
     
     
@@ -80,7 +80,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#creation-des-regles-de-filtrage" class="md-skip">
+        <a href="#fonctionnement-de-grafana" class="md-skip">
           Aller au contenu
         </a>
       
@@ -115,7 +115,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Création des règles de filtrage
+              Fonctionnement de Grafana
             
           </span>
         </div>
@@ -3351,10 +3351,8 @@
                 
   
   
-    
   
   
-  
     
     
       
@@ -3366,11 +3364,11 @@
     
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_8" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_8" >
         
           
           <label class="md-nav__link" for="__nav_3_8" id="__nav_3_8_label" tabindex="0">
@@ -3391,7 +3389,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_8_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_8_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_3_8">
             <span class="md-nav__icon md-icon"></span>
             
@@ -3472,7 +3470,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../procedures/configuration-alias-opnsense/" class="md-nav__link">
+      <a href="../../../reseau/procedures/configuration-alias-opnsense/" class="md-nav__link">
         
   
   
@@ -3500,7 +3498,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../procedures/configuration-boostrap-opnsense/" class="md-nav__link">
+      <a href="../../../reseau/procedures/configuration-boostrap-opnsense/" class="md-nav__link">
         
   
   
@@ -3528,7 +3526,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../procedures/configuration-categories-opnsense/" class="md-nav__link">
+      <a href="../../../reseau/procedures/configuration-categories-opnsense/" class="md-nav__link">
         
   
   
@@ -3556,7 +3554,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../procedures/configuration-dns-recursif-opnsense/" class="md-nav__link">
+      <a href="../../../reseau/procedures/configuration-dns-recursif-opnsense/" class="md-nav__link">
         
   
   
@@ -3584,7 +3582,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../procedures/configuration-ips-suricata-opnsense/" class="md-nav__link">
+      <a href="../../../reseau/procedures/configuration-ips-suricata-opnsense/" class="md-nav__link">
         
   
   
@@ -3612,7 +3610,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../procedures/installation-opnsense/" class="md-nav__link">
+      <a href="../../../reseau/procedures/installation-opnsense/" class="md-nav__link">
         
   
   
@@ -3691,7 +3689,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../procedures/regles-filtrage/configuration-regles-filtrage-vlan-admoob-opnsense/" class="md-nav__link">
+      <a href="../../../reseau/procedures/regles-filtrage/configuration-regles-filtrage-vlan-admoob-opnsense/" class="md-nav__link">
         
   
   
@@ -3732,10 +3730,8 @@
                 
   
   
-    
   
   
-  
     
     
       
@@ -3751,11 +3747,11 @@
     
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_8_2" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_8_2" >
         
           
           <label class="md-nav__link" for="__nav_3_8_2" id="__nav_3_8_2_label" tabindex="0">
@@ -3776,7 +3772,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_3_8_2_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_3_8_2_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_3_8_2">
             <span class="md-nav__icon md-icon"></span>
             
@@ -3794,7 +3790,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../creation-compte-service-opnsense/" class="md-nav__link">
+      <a href="../../../reseau/runbooks/creation-compte-service-opnsense/" class="md-nav__link">
         
   
   
@@ -3822,7 +3818,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../creation-objets-logiques-et-categories-filtrage/" class="md-nav__link">
+      <a href="../../../reseau/runbooks/creation-objets-logiques-et-categories-filtrage/" class="md-nav__link">
         
   
   
@@ -3847,37 +3843,10 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Création des règles de filtrage
-  
-
-    
-  </span>
-  
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../../../reseau/runbooks/creation-regles-filtrage/" class="md-nav__link">
         
   
   
@@ -3893,81 +3862,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table des matières">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table des matières
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#1-contexte" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        1. Contexte
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#2-prerequis" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        2. Prérequis
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#3-creation-dune-regle-de-filtrage-dans-linterface-moderne" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        3. Création d'une règle de filtrage dans l'interface moderne
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#4-application-et-validation-de-la-politique" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        4. Application et validation de la politique
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#annexe" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Annexe
-      
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -3980,7 +3874,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../creation-vlan-opnsense/" class="md-nav__link">
+      <a href="../../../reseau/runbooks/creation-vlan-opnsense/" class="md-nav__link">
         
   
   
@@ -4021,8 +3915,10 @@
                 
   
   
+    
   
   
+  
     
     
       
@@ -4036,11 +3932,11 @@
     
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_9" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_9" checked>
         
           
           <label class="md-nav__link" for="__nav_3_9" id="__nav_3_9_label" tabindex="0">
@@ -4061,7 +3957,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_9_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_9_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_3_9">
             <span class="md-nav__icon md-icon"></span>
             
@@ -4076,8 +3972,10 @@
                 
   
   
+    
   
   
+  
     
     
       
@@ -4089,11 +3987,11 @@
     
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_9_1" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_9_1" checked>
         
           
           <label class="md-nav__link" for="__nav_3_9_1" id="__nav_3_9_1_label" tabindex="0">
@@ -4114,7 +4012,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_3_9_1_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_3_9_1_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_3_9_1">
             <span class="md-nav__icon md-icon"></span>
             
@@ -4129,10 +4027,37 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../../../supervision/architecture/fonctionnement-grafana/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Fonctionnement de Grafana
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   
@@ -4148,6 +4073,76 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table des matières">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table des matières
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1-contexte" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. Contexte
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-fonctionnement-de-loutil" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. Fonctionnement de l'outil
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2. Fonctionnement de l&#39;outil">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#21-explications-du-fonctionnement-du-schema" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.1. Explications du fonctionnement du schéma
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-fonctionnement-de-loutil-sur-linfrastructure" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. Fonctionnement de l'outil sur l'infrastructure
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -4160,7 +4155,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../supervision/architecture/fonctionnement-prometheus/" class="md-nav__link">
+      <a href="../fonctionnement-prometheus/" class="md-nav__link">
         
   
   
@@ -4249,7 +4244,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../supervision/procedures/creation-token-api-pbs-exporter/" class="md-nav__link">
+      <a href="../../procedures/creation-token-api-pbs-exporter/" class="md-nav__link">
         
   
   
@@ -4277,7 +4272,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../supervision/procedures/creation-token-api-proxmox-pve-exporter/" class="md-nav__link">
+      <a href="../../procedures/creation-token-api-proxmox-pve-exporter/" class="md-nav__link">
         
   
   
@@ -4364,7 +4359,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../supervision/runbooks/ajouter-machine-exporter-inventaire-prometheus/" class="md-nav__link">
+      <a href="../../runbooks/ajouter-machine-exporter-inventaire-prometheus/" class="md-nav__link">
         
   
   
@@ -5242,43 +5237,38 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#2-prerequis" class="md-nav__link">
+  <a href="#2-fonctionnement-de-loutil" class="md-nav__link">
     <span class="md-ellipsis">
       
-        2. Prérequis
+        2. Fonctionnement de l'outil
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2. Fonctionnement de l&#39;outil">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#21-explications-du-fonctionnement-du-schema" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.1. Explications du fonctionnement du schéma
       
     </span>
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#3-creation-dune-regle-de-filtrage-dans-linterface-moderne" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        3. Création d'une règle de filtrage dans l'interface moderne
-      
-    </span>
-  </a>
+        
+      </ul>
+    </nav>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#4-application-et-validation-de-la-politique" class="md-nav__link">
+  <a href="#3-fonctionnement-de-loutil-sur-linfrastructure" class="md-nav__link">
     <span class="md-ellipsis">
       
-        4. Application et validation de la politique
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#annexe" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Annexe
+        3. Fonctionnement de l'outil sur l'infrastructure
       
     </span>
   </a>
@@ -5301,7 +5291,7 @@
   
   
     <div style="text-align: left; font-size: 0.85em; color: var(--md-default-fg-color--light); margin-bottom: 20px;">
-      <strong>Dernière édition :</strong> <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-timeago" title="28 juillet 2026 19:28:43 UTC"><span class="timeago" datetime="2026-07-28T19:28:43+00:00" locale="fr"></span></span><span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date" title="28 juillet 2026 19:28:43 UTC">2026-07-28</span>
+      <strong>Dernière édition :</strong> <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-timeago" title="26 août 2026 09:52:39 UTC"><span class="timeago" datetime="2026-08-26T09:52:39+00:00" locale="fr"></span></span><span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date" title="26 août 2026 09:52:39 UTC">2026-08-26</span>
     </div>
   
   
@@ -5314,63 +5304,41 @@
   
 
 
-<h1 id="creation-des-regles-de-filtrage">Création des règles de filtrage</h1>
+<h1 id="fonctionnement-de-grafana">Fonctionnement de Grafana</h1>
 <p><img alt="Bannière LoutikCloud" src="https://raw.githubusercontent.com/loutik/design-assets/main/loutikcloud/banniere_loutikcloud.png" /></p>
 <div class="admonition info">
 <p class="admonition-title">Informations</p>
 <ul>
-<li><strong>Date de création</strong> : 2026-06-30</li>
-<li><strong>Service ciblé</strong> : OPNsense</li>
+<li><strong>Date de création</strong> : 2026-08-26</li>
+<li><strong>Service ciblé</strong> : Supervision</li>
 <li><strong>Auteur</strong> : Louis MEDO</li>
 <li><strong>Responsable</strong> : Louis MEDO</li>
 </ul>
 </div>
 <h2 id="1-contexte">1. Contexte</h2>
-<p>Cette procédure décrit l'écriture et l'application des règles de sécurité au sein de la nouvelle interface de filtrage d'OPNsense (<code>Rules [new]</code>). Ce framework moderne basé sur l'API MVC structure la matrice de flux de manière granulaire. L'objectif est d'implémenter une politique de sécurité de type <em>Zero-Trust</em> inter-VLAN en exploitant les alias et catégories configurés précédemment. Cette approche garantit la compatibilité directe avec le code des playbooks Ansible.</p>
-<h2 id="2-prerequis">2. Prérequis</h2>
-<ul>
-<li>La procédure de création des VLANs et interfaces (<a href="../creation-vlan-opnsense/">Création des VLANs et interfaces</a>) est validée.</li>
-<li>La procédure de déclaration des alias et catégories (<a href="../creation-objets-logiques-et-categories-filtrage/">Création des objets logiques et catégories de filtrage</a>) est finalisée.</li>
-<li>Consultation du référentiel <strong>REF-003 (<a href="../../../../01-architecture/referentiels/ref-003-convention-nommage-reseau-pare-feu/">Convention de nommage réseau et pare-feu</a>)</strong>, Section 2.3 pour la nomenclature obligatoire des descriptions.</li>
-</ul>
-<h2 id="3-creation-dune-regle-de-filtrage-dans-linterface-moderne">3. Création d'une règle de filtrage dans l'interface moderne</h2>
-<p>3.1. <strong>Ajout d'une règle unitaire.</strong> Depuis l'interface Web, naviguez dans <code>Firewall &gt; Rules [new]</code> et cliquez sur le bouton "+" rouge en bas à droite pour ouvrir la fenêtre de dialogue "Edit rule".</p>
-<div class="highlight"><pre><span></span><code>Enabled<span class="w"> </span>:<span class="w"> </span>Coché
-Categories<span class="w"> </span>:<span class="w"> </span>Management
-Description<span class="w"> </span>:<span class="w"> </span><span class="o">[</span>DMZI<span class="w"> </span>-&gt;<span class="w"> </span>Management<span class="o">]</span><span class="w"> </span>Autorisation<span class="w"> </span>flux<span class="w"> </span>SSH<span class="w"> </span>vers<span class="w"> </span>le<span class="w"> </span>reverse<span class="w"> </span>proxy
-Interface<span class="w"> </span>:<span class="w"> </span>DMZI_SVC_12
-Quick<span class="w"> </span>:<span class="w"> </span>Coché
-Action<span class="w"> </span>:<span class="w"> </span>Pass
-Direction<span class="w"> </span>:<span class="w"> </span>In
-Version<span class="w"> </span>:<span class="w"> </span>IPv4
-Protocol<span class="w"> </span>:<span class="w"> </span>TCP
-Source<span class="w"> </span>:<span class="w"> </span>NET_DMZI_SERVICES
-Source<span class="w"> </span>Port<span class="w"> </span>:<span class="w"> </span>any
-Destination<span class="w"> </span>:<span class="w"> </span>HOST_REVERSE_PROXY
-Destination<span class="w"> </span>Port<span class="w"> </span>:<span class="w"> </span><span class="m">22</span>
-Gateway<span class="w"> </span>:<span class="w"> </span>None
+<p>Grafana est déployé sur l'infrastructure LoutikCLOUD pour exploiter visuellement les métriques collectées par Prometheus. Alors que Prometheus gère la collecte et le stockage brut, Grafana organise ces données en tableaux de bord intuitifs. Cette séparation des rôles facilite l'analyse, le monitoring et l'alerte pour les équipes opérationnelles.</p>
+<h2 id="2-fonctionnement-de-loutil">2. Fonctionnement de l'outil</h2>
+<div class="highlight"><pre><span></span><code>+-------------+        +-------------+        +-------------+
+|             |  [1]   |             |  [2]   |             |
+| Utilisateur | -----&gt; |   Grafana   | -----&gt; | Prometheus  |
+|             | &lt;----- |             | &lt;----- |             |
++-------------+  [3]   +-------------+        +-------------+
 </code></pre></div>
-<p><code>Enabled</code> : Active la règle de filtrage.</p>
-<p><code>Categories</code> : Association à l'étiquette organisationnelle (ex: Management, Inter-VLAN).</p>
-<p><code>Description</code> : Contextualisation humaine respectant scrupuleusement le format strict [Flux] Description métier du REF-003, Section 2.3 (<a href="../../../../01-architecture/referentiels/ref-003-convention-nommage-reseau-pare-feu/">Convention de nommage réseau et pare-feu</a>).</p>
-<p><code>Interface</code> : Segment réseau physique ou logique (VLAN) sur lequel s'applique le contrôle d'accès.</p>
-<p><code>Quick</code> : Si coché, applique immédiatement la règle dès qu'un paquet correspond, sans évaluer les règles suivantes.</p>
-<p><code>Action</code> : Détermine le traitement du flux (Pass pour autoriser, Drop pour rejeter silencieusement)[cite: 8].</p>
-<p><code>Direction</code> : Sens du trafic par rapport à l'interface (In pour intercepter le trafic entrant dans le pare-feu depuis un segment)[cite: 8].</p>
-<p><code>Version</code> : Sélectionne la version du protocole IP (IPv4 ou IPv6).</p>
-<p><code>Protocol</code> : Sélectionne le protocole de transport ciblé (ex: TCP, UDP, ICMP).</p>
-<p><code>Source / Destination</code> : Sélection stricte des alias de réseaux (NET_) ou d'hôtes (HOST_) définis selon la norme Nomina.</p>
-<p><code>Source Port / Destination Port</code> : Spécification des ports sources ou des alias de services (PORT_) cibles.</p>
-<p><code>Gateway</code> : Permet de forcer un routage spécifique via une passerelle de sortie (Laisser à None par défaut).</p>
-<h2 id="4-application-et-validation-de-la-politique">4. Application et validation de la politique</h2>
-<p>4.1. <strong>Rechargement des configurations en mémoire.</strong> Pour appliquer les modifications et injecter les règles au sein du moteur de filtrage <code>pf</code>, appliquez les changements.</p>
-<div class="highlight"><pre><span></span><code>Action<span class="w"> </span>:<span class="w"> </span>Clic<span class="w"> </span>sur<span class="w"> </span>le<span class="w"> </span>bouton<span class="w"> </span><span class="s2">&quot;Apply Changes&quot;</span>
-</code></pre></div>
-<p><code>Apply Changes</code> : Valide et recharge la politique de sécurité globale du pare-feu.</p>
-<h2 id="annexe">Annexe</h2>
-<ul>
-<li><a href="../../../../01-architecture/referentiels/ref-003-convention-nommage-reseau-pare-feu/">REF-003 - Convention de nommage réseau et pare-feu</a></li>
-</ul>
+<p><em>Schéma 1 : Logique de récupération et restitution des données par Grafana</em></p>
+<h3 id="21-explications-du-fonctionnement-du-schema">2.1. Explications du fonctionnement du schéma</h3>
+<ol>
+<li><strong>Accès utilisateur.</strong> L'opérateur accède à l'interface web de Grafana pour consulter un tableau de bord spécifique.</li>
+<li><strong>Requête des données.</strong> Grafana exécute une requête (ex: PromQL) vers la source de données Prometheus configurée pour récupérer les métriques nécessaires à l'affichage.</li>
+<li><strong>Restitution visuelle.</strong> Grafana compile les données brutes retournées par l'API de Prometheus et génère les composants graphiques finaux pour l'utilisateur.</li>
+</ol>
+<h2 id="3-fonctionnement-de-loutil-sur-linfrastructure">3. Fonctionnement de l'outil sur l'infrastructure</h2>
+<p><img alt="Fonctionnement de Grafana" src="../assets/fonctionnement-grafana-loutik.png" /></p>
+<p><em>Schéma 2 : Intégration de Grafana sur la VM de supervision LoutikCLOUD</em></p>
+<ol>
+<li><strong>Accès externe opérationnel.</strong> L'équipe accède à l'interface de Grafana hébergée sur la VM Supervision (VLAN 14) via les requêtes web entrantes.</li>
+<li><strong>Communication locale inter-conteneurs.</strong> Grafana et Prometheus sont déployés conjointement via le même fichier <code>docker-compose.yml</code>. Grafana interroge Prometheus directement via le réseau virtuel Docker interne, assurant sécurité et faible latence.</li>
+<li><strong>Collecte d'infrastructure.</strong> En parallèle, Prometheus gère de manière indépendante le scraping des métriques (Exporters) sur le reste de l'infrastructure réseau.</li>
+</ol>
 
 
 
@@ -5393,7 +5361,7 @@ Gateway<span class="w"> </span>:<span class="w"> </span>None
     <span class="md-icon" title="Dernière mise à jour">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-timeago" title="28 juillet 2026 19:28:43 UTC"><span class="timeago" datetime="2026-07-28T19:28:43+00:00" locale="fr"></span></span><span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date" title="28 juillet 2026 19:28:43 UTC">2026-07-28</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-timeago" title="26 août 2026 09:52:39 UTC"><span class="timeago" datetime="2026-08-26T09:52:39+00:00" locale="fr"></span></span><span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date" title="26 août 2026 09:52:39 UTC">2026-08-26</span>
   </span>
 
     
@@ -5403,7 +5371,7 @@ Gateway<span class="w"> </span>:<span class="w"> </span>None
     <span class="md-icon" title="Créé">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M14.47 15.08 11 13V7h1.5v5.25l3.08 1.83c-.41.28-.79.62-1.11 1m-1.39 4.84c-.36.05-.71.08-1.08.08-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8c0 .37-.03.72-.08 1.08.69.1 1.33.32 1.92.64.1-.56.16-1.13.16-1.72 0-5.5-4.5-10-10-10S2 6.5 2 12s4.47 10 10 10c.59 0 1.16-.06 1.72-.16-.32-.59-.54-1.23-.64-1.92M18 15v3h-3v2h3v3h2v-3h3v-2h-3v-3z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-timeago" title="4 juillet 2026 13:28:52 UTC"><span class="timeago" datetime="2026-07-04T13:28:52+00:00" locale="fr"></span></span><span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date" title="4 juillet 2026 13:28:52 UTC">2026-07-04</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-timeago" title="26 août 2026 09:52:39 UTC"><span class="timeago" datetime="2026-08-26T09:52:39+00:00" locale="fr"></span></span><span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date" title="26 août 2026 09:52:39 UTC">2026-08-26</span>
   </span>
 
     
